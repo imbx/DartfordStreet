@@ -4,12 +4,14 @@ using UnityEngine;
 public class FilmProjector : InteractBase {
 
     public Material TargetMaterial;
-
+    public string TextureName;
     public Texture2D[] ProjectorTextures;
+
+    public Texture2D EmptyTexture;
 
     public Transform ProjectorTop;
 
-    public float RotationSpeed;
+    public float RotationSpeed = 2f;
 
     private bool isRotating = false;
 
@@ -33,7 +35,7 @@ public class FilmProjector : InteractBase {
         isRotating = true;
         CurrentProjectorTexture++;
         if (CurrentProjectorTexture > 2) CurrentProjectorTexture = 0;
-
+        TargetMaterial.SetTexture(TextureName, EmptyTexture);
         while(timer < 1f)
         {
             timer += RotationSpeed * Time.deltaTime;
@@ -44,7 +46,7 @@ public class FilmProjector : InteractBase {
 
             yield return null;
         }
-        
+        TargetMaterial.SetTexture(TextureName, ProjectorTextures[CurrentProjectorTexture]);
         ProjectorTop.localEulerAngles = new Vector3(
                 ProjectorTop.localEulerAngles.x,
                 targetAngle,
