@@ -40,6 +40,8 @@ public class Item : InteractBase {
             {
                 if(Son) BoxUtils.SetLayerRecursively(gameObject, 8);
                 else gameObject.layer = LayerMask.NameToLayer("Focus");
+
+                if(Son) Son.tag = "Item";
                 startTransform = new TransformData(transform);
                 movement.SetConfig(2f, true);
                 movement.SetParameters(new TransformData(GameController.current.Hand.position, Vector3.zero), startTransform);

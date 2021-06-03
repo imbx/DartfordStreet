@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RoomManager : MonoBehaviour {
@@ -14,6 +17,8 @@ public class RoomManager : MonoBehaviour {
     private float Counter = 60f;
 
     public UnityEvent Action;
+
+    public Image uiImage;
 
     private void Start() {
         CounterGameObject.SetActive(false);
@@ -32,10 +37,11 @@ public class RoomManager : MonoBehaviour {
         }
         if(!isUserPlaying) return;
 
+        
         if(bomb.isBombDeactivated) hasToEnd = true;
 
-
-        // if(hasToEnd && Counter >= 0f) Playgoodend;
+        if(bomb.isBombExploding || (Counter < 0f)) StartCoroutine(PlayEnd());
+        if(hasToEnd && Counter >= 0f) StartCoroutine(PlayGoodEnd());
         // else if(hasToEnd && Counter < 0f) PlayBadEnd;
 
         Counter -= Time.deltaTime;
@@ -55,5 +61,50 @@ public class RoomManager : MonoBehaviour {
 
         isUserPlaying = true;
         yield return null;
+    }
+
+    IEnumerator PlayEnd()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        Color col = Color.white;
+        col.a = 0;
+        uiImage.gameObject.SetActive(true);
+
+        float timer = 0f;
+
+        while (timer < 1f)
+        {
+            col.a = Mathf.Lerp(0, 1, timer);
+            uiImage.color = col;
+
+            timer = Time.deltaTime * 0.5f;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(1.5f);
+
+        timer = 0f;
+
+        while (timer < 1f)
+        {
+            col = new Color(Mathf.Lerp(1, 0, timer),  Mathf.Lerp(1, 0, timer), Mathf.Lerp(1, 0, timer), 1);
+            uiImage.color = col;
+
+            timer = Time.deltaTime * 1.5f;
+            yield return null;
+        }
+
+
+        yield return null;
+
+        SceneManager.LoadScene("Credits");
+    }
+
+    IEnumerator PlayGoodEnd()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+
     }
 }
