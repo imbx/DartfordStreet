@@ -34,7 +34,7 @@ public class PicturePuzzle : MonoBehaviour {
         foreach(Picture pic in pictures)
             {
                 pic.gameObject.AddComponent<Rigidbody>();
-                pic.GetComponent<Rigidbody>().AddForce(pic.transform.forward * 4f);
+                // pic.GetComponent<Rigidbody>().AddForce(pic.transform.forward * 4f);
                 yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 0.3f));
             }
         yield return null;
