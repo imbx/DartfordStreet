@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class RoomManager : MonoBehaviour {
@@ -11,6 +12,8 @@ public class RoomManager : MonoBehaviour {
     private bool isUserInRoom = false;
     private bool hasToEnd = false;
     private float Counter = 60f;
+
+    public UnityEvent Action;
 
     private void Start() {
         CounterGameObject.SetActive(false);
@@ -24,6 +27,7 @@ public class RoomManager : MonoBehaviour {
         {
             isUserInRoom = false;
             GetComponent<BoxCollider>().enabled = false;
+            Action.Invoke();
             StartCoroutine(PreRoomAnimation());
         }
         if(!isUserPlaying) return;
@@ -35,7 +39,7 @@ public class RoomManager : MonoBehaviour {
         // else if(hasToEnd && Counter < 0f) PlayBadEnd;
 
         Counter -= Time.deltaTime;
-        CounterText.text = "Time to explode:\n" + (Counter * 10f / 10f) + " seconds";
+        CounterText.text = "Time to explode:\n" + (Mathf.Round(Counter * 10f) / 10f) + " seconds";
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -45,6 +49,11 @@ public class RoomManager : MonoBehaviour {
     IEnumerator PreRoomAnimation ()
     {
         CounterGameObject.SetActive(true);
+
+
+
+
+        isUserPlaying = true;
         yield return null;
     }
 }

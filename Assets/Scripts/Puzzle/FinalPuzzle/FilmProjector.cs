@@ -21,7 +21,7 @@ public class FilmProjector : InteractBase {
     public override void Execute(bool isLeftAction = true)
     {
         if(isRotating) return;
-        base.Execute();
+        // base.Execute();
 
         StartCoroutine(RotateProjector());
 
@@ -41,19 +41,24 @@ public class FilmProjector : InteractBase {
             timer += RotationSpeed * Time.deltaTime;
             ProjectorTop.localEulerAngles = new Vector3(
                 ProjectorTop.localEulerAngles.x,
-                Mathf.Lerp(startAngle, targetAngle, timer),
-                ProjectorTop.localEulerAngles.z);
+                ProjectorTop.localEulerAngles.y,
+                Mathf.Lerp(startAngle, targetAngle, timer));
 
             yield return null;
         }
         TargetMaterial.SetTexture(TextureName, ProjectorTextures[CurrentProjectorTexture]);
         ProjectorTop.localEulerAngles = new Vector3(
                 ProjectorTop.localEulerAngles.x,
-                targetAngle,
-                ProjectorTop.localEulerAngles.z);
+                ProjectorTop.localEulerAngles.y,
+                targetAngle);
 
         isRotating = false;
 
         yield return null;
+    }
+
+    public void SetImage()
+    {
+        TargetMaterial.SetTexture(TextureName, ProjectorTextures[CurrentProjectorTexture]);
     }
 }
