@@ -8,14 +8,11 @@ public class BombController : PuzzleBase {
     public bool isBombDeactivated = false;
 
     public bool isBombExploding = false;
-    public GameObject Tapa;
-    [SerializeField] private List<AntiwireKnot> tornillos;
     public List<int> WireOrder;
 
     public override void Execute(bool isLeftAction = true)
     {
         base.Execute();
-        if(Tapa) Tapa.SetActive(false);
         GetComponent<BoxCollider>().enabled = false;
     }
 

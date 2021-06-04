@@ -15,14 +15,15 @@ public class Wire : InteractBase {
     {
         Debug.Log("[Wire] Set Position to Knot at " + v.x + " " + v.y + " " + v.z);
         isLocked = true;
-        transform.position = new Vector3(startPosition.x, v.y, v.z);
-        line.SetPosition(1, new Vector3(startPosition.x, v.y, v.z));
+        transform.position = new Vector3(v.x, v.y, startPosition.z);
+        line.SetPosition(1, new Vector3(v.x, v.y, startPosition.z));
     }
 
     public override void Execute(bool isLeftAction = true)
     {
         if(!isInteractingThis)
         {
+            Debug.Log("[Wire] Interacting with " + name);
             startMousePos = Camera.main.ViewportToWorldPoint (new Vector3(0.5f, 0.5f, 0.0f));
             startPosition = line.GetPosition(1);
             isInteractingThis = true;
@@ -82,15 +83,15 @@ public class Wire : InteractBase {
                 r, out var hit, 5f))
             {
                 transform.position = new Vector3(
-                    startPosition.x,
+                    hit.point.x,
                     hit.point.y,
-                    hit.point.z
+                    startPosition.z
                 );
                 line.SetPosition(1, 
                 new Vector3(
-                        startPosition.x,
+                        hit.point.x,
                         hit.point.y,
-                        hit.point.z
+                        startPosition.z
                 ));
             }
         }

@@ -38,6 +38,7 @@ public class Item : InteractBase {
             
             if(startTransform == null) 
             {
+                tag = "Item";
                 if(Son) BoxUtils.SetLayerRecursively(gameObject, 8);
                 else gameObject.layer = LayerMask.NameToLayer("Focus");
 
@@ -76,6 +77,7 @@ public class Item : InteractBase {
     public override void OnExit()
     {
         isInteractingThis = false;
+        tag = "BasicInteraction";
         // base.OnExit();
         if(!NoEffects) {
             BoxUtils.SetLayerRecursively(gameObject, 6);

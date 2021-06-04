@@ -17,6 +17,7 @@ public class ItemNote : Item
         isInteractingThis = false;
         isLeftAction = false;
         GameController.current.database.EditProgression(_id, true);
+        gameControllerObject.playerTargetTag = "";
         gameControllerObject.ChangeState(GameState.OPENNOTEBOOK);
         GameController.current.ui.ForceDiaryPage(_id);
         Destroy(gameObject);

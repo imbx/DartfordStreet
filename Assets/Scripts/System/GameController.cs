@@ -76,12 +76,12 @@ public class GameController : MonoBehaviour{
                 
                 NotebookVisibility();
 
-                if(PlayerControls.isInput2Pressed && keyPressCooldown <= 0f){
+                /*if(PlayerControls.isInput2Pressed && keyPressCooldown <= 0f){
                     keyPressCooldown = 0.75f;
 
                     textManager.SpawnThought(counter);
                     counter++;
-                }
+                }*/
                 // HERE KEYBINDS FOR NOTEBOOK, UI AND SO
 
                 break;

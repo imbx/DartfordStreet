@@ -20,6 +20,10 @@ public class RoomManager : MonoBehaviour {
 
     public Image uiImage;
 
+    public Animator oliver;
+
+    public EntityData player;
+
     private void Start() {
         CounterGameObject.SetActive(false);
         isUserInRoom = false;
@@ -54,10 +58,12 @@ public class RoomManager : MonoBehaviour {
 
     IEnumerator PreRoomAnimation ()
     {
+        player.CanMove = false;
+        oliver.SetTrigger("StartAnim");
+
+        yield return new WaitForSeconds(7f);
         CounterGameObject.SetActive(true);
-
-
-
+        player.CanMove = true;
 
         isUserPlaying = true;
         yield return null;
