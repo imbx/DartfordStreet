@@ -24547,7 +24547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155383653}
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -10.529, y: 5.33, z: -2.37}
+  m_LocalPosition: {x: -10.67, y: 5.33, z: -2.37}
   m_LocalScale: {x: 0.3, y: 4.18, z: 1.253737}
   m_Children: []
   m_Father: {fileID: 678292698}
@@ -25983,7 +25983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353813596}
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -8.1473, y: 5.33, z: -2.37}
+  m_LocalPosition: {x: -7.93, y: 5.33, z: -2.37}
   m_LocalScale: {x: 0.3, y: 4.18, z: 1.731681}
   m_Children: []
   m_Father: {fileID: 678292698}
@@ -27258,7 +27258,7 @@ MonoBehaviour:
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 0.5
-  vecModifier: {x: 0, y: 0, z: 0}
+  vecModifier: {x: 0, y: 0, z: -1}
   targetAngle: {x: 0, y: 0, z: 0}
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Tapa: {fileID: 0}
