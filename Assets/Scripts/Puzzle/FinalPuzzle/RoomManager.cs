@@ -65,6 +65,7 @@ public class RoomManager : MonoBehaviour {
 
     IEnumerator PlayEnd()
     {
+        isUserPlaying = false;
         yield return new WaitForSeconds(1.5f);
 
         Color col = Color.white;
@@ -78,7 +79,7 @@ public class RoomManager : MonoBehaviour {
             col.a = Mathf.Lerp(0, 1, timer);
             uiImage.color = col;
 
-            timer = Time.deltaTime * 0.5f;
+            timer += Time.deltaTime * 0.5f;
             yield return null;
         }
 
@@ -91,7 +92,7 @@ public class RoomManager : MonoBehaviour {
             col = new Color(Mathf.Lerp(1, 0, timer),  Mathf.Lerp(1, 0, timer), Mathf.Lerp(1, 0, timer), 1);
             uiImage.color = col;
 
-            timer = Time.deltaTime * 1.5f;
+            timer += Time.deltaTime * 1.5f;
             yield return null;
         }
 
