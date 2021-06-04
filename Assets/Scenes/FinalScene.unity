@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6490495
 Transform:
   m_ObjectHideFlags: 0
@@ -149,8 +149,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6490494}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.2211862, y: 0.1305567, z: -4.5419517}
-  m_LocalScale: {x: 31.253464, y: 34.815514, z: 29.090574}
+  m_LocalPosition: {x: 3.28, y: 0.1305567, z: -4.5419517}
+  m_LocalScale: {x: -31.25346, y: 34.815514, z: 29.090574}
   m_Children:
   - {fileID: 1555529625}
   m_Father: {fileID: 1506689183}
@@ -11217,7 +11217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.1619463
+      value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
       propertyPath: m_LocalScale.y
@@ -11225,7 +11225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.929
+      value: 2.396
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16175,9 +16175,9 @@ GameObject:
   m_Component:
   - component: {fileID: 728416108}
   - component: {fileID: 728416109}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cuadro
-  m_TagString: Picture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23728,7 +23728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4295
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
   reqID: 66666666
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
@@ -25322,9 +25322,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1302358537}
   - component: {fileID: 1302358538}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cuadro (1)
-  m_TagString: Picture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25370,7 +25370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d48e1597f08e55418ec08902f0dfb32, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.8722825
+      value: 2.872283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d48e1597f08e55418ec08902f0dfb32, type: 3}
       propertyPath: m_LocalScale.y
@@ -26570,9 +26570,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1379034409}
   - component: {fileID: 1379034410}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cuadro
-  m_TagString: Picture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27330,9 +27330,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1462922274}
   - component: {fileID: 1462922275}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cuadro
-  m_TagString: Picture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30515,9 +30515,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1853488411}
   - component: {fileID: 1853488412}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Cuadro
-  m_TagString: Picture
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34722,8 +34722,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9528302, g: 0.6744212, b: 0.43596476, a: 1}
-  m_Intensity: 2
-  m_Range: 4
+  m_Intensity: 3
+  m_Range: 5
   m_SpotAngle: 45.23404
   m_InnerSpotAngle: 18.727869
   m_CookieSize: 10
@@ -86383,7 +86383,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 0e7001926cd7759488f3b09328cbf1fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
