@@ -68120,8 +68120,8 @@ AudioSource:
   m_GameObject: {fileID: 1977702862869058645}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1ebab3d10f8ccfb4fa0bf73f93dcb793, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 5084c19a2d8dff04882c37961e3815c1, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d4d10da6d951fda41bf4cdf66bf94ed4, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 2cba122397cc3054a8381ec60d0e369e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -68264,8 +68264,8 @@ MonoBehaviour:
   player: {fileID: 11400000, guid: 19b9218227f13c24d9845ab8998150cf, type: 2}
   sequence: 0000000001000000000000000000000001000000
   bgAudioSource: {fileID: 1977702862869058647}
-  Beep: {fileID: 8300000, guid: 49743c34b4bb31340b94fd88301c668e, type: 3}
-  Boop: {fileID: 8300000, guid: 075875f119a538f4b9fcfa8e08e458d9, type: 3}
+  Beep: {fileID: 8300000, guid: 1c0062619b1c75046b230dcba1d881bb, type: 3}
+  Boop: {fileID: 8300000, guid: 9db5425dcaec41d4198561d7487ddd46, type: 3}
   FrequencyInterval: {x: 70, y: 75}
   FinalFrequencyInterval: {x: 73.3, y: 73.8}
   uiText: {fileID: 8182179680661268541}
@@ -68278,8 +68278,8 @@ AudioSource:
   m_GameObject: {fileID: 1977702864149836039}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1ebab3d10f8ccfb4fa0bf73f93dcb793, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 5084c19a2d8dff04882c37961e3815c1, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: d4d10da6d951fda41bf4cdf66bf94ed4, type: 2}
+  m_audioClip: {fileID: 8300000, guid: d1873686be6701340888350683859d0b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.658
   m_Pitch: 1
