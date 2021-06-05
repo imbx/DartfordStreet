@@ -51,7 +51,7 @@ public class Note : InteractBase {
                 Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)controller.Mouse);
                 if(Physics.Raycast(
                     r, out hit, 5f,
-                    LayerMask.GetMask("Focus")))
+                    LayerMask.GetMask("Focus") | LayerMask.GetMask("Blocked")))
                 {
                     if(hit.collider.GetComponent<NotePlacement>())
                     {
@@ -83,7 +83,7 @@ public class Note : InteractBase {
             isMoving = controller.isInputHold;
             Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)controller.Mouse);
             if(Physics.Raycast(
-                r, out var hit, 5f))
+                r, out var hit, 5f, LayerMask.GetMask("Blocked")))
             {
                 transform.position = new Vector3(
                     hit.point.x,

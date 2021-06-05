@@ -56,7 +56,7 @@ public class Wire : InteractBase {
                 Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)controller.Mouse);
                 if(Physics.Raycast(
                     r, out hit, 5f,
-                    LayerMask.GetMask("Focus")))
+                    LayerMask.GetMask("Focus") | LayerMask.GetMask("Blocked")))
                 {
                     Debug.Log(hit.collider.name);
                     //if(hit.transform.tag == "MapPin") return hit.transform;
@@ -79,7 +79,7 @@ public class Wire : InteractBase {
             isMoving = controller.isInputHold;
             Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)controller.Mouse);
             if(Physics.Raycast(
-                r, out var hit, 5f))
+                r, out var hit, 5f, LayerMask.GetMask("Blocked")))
             {
                 transform.position = new Vector3(
                     hit.point.x,
