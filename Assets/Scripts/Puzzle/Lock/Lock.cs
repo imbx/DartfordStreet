@@ -32,6 +32,12 @@ public class Lock : PuzzleBase {
             OnEnd(true);
             GameController.current.music.playMusic(candadoSound);
         }
+
+        if(isInteractingThis && controller.isEscapePressed)
+        {
+            Debug.Log("[Safebox] Escape pressed");
+            this.OnExit();
+        }
         
     }
     protected override void OnEnd(bool destroyGameObject = false)
