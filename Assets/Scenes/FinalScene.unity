@@ -11888,7 +11888,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.5114722e+21, z: 4.5904e-41, w: 0}
+  m_BoundingSphereOverride: {x: 2.4257473e-29, y: 2.2e-44, z: 2.4405384e-30, w: 9.1858e-41}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12244,7 +12244,7 @@ GameObject:
   - component: {fileID: 311864622}
   - component: {fileID: 311864624}
   - component: {fileID: 311864623}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaM (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13066,7 +13066,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  MovDimensions: {x: 0, y: 0, z: -0.25}
+  MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -13660,7 +13660,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  MovDimensions: {x: 0, y: 0, z: -0.25}
+  MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -13955,7 +13955,7 @@ GameObject:
   - component: {fileID: 497661652}
   - component: {fileID: 497661655}
   - component: {fileID: 497661654}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: ChimeneaPuertaIzq1.001 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15411,7 +15411,7 @@ GameObject:
   - component: {fileID: 605732248}
   - component: {fileID: 605732250}
   - component: {fileID: 605732249}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTopL (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16287,7 +16287,7 @@ GameObject:
   - component: {fileID: 689220965}
   - component: {fileID: 689220968}
   - component: {fileID: 689220967}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: ChimeneaPuertaIzq1.002 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17067,7 +17067,7 @@ GameObject:
   - component: {fileID: 789593027}
   - component: {fileID: 789593029}
   - component: {fileID: 789593028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaMarcoL (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17702,7 +17702,7 @@ GameObject:
   - component: {fileID: 853932038}
   - component: {fileID: 853932040}
   - component: {fileID: 853932039}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaL (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18031,6 +18031,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4967600256151228270, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4476662562658175215, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: -4276974794524933271, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -18051,6 +18059,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: VentanasFinales
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3039398929178183435, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4518157695251286735, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -18059,6 +18075,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 26c038aece7445f4885a3761d6d255b6, type: 2}
+    - target: {fileID: 5969619912184994945, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6117777995861138139, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -18067,10 +18087,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8937d7c5b2f8e1a4c89a3d3c397cc5d8, type: 2}
+    - target: {fileID: 7309531797523489921, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7318374642797631972, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7417896486380189984, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5ecf1b8b31653604cbbd6bd527cfa5cd, type: 2}
+    - target: {fileID: 8236580330406499563, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272016777512134649, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330298171409959347, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
 --- !u!4 &874076041 stripped
@@ -24462,7 +24502,7 @@ GameObject:
   - component: {fileID: 1084955469}
   - component: {fileID: 1084955471}
   - component: {fileID: 1084955470}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTop XL (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26076,7 +26116,7 @@ GameObject:
   - component: {fileID: 1232584516}
   - component: {fileID: 1232584518}
   - component: {fileID: 1232584517}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTopL (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29249,7 +29289,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4e-45, y: 6e-45, z: 7e-45, w: 1}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -29747,7 +29787,7 @@ GameObject:
   - component: {fileID: 1633590821}
   - component: {fileID: 1633590823}
   - component: {fileID: 1633590822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaMarcoM (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30914,7 +30954,7 @@ GameObject:
   - component: {fileID: 1782686148}
   - component: {fileID: 1782686150}
   - component: {fileID: 1782686149}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTopL (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31289,7 +31329,7 @@ GameObject:
   - component: {fileID: 1792667951}
   - component: {fileID: 1792667953}
   - component: {fileID: 1792667952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTop XL (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33397,7 +33437,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  MovDimensions: {x: 0, y: 0, z: -0.25}
+  MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -36097,7 +36137,7 @@ GameObject:
   - component: {fileID: 5561010800522145336}
   - component: {fileID: 2368169536912030944}
   - component: {fileID: 6471369303446982185}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SueloDespacho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36801,7 +36841,7 @@ GameObject:
   - component: {fileID: 1514781607121410515}
   - component: {fileID: 6756346885749386239}
   - component: {fileID: 6733901736908257140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SueloHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37503,7 +37543,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 495
+    m_Bits: 1007
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -37775,7 +37815,7 @@ GameObject:
   - component: {fileID: 1951395978650730840}
   - component: {fileID: 6935952194185059954}
   - component: {fileID: 3402526398565271290}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Techos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38850,7 +38890,7 @@ GameObject:
   - component: {fileID: 4097279886808150227}
   - component: {fileID: 1443695213316843708}
   - component: {fileID: 5049413351771416474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TechoHabitacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39063,7 +39103,7 @@ GameObject:
   - component: {fileID: 5728763140636450129}
   - component: {fileID: 3555262571259406068}
   - component: {fileID: 2247593239747116402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39220,7 +39260,7 @@ GameObject:
   - component: {fileID: 6155678157472582466}
   - component: {fileID: 1479194612377886133}
   - component: {fileID: 4523512266268627314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTopSalon.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39379,7 +39419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652158887065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HOUSE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68397,7 +68437,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  MovDimensions: {x: 0, y: -0.25, z: 0}
+  MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -69199,7 +69239,7 @@ GameObject:
   - component: {fileID: 194190884378790536}
   - component: {fileID: 71115944160065254}
   - component: {fileID: 8642717927284995233}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RodapiesDespacho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69704,7 +69744,7 @@ GameObject:
   - component: {fileID: 8560190115294978458}
   - component: {fileID: 4515020017353066205}
   - component: {fileID: 7015179877951415679}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chimenea2_Plane_021.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70181,7 +70221,7 @@ GameObject:
   - component: {fileID: 7193477683041041927}
   - component: {fileID: 5570906106009931500}
   - component: {fileID: 8422611295679034144}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedHabitacion.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71428,7 +71468,7 @@ GameObject:
   - component: {fileID: 3594598774069762371}
   - component: {fileID: 8879258859094641515}
   - component: {fileID: 5262002111975591282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SueloHabFinal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71487,7 +71527,7 @@ GameObject:
   - component: {fileID: 8890679752768578527}
   - component: {fileID: 3872626022482794461}
   - component: {fileID: 9019496983844344740}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ChimeneaLaterales.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72096,7 +72136,7 @@ GameObject:
   - component: {fileID: 6088243870582758717}
   - component: {fileID: 2094336755789627081}
   - component: {fileID: 2094336755789627080}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: PuertaConCandado
   m_TagString: Locked
   m_Icon: {fileID: 0}
@@ -72373,7 +72413,7 @@ GameObject:
   - component: {fileID: 6037848306001855956}
   - component: {fileID: 2229488405584869712}
   - component: {fileID: 2229488405584869711}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: PuertaConCandado.002
   m_TagString: Locked
   m_Icon: {fileID: 0}
@@ -72557,7 +72597,7 @@ GameObject:
   - component: {fileID: 7804122414601481685}
   - component: {fileID: 4764569851492434971}
   - component: {fileID: 5066702240400714222}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ChimeneaArmarios.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72575,7 +72615,7 @@ GameObject:
   - component: {fileID: 5111779755181820125}
   - component: {fileID: 4799273476239288116}
   - component: {fileID: 4597805018473032924}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78589,7 +78629,7 @@ GameObject:
   - component: {fileID: 1333993596144126858}
   - component: {fileID: 6225461365497653445}
   - component: {fileID: 3171518089596376120}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarcoSinCandado.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79167,7 +79207,7 @@ GameObject:
   - component: {fileID: 8320168866837176811}
   - component: {fileID: 4097770351388044944}
   - component: {fileID: 4043314084543989075}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarcoConCandado.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81537,7 +81577,7 @@ GameObject:
   - component: {fileID: 3013381805076581947}
   - component: {fileID: 622093474596342057}
   - component: {fileID: 7871825610183777336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chimenea1_Plane_020.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81921,7 +81961,7 @@ GameObject:
   - component: {fileID: 6418559874122876051}
   - component: {fileID: 6190395164900920045}
   - component: {fileID: 8011206025479757721}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedCocina.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82580,7 +82620,7 @@ GameObject:
   - component: {fileID: 8476781309467661629}
   - component: {fileID: 3331669120649841392}
   - component: {fileID: 905130647369530050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chimenea2_Plane_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82980,7 +83020,7 @@ GameObject:
   - component: {fileID: 8207064958707270802}
   - component: {fileID: 3404604724188763704}
   - component: {fileID: 4743422045761242252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarcoConCandado.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83151,7 +83191,7 @@ GameObject:
   - component: {fileID: 7903813675316395266}
   - component: {fileID: 5652224961029926825}
   - component: {fileID: 7476165152276526877}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chimenea2_Plane_021.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86256,7 +86296,7 @@ GameObject:
   - component: {fileID: 8279570179819022205}
   - component: {fileID: 610015292184338946}
   - component: {fileID: 1433651603718384047}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SueloCocina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87669,7 +87709,7 @@ GameObject:
   - component: {fileID: 574729219682775442}
   - component: {fileID: 4255917911813644034}
   - component: {fileID: 3957085120374000994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RodapiesHabSecr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87700,7 +87740,7 @@ GameObject:
   - component: {fileID: 3372514555281804343}
   - component: {fileID: 6609946571492408591}
   - component: {fileID: 1711468022139340176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArcoEntrada.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88077,7 +88117,7 @@ GameObject:
   - component: {fileID: 1917865907914654712}
   - component: {fileID: 3798145362982522146}
   - component: {fileID: 1192111750936183360}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTopSalon.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88229,7 +88269,7 @@ GameObject:
   - component: {fileID: 1430241662635317840}
   - component: {fileID: 7919452470566334386}
   - component: {fileID: 1878889686945733941}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TechoSalon.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88457,7 +88497,7 @@ GameObject:
   - component: {fileID: 2366254551896669333}
   - component: {fileID: 6573359580143786444}
   - component: {fileID: 2575056838357045689}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZocaloEntrada1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88880,7 +88920,7 @@ GameObject:
   - component: {fileID: 1153367548132156585}
   - component: {fileID: 6572071883045958250}
   - component: {fileID: 5666009517091709429}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArcoDormitorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89142,7 +89182,7 @@ GameObject:
   - component: {fileID: 4790007599678671369}
   - component: {fileID: 4898291038163778130}
   - component: {fileID: 4898291038163778129}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: PuertaConCandado.001
   m_TagString: Locked
   m_Icon: {fileID: 0}
@@ -89210,7 +89250,7 @@ GameObject:
   - component: {fileID: 5382291944074812383}
   - component: {fileID: 8720791026723195464}
   - component: {fileID: 1337125558098570981}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArcoCocina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90019,7 +90059,7 @@ GameObject:
   - component: {fileID: 3453891547170068015}
   - component: {fileID: 4921927342546875400}
   - component: {fileID: 8285153045009184414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedHallSup.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90294,7 +90334,7 @@ GameObject:
   - component: {fileID: 6941769426481331689}
   - component: {fileID: 671521676007316758}
   - component: {fileID: 3795282698905067289}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RodapiesHabSecreta1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90675,7 +90715,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  MovDimensions: {x: 0, y: -0.25, z: 0}
+  MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -91783,7 +91823,7 @@ GameObject:
   - component: {fileID: 408613864090728319}
   - component: {fileID: 5732361501424781241}
   - component: {fileID: 5732361501424781240}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: PuertaSinCandado
   m_TagString: Locked
   m_Icon: {fileID: 0}
@@ -91974,7 +92014,7 @@ GameObject:
   - component: {fileID: 4776013012106027956}
   - component: {fileID: 2597613783918571635}
   - component: {fileID: 6793740697024351960}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedHabFinal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92268,7 +92308,7 @@ GameObject:
   - component: {fileID: 3326424524853107256}
   - component: {fileID: 6085983076963422868}
   - component: {fileID: 6846978384908967320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedEscaleraSup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92957,7 +92997,7 @@ GameObject:
   - component: {fileID: 5809303869525414977}
   - component: {fileID: 8066467425149360744}
   - component: {fileID: 7483467246032529176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedHabSEscalera.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93053,7 +93093,7 @@ GameObject:
   - component: {fileID: 6643842045022798614}
   - component: {fileID: 5222278274672502381}
   - component: {fileID: 226213280625249268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TapiaDormitorio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93141,7 +93181,7 @@ GameObject:
   - component: {fileID: 1481370259970446821}
   - component: {fileID: 5552082715163795226}
   - component: {fileID: 2263077875301884430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedHall.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93837,7 +93877,7 @@ GameObject:
   - component: {fileID: 9221159682785652520}
   - component: {fileID: 4543169022474356390}
   - component: {fileID: 6857229311538328946}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZocaloFinalHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93863,7 +93903,7 @@ GameObject:
   - component: {fileID: 518215838813528250}
   - component: {fileID: 3130375058084713957}
   - component: {fileID: 1669731406371341609}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EscaleraPilar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94044,7 +94084,7 @@ GameObject:
   - component: {fileID: 8185831310374055256}
   - component: {fileID: 5985754604569789252}
   - component: {fileID: 2362577329342037863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RodapiesHabitacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94699,7 +94739,7 @@ GameObject:
   - component: {fileID: 7046232498159072577}
   - component: {fileID: 133669179212977164}
   - component: {fileID: 516515509344038361}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarcoSinCandado.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94837,7 +94877,7 @@ GameObject:
   - component: {fileID: 7678554645688502890}
   - component: {fileID: 2811518170640202817}
   - component: {fileID: 4001907671094070187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RodapiesHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94855,7 +94895,7 @@ GameObject:
   - component: {fileID: 4800651695875032057}
   - component: {fileID: 7401802769294201257}
   - component: {fileID: 8840522409224037630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarcoSinCandado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95303,7 +95343,7 @@ GameObject:
   - component: {fileID: 7924254741408219267}
   - component: {fileID: 1662676802156030812}
   - component: {fileID: 3798056113835575064}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArcoEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95425,7 +95465,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  MovDimensions: {x: 0, y: -0.25, z: 0}
+  MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -95540,7 +95580,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  MovDimensions: {x: 0, y: -0.25, z: 0}
+  MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -95746,7 +95786,7 @@ GameObject:
   - component: {fileID: 699892423946532909}
   - component: {fileID: 6379970619282863069}
   - component: {fileID: 7040576947215292374}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarandillaAbajo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96106,7 +96146,7 @@ GameObject:
   - component: {fileID: 7156721878699508957}
   - component: {fileID: 1197301691589002166}
   - component: {fileID: 8312201542805507725}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Escaleras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96181,7 +96221,7 @@ GameObject:
   - component: {fileID: 7682883101492171518}
   - component: {fileID: 7241597098783030987}
   - component: {fileID: 7241597098783030986}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: ChimeneaPuertaIzq1.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96274,7 +96314,7 @@ GameObject:
   - component: {fileID: 5714166294590461002}
   - component: {fileID: 4368769987137849123}
   - component: {fileID: 2402531042693427732}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZocaloTechoEscaleras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96736,7 +96776,7 @@ GameObject:
   - component: {fileID: 680954812599045539}
   - component: {fileID: 1460665823904699137}
   - component: {fileID: 8968386373255970811}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZocaloEscaleras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97152,7 +97192,7 @@ GameObject:
   - component: {fileID: 5163800158489931803}
   - component: {fileID: 3945660140248018324}
   - component: {fileID: 8505526446581212634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SueloToilet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97170,7 +97210,7 @@ GameObject:
   - component: {fileID: 6560374937327273446}
   - component: {fileID: 6390460960417297638}
   - component: {fileID: 22407259729943615}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chimenea2_Plane_021.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97225,7 +97265,7 @@ GameObject:
   - component: {fileID: 2759662839021414242}
   - component: {fileID: 3006935124156184913}
   - component: {fileID: 419272135885529935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedToilet.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98761,7 +98801,7 @@ GameObject:
   - component: {fileID: 1268942443483051768}
   - component: {fileID: 7978634119226082448}
   - component: {fileID: 7978634119226082447}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: PuertaSinCandado.002
   m_TagString: Locked
   m_Icon: {fileID: 0}
@@ -98827,7 +98867,7 @@ GameObject:
   - component: {fileID: 1150565339240892604}
   - component: {fileID: 4455411518388254449}
   - component: {fileID: 7329794588973730581}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: salon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99833,7 +99873,7 @@ GameObject:
   - component: {fileID: 5810777952273331389}
   - component: {fileID: 8212967051437006104}
   - component: {fileID: 8212967051437006103}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: ChimeneaPuertaIzq1.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99885,7 +99925,7 @@ GameObject:
   - component: {fileID: 443850891163691546}
   - component: {fileID: 1326498214592468604}
   - component: {fileID: 8924443772950779475}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ChimeneaLaterales.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100460,7 +100500,7 @@ GameObject:
   - component: {fileID: 4079041159625701998}
   - component: {fileID: 4326900175281225155}
   - component: {fileID: 25805220168724013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZocaloEsquinaSalon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100533,7 +100573,7 @@ GameObject:
   - component: {fileID: 6416967783149066389}
   - component: {fileID: 7322308236184224324}
   - component: {fileID: 4851059668831970987}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TechoDespacho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100565,7 +100605,7 @@ GameObject:
   - component: {fileID: 1077975707884922412}
   - component: {fileID: 6586303286013117141}
   - component: {fileID: 3625943915354032994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedDespacho.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100890,7 +100930,7 @@ GameObject:
   - component: {fileID: 6435137043130429970}
   - component: {fileID: 2545802565332038856}
   - component: {fileID: 5384139154696240303}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EscalerasDecoracion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101633,7 +101673,7 @@ GameObject:
   - component: {fileID: 1644874774364529}
   - component: {fileID: 5897559776849112913}
   - component: {fileID: 6687381451983346095}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BarandillaArriba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101781,7 +101821,7 @@ GameObject:
   - component: {fileID: 5741427785730736793}
   - component: {fileID: 1631531641386641280}
   - component: {fileID: 5565546943753001273}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RodapiesHallSup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102548,7 +102588,7 @@ GameObject:
   - component: {fileID: 6325657449409878573}
   - component: {fileID: 8665218302804568583}
   - component: {fileID: 8786206135295406306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ArcoSalon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102566,7 +102606,7 @@ GameObject:
   - component: {fileID: 2947956634491616870}
   - component: {fileID: 8033651235390945503}
   - component: {fileID: 5710056687928636093}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: VentanaTopSalon.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102585,7 +102625,7 @@ GameObject:
   - component: {fileID: 6279622978110760310}
   - component: {fileID: 6026393426931023233}
   - component: {fileID: 9082256656155270343}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Chimenea1_Plane_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102913,7 +102953,7 @@ GameObject:
   - component: {fileID: 1154342886476767235}
   - component: {fileID: 6502970920718366110}
   - component: {fileID: 822442673992331229}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MarcoConCandado
   m_TagString: Untagged
   m_Icon: {fileID: 0}

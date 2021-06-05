@@ -32,7 +32,7 @@ public class TargetController : MonoBehaviour {
                 InteractRange && !gcObject.targetAllLayers)
             {
                 if(!gcObject.isInPuzzle) gcObject.playerTargetTag = "";
-                if(gcObject.state == BoxScripts.GameState.TARGETING) gcObject.ChangeState(BoxScripts.GameState.PLAYING);
+                // if(gcObject.state == BoxScripts.GameState.TARGETING) gcObject.ChangeState(BoxScripts.GameState.PLAYING);
                 GameController.current.ui.ChangeCursor(-1);
                 return;
             }
@@ -47,8 +47,7 @@ public class TargetController : MonoBehaviour {
                 (hit.collider.GetComponent<InteractBase>() && Mathf.Abs((hit.transform.position - transform.position).magnitude) < InteractRange)
             )
             {
-                if( gcObject.state != BoxScripts.GameState.TARGETING &&
-                    gcObject.state != BoxScripts.GameState.INTERACTING &&
+                if( gcObject.state != BoxScripts.GameState.INTERACTING &&
                     gcObject.state != BoxScripts.GameState.ENDINTERACTING &&
                     gcObject.state != BoxScripts.GameState.LOOKITEM &&
                     gcObject.state != BoxScripts.GameState.ENDLOOKITEM)
@@ -81,7 +80,7 @@ public class TargetController : MonoBehaviour {
                         }
                     }
                 if(hit.collider.tag == "Item" || gcObject.state != BoxScripts.GameState.LOOKITEM)
-                if(_isPressedCd <= 0 && (leftButton || m_PlayerMovement.isInput2Pressed)) {
+                if(_isPressedCd <= 0 && (leftButton || m_PlayerMovement.isInput2Pressed) && hit.collider.GetComponent<InteractBase>()) {
                     Debug.Log("[TargetController] Executing on " + hit.collider.name);
                     _isPressedCd = 0.5f;
                     hit.collider.GetComponent<InteractBase>().Execute(leftButton);
@@ -91,7 +90,7 @@ public class TargetController : MonoBehaviour {
         else
         {
             if(!gcObject.isInPuzzle) gcObject.playerTargetTag = "";
-            if(gcObject.state == BoxScripts.GameState.TARGETING) gcObject.ChangeState(BoxScripts.GameState.PLAYING);
+            // if(gcObject.state == BoxScripts.GameState.TARGETING) gcObject.ChangeState(BoxScripts.GameState.PLAYING);
             GameController.current.ui.ChangeCursor(-1);
         }
     }
