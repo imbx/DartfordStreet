@@ -18,11 +18,6 @@ public class Note : InteractBase {
     [FMODUnity.EventRef]
     public string itemSound = "event:/cogerObject2d";
 
-
-
-
-    private bool isInteractingThis = false;
-
     public override void Execute(bool isLeftAction = true)
     {
         if(controller.isInputHold || controller.isInput2Hold) return;

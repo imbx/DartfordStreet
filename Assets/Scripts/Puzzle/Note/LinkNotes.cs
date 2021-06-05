@@ -15,6 +15,14 @@ public class LinkNotes : PuzzleBase {
         Destroy(nt);
     }
 
+    protected override void OnEnd(bool destroyGameObject = false)
+    {
+        GameController.current.textManager.SpawnThought(5);
+        GameController.current.database.EditProgression(_id, true);
+        GameController.current.ui.ForceDiaryPage(_id);
+        base.OnEnd(true);
+    }
+
     private void Update() {
         if(!isInteractingThis) return;
         if(notes.Count <= 0) this.OnEnd();

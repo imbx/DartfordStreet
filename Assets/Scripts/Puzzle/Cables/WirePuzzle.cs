@@ -19,8 +19,19 @@ public class WirePuzzle : PuzzleBase
         if(isInteractingThis && controller.isEscapePressed)
         {
             Debug.Log("[PuzzleBase] Called Escape");
+            this.OnExit();
+        }
+
+        if(tornillos.Count <= 0)
+        {
             this.OnEnd();
         }
+    }
+
+    public void RemoveKnot(Knot kn)
+    {
+        tornillos.Remove(kn);
+        Destroy(kn);
     }
 
 

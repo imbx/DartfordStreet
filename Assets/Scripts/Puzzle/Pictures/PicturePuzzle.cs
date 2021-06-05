@@ -31,9 +31,11 @@ public class PicturePuzzle : MonoBehaviour {
     IEnumerator DeatachPictures()
     {
         pictures.Shuffle();
-        foreach(Picture pic in pictures)
+        List<Picture> tempPictures = pictures;
+        pictures = new List<Picture>();
+        foreach(Picture pic in tempPictures)
             {
-                pic.gameObject.AddComponent<Rigidbody>();
+                pic.MovePicture();
                 // pic.GetComponent<Rigidbody>().AddForce(pic.transform.forward * 4f);
                 yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 0.3f));
             }
@@ -43,6 +45,7 @@ public class PicturePuzzle : MonoBehaviour {
     public bool CheckPictures()
     {
         int lastPicture = -1;
+        if(pictures.Count <= 0) return false;
         foreach(Picture p in pictures)
         {
             if(p.CheckRotation()){

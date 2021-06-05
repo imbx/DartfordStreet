@@ -53,6 +53,11 @@ public class DiaryNodes : MonoBehaviour {
         diaryNodes = new List<GameObject>();
         if(notesNodes != null) foreach(GameObject noteObject in notesNodes) Destroy(noteObject);
         notesNodes = new List<GameObject>();
+
+        diaryNodesWidth = 0;
+        notesNodesWidth = 0;
+        GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 96f);
+
     }
 
     private void SetNodes(bool isDiary)
@@ -66,6 +71,7 @@ public class DiaryNodes : MonoBehaviour {
         for(int i = 0; i < nodesLeft; i++)
         {
             bool isFirst = false;
+            
             GameObject goParent = Instantiate(nodePrefab);
             //new GameObject("Node " + diaryNodesCount + i, typeof(RectTransform));
             //goParent.AddComponent<DiaryPoint>();
@@ -77,7 +83,7 @@ public class DiaryNodes : MonoBehaviour {
             {
                 GameObject link = Instantiate(linkPrefab);
                 link.transform.SetParent(goParent.transform);
-                link.GetComponent<RectTransform>().anchoredPosition = new Vector2(NodeSpan * -0.5f, 0f);
+                link.GetComponent<RectTransform>().anchoredPosition = new Vector2(48f * -0.5f, 0f);
             }
 
             GameObject point = Instantiate(pointPrefab);

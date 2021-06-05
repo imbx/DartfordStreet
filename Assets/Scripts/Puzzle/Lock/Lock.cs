@@ -18,6 +18,15 @@ public class Lock : PuzzleBase {
 
     void Update()
     {
+        if(hasRequirement)
+        {
+            if(GameController.current.database.GetProgressionState(reqID))
+            {
+                Debug.Log("[Lock] Unlocked");
+                hasRequirement = false;
+                tag = "BasicInteraction";
+            }
+        }
         if (isInteractingThis && GetCurrentCombination().Equals(FinalCombination))
         {
             OnEnd(true);

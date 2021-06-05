@@ -14,9 +14,6 @@ public class Map : InteractBase {
     public LineRenderer RedLine;
     public LineRenderer BlueLine;
 
-
-    private bool hasGivenPage = false;
-
     public MapPuzzle mapPuzzle;
 
 

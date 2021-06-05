@@ -6,7 +6,6 @@ public class Wire : InteractBase {
     public bool isLocked = false;
     [SerializeField] private PrimaryController controller;
     public LineRenderer line;
-    private bool isInteractingThis = false;
     private bool isMoving = false;
     private Vector3 startPosition;
     private Vector3 startMousePos;

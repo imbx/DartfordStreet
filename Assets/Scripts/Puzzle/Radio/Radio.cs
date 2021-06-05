@@ -91,6 +91,8 @@ public class Radio : InteractBase {
                 if(!hasGivenPage && currentSeqPos == sequence.Count - 1)
                 {
                     hasGivenPage = true;
+
+                    GameController.current.textManager.SpawnThought(9);
                     Debug.Log("Youll get a diary page");
                     GameController.current.database.EditProgression(Identifier);
                 }

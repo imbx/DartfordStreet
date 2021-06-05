@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 using BoxScripts;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Movement))]
 public class Drawer : InteractBase {
@@ -10,22 +11,50 @@ public class Drawer : InteractBase {
     private Movement movement;
     
     [FMODUnity.EventRef]
-    public string abrirCajon = "event:/cajón/abrirCajon2d";
+    public string abrirCajon = "event:/cajï¿½n/abrirCajon2d";
 
     [FMODUnity.EventRef]
-    public string cerrarCajon = "event:/cajón/cerrarCajon2d";
+    public string cerrarCajon = "event:/cajï¿½n/cerrarCajon2d";
+
+    public bool hasMultipleReqs = false;
+
+    public List<int> reqIds;
 
     private void Start() 
     {
         movement = GetComponent<Movement>();
     }
 
+    private void Update() {
+        if(hasRequirement){
+            if(GameController.current.database.GetProgressionState(reqID)){
+                tag = "BasicInteraction";
+                hasRequirement = false;
+            }
+        }
+    }
+
     public override void Execute(bool isLeftAction = true)
     {
+        if(hasMultipleReqs)
+        {
+            if(!CheckRequirements()) return;
+        }
+
+        if(hasRequirement && !GameController.current.database.GetProgressionState(reqID)) return;
         if(movement.isAtDestination) ToggleDrawer();
 
         if(isDrawerIn) GameController.current.music.playMusic(cerrarCajon);
         if (!isDrawerIn) GameController.current.music.playMusic(abrirCajon);
+    }
+
+    private bool CheckRequirements()
+    {
+        foreach(int i in reqIds)
+        {
+            if(!GameController.current.database.GetProgressionState(i)) return false;
+        }
+        return true;
     }
 
     void ToggleDrawer()

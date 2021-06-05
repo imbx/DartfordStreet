@@ -23,6 +23,8 @@ public class Picture : InteractBase {
     [FMODUnity.EventRef]
     public string itemSound = "event:/cogerObject2d";
 
+    public Drawer pic;
+
     protected override void OnStart()
     {
         boxCollider = GetComponent<BoxCollider>();
@@ -100,6 +102,13 @@ public class Picture : InteractBase {
     public bool CheckRotation()
     {
         return Mathf.Abs(transform.localEulerAngles.z) == Mathf.Abs(finalRotation.z);
+    }
+
+    public void MovePicture()
+    {
+        tag = "Untagged";
+        pic.Execute();
+        Destroy(this);
     }
     
 }

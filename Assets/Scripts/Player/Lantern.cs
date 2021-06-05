@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Lantern : MonoBehaviour {
 
-    public int reqId;
-    [SerializeField] private bool reqIdBool = false;
     public int reqIdUV;
     [SerializeField] private bool reqIdUVBool = false;
     public PrimaryController playerController;
@@ -12,7 +10,6 @@ public class Lantern : MonoBehaviour {
     [SerializeField] private float lanternInputCd = 0f;
     [SerializeField] private LayerMask UVLayer;
     [SerializeField] private LayerMask NotUVLayer;
-    private int lanternState = 0;
 
     [SerializeField] private Color MainLanternColor;
     [SerializeField] private Color UVLanternColor;
@@ -29,7 +26,6 @@ public class Lantern : MonoBehaviour {
 
     public void UpdateChecks()
     {
-        reqIdBool = GameController.current.database.GetProgressionState(reqId);
         reqIdUVBool = GameController.current.database.GetProgressionState(reqIdUV);
     }
 
@@ -37,15 +33,14 @@ public class Lantern : MonoBehaviour {
     {
         UpdateChecks();
         
-        if (reqIdBool)
+        if (reqIdUVBool)
         {
             if(lanternInputCd > 0f) lanternInputCd -= Time.deltaTime;
 
             if(playerController.isLanternPressed &&
-                !isLanternActive &&
                 lanternInputCd <= 0f)
             {
-                TurnOn(reqIdUVBool);
+                TurnOnUV(isLanternActive);
                 // GameController.current.lanternActive = true;
             }
 
@@ -56,13 +51,26 @@ public class Lantern : MonoBehaviour {
                 TurnOff();
             }
         }
-        lanternLight.enabled = isLanternActive;
+        // lanternLight.enabled = isLanternActive;
     }
 
-    private void TurnOn(bool isUV = false)
-    {
-        lanternState = 1;
+    private void TurnOnUV(bool isLanternOn = false)
+    {   
+        if(isLanternOn) {
+            TurnOff();
+            return;
+        }
         
+        lanternLight.color = UVLanternColor;
+        Camera.main.cullingMask = ~(1 << UVLayer);
+        lanternLight.cullingMask = ~(1 << UVLayer);
+        isLanternActive = true;
+        lanternInputCd = 1f;
+        GameController.current.music.playMusic(eventoSound);
+    }
+
+    /*private void TurnOn(bool isUV = false)
+    {   
         if(isUV){
             lanternLight.color = UVLanternColor;
             Camera.main.cullingMask = ~(1 << UVLayer);
@@ -71,13 +79,12 @@ public class Lantern : MonoBehaviour {
         isLanternActive = true;
         lanternInputCd = 1f;
         GameController.current.music.playMusic(eventoSound);
-    }
+    }*/
 
     private void TurnOff() 
     {
-        lanternState = 0;
         isLanternActive = false;
-        
+        lanternLight.color = MainLanternColor;
         Camera.main.cullingMask = NotUVLayer;
         lanternLight.cullingMask =  -1;
         lanternInputCd = 1f;

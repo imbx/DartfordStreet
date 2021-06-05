@@ -14,8 +14,9 @@ public class InteractBase : MonoBehaviour {
 
     private bool hasCheckedState = false;
 
-
+    protected bool isInteractingThis = false;
     protected string MainTag = "";
+    
 
     private void Awake() {
         GameController.current.SubscribeInteraction(this);
@@ -56,6 +57,8 @@ public class InteractBase : MonoBehaviour {
     }
 
     protected virtual void OnEnd(bool destroyGameObject = false) {
+        isInteractingThis = false;
+
         if(!gameControllerObject)
             GameController.current.ChangeState(BoxScripts.GameState.ENDINTERACTING);
         else {
@@ -68,6 +71,8 @@ public class InteractBase : MonoBehaviour {
     }
 
     public virtual void OnExit() {
+        isInteractingThis = false;
+
         if(!gameControllerObject)
             GameController.current.ChangeState(BoxScripts.GameState.ENDINTERACTING);
         else {
@@ -81,9 +86,10 @@ public class InteractBase : MonoBehaviour {
 
     public virtual void Execute(bool isLeftAction = true)
     {
-        
         if(hasRequirement && !GameController.current.database.GetProgressionState(reqID)) return;
         
+        isInteractingThis = true;
+
         transform.tag = MainTag;
 
         if(!gameControllerObject)

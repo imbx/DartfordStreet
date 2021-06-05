@@ -12,8 +12,6 @@ public class Item : InteractBase {
     protected TransformData startTransform;
     [SerializeField] protected GameObject Son = null;
 
-    protected bool isInteractingThis = false;
-
     [FMODUnity.EventRef]
     public string itemSound = "event:/cogerObject2d";
 

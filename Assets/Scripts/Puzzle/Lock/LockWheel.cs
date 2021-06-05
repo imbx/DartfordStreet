@@ -1,7 +1,6 @@
 using UnityEngine;
 
 public class LockWheel : InteractBase {
-    private bool isInteractingThis = false;
     private bool isHold = false;
     private float CurrentRotation;
     private float RotationLerp = 0;

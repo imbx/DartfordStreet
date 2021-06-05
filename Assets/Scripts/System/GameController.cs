@@ -19,12 +19,8 @@ public class GameController : MonoBehaviour{
     public Transform Hand;
 
     public TextManager textManager;
-    //[SerializeField] private VolumeProfile postFxVol;
-    //[SerializeField] private FloatParameter contrast;
-    [SerializeField] private float blurSpeed = 2f;
 
     private float keyPressCooldown = 0.75f;
-    private int counter = 1;
     private List<InteractBase> AllInteractions;
 
     public MusicControler music;

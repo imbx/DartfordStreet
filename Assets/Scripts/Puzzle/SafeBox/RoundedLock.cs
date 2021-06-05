@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class RoundedLock : InteractBase
 {
-    
-    private bool isInteractingThis = false;
     private bool isHold = false;
     private float CurrentRotation;
     private float RotationLerp = 0;

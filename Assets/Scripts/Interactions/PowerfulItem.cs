@@ -8,6 +8,13 @@ public class PowerfulItem : Item {
         if(hasRequirement && !GameController.current.database.GetProgressionState(reqID)) return;
         Debug.Log("[PowerfulItem] Executing");
         isInteractingThis = true;
+        if(NoEffects)
+        {
+            Debug.Log("[PowerfulItem] Picking up");
+            Action.Invoke();
+            OnEnd();
+            return;
+        }
         if(isLeftAction && gameControllerObject.state != GameState.LOOKITEM) {
             if(startTransform == null) 
             {

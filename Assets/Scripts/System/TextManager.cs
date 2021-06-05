@@ -56,9 +56,7 @@ public class TextManager : MonoBehaviour
             textHeight += ThoughtsLeftTopAnchor.y + ThoughtsRightBottomAnchor.y + 30f;
             ThoughtsText.text = tx;
             ThoughtsContainer.GetComponent<RectTransform>().sizeDelta = new Vector2(textWidth, 224);
-            Debug.Log(" W H is " + new Vector2(textWidth, textHeight));
-            Debug.Log("Position should be set at : " + new Vector3(-1 * Margin.x, Margin.y, 0));
-            ThoughtsContainer.GetComponent<RectTransform>().anchoredPosition = new Vector3(-Margin.x, Margin.y, 0);
+            ThoughtsContainer.GetComponent<RectTransform>().anchoredPosition = new Vector3(-Margin.x, 400f /*Margin.y*/, 0);
             ThoughtsContainer.SetActive(true);
         } else ThoughtsInQueue.Add(dialogueID);
         
