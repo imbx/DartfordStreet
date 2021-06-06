@@ -20,7 +20,6 @@ public class Lightbox : PuzzleBase {
     protected override void OnEnd(bool destroyGameObject = false)
     {
         base.OnEnd();
-        GetComponent<LightController>().LightController_AnimLights();
         OnDestroyLightbox.Invoke();
     }
 

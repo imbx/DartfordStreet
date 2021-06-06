@@ -218,13 +218,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19616970}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: -0.0022465736, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 279027734}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &19616972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5432,13 +5432,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54939930}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: 0.0027383263, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1091191040}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &54939932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5524,6 +5524,56 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54939930}
   m_Mesh: {fileID: 4099540556687693790, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
+--- !u!1 &70856861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70856863}
+  - component: {fileID: 70856862}
+  m_Layer: 0
+  m_Name: LightControllerHigher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &70856862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70856861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d38748ca7bae44ca1ef2276bb78d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 897324789
+  RequirementIds: fc304500cb1af60d
+  lights: []
+  otherActions:
+    m_PersistentCalls:
+      m_Calls: []
+  IntensitySpeed: 4
+--- !u!4 &70856863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70856861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.463719, y: 4.50545, z: 2.4386125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &77261872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6290,8 +6340,6 @@ MonoBehaviour:
   - {fileID: 8082898391355599612}
   - {fileID: 1986138005676567065}
   - {fileID: 7994821920502364963}
-  isLocker: 0
-  LibraryDrawer: {fileID: 0}
 --- !u!65 &129977963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11404,8 +11452,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &154858747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12019,8 +12065,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &233435941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13237,8 +13281,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &342158180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13939,8 +13981,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &441721112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14894,8 +14934,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &532116390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14938,13 +14976,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556294952}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: -0.004874685, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1091191040}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &556294954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16352,6 +16390,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RotationSpeed: 2
 --- !u!65 &653101503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16392,13 +16431,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659423761}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: 0.00028329727, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1091191040}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &659423763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17260,6 +17299,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RotationSpeed: 2
 --- !u!65 &783152355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18490,6 +18530,58 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2673144, y: 0.38349137, z: 0.41641945}
   m_Center: {x: -0.00083650794, y: -0.18322362, z: 0.34044176}
+--- !u!1 &903139990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903139992}
+  - component: {fileID: 903139991}
+  m_Layer: 0
+  m_Name: LightControllerLower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &903139991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903139990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d38748ca7bae44ca1ef2276bb78d99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: -1
+  RequirementIds: 07000000
+  lights:
+  - {fileID: 266536801}
+  - {fileID: 1663165287}
+  otherActions:
+    m_PersistentCalls:
+      m_Calls: []
+  IntensitySpeed: 4
+--- !u!4 &903139992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903139990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.463719, y: 4.50545, z: 2.4386125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &914653825
 GameObject:
   m_ObjectHideFlags: 0
@@ -19229,8 +19321,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &958218717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25105,8 +25195,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091191039}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.043350793, y: -0.6669575, z: -0.038923766, w: 0.7428145}
+  m_LocalPosition: {x: -0.0144, y: 0.0056, z: 0.0095}
   m_LocalScale: {x: 5.506075, y: 3.2153149, z: 3.2153149}
   m_Children:
   - {fileID: 584231071}
@@ -25121,7 +25211,7 @@ Transform:
   - {fileID: 54939931}
   m_Father: {fileID: 952489326}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: -6.68, y: -83.84, z: 0}
 --- !u!23 &1091191041
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26181,8 +26271,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!1 &1183041197
 GameObject:
   m_ObjectHideFlags: 0
@@ -26821,6 +26909,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RotationSpeed: 2
 --- !u!65 &1284265664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27489,6 +27578,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RotationSpeed: 2
 --- !u!65 &1332676057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27992,13 +28082,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374475427}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: -0.004874685, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 279027734}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &1374475429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28317,6 +28407,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RotationSpeed: 2
 --- !u!65 &1395876743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29012,8 +29103,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7892995, y: 0.42127585, z: 0.27519023}
-  m_Center: {x: -0.029498085, y: -0.01966536, z: 0.016855985}
+  m_Size: {x: 0.8121489, y: 0.4734187, z: 0.32469228}
+  m_Center: {x: -0.040922835, y: -0.04573679, z: 0.041607007}
 --- !u!1 &1462922273
 GameObject:
   m_ObjectHideFlags: 0
@@ -29409,8 +29500,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1518401814}
-  - component: {fileID: 1518401817}
-  - component: {fileID: 1518401816}
   - component: {fileID: 1518401815}
   m_Layer: 9
   m_Name: Cube (19)
@@ -29427,7 +29516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518401813}
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -8.5453, y: 5.33, z: 1.58}
+  m_LocalPosition: {x: -8.5453, y: 5.33, z: 1.809}
   m_LocalScale: {x: 0.3, y: 4.18, z: 2.5372615}
   m_Children: []
   m_Father: {fileID: 678292698}
@@ -29444,57 +29533,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1518401816
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518401813}
-  m_Enabled: 1
-  m_CastShadows: 3
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1518401817
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518401813}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: 1.0326961, y: 0.9408532, z: 1}
+  m_Center: {x: 0.016348112, y: 0.029573802, z: 0}
 --- !u!4 &1529789247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90e2f47a0b494b44586baddcc6005ccf, type: 3}
@@ -30080,13 +30120,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591058712}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: 0.0027383263, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 279027734}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &1591058714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30345,8 +30385,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8750446, y: 1.4632034, z: 0.79263896}
-  m_Center: {x: -0.08613217, y: -0.22496748, z: 0.06972852}
+  m_Size: {x: 1.567949, y: 1.4632034, z: 1.2738254}
+  m_Center: {x: 0.067415595, y: -0.22496748, z: -0.38300884}
 --- !u!1 &1633590820
 GameObject:
   m_ObjectHideFlags: 0
@@ -30880,8 +30920,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &1698579576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31317,13 +31355,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739875150}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: 0.00028329727, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 279027734}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &1739875152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34207,8 +34245,6 @@ MonoBehaviour:
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &1982687536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34797,8 +34833,6 @@ MonoBehaviour:
   - {fileID: 8417351402820455925}
   - {fileID: 7097036043279795846}
   - {fileID: 697176094423328381}
-  isLocker: 0
-  LibraryDrawer: {fileID: 0}
 --- !u!1 &1998985353
 GameObject:
   m_ObjectHideFlags: 0
@@ -34888,8 +34922,6 @@ MonoBehaviour:
   - {fileID: 2024856689510956710}
   - {fileID: 8594978529912355356}
   - {fileID: 5083466056683731964}
-  isLocker: 1
-  LibraryDrawer: {fileID: 4056878810455269163}
 --- !u!65 &1998985356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35529,14 +35561,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2051559312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44d38748ca7bae44ca1ef2276bb78d99, type: 3}
+  m_Script: {fileID: 11500000, guid: fd5a1649b19f8584887c23c334f2113f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights:
-  - {fileID: 825906424}
-  - {fileID: 266536801}
-  - {fileID: 1663165287}
-  IntensitySpeed: 2
+  Id: 234232523
+  DialogueId: 21
 --- !u!114 &2051559314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35550,9 +35579,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4534524
-  hasRequirement: 1
+  hasRequirement: 0
   hideIfReq: 0
-  reqID: 234232523
+  reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
   MoveCamera: 1
@@ -35736,10 +35765,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4056878810455269163}
-        m_TargetAssemblyTypeName: Drawer, Assembly-CSharp
-        m_MethodName: Execute
-        m_Mode: 6
+      - m_Target: {fileID: 2051559313}
+        m_TargetAssemblyTypeName: ThoughtsCheckReq, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -35759,8 +35788,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.177794, y: 0.8653654, z: 0.33838788}
-  m_Center: {x: -0.008323193, y: 0.07395154, z: 0.035022803}
+  m_Size: {x: 1.177794, y: 0.78419006, z: 0.33838788}
+  m_Center: {x: -0.008323193, y: 0.03336388, z: 0.03502281}
 --- !u!4 &2051559316
 Transform:
   m_ObjectHideFlags: 0
@@ -36352,13 +36381,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126441292}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: -0.0022465736, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1091191040}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!114 &2126441294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37348,7 +37377,6 @@ GameObject:
   - component: {fileID: 644434615764875500}
   - component: {fileID: 1115701537653586036}
   - component: {fileID: 1115701537653586038}
-  - component: {fileID: 268717837132046935}
   m_Layer: 6
   m_Name: Leadbox
   m_TagString: Untagged
@@ -37356,23 +37384,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &268717837132046935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268717837132046934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44d38748ca7bae44ca1ef2276bb78d99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lights:
-  - {fileID: 825906424}
-  - {fileID: 266536801}
-  - {fileID: 1663165287}
-  IntensitySpeed: 2
 --- !u!4 &271416592348047962
 Transform:
   m_ObjectHideFlags: 0
@@ -69312,8 +69323,6 @@ MonoBehaviour:
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &1031528695312743355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73040,8 +73049,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.0018880662, y: 0.008019151, z: 0.020924363}
-  m_Center: {x: -0.0000000014551913, y: 0.003759574, z: 0.010462185}
+  m_Size: {x: 0.0011165016, y: 0.008019151, z: 0.020924363}
+  m_Center: {x: 0.00010228671, y: 0.0037595734, z: 0.010462186}
 --- !u!114 &2094336755789627081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83186,7 +83195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3326424524853107256
 Transform:
   m_ObjectHideFlags: 0
@@ -84246,7 +84255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094336755789627079}
   m_LocalRotation: {x: -0.00000013767877, y: 0.7071068, z: 0.70710677, w: 0.00000013767878}
-  m_LocalPosition: {x: 2.5482776, y: 0.00000166893, z: 3.3700511}
+  m_LocalPosition: {x: 2.5482776, y: 0.00000166893, z: 3.368}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
@@ -87690,6 +87699,7 @@ GameObject:
   - component: {fileID: 4056878810455269162}
   - component: {fileID: 4056878810455269164}
   - component: {fileID: 4056878810455269163}
+  - component: {fileID: 4056878810455269165}
   m_Layer: 0
   m_Name: LibraryCenter
   m_TagString: Untagged
@@ -87732,8 +87742,6 @@ MonoBehaviour:
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 1
-  reqIds: 022b0100fc304500
 --- !u!114 &4056878810455269164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87749,6 +87757,34 @@ MonoBehaviour:
   hasParameters: 0
   HasToDestroy: 0
   isAtDestination: 1
+--- !u!114 &4056878810455269165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056878810455269161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f6a5600ccff3543870858d5009a0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RequirementIds: f5167c35022b0100
+  Action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4056878810455269163}
+        m_TargetAssemblyTypeName: Drawer, Assembly-CSharp
+        m_MethodName: Execute
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &4079041159625701998
 Transform:
   m_ObjectHideFlags: 0
@@ -91661,8 +91697,6 @@ MonoBehaviour:
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &5456817267417335483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96435,8 +96469,6 @@ MonoBehaviour:
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &6962151909431514044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96551,8 +96583,6 @@ MonoBehaviour:
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
-  hasMultipleReqs: 0
-  reqIds: 
 --- !u!114 &7016010496118912078
 MonoBehaviour:
   m_ObjectHideFlags: 0

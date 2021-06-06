@@ -16,10 +16,6 @@ public class Drawer : InteractBase {
     [FMODUnity.EventRef]
     public string cerrarCajon = "event:/caj�n/cerrarCajon2d";
 
-    public bool hasMultipleReqs = false;
-
-    public List<int> reqIds;
-
     private void Start() 
     {
         movement = GetComponent<Movement>();
@@ -36,25 +32,11 @@ public class Drawer : InteractBase {
 
     public override void Execute(bool isLeftAction = true)
     {
-        if(hasMultipleReqs)
-        {
-            if(!CheckRequirements()) return;
-        }
-
         if(hasRequirement && !GameController.current.database.GetProgressionState(reqID)) return;
         if(movement.isAtDestination) ToggleDrawer();
 
         if(isDrawerIn) GameController.current.music.playMusic(cerrarCajon);
         if (!isDrawerIn) GameController.current.music.playMusic(abrirCajon);
-    }
-
-    private bool CheckRequirements()
-    {
-        foreach(int i in reqIds)
-        {
-            if(!GameController.current.database.GetProgressionState(i)) return false;
-        }
-        return true;
     }
 
     void ToggleDrawer()
