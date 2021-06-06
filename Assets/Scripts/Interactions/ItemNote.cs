@@ -20,6 +20,7 @@ public class ItemNote : Item
         gameControllerObject.playerTargetTag = "";
         gameControllerObject.ChangeState(GameState.OPENNOTEBOOK);
         GameController.current.textManager.SpawnAchievement(achievementType);
+        GameController.current.database.SaveGame();
         // GameController.current.ui.ForceDiaryPage(_id);
         Destroy(gameObject);
     }

@@ -13,36 +13,36 @@ public class Database {
     private Dictionary<int, bool> PlayerProgression;
     public EntityData playerData;
 
-    public Database(EntityData entityData) {
+    public Database(EntityData entityData, bool ignoreSavedGame = true) {
         Dialogues = new Dictionary<int, Dialogue>();
         PlayerProgression = new Dictionary<int, bool>();
         playerData = entityData;
         // Try to load
-        LoadGame();
+        if(!ignoreSavedGame) LoadGame();
         LoadData();
     }
 
     private bool LoadData() {
         //Dialogues.Add(1, "Test dialogue");
         ParseDialogueData("Database/dialogues");
-        PlayerProgression.Add(-1, true);
-        PlayerProgression.Add(0, true);
-        PlayerProgression.Add(1, true);
+        AddProgressionID(-1, true);
+        AddProgressionID(0, true);
+        AddProgressionID(1, true);
 
         
         //Notes.Add(5223, new NotebookPage("La llave esta en el jarron"));
         
 
-        PlayerProgression.Add(78325, true);
-        PlayerProgression.Add(324234, true);
-        PlayerProgression.Add(2342342, true);
-        PlayerProgression.Add(232341, true);
-        PlayerProgression.Add(646533, true);
+        AddProgressionID(78325, true);
+        AddProgressionID(324234, true);
+        AddProgressionID(2342342, true);
+        AddProgressionID(232341, true);
+        AddProgressionID(646533, true);
         //PlayerProgression.Add(5223, true);
-        PlayerProgression.Add(3652, true);
-        PlayerProgression.Add(1234, true);
-        PlayerProgression.Add(6434, true);
-        PlayerProgression.Add(3234, true);
+        AddProgressionID(3652, true);
+        AddProgressionID(1234, true);
+        AddProgressionID(6434, true);
+        AddProgressionID(3234, true);
         return true;
     }
 
@@ -51,8 +51,8 @@ public class Database {
     {
         Save save = new Save();
         save.PlayerProgression = PlayerProgression;
-        save.playerPosition = playerData.PlayerPosition;
-        save.cameraRotation = playerData.CameraRotations;
+        save.playerPosition = new SerializableVector3(playerData.PlayerPosition);
+        save.cameraRotation = new SerializableVector3(playerData.CameraRotations);
         return save;
     }
 
@@ -71,15 +71,22 @@ public class Database {
     {
         if(File.Exists(Application.persistentDataPath + "/gamesave.save"))
         {
+            Debug.Log("[Database] File exists at " + Application.persistentDataPath + "/gamesave.save");
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/gamesave.save", FileMode.Open);
+            file.Position = 0;
             Save save = (Save)bf.Deserialize(file);
             file.Close();
             playerData.isLoadingData = true;
+            Debug.Log("[Database] Loading game");
+            playerData.PlayerPosition = save.playerPosition.Vector3;
+            playerData.CameraRotations = save.cameraRotation.Vector3;
 
-            PlayerProgression = save.PlayerProgression;
-            playerData.PlayerPosition = save.playerPosition;
-            playerData.CameraRotations = save.cameraRotation;
+            foreach(var item in save.PlayerProgression)
+            {
+                if(PlayerProgression.ContainsKey(item.Key)) PlayerProgression[item.Key] = item.Value;
+                else PlayerProgression.Add(item.Key, item.Value);
+            }
 
             Debug.Log("[Database] Game loaded");
 
@@ -143,6 +150,6 @@ public class Database {
 public class Save
 {
     public Dictionary<int, bool> PlayerProgression;
-    public Vector3 playerPosition;
-    public Vector3 cameraRotation;
+    public SerializableVector3 playerPosition;
+    public SerializableVector3 cameraRotation;
 }

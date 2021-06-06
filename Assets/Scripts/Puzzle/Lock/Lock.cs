@@ -14,8 +14,13 @@ public class Lock : PuzzleBase {
 
     public override void Execute(bool isLeftAction = true)
     {
-        base.Execute();
-        GetComponent<BoxCollider>().enabled = false;
+        if(hasRequirement && !GameController.current.database.GetProgressionState(reqID)) return;
+        else 
+        {
+            base.Execute();
+            GetComponent<BoxCollider>().enabled = false;
+        }
+        
     }
 
     void Update()

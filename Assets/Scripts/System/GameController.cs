@@ -27,10 +27,17 @@ public class GameController : MonoBehaviour{
 
     public Texture2D CircleCursor;
 
+    [Header("SAVED GAME")]
+    public bool ignoreSavedGame = true;
+
     private void Awake() {
+        DontDestroyOnLoad(this);
         current = this;
         Debug.Log("Loading Database");
-        database = new Database(Player);
+        #if UNITY_EDITOR
+            SceneController.LoadGame = !ignoreSavedGame;
+        #endif
+        database = new Database(Player, !SceneController.LoadGame);
         Debug.Log("-- DB LOADED --");
         gameCObject.camera = Camera.main;
         AllInteractions = new List<InteractBase>();

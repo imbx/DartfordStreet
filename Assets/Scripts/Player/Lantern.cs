@@ -1,7 +1,6 @@
 using UnityEngine;
 
 public class Lantern : MonoBehaviour {
-
     public int reqIdUV;
     [SerializeField] private bool reqIdUVBool = false;
     public PrimaryController playerController;
@@ -16,10 +15,15 @@ public class Lantern : MonoBehaviour {
 
     [FMODUnity.EventRef]
     public string eventoSound = "event:/candado";
-    
+    private void Start() {
+        
+    }
 
     void OnEnable()
     {
+        if(!GameController.current.database.GetProgressionState(2))
+            gameObject.SetActive(false);
+            
         lanternLight = GetComponent<Light>();
         if(GameController.current) UpdateChecks();
     }

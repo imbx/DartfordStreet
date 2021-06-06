@@ -11,6 +11,7 @@ public class PowerfulItem : Item {
         if(NoEffects)
         {
             Debug.Log("[PowerfulItem] Picking up");
+            GameController.current.database.EditProgression(_id, true);
             Action.Invoke();
             OnEnd();
             return;
@@ -22,7 +23,7 @@ public class PowerfulItem : Item {
                 tag = "Item";
                 startTransform = new TransformData(transform);
                 movement.SetConfig(2f, true);
-                movement.SetParameters(new TransformData(GameController.current.Hand.position, Vector3.zero), startTransform);
+                movement.SetParameters(new TransformData(GameController.current.gameCObject.camera.transform.position + (GameController.current.gameCObject.camera.transform.forward * 0.5f), Vector3.zero), startTransform);
             } else {
                 gameObject.layer = 6;
                 movement.Invert();
@@ -36,6 +37,7 @@ public class PowerfulItem : Item {
             if(isLeftAction && CanPickup)
             {
                 Debug.Log("[PowerfulItem] Picking up");
+                GameController.current.database.EditProgression(_id, true);
                 Action.Invoke();
                 OnEnd();
                 return;

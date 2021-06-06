@@ -74,6 +74,7 @@ public class Item : InteractBase {
         isLeftAction = false;
         GameController.current.database.EditProgression(_id, true);
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);
+        GameController.current.database.SaveGame();
         if(achievementType != AchievementType.None)
         {
             GameController.current.textManager.SpawnAchievement(achievementType);

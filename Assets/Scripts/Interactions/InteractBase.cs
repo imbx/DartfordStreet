@@ -6,7 +6,7 @@ using BoxScripts;
 public class InteractBase : MonoBehaviour {
     [Header("Interact Base Parameters")]
     public int _id = 0;
-
+    public bool hideIfAlreadyGotten = true;
     public bool hasRequirement = false;
     public bool hideIfReq = false;
     public int reqID = -1;
@@ -44,7 +44,7 @@ public class InteractBase : MonoBehaviour {
                 if(_id != 0)
                     if(GameController.current.database.ProgressionExists(_id)){
                         Debug.Log("Deactivating " + name);
-                        // this.gameObject.SetActive(!GameController.current.database.GetProgressionState(_id));
+                        this.gameObject.SetActive(!GameController.current.database.GetProgressionState(_id));
                     }
                     else GameController.current.database.AddProgressionID(_id);
             }
@@ -68,6 +68,8 @@ public class InteractBase : MonoBehaviour {
             gameControllerObject.requireFocus = true;
         }
         BoxUtils.SetLayerRecursively(gameObject, 6);
+
+        GameController.current.database.SaveGame();
 
         if(transform.tag != "Picture") transform.tag = "BasicInteraction";
     }
