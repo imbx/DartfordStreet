@@ -11,6 +11,7 @@ public class RoundedLock : InteractBase
     [SerializeField] private PrimaryController controller;
     public Vector2 Interval = new Vector2(0, 99.99f);
     [SerializeField] private SafeBox parent;
+    public float rotationMultiplier = 0.20f;
 
     public override void Execute(bool isLeftAction = true)
     {
@@ -34,7 +35,7 @@ public class RoundedLock : InteractBase
 
         int mouseDir = BoxScripts.BoxUtils.ConvertTo01((int)controller.CameraAxis.x);
         CurrentRotation = (int) Mathf.Lerp(Interval.x, Interval.y, RotationLerp);
-        RotationLerp += mouseDir * 0.25f * Time.deltaTime;
+        RotationLerp += mouseDir * rotationMultiplier * Time.deltaTime;
 
         if(RotationLerp > 1f ) RotationLerp = 0f;
         if(RotationLerp < 0f) RotationLerp = 1f;
