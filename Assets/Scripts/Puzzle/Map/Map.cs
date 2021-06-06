@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using BoxScripts;
 
 public class Map : InteractBase {
-    private GameObject Marker3;
-    private PinSelect pinSelect = PinSelect.None;
-
+    
     public GameObject PinPrefab;
-
     public Material Red;
-    public Material Blue;
-
     public LineRenderer RedLine;
-    public LineRenderer BlueLine;
-
     public MapPuzzle mapPuzzle;
+    public GameObject MarkerPrefab;
+    public List<MapIntersection> Markers;
+
+    private void Start() {
+        Markers = new List<MapIntersection>();
+    }
 
 
     public override void Execute(bool isLeftAction = true)
     {
         base.Execute(isLeftAction);
 
-        if(pinSelect != PinSelect.None && isLeftAction)
+        if(isLeftAction)
         {
             Debug.Log("[Map] Setting pin");
             SetPin();
@@ -44,24 +43,24 @@ public class Map : InteractBase {
             Debug.Log("[Map] Instantiating prefab");
             GameObject go = Instantiate(PinPrefab);
             MapPin mapPin = go.GetComponent<MapPin>();
-            mapPin.SetPin(transform, pinSelect == PinSelect.Red ? Red : Blue);
+            mapPin.SetPin(transform, Red);
             go.transform.position = pos;
-            if(pinSelect == PinSelect.Red)
+            mapPuzzle.PinList.Add(go);
+
+            foreach(MapIntersection mi in Markers)
             {
-                mapPuzzle.RedPinList.Add(go);
-                return;
+                Destroy(mi.Marker);
             }
-            mapPuzzle.BluePinList.Add(go);
+            Markers = new List<MapIntersection>();
+            DrawIntersections(mapPuzzle.PinList);
         }
     }
 
     public void RemovePin(GameObject ioa)
     {
 
-        if(mapPuzzle.RedPinList.Exists(vec => vec == ioa))
-            mapPuzzle.RedPinList.Remove(ioa);
-        if(mapPuzzle.BluePinList.Exists(vec => vec == ioa))
-            mapPuzzle.BluePinList.Remove(ioa);
+        if(mapPuzzle.PinList.Exists(vec => vec == ioa))
+            mapPuzzle.PinList.Remove(ioa);
 
         Destroy(ioa);
     }
@@ -98,31 +97,90 @@ public class Map : InteractBase {
     void Update()
     {
         
-        if(mapPuzzle.RedPinList.Count > 1)
+        if(mapPuzzle.PinList.Count > 1)
         {
             if(!RedLine.enabled) RedLine.enabled = true;
-            SetLineRenderer(mapPuzzle.RedPinList, RedLine);
+            SetLineRenderer(mapPuzzle.PinList, RedLine);
         } else if(RedLine.enabled) RedLine.enabled = false;
-        if(mapPuzzle.BluePinList.Count > 1)
+    }
+
+    private void DrawIntersections (List<GameObject> list)
+    {
+        List<Vector3> positions = new List<Vector3>();
+
+        List<Line> lines = new List<Line>();
+
+        for(int i = 0; i < list.Count; i++)
         {
-            if(!BlueLine.enabled) BlueLine.enabled = true;
-            SetLineRenderer(mapPuzzle.BluePinList, BlueLine);
-        } else if(BlueLine.enabled) BlueLine.enabled = false;
+            positions.Add(list[i].GetComponent<MapPin>().lineStart.position);
+            if(i < list.Count - 1)
+            {
+                Vector2 point1 = new Vector2(list[i].GetComponent<MapPin>().lineStart.position.z, list[i].GetComponent<MapPin>().lineStart.position.y);
+                Vector2 point2 = new Vector2(list[i + 1].GetComponent<MapPin>().lineStart.position.z, list[i + 1].GetComponent<MapPin>().lineStart.position.y);
+                Line tempLine = new Line(point1, point2);
+                lines.Add(tempLine);
+            }
+        }
+
+        if(lines.Count > 1)
+        {
+            for(int i = 0; i < lines.Count; i++)
+            {
+                for(int j = i + 1; j < lines.Count; j++)
+                {
+                    Vector2 testVec = Vector2.zero;
+                    if(LineIntersection.HasIntersection(lines[i], lines[j], out testVec))
+                    {
+                        if(Markers == null) Markers = new List<MapIntersection>();
+                        bool hasMarker = false;
+                        foreach(MapIntersection mi in Markers)
+                        {
+                            if(mi.line1 == lines[i] || mi.line1 == lines[j] || mi.line2 == lines[i] || mi.line2 == lines[j])
+                            {
+                                hasMarker = true;
+                                break;
+                            }
+                        }
+                        if(!hasMarker)
+                        {
+                            GameObject go = Instantiate(MarkerPrefab);
+                            go.transform.SetParent(transform);
+                            go.transform.position = new Vector3(go.transform.position.x, testVec.y, testVec.x);
+
+                            MapIntersection tempMapInteraction = new MapIntersection(go, lines[i], lines[j]);
+                            Markers.Add(tempMapInteraction);
+                            Debug.Log("[Map] New Intersection at : " + testVec);
+                        }
+                        
+                        Debug.Log("[Map] Intersection at : " + testVec);
+                    }
+                        
+                }
+            }
+        }
     }
 
     void SetLineRenderer(List<GameObject> list, LineRenderer lr)
     {
         List<Vector3> positions = new List<Vector3>();
-        foreach(GameObject go in list)
+
+        for(int i = 0; i < list.Count; i++)
         {
-            positions.Add(go.GetComponent<MapPin>().lineStart.position);
+            positions.Add(list[i].GetComponent<MapPin>().lineStart.position);
         }
         lr.positionCount = list.Count;
         lr.SetPositions(positions.ToArray());
     }
-
-    public void SetPin(PinSelect ps)
+}
+public class MapIntersection{
+    public GameObject Marker;
+    public Line line1;
+    public Line line2;
+    public MapIntersection(GameObject mrk, Line l1, Line l2)
     {
-        pinSelect = ps;
+        Marker = mrk;
+        line1 = l1;
+        line2 = l2;
     }
+
 }

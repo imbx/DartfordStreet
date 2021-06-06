@@ -5,13 +5,11 @@ using BoxScripts;
 
 public class MapPuzzle : PuzzleBase
 {
-    public List<GameObject> RedPinList;
-    public List<GameObject> BluePinList;
-    private GameObject Marker3;
+    public List<GameObject> PinList;
+    public List<GameObject> MarkerList;
 
     private void OnEnable() {
-        RedPinList = new List<GameObject>();
-        BluePinList = new List<GameObject>();
+        PinList = new List<GameObject>();
     }
 
     public override void Execute(bool isLeftAction = true)

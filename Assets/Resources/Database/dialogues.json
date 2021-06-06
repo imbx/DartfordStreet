@@ -79,7 +79,7 @@
             "dialogueText" : "La radio emite un ruido extraño. Parece el código que Oliver invento cuando combatiamos juntos... ¡Le encantaba usarlo para ocultar combinaciones!",
             "isAnchoredAtTop" : true,
             "isAnchoredAtCenter" : false,
-            "lifeTime" : 4.0
+            "lifeTime" : 5.0
         },
         {
             "id" : 10,
