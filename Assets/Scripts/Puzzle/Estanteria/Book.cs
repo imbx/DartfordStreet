@@ -45,7 +45,7 @@ public class Book : InteractBase {
         }
         else if(isInteractingThis && isMoving)
         {
-            if(!controller.isInputPressed)
+            if(!controller.isInputHold)
             {
                 isMoving = false;
                 isInteractingThis = false;
@@ -70,8 +70,8 @@ public class Book : InteractBase {
                         Action.Invoke(this, book);
                         
                     } else ResetPosition();
-                    GetComponent<BoxCollider>().enabled = true;
                 } else  ResetPosition();
+                GetComponent<BoxCollider>().enabled = true;
             }
         }
 
