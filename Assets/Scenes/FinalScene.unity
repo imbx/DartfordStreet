@@ -17897,6 +17897,63 @@ Transform:
   m_Father: {fileID: 772394915}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &837074694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2110041957085412695, guid: a547465ba1dc82c46b1790008602f5ce, type: 3}
+  m_PrefabInstance: {fileID: 621528382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &837074695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837074694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15092856, y: 0.01975084, z: 0.26658607}
+  m_Center: {x: -0.06714791, y: 0.03, z: 0.13268302}
+--- !u!65 &837074696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837074694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15092856, y: 0.01975084, z: 0.26658607}
+  m_Center: {x: -0.06714791, y: 0.15913612, z: 0.13268302}
+--- !u!65 &837074697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837074694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.013594454, y: 0.14794086, z: 0.26658607}
+  m_Center: {x: 0.016572556, y: 0.09749518, z: 0.13268304}
+--- !u!65 &837074698
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837074694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15438125, y: 0.13437223, z: 0.254143}
+  m_Center: {x: -0.12763953, y: 0.09071068, z: 0.12646107}
 --- !u!1 &843315114
 GameObject:
   m_ObjectHideFlags: 0
@@ -26262,9 +26319,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hasRequirement: 1
+  hasRequirement: 0
   hideIfReq: 0
-  reqID: 9417434
+  reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
   MovDimensions: {x: 0.35, y: 0, z: 0}
@@ -87738,7 +87795,7 @@ MonoBehaviour:
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  MovDimensions: {x: -1.45, y: 0, z: 0}
+  MovDimensions: {x: -1.3, y: 0, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
   cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
@@ -91154,8 +91211,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   FirstNumber: 0
   SecondNumber: 0
-  FirstTargetNumber: 20
-  SecondTargetNumber: 80
+  FirstTargetNumber: 53
+  SecondTargetNumber: 48
   targetText: {fileID: 2082027217}
   childDoor: {fileID: 6516120379338255354}
 --- !u!65 &5302709689310654451
@@ -103722,6 +103779,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 99.99}
   parent: {fileID: 5302709689310654450}
+  rotationMultiplier: 0.2
 --- !u!65 &9083583269613368192
 BoxCollider:
   m_ObjectHideFlags: 0
