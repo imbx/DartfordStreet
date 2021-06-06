@@ -10,6 +10,8 @@ public class Keybinds : MonoBehaviour {
 
     private float isHoldCounter = 0f;
     private float isHold2Counter = 0f;
+
+    private float inputThreshold = 0.25f;
     
     void Start() {
         var map = new InputActionMap("DartfordStController");
@@ -36,26 +38,44 @@ public class Keybinds : MonoBehaviour {
         controller.Axis = vecMov;
         controller.CameraAxis = lookAction.ReadValue<Vector2>();
         controller.Mouse = mousePosition();
+        inputThreshold -= Time.deltaTime;
 
+        controller.isTabPressed = isTabPressed();
+        controller.isLanternPressed = isLanternPressed();
         controller.isEscapePressed = isEscapePressed();
         controller.isInputPressed = isActionPressed();
         controller.isInput2Pressed = isAction2Pressed();
-        controller.isTabPressed = isTabPressed();
-        controller.isLanternPressed = isLanternPressed();
+        controller.isInputDown = controller.isInputHold ? false : isActionPressed();
+        controller.isInput2Down = controller.isInput2Hold ? false : isAction2Pressed();
 
-        if(controller.isInputPressed) isHoldCounter += Time.deltaTime;
+        if(isActionPressed()) isHoldCounter += Time.deltaTime;
         else isHoldCounter = 0;
 
-        if(controller.isInputPressed && isHoldCounter > 0.2f){
+        if(isActionPressed() && isHoldCounter > 0.2f){
             controller.isInputHold = true;
         } else controller.isInputHold = false;
 
-        if(controller.isInput2Pressed) isHold2Counter += Time.deltaTime;
+        if(isAction2Pressed()) isHold2Counter += Time.deltaTime;
         else isHold2Counter = 0;
 
-        if(controller.isInput2Pressed && isHold2Counter > 0.2f){
+        if(isAction2Pressed() && isHold2Counter > 0.2f){
             controller.isInput2Hold = true;
         } else controller.isInput2Hold = false;
+
+        
+
+        /*if(inputThreshold <= 0f)
+        {
+            inputThreshold = 0.25f;
+            
+        }
+        else
+        {
+            controller.isEscapePressed = false;
+            controller.isInputPressed = false;
+            controller.isInput2Pressed = false;
+        }*/
+        
     }
 
     bool isEscapePressed() {

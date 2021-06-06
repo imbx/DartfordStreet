@@ -41,7 +41,7 @@ public class TargetController : MonoBehaviour {
 
             // Debug.Log("[TargetController] Hitpoint : " + hit.point);
             gcObject.playerTargetPosition = hit.point;
-            bool leftButton = m_PlayerMovement.isInputPressed;
+            bool leftButton = m_PlayerMovement.isInputDown;
             if(
                 (!m_CVars.CanLook && hit.collider.GetComponent<InteractBase>()) ||
                 (hit.collider.GetComponent<InteractBase>() && Mathf.Abs((hit.transform.position - transform.position).magnitude) < InteractRange)
@@ -59,6 +59,11 @@ public class TargetController : MonoBehaviour {
                                 GameController.current.ui.ChangeCursor(0);
                             break;
                             case "Picture":
+                                GameController.current.ui.ChangeCursor(3);
+                                //gcObject.ChangeState(BoxScripts.GameState.TARGETINGPICTURE);
+                                // GameController.current.SetCursor();
+                                break;
+                            case "Pick":
                                 GameController.current.ui.ChangeCursor(1);
                                 //gcObject.ChangeState(BoxScripts.GameState.TARGETINGPICTURE);
                                 // GameController.current.SetCursor();
@@ -81,7 +86,7 @@ public class TargetController : MonoBehaviour {
                     }
                 if(gcObject.state == BoxScripts.GameState.MOVINGPICTURE) return;
                 if(hit.collider.tag == "Item" || gcObject.state != BoxScripts.GameState.LOOKITEM)
-                if(_isPressedCd <= 0 && (leftButton || m_PlayerMovement.isInput2Pressed) && hit.collider.GetComponent<InteractBase>()) {
+                if(_isPressedCd <= 0 && (leftButton || m_PlayerMovement.isInput2Down) && hit.collider.GetComponent<InteractBase>()) {
                     Debug.Log("[TargetController] Executing on " + hit.collider.name);
                     _isPressedCd = 0.5f;
                     hit.collider.GetComponent<InteractBase>().Execute(leftButton);
