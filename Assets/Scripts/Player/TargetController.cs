@@ -24,10 +24,10 @@ public class TargetController : MonoBehaviour {
         if(_isPressedCd > 0) _isPressedCd -= Time.deltaTime;
         LayerMask layerMask = LayerMask.GetMask("Blocked") | LayerMask.GetMask("Focus") | LayerMask.GetMask("Interactuable");
         if(gcObject.state == GameState.INTERACTING || gcObject.state == GameState.LOOKITEM) layerMask = LayerMask.GetMask("Blocked") | LayerMask.GetMask("Focus");
-        if(gcObject.targetAllLayers) layerMask = 1;
+        if(gcObject.targetAllLayers) layerMask = -1;
         if(Physics.Raycast(m_ROrigin, direction, out hit, m_CVars.VisionRange, layerMask)){
             
-
+            // Debug.Log("[TargetController] Passed check");
             if(Mathf.Abs((hit.transform.position - transform.position).magnitude) >
                 InteractRange && !gcObject.targetAllLayers)
             {
@@ -79,6 +79,7 @@ public class TargetController : MonoBehaviour {
                                 break;
                         }
                     }
+                if(gcObject.state == BoxScripts.GameState.MOVINGPICTURE) return;
                 if(hit.collider.tag == "Item" || gcObject.state != BoxScripts.GameState.LOOKITEM)
                 if(_isPressedCd <= 0 && (leftButton || m_PlayerMovement.isInput2Pressed) && hit.collider.GetComponent<InteractBase>()) {
                     Debug.Log("[TargetController] Executing on " + hit.collider.name);
