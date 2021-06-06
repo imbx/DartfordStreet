@@ -69,6 +69,11 @@ public class Note : InteractBase {
                             GetComponent<BoxCollider>().enabled = true;
                         }
                     }
+                    else 
+                    {
+                        transform.position = startPosition;
+                        GetComponent<BoxCollider>().enabled = true;
+                    }
                 }
                 else 
                 {
