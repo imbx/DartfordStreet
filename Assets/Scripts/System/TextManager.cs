@@ -19,11 +19,17 @@ public class TextManager : MonoBehaviour
     [SerializeField] private GameObject BubbleContainer;
     [SerializeField] private Text BubbleText;
 
+    [Header("Achievement")]
+
+    [SerializeField] private Achievement achievement;
+
 
     private List<int> ThoughtsInQueue;
+    private List<int> AchievementsInQueue;
 
     private void Awake() {
         ThoughtsInQueue = new List<int> ();
+        AchievementsInQueue = new List<int>();
     }
     
     // Start is called before the first frame update
@@ -40,26 +46,55 @@ public class TextManager : MonoBehaviour
             SpawnThought(ThoughtsInQueue[0]);
             ThoughtsInQueue.Remove(ThoughtsInQueue[0]);
         }
+
+        if(AchievementsInQueue.Count > 0 && !achievement.gameObject.activeSelf)
+        {
+            SpawnAchievement((AchievementType) AchievementsInQueue[0]);
+            AchievementsInQueue.Remove(AchievementsInQueue[0]);
+        }
     }
 
-    public void SpawnThought(int dialogueID, TextPosition textPos = TextPosition.BOTTOMLEFT)
+    public void SpawnThought(int dialogueID)
     {
         if(!ThoughtsContainer.activeSelf){
             
-            string tx = GameController.current.database.GetDialogue(dialogueID);
+            Dialogue tx = GameController.current.database.GetDialogue(dialogueID);
+            RectTransform thoughtTransform = ThoughtsContainer.GetComponent<RectTransform>();
+            Vector2 anchorSettings = Vector2.one * 0.5f;
 
             Debug.Log("Spawning this text : " + tx);
+            ThoughtsText.text = tx.dialogueText;
 
-            float textWidth = CalculateLength(ThoughtsText, tx);
-            float textHeight = ThoughtsText.fontSize * 3 * (int)((textWidth + ThoughtsLeftTopAnchor.x + ThoughtsRightBottomAnchor.x + (96f * 2)) / Screen.width);
-            textWidth += ThoughtsLeftTopAnchor.x + ThoughtsRightBottomAnchor.x;
-            textHeight += ThoughtsLeftTopAnchor.y + ThoughtsRightBottomAnchor.y + 30f;
-            ThoughtsText.text = tx;
-            ThoughtsContainer.GetComponent<RectTransform>().sizeDelta = new Vector2(textWidth, 224);
-            ThoughtsContainer.GetComponent<RectTransform>().anchoredPosition = new Vector3(-Margin.x, 400f /*Margin.y*/, 0);
+            if(tx.isAnchoredAtTop) anchorSettings = Vector2.one;
+            else anchorSettings = Vector2.right;
+            if(tx.isAnchoredAtCenter) anchorSettings.x = 0.5f;
+
+            thoughtTransform.sizeDelta = new Vector2(tx.size.x, tx.size.y);
+            thoughtTransform.pivot = anchorSettings;
+            thoughtTransform.anchorMin = anchorSettings;
+            thoughtTransform.anchorMax = anchorSettings;
+            thoughtTransform.anchoredPosition = new Vector3(tx.anchoredPosition.x, tx.anchoredPosition.y, 0);
+
+            ThoughtsContainer.GetComponent<MessageBox>().SetLifetime(tx.lifeTime);
+
             ThoughtsContainer.SetActive(true);
         } else ThoughtsInQueue.Add(dialogueID);
-        
+    }
+
+    public bool IsThoughtInQueue (int ThoughtId)
+    {
+        if(ThoughtsInQueue.Contains(ThoughtId)) return true;
+        return false;
+    }
+
+
+    public void SpawnAchievement(AchievementType a)
+    {
+        if(!achievement.gameObject.activeSelf)
+        {
+            achievement.ShowAchievement(a);
+
+        } else AchievementsInQueue.Add((int) a);
     }
 
     private float CalculateLength(Text textComponent, string message)

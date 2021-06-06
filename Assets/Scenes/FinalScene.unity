@@ -186,6 +186,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 5
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -241,10 +242,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &19616973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5453,10 +5456,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &54939933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5606,7 +5611,7 @@ GameObject:
   - component: {fileID: 83406136}
   - component: {fileID: 83406135}
   - component: {fileID: 83406134}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5851,6 +5856,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 65.6, y: 180, z: 90}
+--- !u!1 &101160853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 101160854}
+  - component: {fileID: 101160856}
+  - component: {fileID: 101160855}
+  m_Layer: 0
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &101160854
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101160853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1743256823}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 432, y: 144}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &101160855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101160853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 65c0c77226dc2a84bbd07aaa8a5e4883, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &101160856
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101160853}
+  m_CullTransparentMesh: 1
 --- !u!1 &102828514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2799759246717453803, guid: 97a8fc9833957074184e5125ae1f3b21, type: 3}
@@ -5873,6 +5953,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -5902,7 +5983,7 @@ GameObject:
   - component: {fileID: 124669115}
   - component: {fileID: 124669114}
   - component: {fileID: 124669113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5997,7 +6078,7 @@ GameObject:
   - component: {fileID: 125703041}
   - component: {fileID: 125703040}
   - component: {fileID: 125703039}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6102,6 +6183,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -6184,6 +6266,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 2
@@ -11316,6 +11399,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   MovDimensions: {x: 0.25, y: 0, z: 0}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -11399,7 +11483,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
       propertyPath: m_LocalScale.x
@@ -11606,6 +11690,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   TargetMaterial: {fileID: 2100000, guid: 7042704e47ae8724e85f2bcbe4269c3e, type: 2}
   TextureName: _Proyector2
   ProjectorTextures:
@@ -11731,7 +11816,7 @@ GameObject:
   - component: {fileID: 206642305}
   - component: {fileID: 206642304}
   - component: {fileID: 206642303}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11746,8 +11831,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206642301}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.81, y: 5.33, z: 2.7683}
-  m_LocalScale: {x: 0.3, y: 4.18, z: 5.0664167}
+  m_LocalPosition: {x: -9.81, y: 5.33, z: 3.474}
+  m_LocalScale: {x: 0.3, y: 4.18, z: 3.6}
   m_Children: []
   m_Father: {fileID: 678292698}
   m_RootOrder: 4
@@ -11843,19 +11928,19 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.6901961, g: 0.72156864, b: 0.7647059, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.356
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.31
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -11888,7 +11973,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.4257473e-29, y: 2.2e-44, z: 2.4405384e-30, w: 9.1858e-41}
+  m_BoundingSphereOverride: {x: -1, y: 9, z: 10, w: -10}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -11929,6 +12014,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   MovDimensions: {x: 0.25, y: 0, z: 0}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -12508,6 +12594,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 2
   isChecker: 0
   Action:
@@ -12620,7 +12707,7 @@ GameObject:
   - component: {fileID: 324866363}
   - component: {fileID: 324866362}
   - component: {fileID: 324866361}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12768,6 +12855,85 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 807f6d11cf8fdf448bbbb20d2df11980, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df42d2b6cd512aa43a976abad795befc, type: 3}
+--- !u!1 &328060833
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328060834}
+  - component: {fileID: 328060836}
+  - component: {fileID: 328060835}
+  m_Layer: 0
+  m_Name: UpperText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &328060834
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328060833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1743256823}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 25.7, y: 19}
+  m_SizeDelta: {x: 320, y: 38}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &328060835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328060833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3a4f46d9fc605f343b6b28df1eb71877, type: 3}
+    m_FontSize: 28
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Nota apuntada!
+--- !u!222 &328060836
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328060833}
+  m_CullTransparentMesh: 1
 --- !u!1 &334891877
 GameObject:
   m_ObjectHideFlags: 0
@@ -13066,6 +13232,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -13180,7 +13347,7 @@ GameObject:
   - component: {fileID: 366000581}
   - component: {fileID: 366000580}
   - component: {fileID: 366000579}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13263,6 +13430,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366000577}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &370233525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370233526}
+  - component: {fileID: 370233527}
+  m_Layer: 0
+  m_Name: OilLamp Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370233526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370233525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00469, y: 0.00228, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1437909427}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &370233527
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370233525}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.9528302, g: 0.6744212, b: 0.43596476, a: 1}
+  m_Intensity: 2
+  m_Range: 3
+  m_SpotAngle: 45.23404
+  m_InnerSpotAngle: 18.727869
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.02
+    m_NormalBias: 0.1
+    m_NearPlane: 0.17389475
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 3.9309425, y: 1.177e-42, z: 0, w: 4.2965852e-16}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &387296391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13280,10 +13540,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &387296392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13363,6 +13625,18 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
       propertyPath: m_Name
       value: LR_Chair
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150394705501895891, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438743933791950840, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
@@ -13660,6 +13934,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -13693,7 +13968,7 @@ GameObject:
   - component: {fileID: 451482622}
   - component: {fileID: 451482621}
   - component: {fileID: 451482620}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13870,8 +14145,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.18975341, y: 0.17562135, z: 0.044918746}
-  m_Center: {x: 0.00022908233, y: -0.102566004, z: 0.21046223}
+  m_Size: {x: 0.18975341, y: 0.17562133, z: 0.24276331}
+  m_Center: {x: 0.0002290861, y: -0.102566, z: 0.102565244}
 --- !u!4 &474195680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
@@ -14042,6 +14317,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -14194,6 +14470,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LR_Chair (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150394705501895891, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438743933791950840, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44164cf1a48a60149b78bad5f0cb6de8, type: 3}
 --- !u!4 &505957588 stripped
@@ -14255,6 +14543,10 @@ PrefabInstance:
     - target: {fileID: 2143124009215491309, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: m_Name
       value: probeta
+      objectReference: {fileID: 0}
+    - target: {fileID: 2143124009215491309, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2143124009215491309, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: m_IsActive
@@ -14451,6 +14743,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 1
   isChecker: 0
   Action:
@@ -14596,6 +14889,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   MovDimensions: {x: 0, y: 0, z: 0}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -14668,10 +14962,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &556294955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14827,7 +15123,7 @@ GameObject:
   - component: {fileID: 571006216}
   - component: {fileID: 571006215}
   - component: {fileID: 571006214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15251,6 +15547,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 5
   isChecker: 0
   Action:
@@ -15604,6 +15901,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: T_WC
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a547465ba1dc82c46b1790008602f5ce, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110041957085412695, guid: a547465ba1dc82c46b1790008602f5ce, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2510212772354644115, guid: a547465ba1dc82c46b1790008602f5ce, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -15726,7 +16031,7 @@ GameObject:
   - component: {fileID: 629914663}
   - component: {fileID: 629914662}
   - component: {fileID: 629914661}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15857,6 +16162,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -16027,6 +16333,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 500
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   KnotID: 3
   hasWire: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -16109,10 +16416,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &659423764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16245,7 +16554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678292698}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: inner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16374,6 +16683,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -16521,6 +16831,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   WireID: 2
   isLocked: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -16610,6 +16921,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -16856,7 +17168,7 @@ Transform:
   - {fileID: 317311774}
   - {fileID: 826292107}
   m_Father: {fileID: 2051559316}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!23 &772394916
 MeshRenderer:
@@ -16929,6 +17241,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 500
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   KnotID: 5
   hasWire: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -17234,8 +17547,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.18975341, y: 0.19251835, z: 0.17121059}
-  m_Center: {x: 0.00022801274, y: -0.094115354, z: 0.1312202}
+  m_Size: {x: 0.18975341, y: 0.19251835, z: 0.4556318}
+  m_Center: {x: 0.00022800709, y: -0.09411534, z: 0.27342963}
 --- !u!1001 &821784531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17448,6 +17761,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   switchID: -1
   isChecker: 1
   Action:
@@ -17592,6 +17906,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   WireID: 5
   isLocked: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -17794,6 +18109,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -17869,6 +18185,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 577931e37b4be8a46b400d91f53d937b, type: 3}
       propertyPath: m_Name
       value: LR_Table
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 577931e37b4be8a46b400d91f53d937b, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 577931e37b4be8a46b400d91f53d937b, type: 3}
@@ -18182,7 +18502,7 @@ GameObject:
   - component: {fileID: 914653829}
   - component: {fileID: 914653828}
   - component: {fileID: 914653827}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18312,6 +18632,8 @@ MonoBehaviour:
   dialogueId: 11
   giveNote: 1
   noteId: 3297432
+  removeWithReq: 0
+  req: 0
 --- !u!65 &915497673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18427,7 +18749,7 @@ GameObject:
   - component: {fileID: 928985186}
   - component: {fileID: 928985185}
   - component: {fileID: 928985184}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18601,6 +18923,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929075347}
   m_CullTransparentMesh: 1
+--- !u!1001 &930831081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2051559316}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.7048
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.88
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.7048
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.058
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7065142
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7076989
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90.096
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd00bf95001f4c6439e3ddc5515a84b2, type: 2}
+    - target: {fileID: 919132149155446097, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_Name
+      value: LeadBoxPlane
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
 --- !u!1 &952489325
 GameObject:
   m_ObjectHideFlags: 0
@@ -18664,6 +19063,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 0.25
@@ -18694,10 +19094,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &953956447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18822,6 +19224,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -24219,7 +24622,7 @@ GameObject:
   - component: {fileID: 1052687612}
   - component: {fileID: 1052687611}
   - component: {fileID: 1052687610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24311,7 +24714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1068390452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24409,6 +24812,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 66666666
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 0.25
@@ -24784,10 +25188,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &1098079557
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25301,6 +25707,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 3
   isChecker: 0
   Action:
@@ -25397,7 +25804,7 @@ GameObject:
   - component: {fileID: 1155383657}
   - component: {fileID: 1155383656}
   - component: {fileID: 1155383655}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25542,6 +25949,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 37a7918b190f7d44ab6176b75ca7cb60, type: 3}
   m_PrefabInstance: {fileID: 1160634736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1169265314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169265315}
+  - component: {fileID: 1169265317}
+  - component: {fileID: 1169265316}
+  m_Layer: 0
+  m_Name: LowerText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1169265315
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169265314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1743256823}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 25.70002, y: -12}
+  m_SizeDelta: {x: 320, y: 24}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1169265316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169265314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3a4f46d9fc605f343b6b28df1eb71877, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Pulsa [Tab] para leer
+--- !u!222 &1169265317
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169265314}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1170228134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25690,6 +26176,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 9417434
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0.35, y: 0, z: 0}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -25926,7 +26413,7 @@ GameObject:
   - component: {fileID: 1198184214}
   - component: {fileID: 1198184213}
   - component: {fileID: 1198184212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26315,6 +26802,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 500
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   KnotID: 2
   hasWire: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -26393,6 +26881,8 @@ MonoBehaviour:
   dialogueId: 3
   giveNote: 0
   noteId: -1
+  removeWithReq: 0
+  req: 0
 --- !u!65 &1295013467
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26727,11 +27217,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 3
   NoEffects: 0
   CanPickup: 1
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
   Action:
     m_PersistentCalls:
@@ -26978,6 +27470,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 500
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   KnotID: 4
   hasWire: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -27021,7 +27514,7 @@ GameObject:
   - component: {fileID: 1338790279}
   - component: {fileID: 1338790278}
   - component: {fileID: 1338790277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27116,7 +27609,7 @@ GameObject:
   - component: {fileID: 1353813600}
   - component: {fileID: 1353813599}
   - component: {fileID: 1353813598}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27353,7 +27846,7 @@ GameObject:
   - component: {fileID: 1365347643}
   - component: {fileID: 1365347642}
   - component: {fileID: 1365347641}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27453,10 +27946,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &1366493998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27521,10 +28016,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &1374475430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27723,7 +28220,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
       propertyPath: m_LocalScale.y
@@ -27801,6 +28298,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 500
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   KnotID: 1
   hasWire: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -27989,6 +28487,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   WireID: 4
   isLocked: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -28283,7 +28782,7 @@ GameObject:
   - component: {fileID: 1433175296}
   - component: {fileID: 1433175295}
   - component: {fileID: 1433175294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28446,6 +28945,8 @@ MonoBehaviour:
   dialogueId: 18
   giveNote: 0
   noteId: -1
+  removeWithReq: 0
+  req: 0
 --- !u!65 &1458785834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28486,6 +28987,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 4
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 0.5
@@ -28832,9 +29334,72 @@ Transform:
   - {fileID: 6490495}
   - {fileID: 5444300827851260180}
   - {fileID: 1040700962}
+  - {fileID: 1513806216}
   m_Father: {fileID: 3781386032989586820}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1513806215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513806216}
+  - component: {fileID: 1513806218}
+  - component: {fileID: 1513806217}
+  m_Layer: 0
+  m_Name: ThoughtCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1513806216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513806215}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 3.28, y: 0.1305567, z: -3.725}
+  m_LocalScale: {x: -31.25346, y: 34.815514, z: 29.090574}
+  m_Children: []
+  m_Father: {fileID: 1506689183}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1513806217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513806215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71810aa01995dc4abc08fea3000aeb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueId: 10
+  giveNote: 0
+  noteId: -1
+  removeWithReq: 1
+  req: 7
+--- !u!65 &1513806218
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513806215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04783934, y: 0.024215542, z: 0.076600164}
+  m_Center: {x: 0.016417053, y: 0.00685342, z: 0.033731986}
 --- !u!1 &1518401813
 GameObject:
   m_ObjectHideFlags: 0
@@ -28847,7 +29412,7 @@ GameObject:
   - component: {fileID: 1518401817}
   - component: {fileID: 1518401816}
   - component: {fileID: 1518401815}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29001,6 +29566,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   TargetMaterial: {fileID: 2100000, guid: 7042704e47ae8724e85f2bcbe4269c3e, type: 2}
   TextureName: _Proyector3
   ProjectorTextures:
@@ -29182,6 +29748,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 4
   isChecker: 0
   Action:
@@ -29289,7 +29856,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 3, y: 1.7e-44, z: 0, w: 1}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -29398,7 +29965,7 @@ GameObject:
   - component: {fileID: 1584659769}
   - component: {fileID: 1584659768}
   - component: {fileID: 1584659767}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29537,10 +30104,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &1591058715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29746,7 +30315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3781386032989586820}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1629952647
 MonoBehaviour:
@@ -29763,6 +30332,8 @@ MonoBehaviour:
   dialogueId: 17
   giveNote: 0
   noteId: -1
+  removeWithReq: 0
+  req: 0
 --- !u!65 &1629952648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29914,6 +30485,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -30073,6 +30645,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   WireID: 3
   isLocked: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -30302,6 +30875,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   MovDimensions: {x: 0.25, y: 0, z: 0}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -30353,7 +30927,7 @@ GameObject:
   - component: {fileID: 1718454884}
   - component: {fileID: 1718454883}
   - component: {fileID: 1718454882}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30499,6 +31073,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 0.25
@@ -30766,10 +31341,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &1739875153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30832,6 +31409,106 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739875150}
   m_Mesh: {fileID: -7096007220123911343, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
+--- !u!1 &1743256822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743256823}
+  - component: {fileID: 1743256824}
+  - component: {fileID: 1743256825}
+  m_Layer: 0
+  m_Name: Logro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1743256823
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743256822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 101160854}
+  - {fileID: 1823843577}
+  - {fileID: 328060834}
+  - {fileID: 1169265315}
+  m_Father: {fileID: 7854663816156047779}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 264, y: -96}
+  m_SizeDelta: {x: 432, y: 144}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1743256824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743256822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2eb77a9bb1e264eb4acfea1bba139e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Icons:
+  - {fileID: 21300000, guid: 34dfcc8cf4bf4f54ea8c5342cd58acdc, type: 3}
+  - {fileID: 21300000, guid: 454042fa07799634eafd536ef0e1dfe9, type: 3}
+  - {fileID: 21300000, guid: c35ad6e944e7efe46a815790033a7e6c, type: 3}
+  - {fileID: 21300000, guid: 228b64127df055640b10fb46acacdbd8, type: 3}
+  - {fileID: 21300000, guid: 057621135e117c64eaa6d4de53485022, type: 3}
+  - {fileID: 21300000, guid: 057621135e117c64eaa6d4de53485022, type: 3}
+  - {fileID: 21300000, guid: 34dfcc8cf4bf4f54ea8c5342cd58acdc, type: 3}
+  Texts:
+  - Nota apuntada!
+  - Llave guardada!
+  - Cuadro guardado!
+  - Pagina guardada!
+  - Lampara de aceite!
+  - Mas luz!
+  - Un destornillador!
+  LowTexts:
+  - Pulsa [Tab] para leer
+  - "\xBFA que puerta pertenecer\xE1?"
+  - "\xBFSer\xE1 el que falta en el sal\xF3n?"
+  - Pulsa [Tab] para leer
+  - Ya puedes ver en las sombras!
+  - Pulsa [Q] para cambiar de luz
+  - "Quiz\xE1s pueda arreglar algo..."
+  AchievementIcon: {fileID: 1823843578}
+  UpperText: {fileID: 328060835}
+  LowerText: {fileID: 1169265316}
+  Duration: 3
+--- !u!95 &1743256825
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743256822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b08f1e488344da4c87f56699db0379c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1764010593
 GameObject:
   m_ObjectHideFlags: 0
@@ -30860,7 +31537,7 @@ GameObject:
   - component: {fileID: 1771685748}
   - component: {fileID: 1771685747}
   - component: {fileID: 1771685746}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31137,6 +31814,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 6
   isChecker: 0
   Action:
@@ -31584,10 +32262,86 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
   cerrarPuerta: event:/puerta/cerrarPuerta2d
+--- !u!1 &1823843576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1823843577}
+  - component: {fileID: 1823843579}
+  - component: {fileID: 1823843578}
+  m_Layer: 0
+  m_Name: Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1823843577
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823843576}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1743256823}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 48, y: 6}
+  m_SizeDelta: {x: 48, y: 48}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1823843578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823843576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3a194c6ffab826a4b9617b5c09e1c939, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1823843579
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823843576}
+  m_CullTransparentMesh: 1
 --- !u!1 &1823900767
 GameObject:
   m_ObjectHideFlags: 0
@@ -32267,6 +33021,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04675807, y: 0.026433386, z: 0.043289497}
   m_Center: {x: -0.0013715122, y: -0.00892343, z: -0.02888576}
+--- !u!4 &1886784628 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+  m_PrefabInstance: {fileID: 930831081}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1887364131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32392,11 +33151,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 4
   NoEffects: 1
   CanPickup: 1
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
   Action:
     m_PersistentCalls:
@@ -32657,7 +33418,7 @@ GameObject:
   - component: {fileID: 1915600119}
   - component: {fileID: 1915600118}
   - component: {fileID: 1915600117}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesRight (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32870,6 +33631,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0a7b7697fa1d03743bb9df283c92124a, type: 2}
+    - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
+      propertyPath: achievementType
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1654570673543456343, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -33437,6 +34202,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -33496,11 +34262,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 6
   NoEffects: 0
   CanPickup: 1
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &1988728153
 MonoBehaviour:
@@ -33743,11 +34511,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 1
   NoEffects: 0
   CanPickup: 1
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &1992018142
 MonoBehaviour:
@@ -33826,6 +34596,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   WireID: 1
   isLocked: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -34002,6 +34773,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 764574
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 2
@@ -34092,6 +34864,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 89485
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 2
@@ -34279,6 +35052,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -34644,7 +35418,7 @@ GameObject:
   - component: {fileID: 2041776378}
   - component: {fileID: 2041776377}
   - component: {fileID: 2041776376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34780,6 +35554,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 234232523
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 1
@@ -34997,6 +35772,7 @@ Transform:
   m_LocalPosition: {x: 3.449, y: 4.522, z: 1.583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1886784628}
   - {fileID: 772394915}
   m_Father: {fileID: 3781386032989586820}
   m_RootOrder: 16
@@ -35600,10 +36376,12 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
   eventoSound: event:/weels2d
+  angleOffset: 18
 --- !u!65 &2126441295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35666,6 +36444,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126441292}
   m_Mesh: {fileID: -5274246707738546616, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
+--- !u!1001 &2128692191
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 543450652158887065}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.9385912
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000010728836
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.716367
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+      propertyPath: m_Name
+      value: ParedHall (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+--- !u!4 &2128692192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
+  m_PrefabInstance: {fileID: 2128692191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2133356668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35887,6 +36727,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ea102b03c81177b46b1cfce8d4bab0b9, type: 3}
   m_PrefabInstance: {fileID: 2137456469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2142014745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 577931e37b4be8a46b400d91f53d937b, type: 3}
+  m_PrefabInstance: {fileID: 863496177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2142014746
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142014745}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08137842, y: 0.13423625, z: 0.062235754}
+  m_Center: {x: -0.01202689, y: -0.012480575, z: 0.02388715}
 --- !u!4 &1644874774364529
 Transform:
   m_ObjectHideFlags: 0
@@ -36354,6 +37212,8 @@ MonoBehaviour:
   dialogueId: 12
   giveNote: 0
   noteId: -1
+  removeWithReq: 0
+  req: 0
 --- !u!65 &176066232622531827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36379,7 +37239,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &215987809109444884
 Transform:
@@ -36646,6 +37506,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 8
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -37009,7 +37870,7 @@ Light:
   m_InnerSpotAngle: 18.727869
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -37037,7 +37898,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -37075,7 +37936,7 @@ MonoBehaviour:
     m_Bits: 16
   NotUVLayer:
     serializedVersion: 2
-    m_Bits: 495
+    m_Bits: 1007
   MainLanternColor: {r: 0.9529412, g: 0.6745098, b: 0.43529412, a: 1}
   UVLanternColor: {r: 0.8745098, g: 0.6901961, b: 0.9529412, a: 1}
   eventoSound: event:/llama/lamaEncendido2d
@@ -37535,7 +38396,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -37758,6 +38619,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 12
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -38069,6 +38931,7 @@ Transform:
   - {fileID: 7193477683041041927}
   - {fileID: 5809303869525414977}
   - {fileID: 5111779755181820125}
+  - {fileID: 2128692192}
   - {fileID: 1481370259970446821}
   - {fileID: 3453891547170068015}
   - {fileID: 2759662839021414242}
@@ -38172,11 +39035,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &573881979218690653
 MeshFilter:
@@ -38198,7 +39063,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &579471649353553004
 MeshRenderer:
@@ -38493,6 +39358,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 5
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -38578,7 +39444,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 67
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &685494776342199735
 MeshRenderer:
@@ -38679,6 +39545,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 16
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -39176,6 +40043,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 11
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -39492,11 +40360,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!1 &1024661989877661868
 GameObject:
@@ -68437,6 +69307,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -68652,6 +69523,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 5
   isChecker: 0
   Action:
@@ -68776,6 +69648,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 2
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 1
@@ -68983,7 +69856,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100.00002, z: 100.00002}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 52
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1153367548132156585
 Transform:
@@ -69263,6 +70136,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 3
   isChecker: 0
   Action:
@@ -69556,11 +70430,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &1326498214592468604
 MeshFilter:
@@ -69851,6 +70727,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 6
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -69895,7 +70772,7 @@ Transform:
   m_LocalScale: {x: 85.44747, y: 85.44747, z: 85.44747}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 62
+  m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1431756291113160009
 GameObject:
@@ -69934,6 +70811,7 @@ MonoBehaviour:
   hideIfReq: 1
   reqID: 48
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   isMoving: 0
   OnAction:
@@ -70118,7 +70996,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1490036500729833589
 BoxCollider:
@@ -70153,7 +71031,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 56
+  m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1520664411272290868
 Transform:
@@ -70245,11 +71123,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!4 &1612187751603366145
 Transform:
@@ -70272,7 +71152,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8793333278236153786}
-  m_Mesh: {fileID: 4010111889500389525, guid: 4740ced26d0998443b01d160b8f49f96, type: 3}
+  m_Mesh: {fileID: 4010111889500389525, guid: 893bf15da59400941a303e57041fbfe6, type: 3}
 --- !u!23 &1642501711394910585
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70758,6 +71638,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 10
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -70821,11 +71702,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &1822220128414229755
 MeshFilter:
@@ -70906,9 +71789,8 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  finalRotation: {x: 0, y: 0, z: 0}
-  forcedRotation: 30
   OnAction:
     m_PersistentCalls:
       m_Calls:
@@ -71019,9 +71901,8 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  finalRotation: {x: 0, y: 0, z: 0}
-  forcedRotation: 30
   OnAction:
     m_PersistentCalls:
       m_Calls:
@@ -71074,9 +71955,8 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  finalRotation: {x: 0, y: 0, z: 0}
-  forcedRotation: 30
   OnAction:
     m_PersistentCalls:
       m_Calls:
@@ -71211,9 +72091,8 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  finalRotation: {x: 0, y: 0, z: 0}
-  forcedRotation: 30
   OnAction:
     m_PersistentCalls:
       m_Calls:
@@ -71273,7 +72152,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1856775780882140837
 MeshRenderer:
@@ -71414,7 +72293,7 @@ Transform:
   m_LocalScale: {x: 99.999985, y: 90.91838, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 64
+  m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1930496146367264256
 MeshRenderer:
@@ -71567,7 +72446,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 61
+  m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1974614950042057277
 Transform:
@@ -71762,6 +72641,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   Identifier: 308462812
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   player: {fileID: 11400000, guid: 19b9218227f13c24d9845ab8998150cf, type: 2}
@@ -71772,6 +72652,8 @@ MonoBehaviour:
   FrequencyInterval: {x: 70, y: 75}
   FinalFrequencyInterval: {x: 73.3, y: 73.8}
   uiText: {fileID: 8182179680661268541}
+  IndicadorRadio: {fileID: 7484040451696986322}
+  UIRadio: {fileID: 8182179681844258058}
 --- !u!82 &1977702864149836041
 AudioSource:
   m_ObjectHideFlags: 0
@@ -71931,6 +72813,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 15
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -72000,6 +72883,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 14
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -72049,11 +72933,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!1 &2035354991955279929
 GameObject:
@@ -72173,6 +73059,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 5687
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -72324,6 +73211,7 @@ MonoBehaviour:
   ThoughtsRightBottomAnchor: {x: 116, y: 78}
   BubbleContainer: {fileID: 0}
   BubbleText: {fileID: 0}
+  achievement: {fileID: 1743256824}
 --- !u!65 &2185742143698663109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72431,8 +73319,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.001888067, y: 0.008019151, z: 0.020924363}
-  m_Center: {x: -1.00027486e-10, y: 0.0037595716, z: 0.010462183}
+  m_Size: {x: 0.0007798239, y: 0.008019151, z: 0.020924363}
+  m_Center: {x: 0.00009332745, y: 0.0037595711, z: 0.010462182}
 --- !u!114 &2229488405584869712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72450,6 +73338,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 1919
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -72516,8 +73405,8 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
@@ -72621,7 +73510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &2290268610184481318
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -72848,7 +73737,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 66
+  m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2368169536912030944
 MeshFilter:
@@ -72857,7 +73746,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82633006374432769}
-  m_Mesh: {fileID: -754034176798721936, guid: 4740ced26d0998443b01d160b8f49f96, type: 3}
+  m_Mesh: {fileID: -754034176798721936, guid: c41afc92b52883646bbe5839ed592c8c, type: 3}
 --- !u!114 &2371003246486531949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72875,11 +73764,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!23 &2383847280381748175
 MeshRenderer:
@@ -73162,6 +74053,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 4
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -73356,6 +74248,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 4
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -73480,13 +74373,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8988697642786443604}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: -0.0022465736, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450651760972384}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!23 &2574857418223006645
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -74452,7 +75345,7 @@ GameObject:
   - component: {fileID: 2612472275845441968}
   - component: {fileID: 2612472275845441971}
   - component: {fileID: 2612472275845441970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesRight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74561,7 +75454,7 @@ GameObject:
   - component: {fileID: 2612472275846670331}
   - component: {fileID: 2612472275846670330}
   - component: {fileID: 2612472275846670333}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74656,7 +75549,7 @@ GameObject:
   - component: {fileID: 2612472275900127649}
   - component: {fileID: 2612472275900127648}
   - component: {fileID: 2612472275900127651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74672,7 +75565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2612472275912264373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74770,7 +75663,7 @@ GameObject:
   - component: {fileID: 2612472275936048608}
   - component: {fileID: 2612472275936048611}
   - component: {fileID: 2612472275936048610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74879,7 +75772,7 @@ GameObject:
   - component: {fileID: 2612472275944102391}
   - component: {fileID: 2612472275944102390}
   - component: {fileID: 2612472275944102393}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiddleShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74974,7 +75867,7 @@ GameObject:
   - component: {fileID: 2612472275982704171}
   - component: {fileID: 2612472275982704170}
   - component: {fileID: 2612472275982704173}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75055,7 +75948,7 @@ GameObject:
   - component: {fileID: 2612472276053723892}
   - component: {fileID: 2612472276053723895}
   - component: {fileID: 2612472276053723894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75099,7 +75992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2612472276085623499}
   - component: {fileID: 2612472276085623496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderEntrada (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75129,7 +76022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2612472276094663087}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75242,7 +76135,7 @@ GameObject:
   - component: {fileID: 2612472276138906441}
   - component: {fileID: 2612472276138906440}
   - component: {fileID: 2612472276138906443}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75261,7 +76154,7 @@ GameObject:
   - component: {fileID: 2612472276210883517}
   - component: {fileID: 2612472276210883516}
   - component: {fileID: 2612472276210883519}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75418,7 +76311,7 @@ GameObject:
   - component: {fileID: 2612472276255369474}
   - component: {fileID: 2612472276255369477}
   - component: {fileID: 2612472276255369476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75513,7 +76406,7 @@ GameObject:
   - component: {fileID: 2612472276321368142}
   - component: {fileID: 2612472276321368177}
   - component: {fileID: 2612472276321368176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75609,7 +76502,7 @@ GameObject:
   - component: {fileID: 2612472276323278151}
   - component: {fileID: 2612472276323278150}
   - component: {fileID: 2612472276323278153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75703,7 +76596,7 @@ GameObject:
   - component: {fileID: 2612472276456053292}
   - component: {fileID: 2612472276456053295}
   - component: {fileID: 2612472276456053294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesRight (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75798,7 +76691,7 @@ GameObject:
   - component: {fileID: 2612472276563978210}
   - component: {fileID: 2612472276563978213}
   - component: {fileID: 2612472276563978212}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75893,7 +76786,7 @@ GameObject:
   - component: {fileID: 2612472276585408470}
   - component: {fileID: 2612472276585408473}
   - component: {fileID: 2612472276585408472}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75951,7 +76844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2612472276639377166}
   - component: {fileID: 2612472276639377167}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76032,7 +76925,7 @@ GameObject:
   - component: {fileID: 2612472276686347394}
   - component: {fileID: 2612472276686347397}
   - component: {fileID: 2612472276686347396}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76141,7 +77034,7 @@ GameObject:
   - component: {fileID: 2612472276729334567}
   - component: {fileID: 2612472276729334566}
   - component: {fileID: 2612472276729334569}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76222,7 +77115,7 @@ GameObject:
   - component: {fileID: 2612472276850598850}
   - component: {fileID: 2612472276850598853}
   - component: {fileID: 2612472276850598852}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76252,7 +77145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2612472276886060771}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Entrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76301,7 +77194,7 @@ GameObject:
   - component: {fileID: 2612472276897967134}
   - component: {fileID: 2612472276897967132}
   - component: {fileID: 2612472276897967135}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TopShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76394,7 +77287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2612472276938851461}
   - component: {fileID: 2612472276938851458}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76454,7 +77347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2612472276981177644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76549,7 +77442,7 @@ GameObject:
   - component: {fileID: 2612472277021220105}
   - component: {fileID: 2612472277021220104}
   - component: {fileID: 2612472277021220107}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76644,7 +77537,7 @@ GameObject:
   - component: {fileID: 2612472277054422213}
   - component: {fileID: 2612472277054422212}
   - component: {fileID: 2612472277054422215}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiddleShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76725,7 +77618,7 @@ GameObject:
   - component: {fileID: 2612472277103535118}
   - component: {fileID: 2612472277103535153}
   - component: {fileID: 2612472277103535152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76834,7 +77727,7 @@ GameObject:
   - component: {fileID: 2612472277113840261}
   - component: {fileID: 2612472277113840260}
   - component: {fileID: 2612472277113840263}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76915,7 +77808,7 @@ GameObject:
   - component: {fileID: 2612472277185680946}
   - component: {fileID: 2612472277185680949}
   - component: {fileID: 2612472277185680948}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77024,7 +77917,7 @@ GameObject:
   - component: {fileID: 2612472277234476903}
   - component: {fileID: 2612472277234476902}
   - component: {fileID: 2612472277234476905}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77105,7 +77998,7 @@ GameObject:
   - component: {fileID: 2612472277237067662}
   - component: {fileID: 2612472277237067697}
   - component: {fileID: 2612472277237067696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77214,7 +78107,7 @@ GameObject:
   - component: {fileID: 2612472277278090283}
   - component: {fileID: 2612472277278090282}
   - component: {fileID: 2612472277278090285}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77233,7 +78126,7 @@ GameObject:
   - component: {fileID: 2612472277361802493}
   - component: {fileID: 2612472277361802492}
   - component: {fileID: 2612472277361802495}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77404,7 +78297,7 @@ GameObject:
   - component: {fileID: 2612472277364522769}
   - component: {fileID: 2612472277364522768}
   - component: {fileID: 2612472277364522771}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77499,7 +78392,7 @@ GameObject:
   - component: {fileID: 2612472277486808969}
   - component: {fileID: 2612472277486808968}
   - component: {fileID: 2612472277486808971}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77580,7 +78473,7 @@ GameObject:
   - component: {fileID: 2612472277599030986}
   - component: {fileID: 2612472277599030989}
   - component: {fileID: 2612472277599030988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77689,7 +78582,7 @@ GameObject:
   - component: {fileID: 2612472277619158523}
   - component: {fileID: 2612472277619158522}
   - component: {fileID: 2612472277619158525}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77770,7 +78663,7 @@ GameObject:
   - component: {fileID: 2612472277619984346}
   - component: {fileID: 2612472277619984349}
   - component: {fileID: 2612472277619984348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77865,7 +78758,7 @@ GameObject:
   - component: {fileID: 2612472277625724328}
   - component: {fileID: 2612472277625724331}
   - component: {fileID: 2612472277625724330}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77960,7 +78853,7 @@ GameObject:
   - component: {fileID: 2612472277688083526}
   - component: {fileID: 2612472277688083529}
   - component: {fileID: 2612472277688083528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78014,7 +78907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2612472277712345610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78109,7 +79002,7 @@ GameObject:
   - component: {fileID: 2612472277741730951}
   - component: {fileID: 2612472277741730950}
   - component: {fileID: 2612472277741730953}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78204,7 +79097,7 @@ GameObject:
   - component: {fileID: 2612472277818010289}
   - component: {fileID: 2612472277818010288}
   - component: {fileID: 2612472277818010291}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesLeft (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78234,7 +79127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2612472277838642271}
   - component: {fileID: 2612472277838642268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColliderEntrada (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78329,7 +79222,7 @@ GameObject:
   - component: {fileID: 2612472277857208776}
   - component: {fileID: 2612472277857208779}
   - component: {fileID: 2612472277857208778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ParedesEntrada
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78590,7 +79483,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100.00001, z: 100.00001}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2761855353792515084
 GameObject:
@@ -78770,6 +79663,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 7
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -78861,11 +79755,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!1 &2856258663154144836
 GameObject:
@@ -79101,6 +79997,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 7
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -79226,7 +80123,7 @@ Transform:
   m_LocalScale: {x: 99.999985, y: 90.91838, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 65
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2965169053102153225
 MeshFilter:
@@ -81220,6 +82117,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 3
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -81269,6 +82167,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 4
   isChecker: 0
   Action:
@@ -81352,6 +82251,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 1
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -81498,6 +82398,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 2
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -81621,6 +82522,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 1
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -81678,11 +82580,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &3140705523835231438
 MeshFilter:
@@ -81867,6 +82771,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 6
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -81898,7 +82803,7 @@ Transform:
   m_LocalScale: {x: 100, y: -100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3177688977608083696
 Transform:
@@ -81931,6 +82836,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 6
   isChecker: 0
   Action:
@@ -82244,11 +83150,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &3292336671184740348
 MeshFilter:
@@ -82489,6 +83397,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   isMoving: 0
   OnAction:
@@ -82738,6 +83647,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 9
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -82837,7 +83747,7 @@ Transform:
   m_LocalScale: {x: 100.00001, y: 100, z: 100.00001}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3464748217972524985
 Transform:
@@ -82871,6 +83781,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 2
   isChecker: 0
   Action:
@@ -82931,11 +83842,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &3486523478132956405
 MonoBehaviour:
@@ -82954,11 +83867,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!23 &3502211929905413885
 MeshRenderer:
@@ -83228,7 +84143,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 55
+  m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3596976648240915744
 GameObject:
@@ -83335,7 +84250,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 41
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3653381934994692806
 GameObject:
@@ -83387,6 +84302,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 3
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -83431,11 +84347,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!4 &3663354590336506808
 Transform:
@@ -83471,7 +84389,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3674037299022097862
 MonoBehaviour:
@@ -85590,9 +86508,9 @@ Transform:
   - {fileID: 1833894612}
   - {fileID: 2051559316}
   - {fileID: 1991579779}
+  - {fileID: 1629952646}
   - {fileID: 1892600731}
   - {fileID: 963311135}
-  - {fileID: 1629952646}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85750,6 +86668,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 1
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -85868,6 +86787,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   isMoving: 0
   OnAction:
@@ -86207,6 +87127,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 2
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -86806,6 +87727,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: -1.45, y: 0, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -86839,7 +87761,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 68
+  m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4087939555939673217
 GameObject:
@@ -87227,7 +88149,7 @@ Transform:
   m_LocalScale: {x: 85.44747, y: 85.44747, z: 85.44747}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 60
+  m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4097770351388044944
 MeshFilter:
@@ -88161,6 +89083,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 13
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -88307,11 +89230,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &4585998780499454346
 MeshFilter:
@@ -88372,6 +89297,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 8
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -88521,11 +89447,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!1 &4633991140707845951
 GameObject:
@@ -88678,6 +89606,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 9
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -88934,7 +89863,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2272066669714712241}
-  m_Mesh: {fileID: -1419838865823075102, guid: 4740ced26d0998443b01d160b8f49f96, type: 3}
+  m_Mesh: {fileID: -609336575269616690, guid: 302eab8b822312b4a859948ac0057c63, type: 3}
 --- !u!4 &4800651695875032057
 Transform:
   m_ObjectHideFlags: 0
@@ -88982,13 +89911,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2355559111698584933}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: 0.00028329727, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450651760972384}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!23 &4839546026633802772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89219,6 +90148,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 4295
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -89230,7 +90160,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5212236330109167187}
-  m_Mesh: {fileID: -913783608201448887, guid: 4740ced26d0998443b01d160b8f49f96, type: 3}
+  m_Mesh: {fileID: -913783608201448887, guid: e80b1782b5fb9b0419c9a6f6cf5e4874, type: 3}
 --- !u!33 &4924281488661344609
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -89307,6 +90237,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 10
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -89411,6 +90342,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 10
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -89563,6 +90495,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 13
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -89701,6 +90634,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   Action:
     m_PersistentCalls:
       m_Calls:
@@ -89766,6 +90700,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 16
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -89860,13 +90795,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2272066669714712241}
-  m_LocalRotation: {x: -0.50000006, y: -0.4999999, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 3.7368667, y: -3.2250075, z: 8.206367}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.7368667, y: 0.042, z: 8.706367}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
   m_RootOrder: 37
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &5136047421282188710
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89928,7 +90863,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 57
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5165984227566336157
 BoxCollider:
@@ -90174,6 +91109,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 1
@@ -90243,11 +91179,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!23 &5324261904257896134
 MeshRenderer:
@@ -90481,6 +91419,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 2
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -90588,8 +91527,8 @@ GameObject:
   - component: {fileID: 5428142393477662869}
   - component: {fileID: 5428142393477662868}
   - component: {fileID: 5428142393477662875}
-  - component: {fileID: 5428142393477662874}
   - component: {fileID: 5428142393477662873}
+  - component: {fileID: 5428142393477662874}
   m_Layer: 6
   m_Name: Nota 0001
   m_TagString: Untagged
@@ -90627,11 +91566,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 3
   NoEffects: 1
-  CanPickup: 0
+  CanPickup: 1
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &5428142393477662875
 MonoBehaviour:
@@ -90715,6 +91656,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -90753,11 +91695,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &5463687140100197448
 MeshFilter:
@@ -90889,11 +91833,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: 95778
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   NoEffects: 0
   CanPickup: 0
   HasItemInside: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 4667376750654138166}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &5477700670643837530
 MonoBehaviour:
@@ -90912,11 +91858,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 1
   NoEffects: 1
   CanPickup: 1
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!136 &5477700670643837531
 CapsuleCollider:
@@ -91199,7 +92147,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 54
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5565546943753001273
 MeshRenderer:
@@ -91365,6 +92313,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 3
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -91737,7 +92686,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 70
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5720699131415169662
 MeshRenderer:
@@ -91860,6 +92809,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -91898,7 +92848,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 51
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5757886295050946829
 GameObject:
@@ -91972,6 +92922,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   isMoving: 0
   OnAction:
@@ -92314,7 +93265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &5915097072858901220
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -92702,6 +93653,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 12
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -92953,11 +93905,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!65 &6139207335570974493
 BoxCollider:
@@ -92984,7 +93938,7 @@ Transform:
   m_LocalScale: {x: 99.999985, y: 90.91838, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 63
+  m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6179677450039452365
 GameObject:
@@ -93254,6 +94208,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 5
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -93310,6 +94265,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 7
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -93354,7 +94310,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6325657449409878573
 Transform:
@@ -93407,6 +94363,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 11
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -93670,7 +94627,7 @@ Transform:
   m_LocalScale: {x: 85.44747, y: 85.44747, z: 85.44747}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 59
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6418559874122876051
 Transform:
@@ -93749,6 +94706,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   switchID: -1
   isChecker: 1
   Action:
@@ -94028,6 +94986,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -94142,6 +95101,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 13
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -94307,11 +95267,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &6586303286013117141
 MeshFilter:
@@ -94487,7 +95449,7 @@ Transform:
   m_LocalScale: {x: 100.85208, y: 68.29163, z: 100.85208}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 58
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6649032251750898803
 GameObject:
@@ -94539,6 +95501,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   TargetMaterial: {fileID: 2100000, guid: 7042704e47ae8724e85f2bcbe4269c3e, type: 2}
   TextureName: _Proyector1
   ProjectorTextures:
@@ -94761,7 +95724,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8874249614819597654}
-  m_Mesh: {fileID: -5250839520293820758, guid: 85ebdf6489799ea40a582abd647ff00c, type: 3}
+  m_Mesh: {fileID: -5250839520293820758, guid: dcfdcb45c69a7714586c7085a76e9cf2, type: 3}
 --- !u!1 &6731620129436112525
 GameObject:
   m_ObjectHideFlags: 0
@@ -95180,11 +96143,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!33 &6879287767958748336
 MeshFilter:
@@ -95384,7 +96349,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463969900421445045}
-  m_Mesh: {fileID: -6764755884840566929, guid: 4740ced26d0998443b01d160b8f49f96, type: 3}
+  m_Mesh: {fileID: -6764755884840566929, guid: f5948131d628b2a4d9195e5e53373f3f, type: 3}
 --- !u!4 &6941086207798306363
 Transform:
   m_ObjectHideFlags: 0
@@ -95411,7 +96376,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 49
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6960419685701646500
 MonoBehaviour:
@@ -95465,6 +96430,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -95580,6 +96546,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   MovDimensions: {x: 0, y: -0.2, z: 0}
   Speed: 1
   abrirCajon: "event:/caj\xF3n/abrirCajon2d"
@@ -95674,6 +96641,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 12
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -95900,6 +96868,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 15
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -95969,6 +96938,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 9
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -96258,6 +97228,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -96486,13 +97457,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7289269642214124020}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: 0.0027383263, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450651760972384}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!33 &7400383749307912466
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -96742,13 +97713,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7020115109630882185}
-  m_LocalRotation: {x: 0, y: 1.0339772e-25, z: -9.8607613e-32, w: 1}
+  m_LocalRotation: {x: 0.1564345, y: 0, z: 0, w: 0.98768836}
   m_LocalPosition: {x: -0.004874685, y: -0.011620681, z: 0.00033908844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450651760972384}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18, y: 0, z: 0}
 --- !u!4 &7536139544264395868
 Transform:
   m_ObjectHideFlags: 0
@@ -96944,6 +97915,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 3
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 1
@@ -97063,7 +98035,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7682883101492171518
 MeshRenderer:
@@ -97234,11 +98206,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!4 &7728163213102771096
 Transform:
@@ -97379,6 +98353,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 5
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -97606,6 +98581,7 @@ RectTransform:
   - {fileID: 8182179681844258057}
   - {fileID: 2001309196}
   - {fileID: 1736986875}
+  - {fileID: 1743256823}
   m_Father: {fileID: 7854663818055181631}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -98135,7 +99111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -98154,7 +99130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Ser\xE1 mejor que lo apunte!"
 --- !u!1 &7854663817295363460
 GameObject:
   m_ObjectHideFlags: 0
@@ -98357,11 +99333,11 @@ RectTransform:
   m_Father: {fileID: 7854663816156047779}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 654.3, y: 400}
-  m_SizeDelta: {x: 408.65, y: 220.4}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -96, y: -30}
+  m_SizeDelta: {x: 560, y: 280}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &7854663818055181619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98466,7 +99442,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -98514,11 +99490,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!4 &7866784826063799396
 Transform:
@@ -98655,6 +99633,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 11
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -98838,6 +99817,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: -90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -98929,6 +99909,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 16
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -99283,6 +100264,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 14
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -99352,6 +100334,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 4
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -99735,6 +100718,7 @@ GameObject:
   - component: {fileID: 8182179681844258061}
   - component: {fileID: 8182179681844258063}
   - component: {fileID: 8182179681844258062}
+  - component: {fileID: 8182179681844258058}
   m_Layer: 0
   m_Name: Radio
   m_TagString: Untagged
@@ -99762,6 +100746,18 @@ RectTransform:
   m_AnchoredPosition: {x: -652.19995, y: 160}
   m_SizeDelta: {x: 295.59998, y: 220.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8182179681844258058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8182179681844258056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116967b4008a4f442a25418f9a0b58c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &8182179681844258061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -99831,7 +100827,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8197296870946116241
 BoxCollider:
@@ -99910,6 +100906,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   rotationSpeed: 2
   targetAngle: 90
   abrirPuerta: event:/puerta/abrirPuerta2d
@@ -100030,7 +101027,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 53
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8285153045009184414
 MeshRenderer:
@@ -100284,6 +101281,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 6
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -100429,6 +101427,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 14
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -101106,6 +102105,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 15
   isImportant: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -101163,11 +102163,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!4 &8623709359366378386
 Transform:
@@ -101548,6 +102550,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   BookID: 8
   isImportant: 1
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -101584,6 +102587,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 0}
+  achievementType: 7
   switchID: 1
   isChecker: 0
   Action:
@@ -101981,11 +102985,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!23 &8840522409224037630
 MeshRenderer:
@@ -102682,6 +103688,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 99.99}
   parent: {fileID: 5302709689310654450}
@@ -102764,11 +103771,13 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 0
   NoEffects: 1
   CanPickup: 0
   HasItemInside: 0
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
+  DistanceToCamera: 0.5
   itemSound: event:/cogerObject2d
 --- !u!1 &9120290757196349114
 GameObject:
@@ -102807,6 +103816,7 @@ MonoBehaviour:
   hideIfReq: 0
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   isMoving: 0
   OnAction:
@@ -103069,7 +104079,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
-  m_RootOrder: 69
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &9222881820173838654
 MeshRenderer:

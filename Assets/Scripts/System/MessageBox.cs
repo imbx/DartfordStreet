@@ -6,9 +6,13 @@ public class MessageBox : MonoBehaviour {
     private void OnEnable() {
         
         willClose = false;
-        lifeTime = 4f;
         GetComponent<Animator>().Rebind();
         GetComponent<Animator>().Update(0f);
+    }
+
+    public void SetLifetime(float lTime)
+    {
+        lifeTime = lTime;
     }
     private void Update() {
         lifeTime -= Time.deltaTime;
@@ -17,7 +21,7 @@ public class MessageBox : MonoBehaviour {
             if(lifeTime <= 0)
             {
                 willClose = true;
-                lifeTime = 2f;
+                lifeTime = 1f;
                 GetComponent<Animator>().SetTrigger("TriggerAnim");
             }
         }

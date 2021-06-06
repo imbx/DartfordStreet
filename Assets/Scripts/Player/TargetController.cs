@@ -22,8 +22,8 @@ public class TargetController : MonoBehaviour {
         }
 
         if(_isPressedCd > 0) _isPressedCd -= Time.deltaTime;
-        LayerMask layerMask = LayerMask.GetMask("Focus") | LayerMask.GetMask("Interactuable") | LayerMask.GetMask("Blocked");
-        if(gcObject.state == GameState.INTERACTING || gcObject.state == GameState.LOOKITEM) layerMask = LayerMask.GetMask("Focus") | LayerMask.GetMask("Blocked");
+        LayerMask layerMask = LayerMask.GetMask("Blocked") | LayerMask.GetMask("Focus") | LayerMask.GetMask("Interactuable");
+        if(gcObject.state == GameState.INTERACTING || gcObject.state == GameState.LOOKITEM) layerMask = LayerMask.GetMask("Blocked") | LayerMask.GetMask("Focus");
         if(gcObject.targetAllLayers) layerMask = 1;
         if(Physics.Raycast(m_ROrigin, direction, out hit, m_CVars.VisionRange, layerMask)){
             

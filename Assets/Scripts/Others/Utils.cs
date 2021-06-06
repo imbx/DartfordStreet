@@ -101,6 +101,88 @@ namespace BoxScripts {
         NONE
     }
 
+    public enum AchievementType
+    {
+        Note,
+        Key,
+        Picture,
+        Diary,
+        OilLamp,
+        OilLampUpgrade,
+        Tool,
+        None
+    }
+
+    [Serializable]
+    public class Dialogue
+    {
+        public int id;
+        public SerializableVector2 anchoredPosition;
+        public SerializableVector2 size;
+        public string dialogueText;
+        public bool isAnchoredAtTop;
+        public bool isAnchoredAtCenter;
+        public float lifeTime;
+    }
+
+    [Serializable]
+    public class SerializableVector2
+    {
+        public float x;
+        public float y;
+        public Vector2 Vector2
+        {
+            get
+            {
+                return new Vector2(x, y);
+            }
+            set
+            {
+                x = value.x;
+                y = value.y;
+            }
+        }
+
+        public SerializableVector2() { x = y = 0; }
+        public SerializableVector2(Vector2 vector2) : this(vector2.x, vector2.y) {}
+        public SerializableVector2 (float _x, float _y)
+        {
+            x = _x;
+            y = _y;
+        }
+    }
+
+    // https://stackoverflow.com/questions/36239705/serialize-and-deserialize-json-and-json-array-in-unity
+
+    public static class JsonHelper
+    {
+        public static T[] FromJson<T>(string json)
+        {
+            Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
+            return wrapper.Items;
+        }
+
+        public static string ToJson<T>(T[] array)
+        {
+            Wrapper<T> wrapper = new Wrapper<T>();
+            wrapper.Items = array;
+            return JsonUtility.ToJson(wrapper);
+        }
+
+        public static string ToJson<T>(T[] array, bool prettyPrint)
+        {
+            Wrapper<T> wrapper = new Wrapper<T>();
+            wrapper.Items = array;
+            return JsonUtility.ToJson(wrapper, prettyPrint);
+        }
+
+        [Serializable]
+        private class Wrapper<T>
+        {
+            public T[] Items;
+        }
+    }
+
     // https://forum.unity.com/threads/change-gameobject-layer-at-run-time-wont-apply-to-child.10091/
     
      

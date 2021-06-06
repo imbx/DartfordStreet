@@ -16,6 +16,8 @@ public class InteractBase : MonoBehaviour {
 
     protected bool isInteractingThis = false;
     protected string MainTag = "";
+
+    public AchievementType achievementType = AchievementType.None;
     
 
     private void Awake() {

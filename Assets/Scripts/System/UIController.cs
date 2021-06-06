@@ -48,11 +48,6 @@ public class UIController : MonoBehaviour {
         {
             SafeboxText.SetActive(true);
         } else SafeboxText.SetActive(false);
-
-        if(targetTag == "RadioOn")
-        {
-            RadioText.SetActive(true);
-        } else RadioText.SetActive(false);
         
         foreach(GameObject gObject in TargetUIObjects)
         {

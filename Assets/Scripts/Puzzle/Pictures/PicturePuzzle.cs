@@ -48,12 +48,9 @@ public class PicturePuzzle : MonoBehaviour {
         if(pictures.Count <= 0) return false;
         foreach(Picture p in pictures)
         {
-            if(p.CheckRotation()){
-                if(lastPicture == -1 || lastPicture + 1 == p.Identifier)
-                    lastPicture = p.Identifier;
-                else return false;
-            } else return false;
-            
+            if(lastPicture == -1 || lastPicture + 1 == p.Identifier)
+                lastPicture = p.Identifier;
+            else return false; 
         }
         return true;
     }

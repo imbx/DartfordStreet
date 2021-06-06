@@ -12,6 +12,8 @@ public class Item : InteractBase {
     protected TransformData startTransform;
     [SerializeField] protected GameObject Son = null;
 
+    public float DistanceToCamera = 0.5f;
+
     [FMODUnity.EventRef]
     public string itemSound = "event:/cogerObject2d";
 
@@ -37,13 +39,16 @@ public class Item : InteractBase {
             if(startTransform == null) 
             {
                 tag = "Item";
-                if(Son) BoxUtils.SetLayerRecursively(gameObject, 8);
+                if(Son) {
+                    BoxUtils.SetLayerRecursively(gameObject, 8);
+                    gameObject.layer = LayerMask.NameToLayer("Blocked");
+                }
                 else gameObject.layer = LayerMask.NameToLayer("Focus");
 
                 if(Son) Son.tag = "Item";
                 startTransform = new TransformData(transform);
                 movement.SetConfig(2f, true);
-                movement.SetParameters(new TransformData(GameController.current.Hand.position, Vector3.zero), startTransform);
+                movement.SetParameters(new TransformData(GameController.current.gameCObject.camera.transform.position + (GameController.current.gameCObject.camera.transform.forward * DistanceToCamera), Vector3.zero), startTransform);
             } else { 
                 movement.Invert();
             }
@@ -69,6 +74,10 @@ public class Item : InteractBase {
         isLeftAction = false;
         GameController.current.database.EditProgression(_id, true);
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);
+        if(achievementType != AchievementType.None)
+        {
+            GameController.current.textManager.SpawnAchievement(achievementType);
+        }
         if(NoEffects || CanPickup) Destroy(gameObject);
     }
 
@@ -79,6 +88,7 @@ public class Item : InteractBase {
         // base.OnExit();
         if(!NoEffects) {
             BoxUtils.SetLayerRecursively(gameObject, 6);
+            gameObject.layer = LayerMask.NameToLayer("Interactuable");
             movement.Invert();
         }
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);

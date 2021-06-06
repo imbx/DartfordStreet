@@ -10,6 +10,8 @@ public class Lock : PuzzleBase {
     [FMODUnity.EventRef]
     public string candadoSound = "event:/candado2d";
 
+    private float innerTimer = 0f;
+
     public override void Execute(bool isLeftAction = true)
     {
         base.Execute();
@@ -29,8 +31,18 @@ public class Lock : PuzzleBase {
         }
         if (isInteractingThis && GetCurrentCombination().Equals(FinalCombination))
         {
-            OnEnd(true);
-            GameController.current.music.playMusic(candadoSound);
+            if(innerTimer < 1f)
+                for(int i = 0; i < keys.Count; i++)
+                {
+                    int targetNumber = int.Parse(FinalCombination[i].ToString());
+                    keys[i].SetRightRotation(targetNumber, innerTimer);
+                }
+            innerTimer += Time.deltaTime;
+            if(innerTimer >= 2f)
+            {
+                OnEnd(true);
+                GameController.current.music.playMusic(candadoSound);
+            }
         }
 
         if(isInteractingThis && controller.isEscapePressed)

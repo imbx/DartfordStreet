@@ -12,10 +12,7 @@ public class Picture : InteractBase {
     private bool hasPressedLeft = false;
     private bool isMoving = false;
     private Vector3 startPosition;
-    [SerializeField] private Vector3 finalRotation;
     private Vector3 startMousePos = Vector3.zero;
-    [SerializeField] private float forcedRotation = 30f;
-
     private BoxCollider boxCollider;
 
     public UnityEvent<Picture> OnAction;
@@ -38,11 +35,6 @@ public class Picture : InteractBase {
             hasPressedLeft = isLeftAction;
             this.OnStart();
             GameController.current.music.playMusic(itemSound);
-
-            if (!isLeftAction)
-            {
-                transform.Rotate(Vector3.forward * forcedRotation);
-            }
         }
     }
 
@@ -97,11 +89,6 @@ public class Picture : InteractBase {
         startPosition = transform.position;
         OnAction.Invoke(this);
         return oldPos;
-    }
-
-    public bool CheckRotation()
-    {
-        return Mathf.Abs(transform.localEulerAngles.z) == Mathf.Abs(finalRotation.z);
     }
 
     public void MovePicture()

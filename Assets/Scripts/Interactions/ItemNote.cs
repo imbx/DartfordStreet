@@ -19,7 +19,8 @@ public class ItemNote : Item
         GameController.current.database.EditProgression(_id, true);
         gameControllerObject.playerTargetTag = "";
         gameControllerObject.ChangeState(GameState.OPENNOTEBOOK);
-        GameController.current.ui.ForceDiaryPage(_id);
+        GameController.current.textManager.SpawnAchievement(achievementType);
+        // GameController.current.ui.ForceDiaryPage(_id);
         Destroy(gameObject);
     }
 }

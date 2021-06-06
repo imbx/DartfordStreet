@@ -7,12 +7,14 @@ using BoxScripts;
 using UnityEngine;
 
 public class Database {
-    private Dictionary<int, string>  Dialogues;
+    // private Dictionary<int, string>  Dialogues;
+
+    private Dictionary<int, Dialogue> Dialogues;
     private Dictionary<int, bool> PlayerProgression;
     public EntityData playerData;
 
     public Database(EntityData entityData) {
-        Dialogues = new Dictionary<int, string>();
+        Dialogues = new Dictionary<int, Dialogue>();
         PlayerProgression = new Dictionary<int, bool>();
         playerData = entityData;
         // Try to load
@@ -87,7 +89,17 @@ public class Database {
     public void ParseDialogueData(string fileName)
     {
         var textAsset = Resources.Load<TextAsset>(fileName);
-        var splitDataset = textAsset.text.Split(new char[] {'\n'});
+
+        Dialogue[] d = JsonHelper.FromJson<Dialogue>(textAsset.text);
+
+        foreach(Dialogue singleDialogue in d)
+        {
+            Dialogues.Add(singleDialogue.id, singleDialogue);
+            Debug.Log("[Database] Dialogue added " + singleDialogue.id + " : "  + singleDialogue.dialogueText);
+        }
+
+
+        /*var splitDataset = textAsset.text.Split(new char[] {'\n'});
 
         for(int i = 0; i < splitDataset.Length; i++)
         {
@@ -97,7 +109,7 @@ public class Database {
                 Dialogues.Add(int.Parse(row[0]), row[1]);
                 Debug.Log("[Database] Dialogue added " + row[0] + " : " + row[1]);
             }
-        }
+        }*/
     }
 
     public bool EditProgression(int eventID, bool check = true) {
@@ -122,7 +134,7 @@ public class Database {
         return ProgressionExists(eventID) ? PlayerProgression[eventID] : false;
     }
 
-    public string GetDialogue(int dialogueID)
+    public Dialogue GetDialogue(int dialogueID)
     {
         return Dialogues.ContainsKey(dialogueID) ? Dialogues[dialogueID] : null;
     }
