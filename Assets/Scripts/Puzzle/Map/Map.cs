@@ -7,19 +7,26 @@ public class Map : InteractBase {
     public GameObject PinPrefab;
     public Material Red;
     public LineRenderer RedLine;
-    public MapPuzzle mapPuzzle;
     public GameObject MarkerPrefab;
     public List<MapIntersection> Markers;
+    public List<GameObject> PinList;
+    public PrimaryController controller;
+
+    private void OnEnable() {
+        if(tag != " Map") tag = "Map";
+    }
 
     private void Start() {
+        PinList = new List<GameObject>();
         Markers = new List<MapIntersection>();
+        if(tag != " Map") tag = "Map";
     }
 
 
     public override void Execute(bool isLeftAction = true)
     {
-        base.Execute(isLeftAction);
-
+        if(tag != " Map") tag = "Map";
+        // base.Execute(isLeftAction);
         if(isLeftAction)
         {
             Debug.Log("[Map] Setting pin");
@@ -45,32 +52,39 @@ public class Map : InteractBase {
             MapPin mapPin = go.GetComponent<MapPin>();
             mapPin.SetPin(transform, Red);
             go.transform.position = pos;
-            mapPuzzle.PinList.Add(go);
+            PinList.Add(go);
 
             foreach(MapIntersection mi in Markers)
             {
                 Destroy(mi.Marker);
             }
             Markers = new List<MapIntersection>();
-            DrawIntersections(mapPuzzle.PinList);
+            DrawIntersections(PinList);
         }
     }
 
     public void RemovePin(GameObject ioa)
     {
 
-        if(mapPuzzle.PinList.Exists(vec => vec == ioa))
-            mapPuzzle.PinList.Remove(ioa);
+        if(PinList.Exists(vec => vec == ioa))
+            PinList.Remove(ioa);
 
         Destroy(ioa);
+
+        foreach(MapIntersection mi in Markers)
+        {
+            Destroy(mi.Marker);
+        }
+        Markers = new List<MapIntersection>();
+        DrawIntersections(PinList);
     }
 
     private Transform ReturnPointer()
     {
-        Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)mapPuzzle.controller.Mouse);
+        Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)controller.Mouse);
         if(Physics.Raycast(
             r, out var hit, 5f,
-            LayerMask.GetMask("Focus")))
+            LayerMask.GetMask("Interactuable")))
         {
             if(hit.transform.tag == "MapPin") return hit.transform;
         }
@@ -80,27 +94,27 @@ public class Map : InteractBase {
 
     private Vector3 ReturnHitPoint()
     {
-        Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)mapPuzzle.controller.Mouse);
+        Ray r = gameControllerObject.camera.ScreenPointToRay((Vector3)controller.Mouse);
         Debug.Log("[Map] Returning HitPoint");
         if(Physics.Raycast(
             r, out var hit, Mathf.Infinity,
-            LayerMask.GetMask("Focus")))
+            LayerMask.GetMask("Interactuable")))
         {
 
-            Debug.Log(hit.point);
+            Debug.Log(hit.point + " at " + hit.transform.tag);
             if(hit.transform.tag == "Map") return hit.point;
         }
-
+        Debug.Log("[Map] Returning HitPoint " + Vector3.zero);
         return Vector3.zero;
     }
 
     void Update()
     {
         
-        if(mapPuzzle.PinList.Count > 1)
+        if(PinList.Count > 1)
         {
             if(!RedLine.enabled) RedLine.enabled = true;
-            SetLineRenderer(mapPuzzle.PinList, RedLine);
+            SetLineRenderer(PinList, RedLine);
         } else if(RedLine.enabled) RedLine.enabled = false;
     }
 
@@ -135,7 +149,7 @@ public class Map : InteractBase {
                         bool hasMarker = false;
                         foreach(MapIntersection mi in Markers)
                         {
-                            if(mi.line1 == lines[i] || mi.line1 == lines[j] || mi.line2 == lines[i] || mi.line2 == lines[j])
+                            if((mi.line1 == lines[i] && mi.line2 == lines[j]) || (mi.line1 == lines[j] && mi.line2 == lines[i]))
                             {
                                 hasMarker = true;
                                 break;
