@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: ddf34f321ec739649a381a319c06c3b3, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 61894fa3e181c2f458f68e92f4a7fa45, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 5
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 12432
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -5581,7 +5581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -5702,7 +5702,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &77261872
 PrefabInstance:
@@ -6030,11 +6030,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87760690}
   m_LocalRotation: {x: 0.59437037, y: 0.59437037, z: -0.38304552, w: 0.38304552}
-  m_LocalPosition: {x: -3.259, y: 4.165, z: -7.137}
+  m_LocalPosition: {x: -1.1754239, y: 0.1469307, z: -0.79530764}
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.15}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 65.6, y: 180, z: 90}
 --- !u!1 &101160853
 GameObject:
@@ -6129,7 +6129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -6445,7 +6445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -6525,39 +6525,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 129977960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb8a0b3a97303a4f94f96fc15afa403, type: 3}
+  m_Script: {fileID: 11500000, guid: 39640b156c05d894a90a0f6edf8bd520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 764574
-  hideIfAlreadyGotten: 1
+  _id: 0
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 2
-  vecModifier: {x: 0, y: 0, z: 0.5}
+  vecModifier: {x: 0, y: 0, z: 0}
   targetAngle: {x: 0, y: 0, z: 0}
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  Books:
-  - {fileID: 3124340764767073176}
-  - {fileID: 3068844165063237310}
-  - {fileID: 5595887447870915541}
-  - {fileID: 8114139720008964582}
-  - {fileID: 7751191602974071145}
-  - {fileID: 8378343502521631931}
-  - {fileID: 3442587517852751843}
-  - {fileID: 4597784057986717218}
-  - {fileID: 863244242998505791}
-  - {fileID: 5025176126437212345}
-  - {fileID: 2931169663296866471}
-  - {fileID: 428283713945437709}
-  - {fileID: 4503555609523322875}
-  - {fileID: 8082898391355599612}
-  - {fileID: 1986138005676567065}
-  - {fileID: 7994821920502364963}
+  controller: {fileID: 0}
+  Books: []
 --- !u!65 &129977963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11661,7 +11645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -11923,7 +11907,7 @@ Transform:
   - {fileID: 1047770946}
   - {fileID: 739929494}
   m_Father: {fileID: 1833972976}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
 --- !u!65 &187918010
 BoxCollider:
@@ -11951,7 +11935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -12195,7 +12179,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.6901961, g: 0.72156864, b: 0.7647059, a: 1}
-  m_Intensity: 1.26
+  m_Intensity: 1.21
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -12204,7 +12188,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.703
+    m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.5
@@ -12234,13 +12218,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.6029888e+28, y: 7.3989534e+31, z: 5.7673364e-31, w: 1.3563128e-19}
+  m_BoundingSphereOverride: {x: 2.817509e+20, y: NaN, z: 5.4041366e-14, w: 1.3563128e-19}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12277,7 +12261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -12325,7 +12309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 266536802}
   - component: {fileID: 266536803}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12856,7 +12840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -13407,11 +13391,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340562006}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -3.259, y: 5.354, z: -7.009}
+  m_LocalPosition: {x: -1.1754239, y: 1.3359308, z: -0.6673074}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 90}
 --- !u!1 &342158176 stripped
 GameObject:
@@ -13444,7 +13428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -13733,7 +13717,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -218.72144}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0.000000009662472}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -13751,7 +13735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -14146,7 +14130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -14528,7 +14512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -14712,6 +14696,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1700456929}
     m_Modifications:
+    - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
+      propertyPath: dontDestroyIfGotten
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1654570673543456343, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14957,7 +14945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -15104,7 +15092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -15257,7 +15245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -15405,11 +15393,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564035343}
   m_LocalRotation: {x: 0.60226196, y: 0.60226196, z: -0.37051392, w: 0.37051392}
-  m_LocalPosition: {x: -3.266, y: 4.196, z: -6.392}
-  m_LocalScale: {x: 0.15, y: 0.1, z: 0.2}
+  m_LocalPosition: {x: -1.1824238, y: 0.17793083, z: -0.05030775}
+  m_LocalScale: {x: 0.15, y: 0.10000001, z: 0.19999999}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 63.2, y: 180, z: 90}
 --- !u!1 &571006212
 GameObject:
@@ -15843,7 +15831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -16267,7 +16255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 21172e0f247c2b94893714bb42b75789, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0468
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 21172e0f247c2b94893714bb42b75789, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16459,7 +16447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -16631,7 +16619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -16716,7 +16704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -16923,7 +16911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -17072,7 +17060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -17173,7 +17161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -17261,7 +17249,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17494,7 +17482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -17784,11 +17772,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812786458}
   m_LocalRotation: {x: 0.27742425, y: 0.27742425, z: -0.650412, w: 0.650412}
-  m_LocalPosition: {x: -3.259, y: 5.67, z: -4.794}
+  m_LocalPosition: {x: -1.1754239, y: 1.6519308, z: 1.5476923}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 133.8, y: 180, z: 90}
 --- !u!1 &819739755 stripped
 GameObject:
@@ -18016,7 +18004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -18219,7 +18207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -18423,7 +18411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -18854,7 +18842,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &914653825
 GameObject:
@@ -19013,6 +19001,44 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6714924, y: 0.55404574, z: 0.26202616}
   m_Center: {x: 0.24109806, y: -0.070386626, z: 0.3190156}
+--- !u!1 &926847770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926847771}
+  m_Layer: 0
+  m_Name: ParedPrint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &926847771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926847770}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.093, y: 4.0180693, z: -6.3416924}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1697366501}
+  - {fileID: 340562009}
+  - {fileID: 2026016556}
+  - {fileID: 87760693}
+  - {fileID: 564035346}
+  - {fileID: 1896641573}
+  - {fileID: 812786461}
+  - {fileID: 1192579138}
+  m_Father: {fileID: 1833972976}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &928501416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19554,7 +19580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 5687
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -19586,7 +19612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -19717,7 +19743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -25304,7 +25330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4295
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 1
   hideIfReq: 0
   reqID: 66666666
@@ -25524,7 +25550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 21172e0f247c2b94893714bb42b75789, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0468
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 21172e0f247c2b94893714bb42b75789, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25681,7 +25707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -25869,7 +25895,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c43cc19810220ee429aa559703aa0342, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c43cc19810220ee429aa559703aa0342, type: 3}
       propertyPath: m_LocalScale.y
@@ -26201,7 +26227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -26671,7 +26697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -26882,11 +26908,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192579135}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -3.259, y: 4.454, z: -5.01}
+  m_LocalPosition: {x: -1.1754239, y: 0.43593073, z: 1.3316922}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 90}
 --- !u!114 &1197279883 stripped
 MonoBehaviour:
@@ -27203,7 +27229,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 987eb0bf5fc5cdd4798069ff9bdcf57f, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 987eb0bf5fc5cdd4798069ff9bdcf57f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27301,7 +27327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -27718,7 +27744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 48
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -27730,6 +27756,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.5
   itemSound: event:/cogerObject2d
   Action:
     m_PersistentCalls:
@@ -27972,7 +28000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -28261,6 +28289,146 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 577931e37b4be8a46b400d91f53d937b, type: 3}
+--- !u!1 &1359145138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359145139}
+  - component: {fileID: 1359145144}
+  - component: {fileID: 1359145143}
+  - component: {fileID: 1359145142}
+  - component: {fileID: 1359145141}
+  - component: {fileID: 1359145140}
+  m_Layer: 6
+  m_Name: Nota 0009 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1359145139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359145138}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.4660237, y: -3.642, z: 0.863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2029667718}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1359145140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359145138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d527f1783dad647909fad1a559edef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 2147483647
+  dontDestroyIfGotten: 1
+  hasRequirement: 0
+  hideIfReq: 0
+  reqID: -1
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
+  NoEffects: 0
+  CanPickup: 0
+  HasItemInside: 0
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  Son: {fileID: 0}
+  DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0.25
+  zoomSpeed: 1
+  itemSound: event:/cogerObject2d
+--- !u!65 &1359145141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359145138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.069508135, y: 0.094187446, z: 0.008147727}
+  m_Center: {x: -0.00044571795, y: 0.00018941988, z: -0.0014086766}
+--- !u!114 &1359145142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359145138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726c7f68e2eb9a741a1e608ec090ae0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasParameters: 0
+  HasToDestroy: 0
+  isAtDestination: 1
+--- !u!23 &1359145143
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359145138}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1359145144
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359145138}
+  m_Mesh: {fileID: 6200449875563204789, guid: af260331ca193114596a6df30b55e0e2, type: 3}
 --- !u!1 &1364209287
 GameObject:
   m_ObjectHideFlags: 0
@@ -28450,7 +28618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -28521,7 +28689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -28804,7 +28972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -28995,7 +29163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -29496,7 +29664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 234232523
-  hideIfAlreadyGotten: 0
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -30027,7 +30195,7 @@ Transform:
   - {fileID: 1824669747}
   - {fileID: 2023585012}
   m_Father: {fileID: 1833972976}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: -130, z: 0}
 --- !u!65 &1543031945
 BoxCollider:
@@ -30055,7 +30223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -30238,7 +30406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -30351,7 +30519,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.078e-42, y: -4.464639e+18, z: -3.0316488e-13, w: -4.464639e+18}
+  m_BoundingSphereOverride: {x: 6.33e-43, y: 0.0000000038031693, z: 6.33e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -30595,7 +30763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -30733,7 +30901,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30977,7 +31145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -31010,7 +31178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1663165288}
   - component: {fileID: 1663165289}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31138,7 +31306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -31345,11 +31513,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697366498}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -3.259, y: 5.354, z: -7.78}
+  m_LocalPosition: {x: -1.1754239, y: 1.3359308, z: -1.4383078}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 90}
 --- !u!1 &1698579571 stripped
 GameObject:
@@ -31369,7 +31537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -31566,7 +31734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 1919
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -31835,7 +32003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -32309,7 +32477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -32758,7 +32926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -32874,7 +33042,7 @@ Transform:
   m_LocalScale: {x: 0.08702, y: 0.08702, z: 0.08702}
   m_Children: []
   m_Father: {fileID: 1833972976}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1823900769
 MeshCollider:
@@ -33130,6 +33298,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 926847771}
   - {fileID: 1870720388}
   - {fileID: 6272893289910372041}
   - {fileID: 1585731706}
@@ -33546,7 +33715,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 1833972976}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1870720389
 MonoBehaviour:
@@ -33744,7 +33913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -33756,6 +33925,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.5
   itemSound: event:/cogerObject2d
   Action:
     m_PersistentCalls:
@@ -33936,11 +34107,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896641570}
   m_LocalRotation: {x: -0.30553067, y: -0.30553067, z: -0.637692, w: 0.637692}
-  m_LocalPosition: {x: -3.259, y: 5.469, z: -6.08}
-  m_LocalScale: {x: 0.2, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: -1.1754239, y: 1.4509306, z: 0.26169252}
+  m_LocalScale: {x: 0.2, y: 0.10000001, z: 0.099999994}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 231.2, y: 180, z: 90}
 --- !u!1001 &1900323225
 PrefabInstance:
@@ -34232,6 +34403,10 @@ PrefabInstance:
     - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: achievementType
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
+      propertyPath: dontDestroyIfGotten
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1654570673543456343, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: m_RootOrder
@@ -34796,7 +34971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -34855,7 +35030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 500
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -34867,6 +35042,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &1988728153
 MonoBehaviour:
@@ -34902,7 +35079,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35105,7 +35282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 66666666
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -35117,6 +35294,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &1992018142
 MonoBehaviour:
@@ -35191,7 +35370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -35365,39 +35544,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993859462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb8a0b3a97303a4f94f96fc15afa403, type: 3}
+  m_Script: {fileID: 11500000, guid: 39640b156c05d894a90a0f6edf8bd520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 89485
-  hideIfAlreadyGotten: 1
-  hasRequirement: 1
+  _id: 0
+  dontDestroyIfGotten: 1
+  hasRequirement: 0
   hideIfReq: 0
-  reqID: 764574
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  reqID: -1
+  gameControllerObject: {fileID: 0}
   achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 2
-  vecModifier: {x: 0, y: 0, z: 0.5}
+  vecModifier: {x: 0, y: 0, z: 0}
   targetAngle: {x: 0, y: 0, z: 0}
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  Books:
-  - {fileID: 3015604459481868826}
-  - {fileID: 3918026851435124837}
-  - {fileID: 3653381934994692808}
-  - {fileID: 2532165598326298715}
-  - {fileID: 6289918227344372107}
-  - {fileID: 3176713217659773986}
-  - {fileID: 2827091323000803020}
-  - {fileID: 8721993626127920831}
-  - {fileID: 7105499384952814584}
-  - {fileID: 4935222726577673783}
-  - {fileID: 7895570839549376860}
-  - {fileID: 6040591916071148350}
-  - {fileID: 5059181373779060475}
-  - {fileID: 8417351402820455925}
-  - {fileID: 7097036043279795846}
-  - {fileID: 697176094423328381}
+  controller: {fileID: 0}
+  Books: []
 --- !u!1 &1998985353
 GameObject:
   m_ObjectHideFlags: 0
@@ -35455,39 +35618,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1998985353}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb8a0b3a97303a4f94f96fc15afa403, type: 3}
+  m_Script: {fileID: 11500000, guid: 39640b156c05d894a90a0f6edf8bd520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 76546
-  hideIfAlreadyGotten: 1
-  hasRequirement: 1
+  _id: 0
+  dontDestroyIfGotten: 1
+  hasRequirement: 0
   hideIfReq: 0
-  reqID: 89485
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  reqID: -1
+  gameControllerObject: {fileID: 0}
   achievementType: 7
   MoveCamera: 1
   EndIdentifier: 0
   DistanceToCamera: 2
-  vecModifier: {x: 0, y: 0, z: 0.5}
+  vecModifier: {x: 0, y: 0, z: 0}
   targetAngle: {x: 0, y: 0, z: 0}
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  Books:
-  - {fileID: 3797936164385704073}
-  - {fileID: 5424930818132539748}
-  - {fileID: 3010769881500234793}
-  - {fileID: 2473498638624011859}
-  - {fileID: 672471475458970131}
-  - {fileID: 1422785312256204821}
-  - {fileID: 6307205571119655275}
-  - {fileID: 313837228188244707}
-  - {fileID: 4710580729740789880}
-  - {fileID: 1797696941058688914}
-  - {fileID: 6327522904146934528}
-  - {fileID: 7039236332218981756}
-  - {fileID: 6562536806483157984}
-  - {fileID: 2024856689510956710}
-  - {fileID: 8594978529912355356}
-  - {fileID: 5083466056683731964}
+  controller: {fileID: 0}
+  Books: []
 --- !u!65 &1998985356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35646,7 +35793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -35665,7 +35812,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7e77936e7027fc449b0bd2e22825c9d2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7e77936e7027fc449b0bd2e22825c9d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35778,7 +35925,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35883,11 +36030,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026016553}
   m_LocalRotation: {x: 0.34706762, y: 0.34706762, z: -0.61607146, w: 0.61607146}
-  m_LocalPosition: {x: -3.259, y: 4.1019998, z: -7.799}
+  m_LocalPosition: {x: -1.1754239, y: 0.08393049, z: -1.4573073}
   m_LocalScale: {x: 0.15, y: 0.1, z: 0.15}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 926847771}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 121.21, y: 180, z: 90}
 --- !u!1 &2029667717
 GameObject:
@@ -35941,6 +36088,7 @@ Transform:
   - {fileID: 6366705720364592607}
   - {fileID: 3096258224821654822}
   - {fileID: 5094012399826760337}
+  - {fileID: 1359145139}
   m_Father: {fileID: 3781386032989586820}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36158,7 +36306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4534524
-  hideIfAlreadyGotten: 0
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -36980,7 +37128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -37377,7 +37525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -37619,7 +37767,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38137,34 +38285,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 313837228188244706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 8
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &313837228188244708
 BoxCollider:
@@ -38543,13 +38679,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.54e-43, y: -4.464639e+18, z: -3.0316488e-13, w: -4.464639e+18}
+  m_BoundingSphereOverride: {x: 6.33e-43, y: 0.000000002580089, z: 6.33e-43, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -38774,7 +38910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &372768530588341129
 Transform:
   m_ObjectHideFlags: 0
@@ -38801,26 +38937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 1
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 1
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!20 &372768530588341135
 Camera:
   m_ObjectHideFlags: 0
@@ -38899,6 +39015,8 @@ MonoBehaviour:
   m_CVars: {fileID: 11400000, guid: 19b9218227f13c24d9845ab8998150cf, type: 2}
   m_PlayerMovement: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   l_gravity: 200
+  boobingSpeed: 13
+  bobbingAmount: 0.025
 --- !u!143 &372768530633163475
 CharacterController:
   m_ObjectHideFlags: 0
@@ -38993,11 +39111,12 @@ GameObject:
   - component: {fileID: 372768530819737662}
   - component: {fileID: 372768530819737661}
   - component: {fileID: 372768530819737660}
-  - component: {fileID: 372768530819737663}
   - component: {fileID: 372768530819737634}
   - component: {fileID: 6567634250436730873}
   - component: {fileID: 6887124486713853535}
   - component: {fileID: 4890838609199600058}
+  - component: {fileID: 372768530819737658}
+  - component: {fileID: 372768530819737659}
   m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -39005,6 +39124,88 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &372768530819737658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372768530819737657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 372768530819737662}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 969
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles:
+  - assemblyQualifiedName: CelFx, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - assemblyQualifiedName: OutlineFx, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  m_AfterStackBundles: []
+--- !u!114 &372768530819737659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372768530819737657}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c520d478f3d2445429bd7ac9c92b03a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postProcessLayer: {fileID: 372768530819737658}
+  lightMeter: 0
+  histogram: 0
+  waveform: 0
+  vectorscope: 0
+  debugOverlay: 0
 --- !u!81 &372768530819737660
 AudioListener:
   m_ObjectHideFlags: 0
@@ -39041,7 +39242,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 1
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 1007
@@ -39072,39 +39273,6 @@ Transform:
   m_Father: {fileID: 372768529762956670}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &372768530819737663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372768530819737657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras:
-  - {fileID: 372768530588341135}
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 2147483648
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 1
-  m_AntialiasingQuality: 2
-  m_StopNaN: 1
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!33 &394348651952133149
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -39251,34 +39419,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 428283713945437708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 12
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &428283713945437710
 BoxCollider:
@@ -39672,7 +39828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 46027432
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -39684,6 +39840,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &573881979218690653
 MeshFilter:
@@ -39726,7 +39884,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39992,34 +40150,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 672471475458970130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 5
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &672471475458970132
 BoxCollider:
@@ -40180,34 +40326,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 697176094423328379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 16
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!4 &699892423946532909
 Transform:
@@ -40679,34 +40813,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 863244242998505790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 11
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &863244242998505792
 BoxCollider:
@@ -41001,7 +41123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4036273
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -41013,6 +41135,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!1 &1024661989877661868
 GameObject:
@@ -69894,7 +70018,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -69949,7 +70073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -70164,7 +70288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -70290,7 +70414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 7
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 2
@@ -70779,7 +70903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -71074,7 +71198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 49563
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -71086,6 +71210,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &1326498214592468604
 MeshFilter:
@@ -71368,34 +71494,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422785312256204820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 6
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &1422785312256204822
 BoxCollider:
@@ -71457,7 +71571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2000
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 1
   reqID: 48
@@ -71513,7 +71627,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -71770,7 +71884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4795772
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -71782,6 +71896,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!4 &1612187751603366145
 Transform:
@@ -72182,7 +72298,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72282,34 +72398,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1797696941058688913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 10
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &1797696941058688915
 BoxCollider:
@@ -72351,7 +72455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 9417434
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -72363,6 +72467,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &1822220128414229755
 MeshFilter:
@@ -72439,7 +72545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8002
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -72552,7 +72658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8001
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -72607,7 +72713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8000
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -72744,7 +72850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8003
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -72872,7 +72978,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73031,7 +73137,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73295,7 +73401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73464,34 +73570,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1986138005676567064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 15
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &1986138005676567066
 BoxCollider:
@@ -73535,34 +73629,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2024856689510956709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 14
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &2024856689510956711
 BoxCollider:
@@ -73590,7 +73672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4589352
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73602,6 +73684,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!1 &2035354991955279929
 GameObject:
@@ -73717,7 +73801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 5687
@@ -73809,7 +73893,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73997,7 +74081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 1919
@@ -74312,7 +74396,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74424,7 +74508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 486532
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -74436,6 +74520,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!23 &2383847280381748175
 MeshRenderer:
@@ -74597,7 +74683,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74710,34 +74796,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2473498638624011858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 4
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &2473498638624011860
 BoxCollider:
@@ -74914,34 +74988,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2532165598326298713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 4
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &2542227722592694034
 BoxCollider:
@@ -80033,7 +80095,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80330,34 +80392,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2827091323000803018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 7
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!114 &2829250832276413141
 MonoBehaviour:
@@ -80427,7 +80477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3188352
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -80439,6 +80489,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!1 &2856258663154144836
 GameObject:
@@ -80707,34 +80759,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2931169663296866470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 7
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &2931169663296866472
 BoxCollider:
@@ -82828,34 +82868,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3010769881500234792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 3
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &3010769881500234794
 BoxCollider:
@@ -83045,7 +83073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -83126,34 +83154,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3015604459481868824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 1
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!33 &3016445272703752236
 MeshFilter:
@@ -83274,34 +83290,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3068844165063237309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 2
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &3068844165063237311
 BoxCollider:
@@ -83399,34 +83403,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3124340764767073175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 1
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &3124340764767073177
 BoxCollider:
@@ -83462,7 +83454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4639023
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -83474,6 +83466,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &3140705523835231438
 MeshFilter:
@@ -83650,34 +83644,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3176713217659773984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 6
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!4 &3176976667006322203
 Transform:
@@ -83720,7 +83702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -83795,7 +83777,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84035,7 +84017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 397724634
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84047,6 +84029,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &3292336671184740348
 MeshFilter:
@@ -84283,7 +84267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2001
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84339,7 +84323,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84530,34 +84514,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3442587517852751842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 9
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &3442587517852751844
 BoxCollider:
@@ -84669,7 +84641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84731,7 +84703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 44793623
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84743,6 +84715,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!114 &3486523478132956405
 MonoBehaviour:
@@ -84757,7 +84731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3856302
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84769,6 +84743,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!23 &3502211929905413885
 MeshRenderer:
@@ -85141,7 +85117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094336755789627079}
   m_LocalRotation: {x: -0.00000013767877, y: 0.7071068, z: 0.70710677, w: 0.00000013767878}
-  m_LocalPosition: {x: 2.5482776, y: 0.00000166893, z: 3.368}
+  m_LocalPosition: {x: 2.5482776, y: 0.00000166893, z: 3.365}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652158887065}
@@ -85189,34 +85165,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3653381934994692806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 3
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!33 &3653741854845021862
 MeshFilter:
@@ -85239,7 +85203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 57827835
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -85251,6 +85215,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!4 &3663354590336506808
 Transform:
@@ -87507,7 +87473,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87558,34 +87524,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3797936164385704072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 1
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &3797936164385704074
 BoxCollider:
@@ -87682,7 +87636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2003
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -88019,34 +87973,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 3918026851435124835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 2
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!1 &3920017894794483969
 GameObject:
@@ -88266,7 +88208,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88625,7 +88567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -89867,7 +89809,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89908,7 +89850,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90004,34 +89946,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4503555609523322874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 13
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &4503555609523322876
 BoxCollider:
@@ -90081,7 +90011,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5ecf1b8b31653604cbbd6bd527cfa5cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90156,7 +90086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 418734324
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -90168,6 +90098,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &4585998780499454346
 MeshFilter:
@@ -90220,34 +90152,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4597784057986717217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 8
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &4597784057986717219
 BoxCollider:
@@ -90375,7 +90295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2147483647
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -90387,6 +90307,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!1 &4633991140707845951
 GameObject:
@@ -90531,34 +90453,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4710580729740789879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 9
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &4710580729740789881
 BoxCollider:
@@ -90912,7 +90822,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91078,7 +90988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 4295
@@ -91164,34 +91074,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4935222726577673781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 10
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!1 &4943049527838562914
 GameObject:
@@ -91270,34 +91168,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5025176126437212344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 10
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &5025176126437212346
 BoxCollider:
@@ -91360,7 +91246,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -91424,34 +91310,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5059181373779060473}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 13
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!23 &5066702240400714222
 MeshRenderer:
@@ -91568,7 +91442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -91631,34 +91505,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5083466056683731963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 16
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &5083466056683731965
 BoxCollider:
@@ -91990,7 +91852,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92056,7 +91918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 0
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92186,7 +92048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92257,7 +92119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3735384
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92269,6 +92131,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!23 &5324261904257896134
 MeshRenderer:
@@ -92494,34 +92358,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5424930818132539747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 2
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &5424930818132539749
 BoxCollider:
@@ -92646,7 +92498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 95778
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92658,6 +92510,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!114 &5428142393477662875
 MonoBehaviour:
@@ -92737,7 +92591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92775,7 +92629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 308462812
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92787,6 +92641,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &5463687140100197448
 MeshFilter:
@@ -92914,7 +92770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 1
   hideIfReq: 0
   reqID: 95778
@@ -92926,6 +92782,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 4667376750654138166}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.5
   itemSound: event:/cogerObject2d
 --- !u!114 &5477700670643837530
 MonoBehaviour:
@@ -92940,7 +92798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 5
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92952,6 +92810,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.5
   itemSound: event:/cogerObject2d
 --- !u!136 &5477700670643837531
 CapsuleCollider:
@@ -93269,7 +93129,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93340,7 +93200,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93406,34 +93266,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 5595887447870915540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 3
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &5595887447870915542
 BoxCollider:
@@ -93664,7 +93512,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -93907,7 +93755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -94021,7 +93869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2002
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -94810,34 +94658,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6040591916071148348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 12
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!33 &6047745936221068293
 MeshFilter:
@@ -95067,7 +94903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3297432
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -95079,6 +94915,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!65 &6139207335570974493
 BoxCollider:
@@ -95276,7 +95114,7 @@ Transform:
   - {fileID: 4102349933106527115}
   - {fileID: 1593449794}
   m_Father: {fileID: 1833972976}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: -65, z: 0}
 --- !u!65 &6278165739385882171
 BoxCollider:
@@ -95367,34 +95205,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6289918227344372105}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 5
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!1 &6307205571119655274
 GameObject:
@@ -95425,34 +95251,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6307205571119655274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 7
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &6307205571119655276
 BoxCollider:
@@ -95524,34 +95338,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6327522904146934527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 11
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &6327522904146934529
 BoxCollider:
@@ -95604,10 +95406,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1833972976}
     m_Modifications:
+    - target: {fileID: 582889539686261175, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
+    - target: {fileID: 1243211165567092197, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
     - target: {fileID: 1363438046407208025, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d08cdcc5c5d50394fbf060e141187f47, type: 2}
+    - target: {fileID: 2867042809175116543, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
+    - target: {fileID: 3096703251104828741, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
     - target: {fileID: 3344587114507227735, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -95616,6 +95434,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1f22ccb18bafdac45af1e89a40e669ec, type: 2}
+    - target: {fileID: 4271855305544861579, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
     - target: {fileID: 6120673633290529750, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
       propertyPath: m_Name
       value: Bomba_V2
@@ -95642,7 +95464,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e8638ae5cb32a5348a8d336897095b0a, type: 2}
     - target: {fileID: 6898055101413454188, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6898055101413454188, guid: 1ae6a12777b82394798f9c7cbdb747e3, type: 3}
       propertyPath: m_LocalScale.x
@@ -95872,7 +95694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96153,7 +95975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96265,34 +96087,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6562536806483157983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 13
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &6562536806483157985
 BoxCollider:
@@ -96436,7 +96246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 43787252
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96448,6 +96258,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &6586303286013117141
 MeshFilter:
@@ -96671,7 +96483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -97238,7 +97050,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97314,7 +97126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3436245
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -97326,6 +97138,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!33 &6879287767958748336
 MeshFilter:
@@ -97602,7 +97416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -97717,7 +97531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -97807,34 +97621,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7039236332218981755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 12
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &7039236332218981757
 BoxCollider:
@@ -98035,34 +97837,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7097036043279795844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 15
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!1 &7105499384952814582
 GameObject:
@@ -98106,34 +97896,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7105499384952814582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 9
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!4 &7142385122284487575
 Transform:
@@ -98401,7 +98179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -99089,7 +98867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 95999
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -99381,7 +99159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 95999
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -99393,6 +99171,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!4 &7728163213102771096
 Transform:
@@ -99525,34 +99305,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7751191602974071144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 5
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &7751191602974071146
 BoxCollider:
@@ -99621,7 +99389,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99662,7 +99430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99969,7 +99737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7854663816872780132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.9, y: 1.2030001, z: -1.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7854663817075115327}
@@ -100322,15 +100090,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7854663817295363483}
-  - component: {fileID: 7854663817295363482}
-  m_Layer: 31
+  - component: {fileID: 7854663817295363461}
+  m_Layer: 0
   m_Name: PostProcessing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7854663817295363482
+--- !u!114 &7854663817295363461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100339,14 +100107,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7854663817295363460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 03082fdec3cb4c74e9d2d4bff8d364f5, type: 2}
   isGlobal: 1
-  priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 7f08344f9f58ad048b7ecae35e689280, type: 2}
+  priority: 0
 --- !u!4 &7854663817295363483
 Transform:
   m_ObjectHideFlags: 0
@@ -100668,7 +100436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 338462
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -100680,6 +100448,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!4 &7866784826063799396
 Transform:
@@ -100808,34 +100578,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7895570839549376858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 11
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!4 &7903813675316395266
 Transform:
@@ -100997,7 +100755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -101086,34 +100844,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7994821920502364962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 16
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &7994821920502364964
 BoxCollider:
@@ -101442,34 +101188,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8082898391355599611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 14
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &8082898391355599613
 BoxCollider:
@@ -101513,34 +101247,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8114139720008964581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 4
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &8114139720008964583
 BoxCollider:
@@ -102090,7 +101812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -102462,34 +102184,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8378343502521631930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 6
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 129977962}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &8378343502521631932
 BoxCollider:
@@ -102609,34 +102319,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8417351402820455923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 14
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!23 &8422611295679034144
 MeshRenderer:
@@ -102973,7 +102671,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103288,34 +102986,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8594978529912355355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 15
+  BookID: 0
   isImportant: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998985355}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!65 &8594978529912355357
 BoxCollider:
@@ -103351,7 +103037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 589054
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -103363,6 +103049,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!4 &8623709359366378386
 Transform:
@@ -103470,7 +103158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103511,7 +103199,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103735,34 +103423,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 8721993626127920829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a71250c3555aed43a5b5dae06ef35eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  gameControllerObject: {fileID: 0}
   achievementType: 7
-  BookID: 8
-  isImportant: 1
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  BookID: 0
+  isImportant: 0
+  controller: {fileID: 0}
   Action:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1993859465}
-        m_TargetAssemblyTypeName: Library, Assembly-CSharp
-        m_MethodName: SwapBooks
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   itemSound: event:/cogerObject2d
 --- !u!114 &8731973589292895938
 MonoBehaviour:
@@ -103777,7 +103453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104176,7 +103852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4246352
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104188,6 +103864,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!23 &8840522409224037630
 MeshRenderer:
@@ -104880,7 +104558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104965,7 +104643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3598356
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104977,6 +104655,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Son: {fileID: 0}
   DistanceToCamera: 0.5
+  zoomedDistanceToCamera: 0
+  zoomSpeed: 0.05
   itemSound: event:/cogerObject2d
 --- !u!1 &9120290757196349114
 GameObject:
@@ -105011,7 +104691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2004
-  hideIfAlreadyGotten: 1
+  dontDestroyIfGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -105122,7 +104802,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 239378781582670930, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -5,20 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Item
-  - RadioOff
   - Picture
+  - RadioOn
+  - RadioOff
+  - MapPin
+  - Locked
+  - Requirement
+  - Map
   - Safebox
   - BasicInteraction
-  - Requirement
-  - Locked
-  - Map
-  - MapPin
-  - RadioOn
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - IgnorePostprocessing
+  - IgnorePostProcessing
   - Water
   - UI
   - Interactuable

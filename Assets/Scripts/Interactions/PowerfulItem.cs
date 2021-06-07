@@ -19,15 +19,46 @@ public class PowerfulItem : Item {
         if(isLeftAction && gameControllerObject.state != GameState.LOOKITEM) {
             if(startTransform == null) 
             {
-                gameObject.layer = 8;
                 tag = "Item";
+                if(Son) {
+                    BoxUtils.SetLayerRecursively(gameObject, 8);
+                    gameObject.layer = LayerMask.NameToLayer("Blocked");
+                }
+                else gameObject.layer = LayerMask.NameToLayer("Focus");
+
+                if(Son) Son.tag = "Item";
+
+                if(!LookAtPoint){
+                    LookAtPoint = new GameObject(name + "_LookAtPoint", typeof(Movement));
+                    LookAtPoint.transform.position = transform.position + transform.forward.normalized * 0.5f;
+                    LookAtPoint.transform.SetParent(transform);
+                }
+                TransformData pointTransform = new TransformData(LookAtPoint.transform);
                 startTransform = new TransformData(transform);
-                movement.SetConfig(2f, true);
-                movement.SetParameters(new TransformData(GameController.current.gameCObject.camera.transform.position + (GameController.current.gameCObject.camera.transform.forward * 0.5f), Vector3.zero), startTransform);
-            } else {
-                gameObject.layer = 6;
+
+                TransformData pointCamera = 
+                    new TransformData(
+                        GameController.current.gameCObject.camera.transform.position +
+                        (GameController.current.gameCObject.camera.transform.forward * (DistanceToCamera * 0.5f)),
+                        -GameController.current.gameCObject.camera.transform.eulerAngles
+                    );
+                TransformData tCamera = 
+                    new TransformData(
+                        GameController.current.gameCObject.camera.transform.position +
+                        (GameController.current.gameCObject.camera.transform.forward * DistanceToCamera),
+                        -GameController.current.gameCObject.camera.transform.eulerAngles
+                    );
+                LookAtPoint.GetComponent<Movement>().SetConfig(4f);
+                movement.SetConfig(2f, true, true);
+                
+                LookAtPoint.GetComponent<Movement>().SetParameters(pointCamera, pointTransform);
+                movement.SetParameters(tCamera, startTransform);
+            } 
+            else
+            { 
                 movement.Invert();
-                tag = MainTag;
+                LookAtPoint.GetComponent<Movement>().Invert();
+                startTransform = default;
             }
             gameControllerObject.ChangeState(GameState.LOOKITEM);
         }

@@ -36,6 +36,7 @@ public class GameController : MonoBehaviour{
         Debug.Log("Loading Database");
         #if UNITY_EDITOR
             SceneController.LoadGame = !ignoreSavedGame;
+            Debug.Log("Ignoring database " + SceneController.LoadGame);
         #endif
         database = new Database(Player, !SceneController.LoadGame);
         Debug.Log("-- DB LOADED --");
