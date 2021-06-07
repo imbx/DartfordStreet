@@ -12,6 +12,7 @@ public class Library : PuzzleBase {
         if(isInteractingThis){
             if(controller.isEscapePressed) {
                 Debug.Log("[Library] Called Escape");
+                this.OnExit();
             }
         }
     }

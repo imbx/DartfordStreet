@@ -17,6 +17,8 @@ public class Item : InteractBase {
     [FMODUnity.EventRef]
     public string itemSound = "event:/cogerObject2d";
 
+    protected GameObject LookAtPoint;
+
 
 
     void Start()
@@ -46,11 +48,38 @@ public class Item : InteractBase {
                 else gameObject.layer = LayerMask.NameToLayer("Focus");
 
                 if(Son) Son.tag = "Item";
+
+                if(!LookAtPoint){
+                    LookAtPoint = new GameObject(name + "_LookAtPoint", typeof(Movement));
+                    LookAtPoint.transform.position = transform.position + transform.forward.normalized * 0.5f;
+                    LookAtPoint.transform.SetParent(transform);
+                }
+                TransformData pointTransform = new TransformData(LookAtPoint.transform);
                 startTransform = new TransformData(transform);
-                movement.SetConfig(2f, true);
-                movement.SetParameters(new TransformData(GameController.current.gameCObject.camera.transform.position + (GameController.current.gameCObject.camera.transform.forward * DistanceToCamera), Vector3.zero), startTransform);
-            } else { 
+
+                TransformData pointCamera = 
+                    new TransformData(
+                        GameController.current.gameCObject.camera.transform.position +
+                        (GameController.current.gameCObject.camera.transform.forward * (DistanceToCamera * 0.5f)),
+                        -GameController.current.gameCObject.camera.transform.eulerAngles
+                    );
+                TransformData tCamera = 
+                    new TransformData(
+                        GameController.current.gameCObject.camera.transform.position +
+                        (GameController.current.gameCObject.camera.transform.forward * DistanceToCamera),
+                        -GameController.current.gameCObject.camera.transform.eulerAngles
+                    );
+                LookAtPoint.GetComponent<Movement>().SetConfig(4f);
+                movement.SetConfig(2f, true, true);
+                
+                LookAtPoint.GetComponent<Movement>().SetParameters(pointCamera, pointTransform);
+                movement.SetParameters(tCamera, startTransform);
+            } 
+            else
+            { 
                 movement.Invert();
+                LookAtPoint.GetComponent<Movement>().Invert();
+                startTransform = default;
             }
             if(HasItemInside) GetComponent<BoxCollider>().enabled = false;
             gameControllerObject.ChangeState(GameState.LOOKITEM);
@@ -117,12 +146,19 @@ public class Item : InteractBase {
                 if(HasItemInside && Son == null) OnExit();
                 if(!isLeftAction && controller.isInput2Hold)
                 {
-                    transform.localEulerAngles += new Vector3(-controller.CameraAxis.y, controller.CameraAxis.x, 0);
+                    transform.Rotate(Vector3.up, -controller.CameraAxis.x);
+                    transform.Rotate(Vector3.right, controller.CameraAxis.y);
+                    
+                    // transform.localEulerAngles += new Vector3(-controller.CameraAxis.y, controller.CameraAxis.x, 0);
                 }
                 else if(isLeftAction)
                 {
                     isLeftAction = false;
                 }
+            }
+            else
+            {
+                transform.LookAt(LookAtPoint.transform);
             }
 
             if(gameControllerObject.state == GameState.LOOKITEM && controller.isEscapePressed && !NoEffects){
@@ -130,6 +166,17 @@ public class Item : InteractBase {
                 OnExit();
             }
         }
+    }
+
+    void OnDrawGizmos(){
+        #if UNITY_EDITOR
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(
+                transform.position,
+                transform.position + transform.forward.normalized * DistanceToCamera
+            );
+            Gizmos.color = Color.white;
+        #endif
     }
     
 }

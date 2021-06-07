@@ -6,7 +6,7 @@ using UnityEngine;
 namespace BoxScripts {
     public class TransformData {
         public Vector3 position { get; }
-        public Vector3 eulerAngles { get; }
+        public Vector3 eulerAngles { get; private set; }
 
         public TransformData (Transform copy) {
             position = copy.position;
@@ -29,6 +29,11 @@ namespace BoxScripts {
                 Mathf.LerpAngle(eulerAngles.x, other.eulerAngles.x, timer),
                 Mathf.LerpAngle(eulerAngles.y, other.eulerAngles.y, timer),
                 Mathf.LerpAngle(eulerAngles.z, other.eulerAngles.z, timer));
+        }
+
+        public void SetEuler(Vector3 newRot)
+        {
+            eulerAngles = newRot;
         }
 
         
