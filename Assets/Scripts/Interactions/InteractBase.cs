@@ -6,7 +6,7 @@ using BoxScripts;
 public class InteractBase : MonoBehaviour {
     [Header("Interact Base Parameters")]
     public int _id = 0;
-    public bool hideIfAlreadyGotten = true;
+    public bool dontDestroyIfGotten = true;
     public bool hasRequirement = false;
     public bool hideIfReq = false;
     public int reqID = -1;
@@ -42,7 +42,7 @@ public class InteractBase : MonoBehaviour {
 
                 hasCheckedState = true;
                 if(_id != 0)
-                    if(GameController.current.database.ProgressionExists(_id)){
+                    if(GameController.current.database.ProgressionExists(_id) && !dontDestroyIfGotten){
                         Debug.Log("Deactivating " + name);
                         this.gameObject.SetActive(!GameController.current.database.GetProgressionState(_id));
                     }
