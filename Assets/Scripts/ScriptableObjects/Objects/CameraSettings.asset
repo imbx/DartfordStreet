@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinPitch: -55
   MaxPitch: 75
-  YawSpeed: 90
-  PitchSpeed: 45
+  YawSpeed: 45
+  PitchSpeed: 22
   InvertY: 1
   InvertX: 0
