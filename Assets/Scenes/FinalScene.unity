@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 5
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 12432
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -5581,7 +5581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -6129,7 +6129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -6445,7 +6445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -6529,7 +6529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 764574
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -11661,7 +11661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -11951,7 +11951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -12240,7 +12240,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.817509e+20, y: NaN, z: 5.4041366e-14, w: 1.3563128e-19}
+  m_BoundingSphereOverride: {x: 1.6029888e+28, y: 7.3989534e+31, z: 5.7673364e-31, w: 1.3563128e-19}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -12277,7 +12277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -12921,7 +12921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -13509,7 +13509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -13798,7 +13798,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 10, z: 8, w: -11}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: -218.72144}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -13816,7 +13816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -14211,7 +14211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -14593,7 +14593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -14781,10 +14781,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1700456929}
     m_Modifications:
-    - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
-      propertyPath: dontDestroyIfGotten
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1654570673543456343, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15030,7 +15026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -15177,7 +15173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -15330,7 +15326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -15921,7 +15917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -16537,7 +16533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -16709,7 +16705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -16794,7 +16790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -17001,7 +16997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -17150,7 +17146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -17251,7 +17247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -17670,7 +17666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -18257,7 +18253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -18460,7 +18456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -18664,7 +18660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -19800,7 +19796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 5687
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -19832,7 +19828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -19963,7 +19959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -25555,7 +25551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4295
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 66666666
@@ -25932,7 +25928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -26452,7 +26448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -26922,7 +26918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -27557,7 +27553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -27974,7 +27970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 48
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -28228,7 +28224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -28522,144 +28518,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 577931e37b4be8a46b400d91f53d937b, type: 3}
---- !u!1 &1359145138
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1359145139}
-  - component: {fileID: 1359145144}
-  - component: {fileID: 1359145143}
-  - component: {fileID: 1359145142}
-  - component: {fileID: 1359145141}
-  - component: {fileID: 1359145140}
-  m_Layer: 6
-  m_Name: Nota 0009 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1359145139
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359145138}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4660237, y: -3.642, z: 0.863}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2029667718}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1359145140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359145138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6d527f1783dad647909fad1a559edef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _id: 2147483647
-  dontDestroyIfGotten: 1
-  hasRequirement: 0
-  hideIfReq: 0
-  reqID: -1
-  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
-  achievementType: 7
-  NoEffects: 0
-  CanPickup: 0
-  HasItemInside: 0
-  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  Son: {fileID: 0}
-  DistanceToCamera: 0.5
-  itemSound: event:/cogerObject2d
---- !u!65 &1359145141
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359145138}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.069508135, y: 0.094187446, z: 0.008147727}
-  m_Center: {x: -0.00044571795, y: 0.00018941988, z: -0.0014086766}
---- !u!114 &1359145142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359145138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726c7f68e2eb9a741a1e608ec090ae0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasParameters: 0
-  HasToDestroy: 0
-  isAtDestination: 1
---- !u!23 &1359145143
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359145138}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1359145144
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359145138}
-  m_Mesh: {fileID: 6200449875563204789, guid: af260331ca193114596a6df30b55e0e2, type: 3}
 --- !u!1 &1364209287
 GameObject:
   m_ObjectHideFlags: 0
@@ -28849,7 +28707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -28920,7 +28778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -29203,7 +29061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 500
@@ -29394,7 +29252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -29965,7 +29823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 234232523
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -30524,7 +30382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -30707,7 +30565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -30820,7 +30678,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.078e-42, y: -4.464639e+18, z: -3.0316488e-13, w: -4.464639e+18}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -31064,7 +30922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -31446,7 +31304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -31607,7 +31465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -31838,7 +31696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -32035,7 +31893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 1919
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -32304,7 +32162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -32843,7 +32701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -33297,7 +33155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -34283,7 +34141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -34870,10 +34728,6 @@ PrefabInstance:
       propertyPath: achievementType
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
-      propertyPath: dontDestroyIfGotten
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1654570673543456343, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -35437,7 +35291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -35496,7 +35350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 500
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -35746,7 +35600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 66666666
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -35832,7 +35686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -36010,7 +35864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 89485
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 764574
@@ -36100,7 +35954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 76546
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 89485
@@ -36380,7 +36234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -36675,7 +36529,6 @@ Transform:
   - {fileID: 6366705720364592607}
   - {fileID: 3096258224821654822}
   - {fileID: 5094012399826760337}
-  - {fileID: 1359145139}
   m_Father: {fileID: 3781386032989586820}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36893,7 +36746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4534524
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -37808,7 +37661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -38205,7 +38058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -38969,7 +38822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -39377,7 +39230,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.233e-42, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 2.54e-43, y: -4.464639e+18, z: -3.0316488e-13, w: -4.464639e+18}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -39727,8 +39580,6 @@ MonoBehaviour:
   m_CVars: {fileID: 11400000, guid: 19b9218227f13c24d9845ab8998150cf, type: 2}
   m_PlayerMovement: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   l_gravity: 200
-  boobingSpeed: 13
-  bobbingAmount: 0.025
 --- !u!143 &372768530633163475
 CharacterController:
   m_ObjectHideFlags: 0
@@ -40085,7 +39936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -40502,7 +40353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 46027432
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -40826,7 +40677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -41014,7 +40865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -41513,7 +41364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -41831,7 +41682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4036273
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -70779,7 +70630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -70994,7 +70845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -71120,7 +70971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 7
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 2
@@ -71609,7 +71460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -71904,7 +71755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 49563
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -72202,7 +72053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -72287,7 +72138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2000
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 1
   reqID: 48
@@ -72600,7 +72451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4795772
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73116,7 +72967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73181,7 +73032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 9417434
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73269,7 +73120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8002
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73382,7 +73233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8001
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73437,7 +73288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8000
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -73574,7 +73425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8003
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -74125,7 +73976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -74298,7 +74149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -74369,7 +74220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -74420,7 +74271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4589352
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -74547,7 +74398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 5687
@@ -74827,7 +74678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 1919
@@ -75254,7 +75105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 486532
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -75544,7 +75395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -75748,7 +75599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -81164,7 +81015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -81257,7 +81108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3188352
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -81541,7 +81392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -83662,7 +83513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -83875,7 +83726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -83960,7 +83811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84108,7 +83959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84233,7 +84084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84292,7 +84143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4639023
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84484,7 +84335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84550,7 +84401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -84865,7 +84716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 397724634
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -85113,7 +84964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2001
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -85364,7 +85215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -85499,7 +85350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -85561,7 +85412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 44793623
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -85587,7 +85438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3856302
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -86023,7 +85874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -86069,7 +85920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 57827835
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -88392,7 +88243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -88512,7 +88363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2003
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -88853,7 +88704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -89455,7 +89306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -90838,7 +90689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -90986,7 +90837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 418734324
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -91054,7 +90905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -91205,7 +91056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2147483647
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -91365,7 +91216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -91908,7 +91759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 4295
@@ -91998,7 +91849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92104,7 +91955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92258,7 +92109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92398,7 +92249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92465,7 +92316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -92886,7 +92737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 0
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -93016,7 +92867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -93087,7 +92938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3735384
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -93328,7 +93179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -93476,7 +93327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 95778
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -93567,7 +93418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -93605,7 +93456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 308462812
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -93744,7 +93595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 1
   hideIfReq: 0
   reqID: 95778
@@ -93770,7 +93621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 5
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -94240,7 +94091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -94737,7 +94588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -94851,7 +94702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2002
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -95644,7 +95495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -95897,7 +95748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3297432
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96201,7 +96052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96259,7 +96110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96358,7 +96209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96702,7 +96553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -96983,7 +96834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -97099,7 +96950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -97266,7 +97117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 43787252
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -97501,7 +97352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -98144,7 +97995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3436245
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -98432,7 +98283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -98547,7 +98398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -98641,7 +98492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -98869,7 +98720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -98940,7 +98791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -99231,7 +99082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -99919,7 +99770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 95999
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -100211,7 +100062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 95999
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -100359,7 +100210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -101498,7 +101349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 338462
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -101642,7 +101493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -101827,7 +101678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -101920,7 +101771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -102276,7 +102127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -102347,7 +102198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -102920,7 +102771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -103296,7 +103147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -103443,7 +103294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104122,7 +103973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104181,7 +104032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 589054
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104569,7 +104420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -104607,7 +104458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -105006,7 +104857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 4246352
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -105710,7 +105561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 0
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -105795,7 +105646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 3598356
-  dontDestroyIfGotten: 0
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
@@ -105841,7 +105692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2004
-  dontDestroyIfGotten: 1
+  hideIfAlreadyGotten: 1
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1

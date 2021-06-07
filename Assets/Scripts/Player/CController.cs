@@ -23,14 +23,6 @@ public class CController : MonoBehaviour
     [SerializeField] private float l_gravity = 9.8f;
 
 
-    public float boobingSpeed = 14f;
-    public float bobbingAmount = 0.05f;
-    private float timer = 0;
-    private float defaultYPos = 0;
-
-    private bool isMoving = false;
-
-
     private FMODUnity.StudioEventEmitter eventEmiterRef;
 
     private void Awake()
@@ -46,7 +38,6 @@ public class CController : MonoBehaviour
             transform.position = m_CVars.PlayerPosition;
             transform.rotation = Quaternion.Euler(0, m_Yaw, 0);
             m_PitchController.localRotation = Quaternion.Euler(m_Pitch, 0, 0);
-            defaultYPos = m_PitchController.localPosition.y;
         }
     }
 
@@ -56,7 +47,6 @@ public class CController : MonoBehaviour
 
         if(m_CVars.CanLook) CameraMovement();
         if(m_CVars.CanMove) Movement();
-        HeadBobbing();
         
     }
     #region UpdateFunctions
@@ -83,55 +73,12 @@ public class CController : MonoBehaviour
         l_Movement = l_Forward * l_Axis.x;
         l_Movement += l_Right * l_Axis.y;
         l_Movement += transform.up * -1 * l_gravity * Time.deltaTime;
-
-        isMoving = Mathf.Abs(l_Movement.x) > 0.1f || Mathf.Abs(l_Movement.z) > 0.1f;
-
         l_Movement.Normalize();
 
         l_Movement = l_Movement * m_CVars.Speed * Time.deltaTime;
 
         m_characterController.Move(l_Movement);
         m_CVars.PlayerPosition = transform.position;
-    }
-
-    private void HeadBobbing()
-    {
-        if(isMoving)
-        {
-            float waveslice = Mathf.Sin(timer);
-            timer += Time.deltaTime * boobingSpeed;
-
-            Vector2 l_Axis = m_PlayerMovement.Axis;
-            float translateChange = waveslice * bobbingAmount;
-            float totalAxes = Mathf.Abs(l_Axis.x) + Mathf.Abs(l_Axis.y);
-            totalAxes = Mathf.Clamp (totalAxes, 0.0f, 1.0f);
-            translateChange = totalAxes * translateChange;
-
-            //cSharpConversion.y = midpoint ;
-            /*m_PitchController.localPosition =
-                new Vector3(
-                    m_PitchController.localPosition.x,
-                    defaultYPos + Mathf.Sin(timer) * bobbingAmount,
-                    m_PitchController.localPosition.z
-                    );*/
-            m_PitchController.localPosition =
-                new Vector3(
-                    m_PitchController.localPosition.x,
-                    defaultYPos + translateChange,
-                    m_PitchController.localPosition.z
-                    );
-                    
-        }
-        else
-        {
-            timer = 0;
-            m_PitchController.localPosition =
-                new Vector3(
-                    m_PitchController.localPosition.x,
-                    Mathf.Lerp(m_PitchController.localPosition.y, defaultYPos, Time.deltaTime * boobingSpeed),
-                    m_PitchController.localPosition.z
-                    );
-        }
     }
     #endregion
 
