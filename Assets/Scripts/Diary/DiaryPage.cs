@@ -3,8 +3,8 @@ using BoxScripts;
 using System.Collections.Generic;
 
 public class DiaryPage : MonoBehaviour {
-
     public int ReqID = 0;
+    public string Title = " ";
     public NotebookType pageType;
     public List<GameObject> childs;
     public bool isActive { get { return gameObject.activeInHierarchy; } }
@@ -13,7 +13,7 @@ public class DiaryPage : MonoBehaviour {
         if(GameController.current)
         {
             if(GameController.current.database.ProgressionExists(ReqID)) return;
-            GameController.current.database.AddProgressionID(ReqID);
+                GameController.current.database.AddProgressionID(ReqID);
         }
     }
     public void SetActive(bool setActive)

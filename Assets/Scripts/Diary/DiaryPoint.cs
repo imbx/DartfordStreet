@@ -6,6 +6,7 @@ public class DiaryPoint : MonoBehaviour {
     public int destinationPage = 0;
     public Image DotImage;
     private DiaryNodes nodesParent;
+    
 
     public void SetData(int dest, DiaryNodes dn)
     {
@@ -18,5 +19,7 @@ public class DiaryPoint : MonoBehaviour {
         Debug.Log("[DiaryPoint] Should send point " + destinationPage);
         nodesParent.SetPointAction(destinationPage);
     }
+
+
 
 }

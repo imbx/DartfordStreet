@@ -38,6 +38,11 @@ public class GameController : MonoBehaviour{
             SceneController.LoadGame = !ignoreSavedGame;
             Debug.Log("Ignoring database " + SceneController.LoadGame);
         #endif
+        if(!SceneController.LoadGame)
+        {
+            Player.PlayerPosition = new Vector3(2.72f, 1.08f, -6.63f);
+            Player.CameraRotations = new Vector3(2.61f, 0, 0.73f);
+        }
         database = new Database(Player, !SceneController.LoadGame);
         Debug.Log("-- DB LOADED --");
         gameCObject.camera = Camera.main;

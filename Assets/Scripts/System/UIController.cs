@@ -7,13 +7,15 @@ public class UIController : MonoBehaviour {
     public GameObject Pointer;
     public GameObject Notebook;
     public DiaryController notebookController;
+    public Archive archive;
     public GameObject RadioText;
     public GameObject SafeboxText;
     public List<GameObject> TargetUIObjects;
     public List<Sprite> Interactions;
 
     public void SetNotebookActive(bool active = true) {
-        Notebook.SetActive(active);
+        archive.gameObject.SetActive(active);
+        // Notebook.SetActive(active);
         //Notebook.GetComponent<Notebook>().enabled = active;
     }
 
@@ -58,7 +60,8 @@ public class UIController : MonoBehaviour {
 
     public void ForceDiaryPage(int reqId)
     {
-        notebookController.forcedReqId = reqId;
-        notebookController.wantToForcePage = true;
+        archive.ForcePage(reqId);
+        // notebookController.forcedReqId = reqId;
+        // notebookController.wantToForcePage = true;
     }
 }

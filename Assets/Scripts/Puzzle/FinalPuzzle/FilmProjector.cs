@@ -16,6 +16,11 @@ public class FilmProjector : InteractBase {
     private bool isRotating = false;
 
     private int CurrentProjectorTexture = 0;
+    
+
+    [FMODUnity.EventRef]
+    public string ruedaSound = "event:/sonidosRadio2d";
+
 
 
     public override void Execute(bool isLeftAction = true)
@@ -33,6 +38,7 @@ public class FilmProjector : InteractBase {
         float startAngle = ProjectorTop.localEulerAngles.y;
         float targetAngle = startAngle + (360f / 3);
         isRotating = true;
+        GameController.current.music.playMusic(ruedaSound);
         CurrentProjectorTexture++;
         if (CurrentProjectorTexture > 2) CurrentProjectorTexture = 0;
         TargetMaterial.SetTexture(TextureName, EmptyTexture);

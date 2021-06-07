@@ -33,13 +33,12 @@ public class Map : InteractBase {
             SetPin();
         }
         
-        if(!isLeftAction)
+        /*if(!isLeftAction)
         {
             Transform temp = ReturnPointer();
             // RemovePin();
             Debug.Log("Pin name is " + temp.name);
-        }
-
+        }*/
     }
 
     public void SetPin()

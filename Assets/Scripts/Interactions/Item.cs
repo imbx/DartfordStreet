@@ -3,27 +3,32 @@ using BoxScripts;
 
 [RequireComponent(typeof (Movement))]
 public class Item : InteractBase {
+    [SerializeField] protected PrimaryController controller;
+
+    [Header("Item Parameters")]
     public bool NoEffects = false;
     public bool CanPickup = true;
     public bool HasItemInside = false;
-    protected bool isLeftAction = true;
-    [SerializeField] protected PrimaryController controller;
     protected Movement movement;
     protected TransformData startTransform;
     [SerializeField] protected GameObject Son = null;
-
+    [Header("Movement Parameters")]
+    public bool doLookAtPoint = true;
     public float DistanceToCamera = 0.5f;
-
     [SerializeField] private float zoomedDistanceToCamera = 0.25f;
     [SerializeField] private float zoomSpeed = 0.05f;
     private Vector3 destination;
     private Vector3 zoomedVector = Vector3.zero;
     private float accumulatedZoomedFloat = 0;
+    
+    [Header("Sound")]
 
     [FMODUnity.EventRef]
     public string itemSound = "event:/cogerObject2d";
 
     protected GameObject LookAtPoint;
+
+     protected bool isLeftAction = true;
 
     void Start()
     {
@@ -74,8 +79,8 @@ public class Item : InteractBase {
                         (GameController.current.gameCObject.camera.transform.forward * DistanceToCamera),
                         -GameController.current.gameCObject.camera.transform.eulerAngles
                     );
-                LookAtPoint.GetComponent<Movement>().SetConfig(4f);
-                movement.SetConfig(2f, true, true);
+                LookAtPoint.GetComponent<Movement>().SetConfig(2.1f);
+                movement.SetConfig(2f, true, doLookAtPoint);
                 destination = GameController.current.gameCObject.camera.transform.position +
                         (GameController.current.gameCObject.camera.transform.forward * DistanceToCamera);
                 LookAtPoint.GetComponent<Movement>().SetParameters(pointCamera, pointTransform);
@@ -172,7 +177,7 @@ public class Item : InteractBase {
                 if(!isLeftAction && controller.isInput2Hold)
                 {
                     transform.Rotate(Vector3.up, -controller.CameraAxis.x);
-                    transform.Rotate(Vector3.right, controller.CameraAxis.y);
+                    transform.Rotate(Vector3.right, -controller.CameraAxis.y);
                     
                     // transform.localEulerAngles += new Vector3(-controller.CameraAxis.y, controller.CameraAxis.x, 0);
                 }
@@ -181,7 +186,7 @@ public class Item : InteractBase {
                     isLeftAction = false;
                 }
             }
-            else
+            else if(doLookAtPoint)
             {
                 transform.LookAt(LookAtPoint.transform);
             }

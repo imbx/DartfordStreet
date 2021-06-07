@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
-using UnityEngine.Audio;
+using FMOD.Studio;
 
 public class CController : MonoBehaviour
 {
@@ -30,13 +26,9 @@ public class CController : MonoBehaviour
 
     private bool isMoving = false;
 
-
-    private FMODUnity.StudioEventEmitter eventEmiterRef;
-
-    private void Awake()
-    {
-        eventEmiterRef = GetComponent<FMODUnity.StudioEventEmitter>();
-    }
+    [FMODUnity.EventRef]
+    public string walkSound = "event:/";
+    private EventInstance walkingEvent;
 
     void OnEnable()
     {
@@ -48,6 +40,7 @@ public class CController : MonoBehaviour
             m_PitchController.localRotation = Quaternion.Euler(m_Pitch, 0, 0);
             defaultYPos = m_PitchController.localPosition.y;
         }
+        walkingEvent = FMODUnity.RuntimeManager.CreateInstance(walkSound);
     }
 
     void Update()
@@ -89,6 +82,11 @@ public class CController : MonoBehaviour
         l_Movement.Normalize();
 
         l_Movement = l_Movement * m_CVars.Speed * Time.deltaTime;
+        
+        if (isMoving)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(walkSound);
+        } 
 
         m_characterController.Move(l_Movement);
         m_CVars.PlayerPosition = transform.position;
