@@ -28,7 +28,14 @@ public class CController : MonoBehaviour
 
     [FMODUnity.EventRef]
     public string walkSound = "event:/";
-    private EventInstance walkingEvent;
+    //private EventInstance walkingEvent;
+    public float walkspeed = 0.8f;
+
+    private void Start()
+    {
+        InvokeRepeating("CallFootsteps", 0, walkspeed);
+    }
+
 
     void OnEnable()
     {
@@ -40,7 +47,7 @@ public class CController : MonoBehaviour
             m_PitchController.localRotation = Quaternion.Euler(m_Pitch, 0, 0);
             defaultYPos = m_PitchController.localPosition.y;
         }
-        walkingEvent = FMODUnity.RuntimeManager.CreateInstance(walkSound);
+        //walkingEvent = FMODUnity.RuntimeManager.CreateInstance(walkSound);
     }
 
     void Update()
@@ -83,13 +90,33 @@ public class CController : MonoBehaviour
 
         l_Movement = l_Movement * m_CVars.Speed * Time.deltaTime;
         
-        if (isMoving)
+        /*if (isMoving)
         {
             FMODUnity.RuntimeManager.PlayOneShot(walkSound);
-        } 
+        } */
 
         m_characterController.Move(l_Movement);
         m_CVars.PlayerPosition = transform.position;
+    }
+
+    void CallFootsteps()
+    {
+        if (isMoving)
+        {
+
+            FMODUnity.RuntimeManager.PlayOneShot(walkSound);
+
+            //walkingEvent.start();
+
+            /*FMOD.Studio.PLAYBACK_STATE playbackState;
+            walkingEvent.getPlaybackState(out playbackState);
+            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                walkingEvent.release();
+                walkingEvent.clearHandle();
+
+            }*/
+        }
     }
 
     private void HeadBobbing()
