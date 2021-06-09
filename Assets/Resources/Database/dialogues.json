@@ -11,8 +11,8 @@
         },
         {
             "id" : 2,
-            "size" : { "x" : 500.0, "y" : 220.0 },
-            "anchoredPosition" : { "x" : -96, "y" : -35 },
+            "size" : { "x" : 600.0, "y" : 280.0 },
+            "anchoredPosition" : { "x" : -396, "y" : -35 },
             "dialogueText" : "Es posible que esto me resulte de utilidad",
             "isAnchoredAtTop" : true,
             "isAnchoredAtCenter" : false,
@@ -197,5 +197,6 @@
             "isAnchoredAtCenter" : true,
             "lifeTime" : 2.5
         }
+        
     ]
 }

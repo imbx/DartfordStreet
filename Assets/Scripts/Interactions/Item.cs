@@ -49,6 +49,7 @@ public class Item : InteractBase {
             
             if(startTransform == null) 
             {
+                Debug.Log("[Item] Moving in");
                 tag = "Item";
                 if(Son) {
                     BoxUtils.SetLayerRecursively(gameObject, 8);
@@ -80,7 +81,7 @@ public class Item : InteractBase {
                         -GameController.current.gameCObject.camera.transform.eulerAngles
                     );
                 LookAtPoint.GetComponent<Movement>().SetConfig(2.1f);
-                movement.SetConfig(2f, true, doLookAtPoint);
+                movement.SetConfig(2f, doLookAtPoint, doLookAtPoint);
                 destination = GameController.current.gameCObject.camera.transform.position +
                         (GameController.current.gameCObject.camera.transform.forward * DistanceToCamera);
                 LookAtPoint.GetComponent<Movement>().SetParameters(pointCamera, pointTransform);
@@ -88,12 +89,7 @@ public class Item : InteractBase {
             } 
             else
             {
-                zoomedVector = Vector3.zero;
-                accumulatedZoomedFloat = 0;
-
-                movement.Invert();
-                LookAtPoint.GetComponent<Movement>().Invert();
-                startTransform = default;
+                InvertMovement();
             }
             if(HasItemInside) GetComponent<BoxCollider>().enabled = false;
             gameControllerObject.ChangeState(GameState.LOOKITEM);
@@ -110,6 +106,16 @@ public class Item : InteractBase {
         }
     }
 
+    private void InvertMovement()
+    {
+        zoomedVector = Vector3.zero;
+        accumulatedZoomedFloat = 0;
+
+        movement.Invert();
+        LookAtPoint.GetComponent<Movement>().Invert();
+        startTransform = default;
+    }
+
     protected override void OnEnd(bool destroyGameObject = false)
     {
         isInteractingThis = false;
@@ -118,6 +124,7 @@ public class Item : InteractBase {
         GameController.current.database.EditProgression(_id, true);
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);
         GameController.current.database.SaveGame();
+        Destroy(LookAtPoint);
         if(achievementType != AchievementType.None)
         {
             GameController.current.textManager.SpawnAchievement(achievementType);
@@ -129,12 +136,14 @@ public class Item : InteractBase {
     {
         isInteractingThis = false;
         tag = "BasicInteraction";
+        
         // base.OnExit();
         if(!NoEffects) {
             BoxUtils.SetLayerRecursively(gameObject, 6);
             gameObject.layer = LayerMask.NameToLayer("Interactuable");
-            movement.Invert();
+            InvertMovement();
         }
+        Destroy(LookAtPoint);
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);
         if(HasItemInside) {
             if(Son) {

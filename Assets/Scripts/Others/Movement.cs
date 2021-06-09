@@ -44,20 +44,20 @@ public class Movement : MonoBehaviour {
         this.rotateOnInvert = rotateOnInvert;
     }
 
-    public void SetParameters(Transform target, Transform from = null)
+    public void SetParameters(Transform target, Transform _from = null)
     {
         this.target = new TransformData(target);
-        this.from = from ? new TransformData(from) : new TransformData(transform);
+        this.from = _from ? new TransformData(_from) : new TransformData(transform);
         isInverted = false;
         isAtDestination = false;
         hasParameters = true;
         timer = 0f;
     }
 
-    public void SetParameters(TransformData target, TransformData from = null)
+    public void SetParameters(TransformData target, TransformData _from = null)
     {
         this.target = target;
-        this.from = from != null ? from : new TransformData(transform);
+        this.from = _from != null ? _from : new TransformData(transform);
         isInverted = false;
         isAtDestination = false;
         hasParameters = true;
@@ -69,10 +69,11 @@ public class Movement : MonoBehaviour {
         timer = 0;
         if(rotateOnInvert) target.SetEuler(transform.eulerAngles);
         TransformData tempTransform = from;
-        from = target;
+        from = new TransformData(transform);
         target = tempTransform;
         isInverted = true;
         isAtDestination = false;
+        hasToRotate = true;
         hasParameters = true;
         Debug.Log("[Movement] Is inverting");
     }
