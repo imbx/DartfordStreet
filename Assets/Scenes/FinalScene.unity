@@ -26395,7 +26395,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 5.0328095e-24, z: 6.15e-43, w: 22.618988}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -26840,7 +26840,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.6e-44, y: 7.1e-44, z: 0, w: 1.3743498e-26}
+  m_BoundingSphereOverride: {x: 0, y: 24.075958, z: 6.17e-43, w: 23.109406}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -29724,7 +29724,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.05e-43, y: 8.731592e-12, z: 7.03e-43, w: 1.1430668e+27}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 8.614e-42, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -29909,7 +29909,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 8.659e-42, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -30226,7 +30226,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5.265705e-27}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 8.62e-42, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -30484,7 +30484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322574642}
   m_LocalRotation: {x: -0.33593282, y: 0.6222131, z: 0.58778954, w: 0.39306927}
-  m_LocalPosition: {x: -2.72, y: 0.057, z: -3.846}
+  m_LocalPosition: {x: 0.175, y: 0.703, z: -6.21}
   m_LocalScale: {x: 2.5399992, y: 2.540072, z: 2.5385725}
   m_Children: []
   m_Father: {fileID: 499315521}
@@ -30967,7 +30967,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 7.03e-43, y: 0, z: 0, w: 1.3452186e-26}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 8.681e-42, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -33059,7 +33059,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.3510647e-38, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 8.625e-42, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -34280,7 +34280,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 6.33e-43, y: 0.0000000038031693, z: 6.33e-43, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 8.675e-42, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -38212,7 +38212,7 @@ Light:
   m_BounceIntensity: 1.3
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 1.1821e-41, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -90051,13 +90051,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2800682807729616154}
-  m_LocalRotation: {x: -0, y: 0.000000029802315, z: 0.3357162, w: 0.9419632}
-  m_LocalPosition: {x: -3.399, y: -0.839, z: -0.23}
+  m_LocalRotation: {x: 0.5427975, y: 0.337833, z: 0.5224864, w: 0.56413454}
+  m_LocalPosition: {x: -3.4338, y: -0.8246, z: -0.1798}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2029667718}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 39.232}
+  m_LocalEulerAnglesHint: {x: 15.034, y: 79.109, z: 98.05}
 --- !u!4 &3285810136945655240
 Transform:
   m_ObjectHideFlags: 0
@@ -97262,7 +97262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &4898291038163778129
 BoxCollider:
   m_ObjectHideFlags: 0
