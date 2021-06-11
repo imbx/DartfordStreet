@@ -781,6 +781,10 @@ PrefabInstance:
       value: C_Carpet_Hall
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -12886,6 +12890,10 @@ PrefabInstance:
       value: C_Carpet_L
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ccae7c651d841df45b19b7a7a237b8e1, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -14899,6 +14907,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
       propertyPath: m_Name
       value: C_Carpet_Hall_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21416,6 +21428,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
       propertyPath: m_Name
       value: C_Carpet_Livingroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -32006,6 +32022,10 @@ PrefabInstance:
       value: C_Carpet_Livingroom
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -36314,6 +36334,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
       propertyPath: m_Name
       value: C_Carpet_Hall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47049,6 +47073,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
       propertyPath: m_Name
       value: C_Carpet_Livingroom_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5d345f5576d964e469887fc6adef140f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -90148,6 +90176,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2612472276897967134}
+  - component: {fileID: 2612472276897967107}
+  - component: {fileID: 2612472276897967106}
   m_Layer: 9
   m_Name: TopShadow
   m_TagString: Untagged
@@ -90155,6 +90185,55 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!23 &2612472276897967106
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612472276897967105}
+  m_Enabled: 1
+  m_CastShadows: 3
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2612472276897967107
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612472276897967105}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &2612472276897967134
 Transform:
   m_ObjectHideFlags: 0
@@ -90163,7 +90242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2612472276897967105}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.46007, y: 6.137, z: -0.93}
+  m_LocalPosition: {x: -11.46007, y: 6.22, z: -0.93}
   m_LocalScale: {x: 10, y: 0.5, z: 15}
   m_Children: []
   m_Father: {fileID: 2612472277712345610}
@@ -97050,7 +97129,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842637790256654208}
-  m_Mesh: {fileID: 7878563061182350054, guid: 4740ced26d0998443b01d160b8f49f96, type: 3}
+  m_Mesh: {fileID: 7878563061182350054, guid: 3cbe8e3b27ec2254cbe16b97ab809191, type: 3}
 --- !u!4 &3571004289223922976
 Transform:
   m_ObjectHideFlags: 0
