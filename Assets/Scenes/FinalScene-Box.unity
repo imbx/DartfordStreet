@@ -29507,13 +29507,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987149977}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 0.02, y: 0.01, z: 0.015}
   m_Children: []
   m_Father: {fileID: 1782744106}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!64 &987149979
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29547,7 +29547,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 93cb78a0943efa44eb02100c44bcc252, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42046,8 +42046,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.036437985, y: 0.29143274, z: 0.21379709}
-  m_Center: {x: -0.0076609533, y: -0.030226648, z: 0}
+  m_Size: {x: 0.25685573, y: 0.2158088, z: 0.08064456}
+  m_Center: {x: 0.010860324, y: 0.0013634115, z: -0.00076513365}
 --- !u!4 &1782744106
 Transform:
   m_ObjectHideFlags: 0
@@ -42055,15 +42055,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782744102}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 3.632, y: 1.112, z: -5.758}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 3.632, y: 1.504, z: -5.758}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 987149978}
   - {fileID: 1899334778}
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1783182894
 GameObject:
   m_ObjectHideFlags: 0
@@ -44458,13 +44458,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899334777}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.02, y: -0.01, z: 0.015}
   m_Children: []
   m_Father: {fileID: 1782744106}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!64 &1899334779
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -44498,7 +44498,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: de585c42bb5ec9244a2be5e0482d0831, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112019,7 +112019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Es posible que esto me resulte de utilidad
+  m_Text: La chimenea sigue encendida, ha debido estar recientemente
 --- !u!1 &7854663817295363460
 GameObject:
   m_ObjectHideFlags: 0
@@ -112168,7 +112168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &7854663817592921513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -112222,10 +112222,10 @@ RectTransform:
   m_Father: {fileID: 7854663816156047779}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -396, y: -35}
-  m_SizeDelta: {x: 600, y: 280}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -960, y: 1045}
+  m_SizeDelta: {x: 766.1, y: 280}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7854663818055181619
 MonoBehaviour:
