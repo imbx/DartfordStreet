@@ -9,6 +9,9 @@ public class ArchivePoint : MonoBehaviour {
     private string nodeTitle = "";
     private Archive nodesParent;
 
+    [FMODUnity.EventRef]
+    string pasarPagina = "event:/papel2d";
+
     public void SetData(int dest, string title, Archive archive)
     {
         destinationPage = dest;
@@ -21,6 +24,7 @@ public class ArchivePoint : MonoBehaviour {
     {
         Debug.Log("[DiaryPoint] Should send point " + destinationPage);
         nodesParent.SetNewPage(destinationPage);
+        GameController.current.music.playMusic(pasarPagina);
     }
 
 }
