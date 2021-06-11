@@ -1,5 +1,7 @@
 using UnityEngine;
 using FMOD.Studio;
+using System.Collections;
+using System.Collections.Generic;
 
 public class CController : MonoBehaviour
 {
@@ -26,16 +28,18 @@ public class CController : MonoBehaviour
 
     private bool isMoving = false;
 
-    [FMODUnity.EventRef]
-    public string walkSound = "event:/";
-    //private EventInstance walkingEvent;
-    public float walkspeed = 0.8f;
+    public Collider playerCollider;
+    public bool isOnCarpets;
 
-    private void Start()
-    {
-        InvokeRepeating("CallFootsteps", 0, walkspeed);
-    }
+    RaycastHit hit;
+    public AudioSource audioSource;
 
+    public AudioClip[] pasosNormales;
+    public AudioClip[] pasosAlfombra;
+    AudioClip previousClip;
+
+    float lastTranslate = 0;
+    int bobbingDirection = 1;
 
     void OnEnable()
     {
@@ -47,19 +51,56 @@ public class CController : MonoBehaviour
             m_PitchController.localRotation = Quaternion.Euler(m_Pitch, 0, 0);
             defaultYPos = m_PitchController.localPosition.y;
         }
-        //walkingEvent = FMODUnity.RuntimeManager.CreateInstance(walkSound);
+        
     }
 
     void Update()
     {
-        // FindObjectOfType<AudioManager>().Play("player_steps");
+       
 
         if(m_CVars.CanLook) CameraMovement();
         if(m_CVars.CanMove) Movement();
-        HeadBobbing();
         
+        isOnCarpets = CheckOnCarpet();
+        HeadBobbing();
     }
     #region UpdateFunctions
+
+    bool CheckOnCarpet()
+    {
+        if (hit.collider != null && hit.collider.tag == "Alfombra")
+        {
+            return true;
+        }
+        else return false;
+    }
+    AudioClip GetClipFromArray(AudioClip[] clipArray)
+    {
+        int atempts = 3;
+        AudioClip selectedClip = clipArray[Random.Range(0, clipArray.Length - 1)];
+
+        while (selectedClip == previousClip && atempts > 0)
+        {
+            selectedClip= clipArray[Random.Range(0, clipArray.Length - 1)];
+            atempts--;
+        }
+        previousClip = selectedClip;
+        return selectedClip;
+    }
+    void TriggerNextClip()
+    {
+        audioSource.pitch = Random.Range(0.9f, 1.1f);
+        audioSource.volume = Random.Range(0.8f, 1f);
+
+        if (isOnCarpets)
+        {
+            audioSource.PlayOneShot(GetClipFromArray(pasosAlfombra), 1);
+        }
+        else
+        {
+            audioSource.PlayOneShot(GetClipFromArray(pasosNormales), 1);
+        }
+    }
     private void CameraMovement()
     {
         Vector2 mouseAxis = m_PlayerMovement.CameraAxis;
@@ -89,35 +130,13 @@ public class CController : MonoBehaviour
         l_Movement.Normalize();
 
         l_Movement = l_Movement * m_CVars.Speed * Time.deltaTime;
-        
-        /*if (isMoving)
-        {
-            FMODUnity.RuntimeManager.PlayOneShot(walkSound);
-        } */
+       
 
         m_characterController.Move(l_Movement);
         m_CVars.PlayerPosition = transform.position;
     }
 
-    void CallFootsteps()
-    {
-        if (isMoving)
-        {
-
-            FMODUnity.RuntimeManager.PlayOneShot(walkSound);
-
-            //walkingEvent.start();
-
-            /*FMOD.Studio.PLAYBACK_STATE playbackState;
-            walkingEvent.getPlaybackState(out playbackState);
-            if (playbackState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
-            {
-                walkingEvent.release();
-                walkingEvent.clearHandle();
-
-            }*/
-        }
-    }
+  
 
     private void HeadBobbing()
     {
@@ -131,6 +150,22 @@ public class CController : MonoBehaviour
             float totalAxes = Mathf.Abs(l_Axis.x) + Mathf.Abs(l_Axis.y);
             totalAxes = Mathf.Clamp (totalAxes, 0.0f, 1.0f);
             translateChange = totalAxes * translateChange;
+
+
+            if (bobbingDirection == 1 && translateChange < lastTranslate)
+            {
+                bobbingDirection = -1;
+                //suena sonido playoneshot
+                TriggerNextClip();
+            }
+            if (bobbingDirection == -1 && translateChange > lastTranslate)
+            {
+                bobbingDirection = 1;
+                //suena sonido
+                //TriggerNextClip();
+            }
+
+            lastTranslate = translateChange;
 
             //cSharpConversion.y = midpoint ;
             /*m_PitchController.localPosition =
