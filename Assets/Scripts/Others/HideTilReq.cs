@@ -4,8 +4,6 @@ using UnityEngine.Events;
 public class HideTilReq : InteractBase {
 
     [Header("Hide parameters")]
-
-    public Renderer targetComponent;
     public UnityEvent Action;
     private bool isEnabled = false;
 
@@ -14,6 +12,7 @@ public class HideTilReq : InteractBase {
         if(isEnabled)
         {
             Action.Invoke();
+            Destroy(gameObject);
         }
     }
 
@@ -22,7 +21,6 @@ public class HideTilReq : InteractBase {
         if(GameController.current.database.GetProgressionState(reqID) && !isEnabled)
         {
             isEnabled = true;
-            targetComponent.enabled = true;
         }
     }
     

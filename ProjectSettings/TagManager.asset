@@ -15,6 +15,7 @@ TagManager:
   - Safebox
   - BasicInteraction
   - Alfombra
+  - PlacePicture
   layers:
   - Default
   - TransparentFX
