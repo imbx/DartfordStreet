@@ -7,8 +7,12 @@ using UnityEngine.Events;
 public class Book : InteractBase {
 
     [Header("Book")]
+    public int Row = 0;
     public int BookID;
     public bool isImportant = false;
+    // public bool strictOrder = false;
+    
+    public BookColor bookColor = BookColor.None;
     public PrimaryController controller;
     [SerializeField] private UnityEvent<Book, Book> Action;
 
@@ -61,13 +65,17 @@ public class Book : InteractBase {
                 {
                     if(hit.collider.GetComponent<Book>())
                     {
-                        Debug.Log("[Book] Found placement");
-                        Book book = hit.collider.GetComponent<Book>();
-                        Vector3 temporalPos = startPosition;
+                        if(hit.collider.GetComponent<Book>().Row == Row)
+                        {
+                            Debug.Log("[Book] Found placement");
+                            Book book = hit.collider.GetComponent<Book>();
+                            Vector3 temporalPos = startPosition;
 
-                        UpdatePosition(book.transform.position);
-                        book.UpdatePosition(temporalPos);
-                        Action.Invoke(this, book);
+                            UpdatePosition(book.transform.position);
+                            book.UpdatePosition(temporalPos);
+                            Action.Invoke(this, book);
+                        } else ResetPosition();
+                        
                         
                     } else ResetPosition();
                 } else  ResetPosition();
@@ -101,4 +109,14 @@ public class Book : InteractBase {
         transform.position = newPosition;
         startPosition = transform.position;
     }
+}
+
+public enum BookColor 
+{
+    Red,
+    Blue,
+    Green,
+    Yellow,
+    Brown,
+    None
 }

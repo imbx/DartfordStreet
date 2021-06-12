@@ -7446,6 +7446,22 @@ Transform:
   m_LocalPosition: {x: 0.00001169506, y: -0.00251, z: 0.01297}
   m_LocalScale: {x: 0.013711843, y: 0.011560694, z: 0.011695906}
   m_Children:
+  - {fileID: 7469498860637178550}
+  - {fileID: 8435567338513953909}
+  - {fileID: 7797691755348250577}
+  - {fileID: 3571004289223922976}
+  - {fileID: 3748544847534252780}
+  - {fileID: 7142385122284487575}
+  - {fileID: 778518869609683682}
+  - {fileID: 7393246613083926605}
+  - {fileID: 2833409083883240415}
+  - {fileID: 1406914695780257667}
+  - {fileID: 610169926498037129}
+  - {fileID: 6695914561837848316}
+  - {fileID: 5885155938573419085}
+  - {fileID: 2053552323249470734}
+  - {fileID: 8984821634359379436}
+  - {fileID: 6477315032380798139}
   - {fileID: 9169913926699480206}
   - {fileID: 8895521298271332675}
   - {fileID: 6221823118926760833}
@@ -7462,6 +7478,22 @@ Transform:
   - {fileID: 5205004216887294557}
   - {fileID: 5967821069098955810}
   - {fileID: 3118207506067540980}
+  - {fileID: 3382114225909567053}
+  - {fileID: 6666603776224628539}
+  - {fileID: 271416592348047962}
+  - {fileID: 5505751697725749417}
+  - {fileID: 3540194593710603966}
+  - {fileID: 8834038654553839478}
+  - {fileID: 7460157004606074734}
+  - {fileID: 547431021829438236}
+  - {fileID: 3369799925531883528}
+  - {fileID: 7866784826063799396}
+  - {fileID: 8552837296464970633}
+  - {fileID: 6424100902359863072}
+  - {fileID: 2092015979208484702}
+  - {fileID: 1744632269989635364}
+  - {fileID: 6095162552645653925}
+  - {fileID: 4161588429721632810}
   m_Father: {fileID: 4486908875894846720}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7490,7 +7522,58 @@ MonoBehaviour:
   vecModifier: {x: 0, y: 0, z: 1}
   targetAngle: {x: 0, y: 0, z: 0}
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  Books: []
+  Books:
+  - {fileID: 3015604459481868826}
+  - {fileID: 3918026851435124837}
+  - {fileID: 2827091323000803020}
+  - {fileID: 2532165598326298715}
+  - {fileID: 6289918227344372107}
+  - {fileID: 3176713217659773986}
+  - {fileID: 3653381934994692808}
+  - {fileID: 8721993626127920831}
+  - {fileID: 7105499384952814584}
+  - {fileID: 4935222726577673783}
+  - {fileID: 7895570839549376860}
+  - {fileID: 6040591916071148350}
+  - {fileID: 5059181373779060475}
+  - {fileID: 8417351402820455925}
+  - {fileID: 7097036043279795846}
+  - {fileID: 697176094423328381}
+  - {fileID: 3124340764767073176}
+  - {fileID: 3068844165063237310}
+  - {fileID: 5595887447870915541}
+  - {fileID: 8114139720008964582}
+  - {fileID: 7751191602974071145}
+  - {fileID: 8378343502521631931}
+  - {fileID: 3442587517852751843}
+  - {fileID: 4597784057986717218}
+  - {fileID: 863244242998505791}
+  - {fileID: 5025176126437212345}
+  - {fileID: 2931169663296866471}
+  - {fileID: 428283713945437709}
+  - {fileID: 4503555609523322875}
+  - {fileID: 8082898391355599612}
+  - {fileID: 1986138005676567065}
+  - {fileID: 7994821920502364963}
+  - {fileID: 3797936164385704073}
+  - {fileID: 5424930818132539748}
+  - {fileID: 3010769881500234793}
+  - {fileID: 2473498638624011859}
+  - {fileID: 672471475458970131}
+  - {fileID: 1422785312256204821}
+  - {fileID: 6307205571119655275}
+  - {fileID: 313837228188244707}
+  - {fileID: 4710580729740789880}
+  - {fileID: 1797696941058688914}
+  - {fileID: 6327522904146934528}
+  - {fileID: 7039236332218981756}
+  - {fileID: 6562536806483157984}
+  - {fileID: 2024856689510956710}
+  - {fileID: 8594978529912355356}
+  - {fileID: 5083466056683731964}
+  ColorRowOrder: 00000000040000000000000004000000040000000400000003000000030000000400000004000000020000000400000004000000010000000400000001000000
+  Row2Order: 05000000060000000700000008000000090000000a0000000b0000000c000000
+  Row3Order: 0400000005000000060000000700000008000000090000000a0000000b000000
 --- !u!65 &129977963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21326,6 +21409,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2427d54b45e100a44a2870097d67e5da, type: 3}
   m_PrefabInstance: {fileID: 761142566}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &766978512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766978513}
+  - component: {fileID: 766978517}
+  - component: {fileID: 766978516}
+  - component: {fileID: 766978515}
+  - component: {fileID: 766978514}
+  m_Layer: 0
+  m_Name: Libro_Grande7_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &766978513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766978512}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
+  m_LocalPosition: {x: -0.16999958, y: -0.07599974, z: 0.15020426}
+  m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
+  m_Children: []
+  m_Father: {fileID: 1993859463}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &766978514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766978512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.098437205, y: 0.07281883, z: 0.021030609}
+  m_Center: {x: -0.05158034, y: -0.0351367, z: 0.0007383358}
+--- !u!114 &766978515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766978512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 0
+  dontDestroyIfGotten: 1
+  hasRequirement: 0
+  hideIfReq: 0
+  reqID: -1
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
+  Row: 0
+  BookID: 7
+  isImportant: 0
+  bookColor: 3
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  Action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  itemSound: event:/cogerObject2d
+--- !u!23 &766978516
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766978512}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e96a05f8721470347b95f557489292f2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &766978517
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766978512}
+  m_Mesh: {fileID: 1453782738867124276, guid: 0cf64b38d53aeb749b0dd14b37fcf64e, type: 3}
 --- !u!1 &768363446
 GameObject:
   m_ObjectHideFlags: 0
@@ -38454,6 +38673,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff117c363f531fe4aaf9d0f76e4984e7, type: 3}
+--- !u!1 &1498718467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 76290159703855147903d8d703a2dcea, type: 3}
+  m_PrefabInstance: {fileID: 1651954924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1498718468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498718467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4ae565b422ca14ca2af3b114e095bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueId: 1
+--- !u!65 &1498718469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498718467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0034999999, y: 0.0027499998, z: 0.000455189}
+  m_Center: {x: -0.000006830991, y: 0.0000022573772, z: 0.00022759303}
 --- !u!1 &1499076349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 97a8fc9833957074184e5125ae1f3b21, type: 3}
@@ -40553,6 +40803,14 @@ PrefabInstance:
       value: O_Folder_04
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 76290159703855147903d8d703a2dcea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 76290159703855147903d8d703a2dcea, type: 3}
+      propertyPath: m_TagString
+      value: BasicInteraction
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 76290159703855147903d8d703a2dcea, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -41529,6 +41787,142 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708008853}
   m_CullTransparentMesh: 1
+--- !u!1 &1713748831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1713748832}
+  - component: {fileID: 1713748836}
+  - component: {fileID: 1713748835}
+  - component: {fileID: 1713748834}
+  - component: {fileID: 1713748833}
+  m_Layer: 0
+  m_Name: Libro_Grande3_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1713748832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713748831}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
+  m_LocalPosition: {x: -0.16999957, y: -0.07599974, z: 0.44000036}
+  m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
+  m_Children: []
+  m_Father: {fileID: 1993859463}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1713748833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713748831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.098437205, y: 0.07281883, z: 0.021030609}
+  m_Center: {x: -0.05158034, y: -0.03513658, z: 0.0007383656}
+--- !u!114 &1713748834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713748831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce255d28ce6e0e4eb2a700f70bcedf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 0
+  dontDestroyIfGotten: 1
+  hasRequirement: 0
+  hideIfReq: 0
+  reqID: -1
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  achievementType: 7
+  Row: 0
+  BookID: 3
+  isImportant: 0
+  bookColor: 0
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
+  Action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  itemSound: event:/cogerObject2d
+--- !u!23 &1713748835
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713748831}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f087f5323732ae64cb89d1af360802e2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1713748836
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713748831}
+  m_Mesh: {fileID: 1453782738867124276, guid: 0cf64b38d53aeb749b0dd14b37fcf64e, type: 3}
 --- !u!1 &1718454880
 GameObject:
   m_ObjectHideFlags: 0
@@ -47031,22 +47425,8 @@ Transform:
   m_LocalPosition: {x: 0.000011695059, y: -0.0025092708, z: 0.016277459}
   m_LocalScale: {x: 0.013711843, y: 0.011560694, z: 0.011695906}
   m_Children:
-  - {fileID: 7469498860637178550}
-  - {fileID: 8435567338513953909}
-  - {fileID: 778518869609683682}
-  - {fileID: 3571004289223922976}
-  - {fileID: 3748544847534252780}
-  - {fileID: 7142385122284487575}
-  - {fileID: 7797691755348250577}
-  - {fileID: 7393246613083926605}
-  - {fileID: 2833409083883240415}
-  - {fileID: 1406914695780257667}
-  - {fileID: 610169926498037129}
-  - {fileID: 6695914561837848316}
-  - {fileID: 5885155938573419085}
-  - {fileID: 2053552323249470734}
-  - {fileID: 8984821634359379436}
-  - {fileID: 6477315032380798139}
+  - {fileID: 1713748832}
+  - {fileID: 766978513}
   m_Father: {fileID: 4486908875894846720}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47059,7 +47439,7 @@ BoxCollider:
   m_GameObject: {fileID: 1993859462}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.51523423, y: 0.24032784, z: 1.2635059}
   m_Center: {x: 0.059250176, y: 0.032318115, z: 0.033658892}
@@ -47070,7 +47450,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993859462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39640b156c05d894a90a0f6edf8bd520, type: 3}
   m_Name: 
@@ -47089,6 +47469,9 @@ MonoBehaviour:
   targetAngle: {x: 0, y: 0, z: 0}
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Books: []
+  ColorRowOrder: 
+  Row2Order: 
+  Row3Order: 
 --- !u!1 &1998985353
 GameObject:
   m_ObjectHideFlags: 0
@@ -47117,23 +47500,7 @@ Transform:
   m_LocalRotation: {x: 0.50000006, y: 0.5, z: 0.5, w: 0.50000006}
   m_LocalPosition: {x: 0.00001169506, y: -0.00251, z: 0.009630059}
   m_LocalScale: {x: 0.013711843, y: 0.011560694, z: 0.011695906}
-  m_Children:
-  - {fileID: 3382114225909567053}
-  - {fileID: 6666603776224628539}
-  - {fileID: 271416592348047962}
-  - {fileID: 5505751697725749417}
-  - {fileID: 3540194593710603966}
-  - {fileID: 8834038654553839478}
-  - {fileID: 7460157004606074734}
-  - {fileID: 547431021829438236}
-  - {fileID: 3369799925531883528}
-  - {fileID: 7866784826063799396}
-  - {fileID: 8552837296464970633}
-  - {fileID: 6424100902359863072}
-  - {fileID: 2092015979208484702}
-  - {fileID: 1744632269989635364}
-  - {fileID: 6095162552645653925}
-  - {fileID: 4161588429721632810}
+  m_Children: []
   m_Father: {fileID: 4486908875894846720}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47144,7 +47511,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998985353}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39640b156c05d894a90a0f6edf8bd520, type: 3}
   m_Name: 
@@ -47163,6 +47530,9 @@ MonoBehaviour:
   targetAngle: {x: 0, y: 0, z: 0}
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Books: []
+  ColorRowOrder: 
+  Row2Order: 
+  Row3Order: 
 --- !u!65 &1998985356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47172,7 +47542,7 @@ BoxCollider:
   m_GameObject: {fileID: 1998985353}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.51523423, y: 0.24032784, z: 1.2635059}
   m_Center: {x: 0.059250176, y: 0.032318115, z: 0.033658892}
@@ -50377,7 +50747,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 4
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &127906948415846963
 MeshFilter:
@@ -50598,7 +50968,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 10
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &226213280625249268
 MeshRenderer:
@@ -50748,12 +51118,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3010769881500234792}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: 0.44000053}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.44000068}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 2
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &291167091461591007
 MeshRenderer:
@@ -50851,7 +51221,7 @@ GameObject:
   - component: {fileID: 313837228188244708}
   - component: {fileID: 313837228188244707}
   m_Layer: 0
-  m_Name: Libro_Grande8
+  m_Name: 3.8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50874,14 +51244,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 8
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &313837228188244708
 BoxCollider:
@@ -52024,7 +52408,7 @@ GameObject:
   - component: {fileID: 428283713945437710}
   - component: {fileID: 428283713945437709}
   m_Layer: 0
-  m_Name: Libro_Grande12
+  m_Name: 2.12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52047,14 +52431,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 12
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &428283713945437710
 BoxCollider:
@@ -52462,12 +52860,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313837228188244706}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: 0.077596106}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.07759616}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 7
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &568788143529207836
 MonoBehaviour:
@@ -52680,11 +53078,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7895570839549376858}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999985, y: -0.07599974, z: -0.14019524}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: -0.1401953}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &617644215224574451
@@ -52796,7 +53194,7 @@ GameObject:
   - component: {fileID: 672471475458970132}
   - component: {fileID: 672471475458970131}
   m_Layer: 0
-  m_Name: Libro_Grande5
+  m_Name: 3.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52819,14 +53217,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 5
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &672471475458970132
 BoxCollider:
@@ -52959,7 +53371,7 @@ GameObject:
   - component: {fileID: 697176094423328381}
   - component: {fileID: 697176094423328380}
   m_Layer: 0
-  m_Name: Libro_Grande16
+  m_Name: 1.16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52995,14 +53407,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 16
+  isImportant: 1
+  bookColor: 1
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!4 &699892423946532909
 Transform:
@@ -53178,12 +53616,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3653381934994692806}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999957, y: -0.07599974, z: 0.44000036}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994646, y: 0.21009573, z: 0.15020433}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
-  m_RootOrder: 2
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &782955641538010091
 MeshRenderer:
@@ -53356,7 +53794,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: -3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 6
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &835377125183556664
 Transform:
@@ -53441,7 +53879,7 @@ GameObject:
   - component: {fileID: 863244242998505792}
   - component: {fileID: 863244242998505791}
   m_Layer: 0
-  m_Name: Libro_Grande11
+  m_Name: 2.11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53464,14 +53902,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 11
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &863244242998505792
 BoxCollider:
@@ -82885,7 +83337,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 5
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1084570275451507449
 MeshRenderer:
@@ -84412,11 +84864,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4935222726577673781}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.1699996, y: -0.07599974, z: -0.06896435}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994646, y: 0.21009573, z: -0.06896438}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422785312256204820
@@ -84433,7 +84885,7 @@ GameObject:
   - component: {fileID: 1422785312256204822}
   - component: {fileID: 1422785312256204821}
   m_Layer: 0
-  m_Name: Libro_Grande6
+  m_Name: 3.6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84456,14 +84908,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 6
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &1422785312256204822
 BoxCollider:
@@ -85148,12 +85614,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024856689510956709}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: -0.36079782}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: -0.36079782}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 13
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1751330744293555805
 MeshFilter:
@@ -85289,7 +85755,7 @@ GameObject:
   - component: {fileID: 1797696941058688915}
   - component: {fileID: 1797696941058688914}
   m_Layer: 0
-  m_Name: Libro_Grande10
+  m_Name: 3.10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85312,14 +85778,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 10
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &1797696941058688915
 BoxCollider:
@@ -86432,7 +86912,7 @@ GameObject:
   - component: {fileID: 1986138005676567066}
   - component: {fileID: 1986138005676567065}
   m_Layer: 0
-  m_Name: Libro_Grande15
+  m_Name: 2.15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86455,14 +86935,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 15
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &1986138005676567066
 BoxCollider:
@@ -86491,7 +86985,7 @@ GameObject:
   - component: {fileID: 2024856689510956711}
   - component: {fileID: 2024856689510956710}
   m_Layer: 0
-  m_Name: Libro_Grande14
+  m_Name: 3.14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86514,14 +87008,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 14
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &2024856689510956711
 BoxCollider:
@@ -86590,11 +87098,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8417351402820455923}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999963, y: -0.07599974, z: -0.36079776}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994646, y: 0.21009573, z: -0.36079785}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2063779960933141474
@@ -86626,12 +87134,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6562536806483157983}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394692, y: -0.051999383, z: -0.28818956}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394692, y: -0.34090403, z: -0.2881895}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 12
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2094336755789627079
 GameObject:
@@ -87742,7 +88250,7 @@ GameObject:
   - component: {fileID: 2473498638624011860}
   - component: {fileID: 2473498638624011859}
   m_Layer: 0
-  m_Name: Libro_Grande4
+  m_Name: 3.4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87765,14 +88273,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 4
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &2473498638624011860
 BoxCollider:
@@ -87921,7 +88443,7 @@ GameObject:
   - component: {fileID: 2532165598326298715}
   - component: {fileID: 2532165598326298714}
   m_Layer: 0
-  m_Name: Libro_Grande4
+  m_Name: 1.4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87957,14 +88479,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 4
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &2542227722592694034
 BoxCollider:
@@ -93167,7 +93715,7 @@ GameObject:
   - component: {fileID: 2827091323000803020}
   - component: {fileID: 2827091323000803019}
   m_Layer: 0
-  m_Name: Libro_Grande7
+  m_Name: 1.7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93203,14 +93751,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 7
+  isImportant: 1
+  bookColor: 3
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!114 &2829250832276413141
 MonoBehaviour:
@@ -93234,11 +93808,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7105499384952814582}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.1699996, y: -0.07599974, z: 0.0036436468}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994646, y: 0.21009573, z: 0.003643642}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2841269309982864563
@@ -93594,7 +94168,7 @@ GameObject:
   - component: {fileID: 2931169663296866472}
   - component: {fileID: 2931169663296866471}
   m_Layer: 0
-  m_Name: Libro_Grande7
+  m_Name: 2.7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93617,14 +94191,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 7
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &2931169663296866472
 BoxCollider:
@@ -95715,7 +96303,7 @@ GameObject:
   - component: {fileID: 3010769881500234794}
   - component: {fileID: 3010769881500234793}
   m_Layer: 0
-  m_Name: Libro_Grande3
+  m_Name: 3.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95738,14 +96326,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 3
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &3010769881500234794
 BoxCollider:
@@ -95988,7 +96590,7 @@ GameObject:
   - component: {fileID: 3015604459481868826}
   - component: {fileID: 3015604459481868825}
   m_Layer: 0
-  m_Name: Libro_Grande1
+  m_Name: 1.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96024,14 +96626,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 1
+  isImportant: 1
+  bookColor: 0
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!33 &3016445272703752236
 MeshFilter:
@@ -96145,7 +96773,7 @@ GameObject:
   - component: {fileID: 3068844165063237311}
   - component: {fileID: 3068844165063237310}
   m_Layer: 0
-  m_Name: Libro_Grande2
+  m_Name: 2.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96168,14 +96796,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 2
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &3068844165063237311
 BoxCollider:
@@ -96224,7 +96866,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 15
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3123432155561184123
 GameObject:
@@ -96258,7 +96900,7 @@ GameObject:
   - component: {fileID: 3124340764767073177}
   - component: {fileID: 3124340764767073176}
   m_Layer: 0
-  m_Name: Libro_Grande1
+  m_Name: 2.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96281,14 +96923,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 1
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &3124340764767073177
 BoxCollider:
@@ -96487,7 +97143,7 @@ GameObject:
   - component: {fileID: 3176713217659773986}
   - component: {fileID: 3176713217659773985}
   m_Layer: 0
-  m_Name: Libro_Grande6
+  m_Name: 1.6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96523,14 +97179,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 6
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!4 &3176976667006322203
 Transform:
@@ -97039,12 +97721,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4710580729740789879}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: 0.003643418}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.0036434827}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 8
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3372514555281804343
 Transform:
@@ -97081,12 +97763,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3797936164385704072}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: 0.5838393}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.1539474, y: -0.34090403, z: 0.5838396}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 0
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3393145180314362213
 GameObject:
@@ -97312,7 +97994,7 @@ GameObject:
   - component: {fileID: 3442587517852751844}
   - component: {fileID: 3442587517852751843}
   m_Layer: 0
-  m_Name: Libro_Grande9
+  m_Name: 2.9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97335,14 +98017,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 9
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &3442587517852751844
 BoxCollider:
@@ -97643,12 +98339,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 672471475458970130}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394692, y: -0.051999383, z: 0.29404303}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.2940432}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 4
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3541702212306026080
 Transform:
@@ -97741,11 +98437,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2532165598326298713}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999981, y: -0.07599974, z: 0.36739248}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: 0.3673926}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3581917867338011331
@@ -97913,7 +98609,7 @@ GameObject:
   - component: {fileID: 3653381934994692808}
   - component: {fileID: 3653381934994692807}
   m_Layer: 0
-  m_Name: Libro_Grande3
+  m_Name: 1.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97949,14 +98645,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 3
+  isImportant: 1
+  bookColor: 0
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!33 &3653741854845021862
 MeshFilter:
@@ -99741,11 +100463,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6289918227344372105}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.17000005, y: -0.07599974, z: 0.294043}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994694, y: 0.21009573, z: 0.29404312}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &3781386031165003375
@@ -100281,7 +101003,7 @@ GameObject:
   - component: {fileID: 3797936164385704074}
   - component: {fileID: 3797936164385704073}
   m_Layer: 0
-  m_Name: Libro_Grande1
+  m_Name: 3.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100304,14 +101026,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 1
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &3797936164385704074
 BoxCollider:
@@ -100568,7 +101304,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 7
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3891351957705458740
 GameObject:
@@ -100717,7 +101453,7 @@ GameObject:
   - component: {fileID: 3918026851435124837}
   - component: {fileID: 3918026851435124836}
   m_Layer: 0
-  m_Name: Libro_Grande2
+  m_Name: 1.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100753,14 +101489,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 2
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!1 &3920017894794483969
 GameObject:
@@ -101959,12 +102721,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5083466056683731963}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: -0.5046375}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: -0.5046375}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 15
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4162999920806524041
 MeshFilter:
@@ -102725,7 +103487,7 @@ GameObject:
   - component: {fileID: 4503555609523322876}
   - component: {fileID: 4503555609523322875}
   m_Layer: 0
-  m_Name: Libro_Grande13
+  m_Name: 2.13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102748,14 +103510,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 13
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &4503555609523322876
 BoxCollider:
@@ -102932,7 +103708,7 @@ GameObject:
   - component: {fileID: 4597784057986717219}
   - component: {fileID: 4597784057986717218}
   m_Layer: 0
-  m_Name: Libro_Grande8
+  m_Name: 2.8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102955,14 +103731,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 8
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &4597784057986717219
 BoxCollider:
@@ -103193,7 +103983,7 @@ GameObject:
   - component: {fileID: 4710580729740789881}
   - component: {fileID: 4710580729740789880}
   m_Layer: 0
-  m_Name: Libro_Grande9
+  m_Name: 3.9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103216,14 +104006,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 9
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &4710580729740789881
 BoxCollider:
@@ -103362,7 +104166,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: -3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 11
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4773068485956004698
 MeshRenderer:
@@ -103779,7 +104583,7 @@ GameObject:
   - component: {fileID: 4935222726577673783}
   - component: {fileID: 4935222726577673782}
   m_Layer: 0
-  m_Name: Libro_Grande10
+  m_Name: 1.10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103815,14 +104619,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 10
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!1 &4943049527838562914
 GameObject:
@@ -103886,7 +104716,7 @@ GameObject:
   - component: {fileID: 5025176126437212346}
   - component: {fileID: 5025176126437212345}
   m_Layer: 0
-  m_Name: Libro_Grande10
+  m_Name: 2.10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103909,14 +104739,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 10
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &5025176126437212346
 BoxCollider:
@@ -103974,7 +104818,7 @@ GameObject:
   - component: {fileID: 5059181373779060475}
   - component: {fileID: 5059181373779060474}
   m_Layer: 0
-  m_Name: Libro_Grande13
+  m_Name: 1.13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104010,14 +104854,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 13
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!23 &5066702240400714222
 MeshRenderer:
@@ -104182,7 +105052,7 @@ GameObject:
   - component: {fileID: 5083466056683731965}
   - component: {fileID: 5083466056683731964}
   m_Layer: 0
-  m_Name: Libro_Grande16
+  m_Name: 3.16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104205,14 +105075,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 16
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &5083466056683731965
 BoxCollider:
@@ -104461,7 +105345,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 13
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5212236330109167187
 GameObject:
@@ -105003,7 +105887,7 @@ GameObject:
   - component: {fileID: 5424930818132539749}
   - component: {fileID: 5424930818132539748}
   m_Layer: 0
-  m_Name: Libro_Grande2
+  m_Name: 3.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105026,14 +105910,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 2
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &5424930818132539749
 BoxCollider:
@@ -105639,12 +106537,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2473498638624011858}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394692, y: -0.051999383, z: 0.36739254}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.3673927}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 3
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5522134847597247187
 Transform:
@@ -105911,7 +106809,7 @@ GameObject:
   - component: {fileID: 5595887447870915542}
   - component: {fileID: 5595887447870915541}
   m_Layer: 0
-  m_Name: Libro_Grande3
+  m_Name: 2.3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105934,14 +106832,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 3
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &5595887447870915542
 BoxCollider:
@@ -106812,11 +107724,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5059181373779060473}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999987, y: -0.07599974, z: -0.28818953}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: -0.2881896}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5897559776849112913
@@ -107049,7 +107961,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 14
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5968931916000341032
 GameObject:
@@ -107353,7 +108265,7 @@ GameObject:
   - component: {fileID: 6040591916071148350}
   - component: {fileID: 6040591916071148349}
   m_Layer: 0
-  m_Name: Libro_Grande12
+  m_Name: 1.12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107389,14 +108301,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 12
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!33 &6047745936221068293
 MeshFilter:
@@ -107535,12 +108473,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8594978529912355355}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: -0.4320282}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: -0.43202814}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 14
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6109353962377576718
 Transform:
@@ -107713,7 +108651,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 2
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6225461365497653445
 MeshFilter:
@@ -107868,7 +108806,7 @@ GameObject:
   - component: {fileID: 6289918227344372107}
   - component: {fileID: 6289918227344372106}
   m_Layer: 0
-  m_Name: Libro_Grande5
+  m_Name: 1.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107904,14 +108842,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 5
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!1 &6307205571119655274
 GameObject:
@@ -107927,7 +108891,7 @@ GameObject:
   - component: {fileID: 6307205571119655276}
   - component: {fileID: 6307205571119655275}
   m_Layer: 0
-  m_Name: Libro_Grande7
+  m_Name: 3.7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107950,14 +108914,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 7
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &6307205571119655276
 BoxCollider:
@@ -108014,7 +108992,7 @@ GameObject:
   - component: {fileID: 6327522904146934529}
   - component: {fileID: 6327522904146934528}
   m_Layer: 0
-  m_Name: Libro_Grande11
+  m_Name: 3.11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108037,14 +109015,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 2
+  BookID: 11
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &6327522904146934529
 BoxCollider:
@@ -108323,12 +109315,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7039236332218981755}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: -0.21280327}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: -0.2128032}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 11
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6435137043130429970
 Transform:
@@ -108407,11 +109399,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697176094423328379}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999966, y: -0.07599974, z: -0.50463736}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994646, y: 0.21009573, z: -0.5046375}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6484046910055065673
@@ -108712,7 +109704,7 @@ GameObject:
   - component: {fileID: 6562536806483157985}
   - component: {fileID: 6562536806483157984}
   m_Layer: 0
-  m_Name: Libro_Grande13
+  m_Name: 3.13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108735,14 +109727,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 13
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &6562536806483157985
 BoxCollider:
@@ -108769,7 +109775,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: -3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 8
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6567634250436730873
 MonoBehaviour:
@@ -109247,12 +110253,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5424930818132539747}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: 0.51123124}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.5112315}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 1
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6687381451983346095
 MeshRenderer:
@@ -109323,11 +110329,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6040591916071148348}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999961, y: -0.07599974, z: -0.21280323}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994646, y: 0.21009573, z: -0.21280329}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6703288110508798415
@@ -110216,7 +111222,7 @@ GameObject:
   - component: {fileID: 7039236332218981757}
   - component: {fileID: 7039236332218981756}
   m_Layer: 0
-  m_Name: Libro_Grande12
+  m_Name: 3.12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110239,14 +111245,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 12
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &7039236332218981757
 BoxCollider:
@@ -110419,7 +111439,7 @@ GameObject:
   - component: {fileID: 7097036043279795846}
   - component: {fileID: 7097036043279795845}
   m_Layer: 0
-  m_Name: Libro_Grande15
+  m_Name: 1.15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110455,14 +111475,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 15
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!1 &7105499384952814582
 GameObject:
@@ -110478,7 +111524,7 @@ GameObject:
   - component: {fileID: 7105499384952814584}
   - component: {fileID: 7105499384952814583}
   m_Layer: 0
-  m_Name: Libro_Grande9
+  m_Name: 1.9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110514,14 +111560,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 9
+  isImportant: 1
+  bookColor: 4
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!4 &7142385122284487575
 Transform:
@@ -110530,11 +111602,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3176713217659773984}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999982, y: -0.07599974, z: 0.22143503}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: 0.22143504}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7156721878699508957
@@ -110972,11 +112044,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8721993626127920829}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999984, y: -0.07599974, z: 0.07759608}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: 0.077596076}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7395329471658918183
@@ -111118,12 +112190,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6307205571119655274}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: 0.1502041}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.15020423}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 6
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7463846845920246206
 MeshRenderer:
@@ -111173,11 +112245,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3015604459481868824}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999978, y: -0.07599974, z: 0.5838391}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: 0.58383936}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7476165152276526877
@@ -111895,7 +112967,7 @@ GameObject:
   - component: {fileID: 7751191602974071146}
   - component: {fileID: 7751191602974071145}
   m_Layer: 0
-  m_Name: Libro_Grande5
+  m_Name: 2.5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111918,14 +112990,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 5
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &7751191602974071146
 BoxCollider:
@@ -112064,12 +113150,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2827091323000803018}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999958, y: -0.07599974, z: 0.15020426}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.16994646, y: 0.21009573, z: 0.44000044}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
-  m_RootOrder: 6
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7804122414601481685
 Transform:
@@ -112136,7 +113222,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 3
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &7854663816156047779
 RectTransform:
@@ -113084,12 +114170,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797696941058688913}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: -0.068964586}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: -0.06896453}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 9
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7871825610183777336
 MeshRenderer:
@@ -113176,7 +114262,7 @@ GameObject:
   - component: {fileID: 7895570839549376860}
   - component: {fileID: 7895570839549376859}
   m_Layer: 0
-  m_Name: Libro_Grande11
+  m_Name: 1.11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113212,14 +114298,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 11
+  isImportant: 1
+  bookColor: 2
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!4 &7902744938318189039
 Transform:
@@ -113389,7 +114501,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: -3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 9
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7971290384930925383
 MeshRenderer:
@@ -113534,7 +114646,7 @@ GameObject:
   - component: {fileID: 7994821920502364964}
   - component: {fileID: 7994821920502364963}
   m_Layer: 0
-  m_Name: Libro_Grande16
+  m_Name: 2.16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113557,14 +114669,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 16
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &7994821920502364964
 BoxCollider:
@@ -113837,7 +114963,7 @@ GameObject:
   - component: {fileID: 8082898391355599613}
   - component: {fileID: 8082898391355599612}
   m_Layer: 0
-  m_Name: Libro_Grande14
+  m_Name: 2.14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113860,14 +114986,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 14
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &8082898391355599613
 BoxCollider:
@@ -113910,7 +115050,7 @@ GameObject:
   - component: {fileID: 8114139720008964583}
   - component: {fileID: 8114139720008964582}
   m_Layer: 0
-  m_Name: Libro_Grande4
+  m_Name: 2.4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113933,14 +115073,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 1
+  BookID: 4
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &8114139720008964583
 BoxCollider:
@@ -114063,7 +115217,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 12
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8151034686808063284
 MeshFilter:
@@ -114954,7 +116108,7 @@ GameObject:
   - component: {fileID: 8378343502521631932}
   - component: {fileID: 8378343502521631931}
   m_Layer: 0
-  m_Name: Libro_Grande6
+  m_Name: 2.6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114977,14 +116131,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 1
+  BookID: 6
+  isImportant: 1
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &8378343502521631932
 BoxCollider:
@@ -115077,7 +116245,7 @@ GameObject:
   - component: {fileID: 8417351402820455925}
   - component: {fileID: 8417351402820455924}
   m_Layer: 0
-  m_Name: Libro_Grande14
+  m_Name: 1.14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115113,14 +116281,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 14
+  isImportant: 1
+  bookColor: 1
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!1 &8426460324885238108
 GameObject:
@@ -115147,11 +116341,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3918026851435124835}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999978, y: -0.07599974, z: 0.5112311}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: 0.51123124}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8441552012235547329
@@ -115509,12 +116703,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6327522904146934527}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394716, y: -0.051999383, z: -0.14019527}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: -0.1401952}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 10
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8557383907083469893
 GameObject:
@@ -115781,7 +116975,7 @@ GameObject:
   - component: {fileID: 8594978529912355357}
   - component: {fileID: 8594978529912355356}
   m_Layer: 0
-  m_Name: Libro_Grande15
+  m_Name: 3.15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115804,14 +116998,28 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
+  Row: 2
+  BookID: 15
   isImportant: 0
-  controller: {fileID: 0}
+  bookColor: 5
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!65 &8594978529912355357
 BoxCollider:
@@ -116206,7 +117414,7 @@ GameObject:
   - component: {fileID: 8721993626127920831}
   - component: {fileID: 8721993626127920830}
   m_Layer: 0
-  m_Name: Libro_Grande8
+  m_Name: 1.8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116242,14 +117450,40 @@ MonoBehaviour:
   hasRequirement: 0
   hideIfReq: 0
   reqID: -1
-  gameControllerObject: {fileID: 0}
+  gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
-  BookID: 0
-  isImportant: 0
-  controller: {fileID: 0}
+  Row: 0
+  BookID: 8
+  isImportant: 1
+  bookColor: 3
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Action:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 129977962}
+        m_TargetAssemblyTypeName: Library, Assembly-CSharp
+        m_MethodName: SwapBooks
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   itemSound: event:/cogerObject2d
 --- !u!114 &8731973589292895938
 MonoBehaviour:
@@ -116766,12 +118000,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422785312256204820}
-  m_LocalRotation: {x: 0.7071069, y: -0.70710677, z: 0.00000025331974, w: -0.00000025331974}
-  m_LocalPosition: {x: -0.15394692, y: -0.051999383, z: 0.22143488}
-  m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000026822084}
+  m_LocalPosition: {x: -0.15394716, y: -0.34090403, z: 0.221435}
+  m_LocalScale: {x: 2.0942397, y: 2.09424, z: 3.3795228}
   m_Children: []
-  m_Father: {fileID: 1998985354}
-  m_RootOrder: 5
+  m_Father: {fileID: 129977961}
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8839271525211188989
 MeshRenderer:
@@ -116984,7 +118218,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 1
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8907684890398863983
 MeshRenderer:
@@ -117092,6 +118326,7 @@ MonoBehaviour:
   m_CVars: {fileID: 11400000, guid: 19b9218227f13c24d9845ab8998150cf, type: 2}
   m_PlayerMovement: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   InteractRange: 3
+  TimeSeenThought: 1
 --- !u!1 &8929285954301784992
 GameObject:
   m_ObjectHideFlags: 0
@@ -117308,11 +118543,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7097036043279795844}
-  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000020861626, w: -0.00000020861626}
-  m_LocalPosition: {x: -0.16999987, y: -0.07599974, z: -0.43202817}
+  m_LocalRotation: {x: 0.7071068, y: -0.7071067, z: 0.00000025331968, w: -0.00000020861621}
+  m_LocalPosition: {x: -0.1699467, y: 0.21009573, z: -0.43202823}
   m_LocalScale: {x: 2.0942397, y: 2.0942397, z: 3.379523}
   m_Children: []
-  m_Father: {fileID: 1993859463}
+  m_Father: {fileID: 129977961}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8988697642786443604
@@ -117717,7 +118952,7 @@ Transform:
   m_LocalScale: {x: 2.0942392, y: 2.0942395, z: 3.379522}
   m_Children: []
   m_Father: {fileID: 129977961}
-  m_RootOrder: 0
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &9171477486169849834
 MeshRenderer:
