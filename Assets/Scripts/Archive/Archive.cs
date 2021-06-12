@@ -23,6 +23,9 @@ public class Archive : MonoBehaviour
     [SerializeField] private List<GameObject> nodes;
     private float totalHeight = 0f;
     public GameObject NodesContainer;
+    public Text ActionText;
+
+    public PrimaryController controller;
 
     [Header("Sounds")]
     
@@ -73,6 +76,9 @@ public class Archive : MonoBehaviour
         {
             Pages[GetPageFromListPost(currentPage)].SetActive(false);
             Pages[GetPageFromListPost(pageId)].SetActive(true);
+
+            ActionText.text = Pages[GetPageFromListPost(pageId)].isDoubleFaced ? "Pulsa [Tab] para salir   [Click derecho] para voltear" : "Pulsa [Tab] para salir";
+            
             SelectCircle(currentPage, pageId);
             currentPage = pageId;
         }
@@ -126,7 +132,12 @@ public class Archive : MonoBehaviour
         SetNewPage(page);
     }
 
-
+    private void Update() {
+        if(controller.isInput2Down && Pages[GetPageFromListPost(currentPage)].isDoubleFaced)
+        {
+            Pages[GetPageFromListPost(currentPage)].Flip();
+        }
+    }
 
     private void DestroyNodes()
     {   if(nodes != null) foreach(GameObject diaryObject in nodes) Destroy(diaryObject);
