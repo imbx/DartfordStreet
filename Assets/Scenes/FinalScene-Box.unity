@@ -6073,7 +6073,9 @@ MonoBehaviour:
   ReqID: 486532
   Title: Mensaje a Edward
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &63514265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7392,7 +7394,9 @@ MonoBehaviour:
   ReqID: 9417434
   Title: Ubicacion UV
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &125629667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12979,7 +12983,9 @@ MonoBehaviour:
   ReqID: 338462
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &148527295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13070,8 +13076,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ReqID: 46027432
   Title: Itinerario de viaje
-  pageType: 1
-  childs: []
+  pageType: 0
+  isDoubleFaced: 1
+  CaraA: {fileID: 21300000, guid: d286e475b2ea5c04dadd45c30d6bdc71, type: 3}
+  CaraB: {fileID: 21300000, guid: 7f86969ddec63324692f78832670c5a6, type: 3}
 --- !u!114 &151634751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14550,6 +14558,115 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301984287}
   m_Mesh: {fileID: -8608999761190720989, guid: 53f35793f17b10f4699d7b61d26398d3, type: 3}
+--- !u!1 &302302862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302302863}
+  - component: {fileID: 302302867}
+  - component: {fileID: 302302866}
+  - component: {fileID: 302302864}
+  - component: {fileID: 302302865}
+  m_Layer: 6
+  m_Name: Plano cuadro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302302863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302302862}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.7071079}
+  m_LocalPosition: {x: -3.278, y: 2.103, z: -3.563}
+  m_LocalScale: {x: 0.0748, y: 0.0748, z: 0.0748}
+  m_Children: []
+  m_Father: {fileID: 499315521}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &302302864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302302862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4ae565b422ca14ca2af3b114e095bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueId: 29
+--- !u!65 &302302865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302302862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 3.9290662, z: 10.000001}
+  m_Center: {x: -1.829634e-13, y: 2.664663, z: 0}
+--- !u!23 &302302866
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302302862}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &302302867
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302302862}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &311864621
 GameObject:
   m_ObjectHideFlags: 0
@@ -15249,7 +15366,9 @@ MonoBehaviour:
   ReqID: 95999
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &334891880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15341,7 +15460,9 @@ MonoBehaviour:
   ReqID: 3297432
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &335733739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15812,7 +15933,9 @@ MonoBehaviour:
   ReqID: 4036273
   Title: 'Diario 02: El sufrimiento de un heroe'
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &359794729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16739,6 +16862,8 @@ MonoBehaviour:
   FilledCircle: {fileID: 21300000, guid: 046d6aff945c6394db05e256b8415e07, type: 3}
   nodes: []
   NodesContainer: {fileID: 1183798114}
+  ActionText: {fileID: 1228830339}
+  controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   openSound: event:/llibreta/abrirLibreta2d
   exitSound: event:/llibreta/cerrarLibreta2d
   papelSound: event:/papel2d
@@ -17787,6 +17912,7 @@ Transform:
   - {fileID: 388660415}
   - {fileID: 874370734}
   - {fileID: 1572581143}
+  - {fileID: 302302863}
   m_Father: {fileID: 3781386032989586820}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18561,7 +18687,9 @@ MonoBehaviour:
   ReqID: 3436245
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &527577839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19181,7 +19309,9 @@ MonoBehaviour:
   ReqID: 3598356
   Title: 'Diario 07: Hay que prepararse'
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &576275268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21724,9 +21854,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReqID: 95778
-  Title: 'Nota 01 : Recordatorio'
+  Title: "Ubicaci\xF3n Llave Hall"
   pageType: 0
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 21300000, guid: e81ceb5d5e8cf0047badcc53751dad0f, type: 3}
+  CaraB: {fileID: 21300000, guid: 95450e25b510bab4581a57c83ddef681, type: 3}
 --- !u!114 &702562072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22454,7 +22586,9 @@ MonoBehaviour:
   ReqID: 418734324
   Title: Lista de la compra
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &768363449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23847,7 +23981,9 @@ MonoBehaviour:
   ReqID: 4246352
   Title: Nota del medico
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &830905105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25279,8 +25415,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.7752638, z: 1}
-  m_Center: {x: 0, y: -0.887633, z: 0}
+  m_Size: {x: 1.103704, y: 2.7752638, z: 0.17684698}
+  m_Center: {x: -0.051851988, y: -0.887633, z: 0.9733236}
 --- !u!1 &915497670
 GameObject:
   m_ObjectHideFlags: 0
@@ -25584,7 +25720,9 @@ MonoBehaviour:
   ReqID: 3188352
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &929075350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31524,7 +31662,9 @@ MonoBehaviour:
   ReqID: 57827835
   Title: ' Carta de Emily'
   pageType: 1
-  childs: []
+  isDoubleFaced: 1
+  CaraA: {fileID: 21300000, guid: 5dbd577af5403f948b37fccf51c9a797, type: 3}
+  CaraB: {fileID: 21300000, guid: bc920da561b12f643a3069c2bc5d90a7, type: 3}
 --- !u!114 &991855662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34648,7 +34788,9 @@ MonoBehaviour:
   ReqID: 397724634
   Title: "Diario 03: P\xE9rdidas de memoria"
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1182022219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36021,10 +36163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8c31d98c3be5542baf578a476e5b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReqID: 95999
-  Title: ' Nota 02: La seguridad lo primero'
+  ReqID: 44793623
+  Title: Cuadro de luces del recibidor
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 21300000, guid: 48aadf49137a4cd49b2dd82f547b0622, type: 3}
+  CaraB: {fileID: 21300000, guid: c45a92ae4310b814892df8fe3ba8d54e, type: 3}
 --- !u!114 &1251612859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36626,7 +36770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1295013465
 Transform:
   m_ObjectHideFlags: 0
@@ -36669,8 +36813,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.62041306, y: 0.8274235, z: 0.8768622}
-  m_Center: {x: -0.259287, y: 0.017698556, z: 0.020726353}
+  m_Size: {x: 0.55902123, y: 0.8274235, z: 0.8768622}
+  m_Center: {x: -0.22859108, y: 0.017698556, z: 0.020726353}
 --- !u!1001 &1307007129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37650,7 +37794,9 @@ MonoBehaviour:
   ReqID: 589054
   Title: Carta de Alfie
   pageType: 1
-  childs: []
+  isDoubleFaced: 1
+  CaraA: {fileID: 21300000, guid: 57247b7cca5c0d9488dbca75c31ca537, type: 3}
+  CaraB: {fileID: 21300000, guid: 76c51aeeed28a3f47b9a61ab801664d0, type: 3}
 --- !u!114 &1345159874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38111,9 +38257,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ReqID: 4589352
-  Title: " Geoposici\xF3n de ciudades"
-  pageType: 1
-  childs: []
+  Title: "C\xF3digo de ciudades"
+  pageType: 0
+  isDoubleFaced: 1
+  CaraA: {fileID: 21300000, guid: d8073a6b2fd22314a885534aa01dfaef, type: 3}
+  CaraB: {fileID: 21300000, guid: 5b70b9832fcb04b4eb7c5554e04fe314, type: 3}
 --- !u!114 &1364026343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38937,8 +39085,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ReqID: 338462
   Title: "Diario 09: Mi nuevo c\xF3digo"
-  pageType: 1
-  childs: []
+  pageType: 0
+  isDoubleFaced: 1
+  CaraA: {fileID: 21300000, guid: 5d880e66ec6587c459e93bdaffac6390, type: 3}
+  CaraB: {fileID: 21300000, guid: c7aeb74a727f0ba429e00147de49f4d6, type: 3}
 --- !u!114 &1377913967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39575,7 +39725,9 @@ MonoBehaviour:
   ReqID: 3735384
   Title: 'Diario 05: Se acercan'
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1422838757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40865,7 +41017,9 @@ MonoBehaviour:
   ReqID: 43787252
   Title: 'Diario 01: Arte'
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1485158510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42967,7 +43121,9 @@ MonoBehaviour:
   ReqID: 2147483647
   Title: 'Diario 06: Primer contacto'
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1599599664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43174,7 +43330,9 @@ MonoBehaviour:
   ReqID: 308462812
   Title: "Apunte 04: C\xF3digo morse de la radio"
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1625532038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43328,7 +43486,9 @@ MonoBehaviour:
   ReqID: 4639023
   Title: Cuadro de luces arriba
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1631779073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43602,7 +43762,9 @@ MonoBehaviour:
   ReqID: 3297432
   Title: Dibujo de cuadros
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1649045083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46336,7 +46498,9 @@ MonoBehaviour:
   ReqID: 49563
   Title: Carta de Abraham
   pageType: 1
-  childs: []
+  isDoubleFaced: 1
+  CaraA: {fileID: 21300000, guid: 78b2128493631ff4cb908c2af6d46451, type: 3}
+  CaraB: {fileID: 21300000, guid: c226266570005c9429e6e7bf86da184d, type: 3}
 --- !u!114 &1765068742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46636,7 +46800,7 @@ MonoBehaviour:
   achievementType: 3
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   NoEffects: 0
-  CanPickup: 1
+  CanPickup: 0
   HasItemInside: 0
   Son: {fileID: 0}
   doLookAtPoint: 1
@@ -48011,7 +48175,9 @@ MonoBehaviour:
   ReqID: 44793623
   Title: Apunte de electricidad
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1844066731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51197,7 +51363,9 @@ MonoBehaviour:
   ReqID: 3856302
   Title: 'Diario 04: Nos estan cuidando'
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &1989365806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54131,7 +54299,9 @@ MonoBehaviour:
   ReqID: 3188352
   Title: Simbolos raros
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &2094404357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54223,7 +54393,9 @@ MonoBehaviour:
   ReqID: 3436245
   Title: 'Diario 08: Vienen a salvarnos'
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &2096353591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54315,7 +54487,9 @@ MonoBehaviour:
   ReqID: 4795772
   Title: Contenido UV
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &2100871489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54365,9 +54539,11 @@ GameObject:
   - component: {fileID: 2105211479}
   - component: {fileID: 2105211481}
   - component: {fileID: 2105211480}
-  m_Layer: 0
+  - component: {fileID: 2105211483}
+  - component: {fileID: 2105211482}
+  m_Layer: 6
   m_Name: Marco_NoMorse_Mundo
-  m_TagString: Untagged
+  m_TagString: BasicInteraction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
@@ -54435,6 +54611,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105211478}
   m_Mesh: {fileID: 6085288807766955201, guid: 6d8f72f500ad789419a7c9b916563b66, type: 3}
+--- !u!114 &2105211482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105211478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4ae565b422ca14ca2af3b114e095bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueId: 1
+--- !u!65 &2105211483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105211478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13001649, y: 0.12828614, z: 0.03491584}
+  m_Center: {x: -0.0016177465, y: -0.06769042, z: 0.014632897}
 --- !u!1 &2106276093
 GameObject:
   m_ObjectHideFlags: 0
@@ -54568,7 +54770,9 @@ MonoBehaviour:
   ReqID: 308462812
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!114 &2117757454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99022,7 +99226,9 @@ MonoBehaviour:
   ReqID: 4589352
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535373209168
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99114,7 +99320,9 @@ MonoBehaviour:
   ReqID: 4795772
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535440981812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99168,7 +99376,9 @@ MonoBehaviour:
   ReqID: 418734324
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535515080641
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99298,7 +99508,9 @@ MonoBehaviour:
   ReqID: 57827835
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535652784094
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99409,7 +99621,9 @@ MonoBehaviour:
   ReqID: 3598356
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535677573311
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99482,7 +99696,9 @@ MonoBehaviour:
   ReqID: 9417434
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535728400738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99574,7 +99790,9 @@ MonoBehaviour:
   ReqID: 2147483647
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535805417391
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99666,7 +99884,9 @@ MonoBehaviour:
   ReqID: 49563
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017535919121250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99758,7 +99978,9 @@ MonoBehaviour:
   ReqID: 3856302
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536074157618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99850,7 +100072,9 @@ MonoBehaviour:
   ReqID: 3735384
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536192764434
 RectTransform:
   m_ObjectHideFlags: 0
@@ -99942,7 +100166,9 @@ MonoBehaviour:
   ReqID: 486532
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536291086198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100034,7 +100260,9 @@ MonoBehaviour:
   ReqID: 43787252
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536380637084
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100126,7 +100354,9 @@ MonoBehaviour:
   ReqID: 397724634
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536385427429
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100180,7 +100410,9 @@ MonoBehaviour:
   ReqID: 589054
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536557450529
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100310,7 +100542,9 @@ MonoBehaviour:
   ReqID: 4036273
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536728554806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100402,7 +100636,9 @@ MonoBehaviour:
   ReqID: 95778
   Title: ' '
   pageType: 0
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017536801841587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100494,7 +100730,9 @@ MonoBehaviour:
   ReqID: 44793623
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017537197046292
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100586,7 +100824,9 @@ MonoBehaviour:
   ReqID: 4246352
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017537220563238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100678,7 +100918,9 @@ MonoBehaviour:
   ReqID: 4639023
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017537410152195
 RectTransform:
   m_ObjectHideFlags: 0
@@ -100770,7 +101012,9 @@ MonoBehaviour:
   ReqID: 46027432
   Title: ' '
   pageType: 1
-  childs: []
+  isDoubleFaced: 0
+  CaraA: {fileID: 0}
+  CaraB: {fileID: 0}
 --- !u!224 &2981017537469770695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -110891,9 +111135,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   dontDestroyIfGotten: 0
-  hasRequirement: 1
+  hasRequirement: 0
   hideIfReq: 0
-  reqID: 95778
+  reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
@@ -114111,7 +114355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6516120379338255354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117970,7 +118214,7 @@ MonoBehaviour:
   textManager: {fileID: 2167283611240303576}
   music: {fileID: 5811870137565355075}
   CircleCursor: {fileID: 2800000, guid: 34f87a666d6f8834eb1a6e047778f8fa, type: 3}
-  ignoreSavedGame: 0
+  ignoreSavedGame: 1
 --- !u!224 &7854663817071786904
 RectTransform:
   m_ObjectHideFlags: 0
