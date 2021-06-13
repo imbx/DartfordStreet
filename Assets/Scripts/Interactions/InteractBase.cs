@@ -72,6 +72,7 @@ public class InteractBase : MonoBehaviour {
         
         GameController.current.database.EditProgression(_id);
         GameController.current.database.SaveGame();
+        
         if(dialogueID != -1) GameController.current.textManager.SpawnThought(dialogueID);
 
         if(destroyGameObject) Destroy(gameObject);
