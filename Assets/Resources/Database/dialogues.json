@@ -170,7 +170,7 @@
         {
             "id": 12,
             "size": {
-                "x": 500.0,
+                "x": 788.0,
                 "y": 220.0
             },
             "anchoredPosition": {
@@ -371,29 +371,29 @@
         {
             "id": 25,
             "size": {
-                "x": 766,
-                "y": 417.5
+                "x": 788,
+                "y": 280
             },
             "anchoredPosition": {
-                "x": -90,
+                "x": -95,
                 "y": -35
             },
             "dialogueText": "Recuerdo a su hermana Emily… Parece que esta carta es de los bombardeos de la guerra",
             "isAnchoredAtTop": true,
-            "isAnchoredAtCenter": true,
+            "isAnchoredAtCenter": false,
             "lifeTime": 4.5
         },
         {
             "id": 26,
             "size": {
-                "x": 766,
-                "y": 368.2
+                "x": 788,
+                "y": 280
             },
             "anchoredPosition": {
-                "x": -90,
+                "x": -96,
                 "y": -35
             },
-            "dialogueText": "En esta carta su amigo menciona la revolución Irlandesa..",
+            "dialogueText": "En esta carta su amigo menciona la revolución Irlandesa...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 3.5
@@ -405,7 +405,7 @@
                 "y": 344.1
             },
             "anchoredPosition": {
-                "x": -90,
+                "x": -96,
                 "y": -35
             },
             "dialogueText": "Parece que está cerrado con llave y un candado",
@@ -477,14 +477,14 @@
         {
             "id": 32,
             "size": {
-                "x": 766,
-                "y": 344.1
+                "x": 500.0,
+                "y": 220.0
             },
             "anchoredPosition": {
-                "x": -90,
+                "x": -96,
                 "y": -35
             },
-            "dialogueText": "¿Por qué habla de una fuerza superior? \n Nunca he visto este símbolo...",
+            "dialogueText": "¿Por qué habla de una fuerza superior? Nunca he visto este símbolo...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 3
@@ -527,15 +527,119 @@
                 "y": 280
             },
             "anchoredPosition": {
-                "x": -445,
+                "x": 0,
                 "y": -35
             },
-            "dialogueText": "quizás debería inspeccionar esta zona",
+            "dialogueText": "¿Un candado y una cerradura? Si que se toma en serio la seguridad...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 36,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Pólvora? Que estás tramando Oliver...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 37,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "La puerta tiene candado. ¿Cuál será la combinación?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 38,
+            "size": {
+                "x": 788.0,
+                "y": 280.0
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "A oliver le encanta el arte. Recuerdo que siempre me lo explicaba cuando combatimos juntos",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 3.5
+        },
+        {
+            "id": 39,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Un cuadro de un hombre sin mano...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 40,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Bonita radio. ¿Debería encenderla?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 41,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Un trozo de nota?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": true,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 42,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver guarda la llave de la puerta de arriba en la cocina",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.5
         }
-
     ]
 }
     
