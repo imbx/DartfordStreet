@@ -55,11 +55,12 @@ public class Item : InteractBase {
             if(startTransform == null) 
             {
                 // transform.SetParent(GameController.current.gameCObject.camera.transform);
+                BoxUtils.SetLayerRecursively(gameObject, 8);
                 Debug.Log("[Item] Moving in");
                 tag = "Item";
                 if(Son) {
-                    BoxUtils.SetLayerRecursively(gameObject, 8);
-                    gameObject.layer = LayerMask.NameToLayer("Blocked");
+                    
+                    //gameObject.layer = LayerMask.NameToLayer("Blocked");
                 }
                 else gameObject.layer = LayerMask.NameToLayer("Focus");
 
