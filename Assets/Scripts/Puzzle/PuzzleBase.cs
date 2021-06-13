@@ -52,7 +52,7 @@ public class PuzzleBase : InteractBase {
         gameControllerObject.isInPuzzle = false;
         GameController.current.RevertCamera();
         Debug.Log("[PuzzleBase] Activating progress id : " + _id);
-        GameController.current.database.EditProgression(_id);
+        // GameController.current.database.EditProgression(_id);
         if(destroyGameObject) Destroy(gameObject);
         DestroyInteraction();
     }

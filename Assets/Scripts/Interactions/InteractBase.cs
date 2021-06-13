@@ -18,6 +18,7 @@ public class InteractBase : MonoBehaviour {
     protected string MainTag = "";
 
     public AchievementType achievementType = AchievementType.None;
+    public int dialogueID = -1;
     
 
     private void Awake() {
@@ -71,7 +72,8 @@ public class InteractBase : MonoBehaviour {
         
         GameController.current.database.EditProgression(_id);
         GameController.current.database.SaveGame();
-
+        GameController.current.textManager.SpawnThought(dialogueID);
+        
         if(destroyGameObject) Destroy(gameObject);
         if(transform.tag != "Picture") transform.tag = "BasicInteraction";
     }
