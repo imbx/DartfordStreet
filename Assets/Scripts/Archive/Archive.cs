@@ -86,8 +86,10 @@ public class Archive : MonoBehaviour
         }
         else
         {
-            Pages[GetPageFromListPost(ArchivePositions.Count - 1)].SetActive(false);
-            currentPage = ArchivePositions.Count - 1;
+            if(ArchivePositions.Count > 0){
+                Pages[GetPageFromListPost(ArchivePositions.Count - 1)].SetActive(false);
+                currentPage = ArchivePositions.Count - 1;
+            } else currentPage = 0;
         }
         forcedPage = -1;
     }

@@ -60,7 +60,7 @@ public class Item : InteractBase {
                 tag = "Item";
                 if(Son) {
                     
-                    //gameObject.layer = LayerMask.NameToLayer("Blocked");
+                    // gameObject.layer = LayerMask.NameToLayer("Blocked");
                 }
                 else gameObject.layer = LayerMask.NameToLayer("Focus");
 
@@ -173,7 +173,10 @@ public class Item : InteractBase {
         if(hasRequirement)
         {
             if(GameController.current.database.GetProgressionState(reqID))
+            {
                 transform.tag = "BasicInteraction";
+                hasRequirement = false;
+            } 
         }
 
         if(isInteractingThis)
