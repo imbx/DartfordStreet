@@ -29870,7 +29870,7 @@ MonoBehaviour:
   - {fileID: 659423763}
   - {fileID: 2126441294}
   - {fileID: 556294954}
-  FinalCombination: 5627
+  FinalCombination: 5127
   candadoSound: event:/candado2d
 --- !u!114 &953956446
 MonoBehaviour:
@@ -121512,8 +121512,8 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   FirstNumber: 0
   SecondNumber: 0
-  FirstTargetNumber: 53
-  SecondTargetNumber: 48
+  FirstTargetNumber: 52
+  SecondTargetNumber: 95
   targetText: {fileID: 2082027217}
   childDoor: {fileID: 6516120379338255354}
   EndAction:
