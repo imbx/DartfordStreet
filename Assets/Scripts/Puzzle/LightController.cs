@@ -20,6 +20,25 @@ public class LightController : MonoBehaviour {
         GameController.current.database.AddProgressionID(Id);
     }
 
+    private void Start() {
+        foreach(Material mat in lightMaterials)
+        {
+            mat.SetColor("_EmissionColor", new Vector4(0.9254902f, 0.6588235f, 0.4235294f, 1f) * -0f);
+            // mat.EnableKeyword("_EMISSION");
+        }
+        
+        lightsIntensity = new List<float>();
+
+        if(lights.Count > 0)
+        {
+            lights.ForEach(l => {
+                l.SetActive(false);
+                lightsIntensity.Add(l.GetComponent<Light>().intensity);
+                l.GetComponent<Light>().intensity = 0;
+            });
+        }
+    }
+
     public void SwitchLights(bool isOn = true, bool saveIntensity = true)
     {
         if(hasExecutedLights) return;
@@ -29,7 +48,7 @@ public class LightController : MonoBehaviour {
         if(saveIntensity) lightsIntensity = new List<float>();
         lights.ForEach(l => {
             l.SetActive(isOn);
-            if(saveIntensity) lightsIntensity.Add(l.GetComponent<Light>().intensity);
+            // if(saveIntensity) lightsIntensity.Add(l.GetComponent<Light>().intensity);
         });
         otherActions.Invoke();
     }
@@ -44,11 +63,11 @@ public class LightController : MonoBehaviour {
     {
         isAnimating = true;
         yield return new WaitForSeconds(1f);
-        SwitchLights(false, true);
+        /* SwitchLights(false, true);
         lights.ForEach(l => {
             l.GetComponent<Light>().intensity = 0;
         });
-        hasExecutedLights = false;
+        hasExecutedLights = false;*/
         SwitchLights(true, false);
 
         yield return new WaitForSeconds(0.35f);
@@ -57,6 +76,8 @@ public class LightController : MonoBehaviour {
         // SwitchLights(true, false);
         foreach(Material mat in lightMaterials)
         {
+            Debug.Log("[LightController] Enabling Emision in " + mat.name);
+            // mat.SetColor("_EmissionColor", new Color(0.9254902f, 0.6588235f, 0.4235294f, -2f));
             mat.EnableKeyword("_EMISSION");
             yield return null;
         }
@@ -75,8 +96,8 @@ public class LightController : MonoBehaviour {
 
             foreach(Material mat in lightMaterials)
             {
-                mat.EnableKeyword("_EMISSION");
-                mat.SetColor("_EMISSION", new Color(0.9254902f, 0.6588235f, 0.4235294f, Mathf.Lerp(-2f, 0.25f, timer)));
+                // mat.EnableKeyword("_EMISSION");
+                mat.SetColor("_EmissionColor", new Vector4(0.9254902f, 0.6588235f, 0.4235294f, 1f) * Mathf.Lerp(0f, 1f, timer));
                 yield return null;
             }
 
@@ -89,7 +110,7 @@ public class LightController : MonoBehaviour {
     private void Update() {
         bool generalCondition = true;
 
-        if(RequirementIds.Count > 0 && !hasExecutedLights)
+        if(RequirementIds.Count > 0 && !hasExecutedLights && !isAnimating)
         {
             // Debug.Log("[LightController] Checking Lights");
             foreach(int i in RequirementIds)
