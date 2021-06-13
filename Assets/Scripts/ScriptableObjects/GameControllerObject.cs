@@ -13,10 +13,20 @@ public class GameControllerObject : ScriptableObject {
     public bool targetAllLayers = false;
     public bool isInPuzzle = false;
 
+    private GameState prevState = GameState.PLAYING;
+
     public void ChangeState(GameState gs)
     {
         justChangedState = true;
-        Debug.Log("Requesting state change to " + gs + " and just changed? " + justChangedState);
+        Debug.Log("[GCO] Requesting state change to " + gs + " and just changed? " + justChangedState);
+        if(gs == GameState.OPENNOTEBOOK) prevState = state;
         state = gs;
+    }
+
+    public void ReturnToPreviousState()
+    {
+        Debug.Log("[GCO] Returning to " + prevState);
+        justChangedState = true;
+        state = prevState;
     }
 }

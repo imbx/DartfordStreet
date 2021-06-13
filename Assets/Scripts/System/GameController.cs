@@ -134,6 +134,7 @@ public class GameController : MonoBehaviour{
             case GameState.INTERACTING:
                 if(gameCObject.justChangedState) StateChange(true);
                 if(gameCObject.requireFocus) ApplyPostEffect();
+                NotebookVisibility(true);
                 break;
 
             case GameState.ENDINTERACTING:
@@ -174,7 +175,7 @@ public class GameController : MonoBehaviour{
                     DisablePostEffect();
                     ui.SetNotebookActive(false);
                 }
-                gameCObject.ChangeState(GameState.PLAYING);
+                gameCObject.ReturnToPreviousState();
                 break;
             case GameState.ENDGAME:
                 break;

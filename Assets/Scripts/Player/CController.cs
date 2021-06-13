@@ -59,7 +59,9 @@ public class CController : MonoBehaviour
        
 
         if(m_CVars.CanLook) CameraMovement();
+        else isMoving = false;
         if(m_CVars.CanMove) Movement();
+        else isMoving = false;
         
         isOnCarpets = CheckOnCarpet();
         HeadBobbing();
