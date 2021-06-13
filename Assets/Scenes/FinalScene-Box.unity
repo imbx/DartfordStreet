@@ -6290,6 +6290,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &56773264
 MonoBehaviour:
@@ -7734,7 +7735,7 @@ MonoBehaviour:
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 3
-  dialogueID: -1
+  dialogueID: 24
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   NoEffects: 0
   CanPickup: 1
@@ -7745,6 +7746,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &115309009
 MonoBehaviour:
@@ -18780,6 +18782,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &409063114
 MonoBehaviour:
@@ -19682,7 +19685,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462277039}
   m_LocalRotation: {x: -0.21068814, y: -0.6749893, z: -0.6749893, w: 0.21068814}
-  m_LocalPosition: {x: 0.4854, y: 0.90129995, z: -0.194}
+  m_LocalPosition: {x: 0.522, y: 0.906, z: -0.194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1451015872}
@@ -19721,6 +19724,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &462277042
 MonoBehaviour:
@@ -22140,6 +22144,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &584252517
 MonoBehaviour:
@@ -24206,6 +24211,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0.25
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &664538844
 MonoBehaviour:
@@ -27490,7 +27496,7 @@ MonoBehaviour:
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 0
-  dialogueID: -1
+  dialogueID: 30
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   NoEffects: 0
   CanPickup: 0
@@ -27501,6 +27507,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 1
   itemSound: event:/cogerObject2d
 --- !u!114 &840597268
 MonoBehaviour:
@@ -36134,6 +36141,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1034492807
 MonoBehaviour:
@@ -36487,6 +36495,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1038620594
 MonoBehaviour:
@@ -42188,6 +42197,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
   Action:
     m_PersistentCalls:
@@ -43380,6 +43390,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0.25
   zoomSpeed: 1
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!65 &1359145141
 BoxCollider:
@@ -47023,6 +47034,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1462730574
 MonoBehaviour:
@@ -48795,6 +48807,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1564813632
 MonoBehaviour:
@@ -50239,6 +50252,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1614664879
 MonoBehaviour:
@@ -51439,6 +51453,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1661329242
 MonoBehaviour:
@@ -52171,6 +52186,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1697547778
 MonoBehaviour:
@@ -52793,7 +52809,7 @@ GameObject:
   - component: {fileID: 1718925738}
   - component: {fileID: 1718925739}
   m_Layer: 9
-  m_Name: GameObject
+  m_Name: Pendulo Anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52824,7 +52840,7 @@ Animator:
   m_GameObject: {fileID: 1718925737}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07d347d653816e646bb2bb2115422ee4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -52977,6 +52993,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1724288095
 MonoBehaviour:
@@ -53954,6 +53971,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1754128920
 MonoBehaviour:
@@ -54430,6 +54448,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1782744104
 MonoBehaviour:
@@ -57093,6 +57112,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
   Action:
     m_PersistentCalls:
@@ -58417,6 +58437,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1940144574
 MonoBehaviour:
@@ -59350,6 +59371,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1988728153
 MonoBehaviour:
@@ -59699,6 +59721,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &1992018142
 MonoBehaviour:
@@ -61103,6 +61126,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &2028339693
 MonoBehaviour:
@@ -61444,6 +61468,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &2032912982
 MonoBehaviour:
@@ -63154,6 +63179,7 @@ MonoBehaviour:
   DistanceToCamera: 0.35
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.1
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &2094201329
 MonoBehaviour:
@@ -67645,6 +67671,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &573881979218690653
 MeshFilter:
@@ -69258,6 +69285,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!1 &1013431426484926378
 GameObject:
@@ -99649,6 +99677,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &1326498214592468604
 MeshFilter:
@@ -100342,6 +100371,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!4 &1612187751603366145
 Transform:
@@ -101068,6 +101098,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &1822220128414229755
 MeshFilter:
@@ -102357,6 +102388,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!1 &2035354991955279929
 GameObject:
@@ -103387,6 +103419,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!23 &2383847280381748175
 MeshRenderer:
@@ -109345,6 +109378,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!1 &2856258663154144836
 GameObject:
@@ -112529,6 +112563,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &3140705523835231438
 MeshFilter:
@@ -113219,6 +113254,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &3292336671184740348
 MeshFilter:
@@ -113956,6 +113992,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &3481981549357589315
 MeshFilter:
@@ -113995,6 +114032,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!23 &3502211929905413885
 MeshRenderer:
@@ -114484,6 +114522,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!4 &3663354590336506808
 Transform:
@@ -119626,6 +119665,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &4585998780499454346
 MeshFilter:
@@ -119812,6 +119852,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!1 &4633991140707845951
 GameObject:
@@ -121838,6 +121879,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!23 &5324261904257896134
 MeshRenderer:
@@ -122253,6 +122295,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &5428142393477662875
 MonoBehaviour:
@@ -122390,6 +122433,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &5463687140100197448
 MeshFilter:
@@ -122552,6 +122596,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!114 &5477700670643837530
 MonoBehaviour:
@@ -122583,6 +122628,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!136 &5477700670643837531
 CapsuleCollider:
@@ -124977,6 +125023,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!65 &6139207335570974493
 BoxCollider:
@@ -126498,6 +126545,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!1 &6592401360658945291
 GameObject:
@@ -127396,6 +127444,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!33 &6879287767958748336
 MeshFilter:
@@ -129844,6 +129893,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!4 &7728163213102771096
 Transform:
@@ -130799,8 +130849,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Nunca hab\xEDa visto unas letras as\xED. En la nota menciona que esconde
-    algo detr\xE1s de la librer\xEDa..."
+  m_Text: "\xBFDiagnosticaron a Oliver con estr\xE9s post traum\xE1tico? Parece un
+    asunto grave"
 --- !u!1 &7854663817295363460
 GameObject:
   m_ObjectHideFlags: 0
@@ -130947,7 +130997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &7854663817592921513
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -131003,7 +131053,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -445.1, y: -35}
+  m_AnchoredPosition: {x: -400, y: -35}
   m_SizeDelta: {x: 766.1, y: 280}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &7854663818055181619
@@ -131173,6 +131223,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!4 &7866784826063799396
 Transform:
@@ -134254,6 +134305,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!4 &8623709359366378386
 Transform:
@@ -135318,6 +135370,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!23 &8840522409224037630
 MeshRenderer:
@@ -136240,6 +136293,7 @@ MonoBehaviour:
   DistanceToCamera: 0.5
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
+  ThoughtAlsoOnExit: 0
   itemSound: event:/cogerObject2d
 --- !u!1 &9120290757196349114
 GameObject:
