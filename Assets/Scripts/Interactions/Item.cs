@@ -21,6 +21,7 @@ public class Item : InteractBase {
     private Vector3 destination;
     private Vector3 zoomedVector = Vector3.zero;
     private float accumulatedZoomedFloat = 0;
+    public bool ThoughtAlsoOnExit = false;
     
     [Header("Sound")]
 
@@ -132,6 +133,9 @@ public class Item : InteractBase {
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);
         GameController.current.database.SaveGame();
         Destroy(LookAtPoint);
+
+        if(dialogueID != -1) GameController.current.textManager.SpawnThought(dialogueID);
+
         if(achievementType != AchievementType.None)
         {
             GameController.current.textManager.SpawnAchievement(achievementType);
@@ -151,6 +155,8 @@ public class Item : InteractBase {
             InvertMovement();
         }
         Destroy(LookAtPoint);
+
+        if(ThoughtAlsoOnExit && dialogueID != -1) GameController.current.textManager.SpawnThought(dialogueID); 
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);
         if(HasItemInside) {
             if(Son) {
