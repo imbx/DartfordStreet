@@ -462,8 +462,8 @@
         {
             "id": 31,
             "size": {
-                "x": 766,
-                "y": 417.5
+                "x": 760,
+                "y": 280
             },
             "anchoredPosition": {
                 "x": -90,
@@ -472,7 +472,7 @@
             "dialogueText": "Oliver... Lo que dice en esta nota es preocupante",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
-            "lifeTime": 4
+            "lifeTime": 3
         },
         {
             "id": 32,
@@ -492,8 +492,8 @@
         {
             "id": 33,
             "size": {
-                "x": 766,
-                "y": 477.2
+                "x": 788,
+                "y": 280
             },
             "anchoredPosition": {
                 "x": -90,
@@ -508,8 +508,8 @@
         {
             "id": 34,
             "size": {
-                "x": 766,
-                "y": 344.1
+                "x": 788,
+                "y": 280
             },
             "anchoredPosition": {
                 "x": -90,

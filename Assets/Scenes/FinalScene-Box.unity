@@ -7060,7 +7060,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0969ec0d4ddf9484dbd6419a5e62021f, type: 2}
     - target: {fileID: -8679921383154817045, guid: dcfaee21c869a394ca9fd3ea8f0877b0, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcfaee21c869a394ca9fd3ea8f0877b0, type: 3}
       propertyPath: m_LocalScale.x
@@ -14083,9 +14083,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   dontDestroyIfGotten: 1
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 0}
   achievementType: 7
   dialogueID: -1
@@ -14782,7 +14782,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0969ec0d4ddf9484dbd6419a5e62021f, type: 2}
     - target: {fileID: -8679921383154817045, guid: dcfaee21c869a394ca9fd3ea8f0877b0, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcfaee21c869a394ca9fd3ea8f0877b0, type: 3}
       propertyPath: m_LocalScale.x
@@ -15490,9 +15490,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   dontDestroyIfGotten: 1
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 0}
   achievementType: 7
   dialogueID: -1
@@ -21885,7 +21885,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 429a23fda632fa44ea9c3cc34d081d00, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 429a23fda632fa44ea9c3cc34d081d00, type: 3}
       propertyPath: m_LocalScale.x
@@ -22106,15 +22106,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584252514}
-  m_LocalRotation: {x: 0.0066915364, y: 0.9803619, z: 0.1970887, w: -0.001344955}
-  m_LocalPosition: {x: -3.971, y: 3.8632, z: 10.585}
+  m_LocalRotation: {x: 0.005122567, y: 0.75047475, z: 0.660864, w: -0.0045105284}
+  m_LocalPosition: {x: -3.971, y: 3.7857, z: 10.03197}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1366740248}
   - {fileID: 361791179}
   m_Father: {fileID: 992949452}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: -157.266, y: 360, z: -179.218}
+  m_LocalEulerAnglesHint: {x: -97.266, y: 360, z: -179.218}
 --- !u!114 &584252516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22134,7 +22134,7 @@ MonoBehaviour:
   reqID: -1
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 0
-  dialogueID: -1
+  dialogueID: 33
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   NoEffects: 0
   CanPickup: 0
@@ -22145,7 +22145,7 @@ MonoBehaviour:
   DistanceToCamera: 0.25
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
-  ThoughtAlsoOnExit: 0
+  ThoughtAlsoOnExit: 1
   itemSound: event:/cogerObject2d
 --- !u!114 &584252517
 MonoBehaviour:
@@ -22189,7 +22189,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 71674240c50db624d87c27c93a3844af, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 71674240c50db624d87c27c93a3844af, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22436,7 +22436,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7c17c37cefb7ee34eaa07d75fbfb74f0, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c17c37cefb7ee34eaa07d75fbfb74f0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23735,9 +23735,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   dontDestroyIfGotten: 1
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 0}
   achievementType: 7
   dialogueID: -1
@@ -29926,9 +29926,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   dontDestroyIfGotten: 1
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 0}
   achievementType: 7
   dialogueID: -1
@@ -36760,7 +36760,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 948ae2d256e79db4a9333ca7ef3ff614, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 948ae2d256e79db4a9333ca7ef3ff614, type: 3}
       propertyPath: m_LocalScale.x
@@ -43773,7 +43773,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366740247}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.6411086, y: -0, z: -0, w: 0.76745015}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.020000001, y: 0.009999997, z: 0.03}
   m_Children: []
@@ -45040,7 +45040,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3106f4b8146dc374d925c9defa713939, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3106f4b8146dc374d925c9defa713939, type: 3}
       propertyPath: m_LocalScale.x
@@ -45095,6 +45095,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4478342687749291390, guid: 3106f4b8146dc374d925c9defa713939, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4478342687749291390, guid: 3106f4b8146dc374d925c9defa713939, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
@@ -45133,6 +45137,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3106f4b8146dc374d925c9defa713939, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3222698757305055875, guid: 3106f4b8146dc374d925c9defa713939, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3222698757305055875, guid: 3106f4b8146dc374d925c9defa713939, type: 3}
       propertyPath: m_LocalScale.x
@@ -48456,7 +48464,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b87d453052ea5e94e93058916e3a5338, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b87d453052ea5e94e93058916e3a5338, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50848,7 +50856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c04b9416796c6140b10793ce9aeee3c, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c04b9416796c6140b10793ce9aeee3c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51458,9 +51466,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 44793623
   dontDestroyIfGotten: 1
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 0
   dialogueID: -1
@@ -52256,9 +52264,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   dontDestroyIfGotten: 1
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 0}
   achievementType: 7
   dialogueID: -1
@@ -54453,9 +54461,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 95778
   dontDestroyIfGotten: 1
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 3
   dialogueID: -1
@@ -58731,7 +58739,6 @@ Transform:
   - {fileID: 1744048746}
   - {fileID: 2115126545}
   - {fileID: 1120748564}
-  - {fileID: 1919413197}
   - {fileID: 86351959}
   - {fileID: 470785113}
   - {fileID: 1867766400}
@@ -58741,6 +58748,7 @@ Transform:
   - {fileID: 1064876107}
   - {fileID: 578024497}
   - {fileID: 1986305236}
+  - {fileID: 1919413197}
   m_Father: {fileID: 3781386032989586820}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -62617,7 +62625,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0969ec0d4ddf9484dbd6419a5e62021f, type: 2}
     - target: {fileID: -8679921383154817045, guid: dcfaee21c869a394ca9fd3ea8f0877b0, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dcfaee21c869a394ca9fd3ea8f0877b0, type: 3}
       propertyPath: m_LocalScale.x
@@ -122925,9 +122933,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   dontDestroyIfGotten: 0
-  hasRequirement: 0
+  hasRequirement: 1
   hideIfReq: 0
-  reqID: -1
+  reqID: 2
   gameControllerObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
   achievementType: 7
   dialogueID: -1
@@ -131341,7 +131349,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "En esta carta su amigo menciona la revoluci\xF3n Irlandesa..."
+  m_Text: "Oliver... Lo que dice aqu\xED es preocupante"
 --- !u!1 &7854663817295363460
 GameObject:
   m_ObjectHideFlags: 0
@@ -131545,7 +131553,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -96, y: -35}
-  m_SizeDelta: {x: 788, y: 280}
+  m_SizeDelta: {x: 760, y: 280}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &7854663818055181619
 MonoBehaviour:
