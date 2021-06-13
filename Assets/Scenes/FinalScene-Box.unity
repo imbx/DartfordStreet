@@ -20299,13 +20299,13 @@ Transform:
   - {fileID: 1089176381}
   - {fileID: 642662563}
   - {fileID: 1383097860}
+  - {fileID: 543450652908187957}
   - {fileID: 752030209}
   - {fileID: 342916662}
   - {fileID: 78505884}
   - {fileID: 123370643}
   - {fileID: 599456636}
   - {fileID: 1281478483}
-  - {fileID: 543450652908187957}
   - {fileID: 28809365}
   - {fileID: 516575034}
   - {fileID: 241579626}
@@ -67597,7 +67597,7 @@ Transform:
   - {fileID: 2548386742110669027}
   - {fileID: 7781335803672049725}
   m_Father: {fileID: 499315521}
-  m_RootOrder: 30
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &543450652966207905
 Transform:
@@ -132468,11 +132468,11 @@ MonoBehaviour:
   achievementType: 7
   dialogueID: -1
   isDrawerIn: 1
-  MovDimensions: {x: -0.15, y: 0, z: 0}
+  MovDimensions: {x: 0.2, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\uFFFDn/abrirCajon2d"
-  cerrarCajon: "event:/caj\uFFFDn/cerrarCajon2d"
+  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
+  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
 --- !u!114 &8022149785552610096
 MonoBehaviour:
   m_ObjectHideFlags: 0
