@@ -31,6 +31,7 @@ public class Picture : InteractBase {
 
     public override void Execute(bool isLeftAction = true)
     {
+        if(hasRequirement && !GameController.current.database.GetProgressionState(reqID)) return;
         if(!(controller.isInputHold || controller.isInput2Hold)){
             hasPressedLeft = isLeftAction;
             this.OnStart();
@@ -40,6 +41,11 @@ public class Picture : InteractBase {
 
     void Update()
     {
+        if(hasRequirement && GameController.current.database.GetProgressionState(reqID))
+        {
+            hasRequirement = false;
+            tag = "Picture";
+        }
         if(hasPressedLeft && !isMoving)
         {
             isMoving = controller.isInputHold;
@@ -60,7 +66,9 @@ public class Picture : InteractBase {
 
                 if(Physics.Raycast(m_ROrigin, direction, out hit, 50f, LayerMask.GetMask("Interactuable"))){
                     Debug.Log(hit.collider.name);
-                    ChangePosition(hit.collider.GetComponent<Picture>().ChangePosition(startPosition));
+                    if(hit.transform.GetComponent<Picture>())
+                        ChangePosition(hit.collider.GetComponent<Picture>().ChangePosition(startPosition));
+                    else transform.position = startPosition;
                 }
                 else transform.position = startPosition;
                 boxCollider.enabled = true;

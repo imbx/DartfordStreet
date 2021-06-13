@@ -13,6 +13,7 @@ public class Item : InteractBase {
     protected TransformData startTransform;
     [SerializeField] protected GameObject Son = null;
     [Header("Movement Parameters")]
+    public bool rotateOnlyHorizontally = true;
     public bool doLookAtPoint = true;
     public float DistanceToCamera = 0.5f;
     [SerializeField] private float zoomedDistanceToCamera = 0.25f;
@@ -30,9 +31,12 @@ public class Item : InteractBase {
 
      protected bool isLeftAction = true;
 
+     private Transform FirstParent;
+
     void Start()
     {
         movement = GetComponent<Movement>();
+        FirstParent = transform.parent;
     }
 
     public override void Execute(bool isLeftAction = true) {
@@ -49,6 +53,7 @@ public class Item : InteractBase {
             
             if(startTransform == null) 
             {
+                // transform.SetParent(GameController.current.gameCObject.camera.transform);
                 Debug.Log("[Item] Moving in");
                 tag = "Item";
                 if(Son) {
@@ -89,6 +94,7 @@ public class Item : InteractBase {
             } 
             else
             {
+
                 InvertMovement();
             }
             if(HasItemInside) GetComponent<BoxCollider>().enabled = false;
@@ -112,7 +118,8 @@ public class Item : InteractBase {
         accumulatedZoomedFloat = 0;
 
         movement.Invert();
-        LookAtPoint.GetComponent<Movement>().Invert();
+        // LookAtPoint.GetComponent<Movement>().Invert();
+        transform.SetParent(FirstParent);
         startTransform = default;
     }
 
@@ -186,7 +193,7 @@ public class Item : InteractBase {
                 if(!isLeftAction && controller.isInput2Hold)
                 {
                     transform.Rotate(Vector3.up, -controller.CameraAxis.x);
-                    transform.Rotate(Vector3.right, -controller.CameraAxis.y);
+                    if(! rotateOnlyHorizontally)transform.Rotate(Vector3.right, -controller.CameraAxis.y);
                     
                     // transform.localEulerAngles += new Vector3(-controller.CameraAxis.y, controller.CameraAxis.x, 0);
                 }

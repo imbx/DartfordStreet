@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class SafeBox : PuzzleBase
@@ -12,6 +13,8 @@ public class SafeBox : PuzzleBase
     public Text targetText;
 
     public Door childDoor;
+
+    public UnityEvent EndAction;
     public override void Execute(bool isLeftAction = true)
     {
         // transform.tag = "Safebox";
@@ -46,6 +49,11 @@ public class SafeBox : PuzzleBase
     {
         // transform.tag = "Untagged";
         base.OnEnd(destroyGameObject);
+        EndAction.Invoke();
+
+        
+        Destroy(GetComponent<BoxCollider>());
+        Destroy(this);
     }
 
     public override void OnExit()

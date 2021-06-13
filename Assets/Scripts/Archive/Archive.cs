@@ -27,6 +27,8 @@ public class Archive : MonoBehaviour
 
     public PrimaryController controller;
 
+    private float flipTimer = 0f;
+
     [Header("Sounds")]
     
     [FMODUnity.EventRef]
@@ -133,8 +135,10 @@ public class Archive : MonoBehaviour
     }
 
     private void Update() {
-        if(controller.isInput2Down && Pages[GetPageFromListPost(currentPage)].isDoubleFaced)
+        if(flipTimer > 0) flipTimer -= Time.deltaTime;
+        if(controller.isInput2Down && Pages[GetPageFromListPost(currentPage)].isDoubleFaced && flipTimer <= 0)
         {
+            flipTimer = 0.75f;
             Pages[GetPageFromListPost(currentPage)].Flip();
         }
     }

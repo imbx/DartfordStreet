@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BoxScripts;
+using UnityEngine.Events;
 
 public class PicturePuzzle : MonoBehaviour {
     public int Identifier = 1242;
@@ -10,9 +11,13 @@ public class PicturePuzzle : MonoBehaviour {
     private Picture first;
     private bool hasGivenPage = false;
 
+    public UnityEvent Action;
+
     private void OnEnable() {
         if(GameController.current.database.ProgressionExists(Identifier)){
             Debug.Log("Deactivating " + name);
+            Action.Invoke();
+            hasGivenPage = true;
         }
         else GameController.current.database.AddProgressionID(Identifier);
     }
@@ -24,6 +29,7 @@ public class PicturePuzzle : MonoBehaviour {
             StartCoroutine(DeatachPictures());
             
             GameController.current.database.EditProgression(Identifier);
+            Action.Invoke();
             Debug.Log("[PicturePuzzle] Ended");
         }
     }

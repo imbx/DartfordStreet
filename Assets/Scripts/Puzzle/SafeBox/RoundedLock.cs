@@ -48,4 +48,10 @@ public class RoundedLock : InteractBase
         Debug.Log("[RoundedLock] Current rot : " + CurrentRotation + " First Number is " + parent.FirstNumber + " and second is " + parent.SecondNumber);
     
     }
+
+    public void DestroyComponent()
+    {
+        Destroy(GetComponent<BoxCollider>());
+        Destroy(this);
+    }
 }

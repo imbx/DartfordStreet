@@ -1,8 +1,11 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class LinkNotes : PuzzleBase {
     public List<Note> notes;
+    public int DialogueOnEnd = 5;
+    public UnityEvent Action;
     public override void Execute(bool isLeftAction = true)
     {
         base.Execute();
@@ -17,9 +20,10 @@ public class LinkNotes : PuzzleBase {
 
     protected override void OnEnd(bool destroyGameObject = false)
     {
-        GameController.current.textManager.SpawnThought(5);
+        GameController.current.textManager.SpawnThought(DialogueOnEnd);
         GameController.current.database.EditProgression(_id, true);
-        GameController.current.ui.ForceDiaryPage(_id);
+        Action.Invoke();
+        // GameController.current.ui.ForceDiaryPage(_id);
         base.OnEnd(true);
     }
 

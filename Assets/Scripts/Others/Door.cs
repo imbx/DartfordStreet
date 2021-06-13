@@ -4,12 +4,14 @@ public class Door : InteractBase {
     public float rotationSpeed = 2f;
     public float targetAngle = 90f; // CALCULATED OVER Y AXIS
 
-    private bool isDoorOpen = false;
+    [HideInInspector] public bool isDoorOpen = false;
 
     private Vector3 BaseRotation;
     private float eulerYAngle = 0;
 
     private float timer = 0f;
+
+    public Door contiguousDoor;
 
     [FMODUnity.EventRef]
     public string abrirPuerta = "event:/puerta/abrirPuerta2d";
@@ -30,6 +32,11 @@ public class Door : InteractBase {
             if(!GameController.current.database.GetProgressionState(reqID))
                 return;
         }
+         if(contiguousDoor)
+        {
+            if(contiguousDoor.isDoorOpen) contiguousDoor.Execute();
+        }
+
         if (isDoorOpen) GameController.current.music.playMusic(cerrarPuerta);
         if (!isDoorOpen) GameController.current.music.playMusic(abrirPuerta);
         ToggleDoor();

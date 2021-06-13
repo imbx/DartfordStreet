@@ -68,9 +68,11 @@ public class InteractBase : MonoBehaviour {
             gameControllerObject.requireFocus = true;
         }
         BoxUtils.SetLayerRecursively(gameObject, 6);
-
+        
+        GameController.current.database.EditProgression(_id);
         GameController.current.database.SaveGame();
 
+        if(destroyGameObject) Destroy(gameObject);
         if(transform.tag != "Picture") transform.tag = "BasicInteraction";
     }
 

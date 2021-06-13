@@ -5,10 +5,12 @@ using System.Collections.Generic;
 
 [RequireComponent(typeof(Movement))]
 public class Drawer : InteractBase {
-    private bool isDrawerIn = true;
+    [HideInInspector] public bool isDrawerIn = true;
     public Vector3 MovDimensions = Vector3.zero;
     public float Speed = 2f;
     private Movement movement;
+
+    public Drawer contiguousDrawer;
     
     [FMODUnity.EventRef]
     public string abrirCajon = "event:/caj�n/abrirCajon2d";
@@ -33,6 +35,11 @@ public class Drawer : InteractBase {
     public override void Execute(bool isLeftAction = true)
     {
         if(hasRequirement && !GameController.current.database.GetProgressionState(reqID)) return;
+
+        if(contiguousDrawer)
+        {
+            if(!contiguousDrawer.isDrawerIn) contiguousDrawer.Execute();
+        }
         if(movement.isAtDestination) ToggleDrawer();
 
         if(isDrawerIn) GameController.current.music.playMusic(cerrarCajon);

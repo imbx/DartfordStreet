@@ -11,8 +11,9 @@ public class HideTilReq : InteractBase {
     {
         if(isEnabled)
         {
+            Debug.Log("[HideTilReq] Executed, id " + _id + " will become available.");
             Action.Invoke();
-            Destroy(gameObject);
+            OnEnd(true);
         }
     }
 

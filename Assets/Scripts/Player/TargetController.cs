@@ -88,12 +88,12 @@ public class TargetController : MonoBehaviour {
                                 case "Locked":
                                     // SHOULD CHANGE CURSOR
                                     GameController.current.ui.ChangeCursor(2);
-                                    Debug.Log("Is locked, shouldnt do anything");
+                                    // Debug.Log("Is locked, shouldnt do anything");
                                     break;
                                 case "Requirement":
                                     // SHOULD CHANGE CURSOR
                                     GameController.current.ui.ChangeCursor(-1);
-                                    Debug.Log("Is locked, shouldnt do anything");
+                                    // Debug.Log("Is locked, shouldnt do anything");
                                     break;
                                 default:
                                     GameController.current.ui.ChangeCursor(-1);

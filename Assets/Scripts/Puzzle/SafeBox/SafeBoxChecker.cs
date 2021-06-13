@@ -37,4 +37,10 @@ public class SafeBoxChecker : InteractBase {
         isOpening = false;
         yield return null;
     }
+
+    public void DestroyComponent()
+    {
+        Destroy(GetComponent<BoxCollider>());
+        Destroy(this);
+    }
 }
