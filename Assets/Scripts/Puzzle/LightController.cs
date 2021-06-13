@@ -7,6 +7,7 @@ public class LightController : MonoBehaviour {
     public int Id = -1;
     public List<int> RequirementIds;
     public List<GameObject> lights;
+    public List<Material> lightMaterials;
     public UnityEvent otherActions;
     private List<float> lightsIntensity;
 
@@ -41,28 +42,44 @@ public class LightController : MonoBehaviour {
 
     IEnumerator AnimLights()
     {
-        yield return new WaitForSeconds(1f);
         isAnimating = true;
+        yield return new WaitForSeconds(1f);
         SwitchLights(false, true);
         lights.ForEach(l => {
             l.GetComponent<Light>().intensity = 0;
         });
+        hasExecutedLights = false;
         SwitchLights(true, false);
 
         yield return new WaitForSeconds(0.35f);
+        
 
         // SwitchLights(true, false);
+        foreach(Material mat in lightMaterials)
+        {
+            mat.EnableKeyword("_EMISSION");
+            yield return null;
+        }
 
         float timer = 0;
 
         while(timer < 1f)
         {
             timer += Time.deltaTime * IntensitySpeed;
+            
             for(int i = 0; i < lights.Count; i++)
             {
                 lights[i].GetComponent<Light>().intensity = Mathf.Lerp(0, lightsIntensity[i], timer);
                 yield return null;
             }
+
+            foreach(Material mat in lightMaterials)
+            {
+                mat.EnableKeyword("_EMISSION");
+                mat.SetColor("_EMISSION", new Color(0.9254902f, 0.6588235f, 0.4235294f, Mathf.Lerp(-2f, 0.25f, timer)));
+                yield return null;
+            }
+
             yield return null;
         }
         isAnimating = false;
@@ -84,7 +101,7 @@ public class LightController : MonoBehaviour {
             if(generalCondition)
             {
                 Debug.Log("[LightController] Switching Lights " + generalCondition);
-                SwitchLights();
+                LightController_AnimLights();
             }
         }
         
