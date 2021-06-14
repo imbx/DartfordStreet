@@ -639,6 +639,51 @@
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.5
+        },
+        {
+            "id": 43,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Un líquido para ver? ¿De que habla?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 44,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Un líquido para ver? ¿De que habla?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 45,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Un frasco con un líquido. Que pasará si lo pongo en la lampara de aceite",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
         }
     ]
 }

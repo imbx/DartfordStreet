@@ -15,9 +15,9 @@ MonoBehaviour:
   Speed: 2.75
   RunSpeedMultiplier: 1.5
   VisionRange: 50
-  CameraRotations: {x: -17.447042, y: 0, z: 534.2392}
+  CameraRotations: {x: -53.883682, y: 0, z: -902.1136}
   CanMove: 1
   CanLook: 1
   IsBlockedByEvent: 0
-  PlayerPosition: {x: 2.9882126, y: 1.074794, z: -6.2573714}
+  PlayerPosition: {x: 0.7526602, y: 0.9549998, z: 2.7468185}
   isLoadingData: 1

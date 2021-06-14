@@ -1389,6 +1389,40 @@ MonoBehaviour:
   opacity:
     overrideState: 0
     value: 1
+--- !u!114 &-3167462305144845090
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: OutlineFx
+  m_EditorClassIdentifier: Assembly-CSharp::OutlineFx
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  thickness:
+    overrideState: 0
+    value: 1
+  depthMultiplier:
+    overrideState: 0
+    value: 1
+  depthBias:
+    overrideState: 0
+    value: 1
+  normalMultiplier:
+    overrideState: 0
+    value: 1
+  normalBias:
+    overrideState: 0
+    value: 10
+  color:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &-2187878125236942060
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1423,6 +1457,55 @@ MonoBehaviour:
   color:
     overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &-1422005980189143557
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cb7e9e120078f43bce4f0b1be547a7, type: 3}
+  m_Name: AmbientOcclusion
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 2
+  color:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  ambientOnly:
+    overrideState: 0
+    value: 1
+  noiseFilterTolerance:
+    overrideState: 0
+    value: 0
+  blurTolerance:
+    overrideState: 0
+    value: -4.6
+  upsampleTolerance:
+    overrideState: 0
+    value: -12
+  thicknessModifier:
+    overrideState: 0
+    value: 1
+  directLightingStrength:
+    overrideState: 0
+    value: 0
+  radius:
+    overrideState: 1
+    value: 0.15
+  quality:
+    overrideState: 1
+    value: 2
 --- !u!114 &-898480272581749735
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1517,7 +1600,8 @@ MonoBehaviour:
   - {fileID: -4213072894832523308}
   - {fileID: -5058949052031880854}
   - {fileID: 4716217825517878967}
-  - {fileID: 3631605300313731694}
+  - {fileID: -3167462305144845090}
+  - {fileID: -1422005980189143557}
 --- !u!114 &51950002695669872
 MonoBehaviour:
   m_ObjectHideFlags: 3
