@@ -57,9 +57,9 @@ public class CameraMovement : MonoBehaviour {
         if(!isMoving && gameControllerObject.state == GameState.MOVINGCAMERA) {
             if(!sentCameraAway){
                 Debug.Log("[CameraMovement] Set base pos and rot");
-                transform.localPosition = new Vector3(0, 0.6f, 0);
+                transform.localPosition = new Vector3(0, 0, 0);
                 transform.localEulerAngles = Vector3.zero;
-                pointerToLook.localPosition = new Vector3(0, 0.6f, 0.25f);
+                pointerToLook.localPosition = new Vector3(0, 0, 0.25f);
                 gameControllerObject.ChangeState(GameState.PLAYING);
             }
             else gameControllerObject.ChangeState(GameState.INTERACTING);
