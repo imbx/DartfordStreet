@@ -36,11 +36,11 @@ public class FilmProjector : InteractBase {
     {
         float timer = 0;
         float startAngle = ProjectorTop.localEulerAngles.y;
-        float targetAngle = startAngle + (360f / 3);
+        float targetAngle = startAngle + (360f / ProjectorTextures.Length);
         isRotating = true;
         GameController.current.music.playMusic(ruedaSound);
         CurrentProjectorTexture++;
-        if (CurrentProjectorTexture > 2) CurrentProjectorTexture = 0;
+        if (CurrentProjectorTexture > ProjectorTextures.Length - 1) CurrentProjectorTexture = 0;
         TargetMaterial.SetTexture(TextureName, EmptyTexture);
         while(timer < 1f)
         {
