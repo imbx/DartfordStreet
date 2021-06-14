@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f13a2dd1-12c6-4a67-84d8-d3b1fa348827}">
+		<property name="assetPath">
+			<value>chispas 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.8445351473922902</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{762f117f-3692-4c0c-8aa1-0e56eee77780}</destination>
+		</relationship>
+	</object>
+</objects>

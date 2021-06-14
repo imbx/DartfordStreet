@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d58fb77b-f192-4cbe-a3f8-f57758cc5182}">
+		<property name="assetPath">
+			<value>Goteras.L.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>16.179795918367347</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{762f117f-3692-4c0c-8aa1-0e56eee77780}</destination>
+		</relationship>
+	</object>
+</objects>
