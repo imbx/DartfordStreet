@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{e93282c8-a090-4ed3-a10a-bc1ccca5a9fa}">
+		<property name="assetPath">
+			<value>Roda candado 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.065306122448979598</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{762f117f-3692-4c0c-8aa1-0e56eee77780}</destination>
+		</relationship>
+	</object>
+</objects>

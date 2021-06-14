@@ -320,8 +320,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!1 &19616970
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &19616973
 BoxCollider:
@@ -552,8 +552,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 6032841889666634251}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &20071330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6161,7 +6161,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &54939933
 BoxCollider:
@@ -6291,7 +6291,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &56773264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6320,6 +6320,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18530926, y: 0.28171137, z: 0.014697222}
   m_Center: {x: 0.010012932, y: 0.00407134, z: 0.0042308737}
+--- !u!1 &60067896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 60067897}
+  - component: {fileID: 60067898}
+  m_Layer: 6
+  m_Name: sonido_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &60067897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60067896}
+  m_LocalRotation: {x: -0, y: -0, z: 0.53729963, w: 0.8433914}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0880928, y: 0.9175888, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1543031944}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &60067898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60067896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambiente/proyector
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0.8
 --- !u!1 &63514262
 GameObject:
   m_ObjectHideFlags: 0
@@ -7571,8 +7625,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &102828519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7682,6 +7736,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106018268}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &109465397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 109465398}
+  - component: {fileID: 109465399}
+  m_Layer: 6
+  m_Name: sonido
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &109465398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109465397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.481, y: 0, z: 0.537}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450652544626031}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &109465399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109465397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambiente/bomba
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 2.4
 --- !u!1 &115309006
 GameObject:
   m_ObjectHideFlags: 0
@@ -7748,7 +7856,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &115309009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8284,8 +8392,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &127066679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13452,7 +13560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/ambiente/Pluja
+  Event: event:/Ambiente/lluvia
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -13461,7 +13569,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 0
-  OverrideMaxDistance: 11.938938
+  OverrideMaxDistance: 10.81
 --- !u!1 &141554197
 GameObject:
   m_ObjectHideFlags: 0
@@ -13619,8 +13727,8 @@ MonoBehaviour:
   MovDimensions: {x: -0.2, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &143428133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14093,8 +14201,8 @@ MonoBehaviour:
   MovDimensions: {x: 0.25, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &154858747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14512,6 +14620,7 @@ Transform:
   m_Children:
   - {fileID: 1047770946}
   - {fileID: 700566390}
+  - {fileID: 1379487108}
   m_Father: {fileID: 1833972976}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
@@ -15500,8 +15609,8 @@ MonoBehaviour:
   MovDimensions: {x: 0.25, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &233435941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17482,8 +17591,8 @@ MonoBehaviour:
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &342158180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17771,6 +17880,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 15f53b6f8a8157b498740e6212b054d6, type: 3}
   m_PrefabInstance: {fileID: 348751156}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &349124228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349124229}
+  - component: {fileID: 349124230}
+  m_Layer: 0
+  m_Name: sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &349124229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349124228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.178, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1919413197}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349124230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349124228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambiente/reloj
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 1.61
 --- !u!1 &358174151
 GameObject:
   m_ObjectHideFlags: 0
@@ -18365,7 +18528,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &387296392
 BoxCollider:
@@ -18784,7 +18947,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &409063114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19083,9 +19246,9 @@ MonoBehaviour:
   NodesContainer: {fileID: 1183798114}
   ActionText: {fileID: 1228830339}
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
-  openSound: event:/llibreta/abrirLibreta2d
-  exitSound: event:/llibreta/cerrarLibreta2d
-  papelSound: event:/papel2d
+  openSound: event:/libreta/paginas
+  exitSound: event:/libreta/paginas
+  papelSound: event:/libreta/paginas
 --- !u!222 &422119153
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19516,8 +19679,8 @@ MonoBehaviour:
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &441721112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20233,8 +20396,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &497661655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20663,6 +20826,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507357772}
   m_CullTransparentMesh: 1
+--- !u!1 &508000097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 508000098}
+  - component: {fileID: 508000099}
+  m_Layer: 9
+  m_Name: sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &508000098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508000097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.873, y: 1.132, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450652908187957}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &508000099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508000097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambiente/reloj
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 2
 --- !u!1001 &514910436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21244,8 +21461,8 @@ MonoBehaviour:
   MovDimensions: {x: 0, y: 0, z: 0.5}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &532116390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21520,7 +21737,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &556294955
 BoxCollider:
@@ -22146,7 +22363,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &584252517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23745,8 +23962,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!1 &640214510
 GameObject:
   m_ObjectHideFlags: 0
@@ -24084,7 +24301,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &659423764
 BoxCollider:
@@ -24213,7 +24430,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.25
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!114 &664538844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24616,8 +24833,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &689220968
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25243,8 +25460,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &737443107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25402,7 +25619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/ambiente/Pluja
+  Event: event:/Ambiente/lluvia
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -25411,7 +25628,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 0
-  OverrideMaxDistance: 19.030453
+  OverrideMaxDistance: 10.81
 --- !u!1001 &752030208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25829,7 +26046,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!23 &766978516
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27509,7 +27726,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &840597268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27877,8 +28094,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &859158916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28081,6 +28298,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -9122059576407716224, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.905
+      objectReference: {fileID: 0}
+    - target: {fileID: -9122059576407716224, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -9122059576407716224, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.725
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -28161,6 +28390,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5931568465642405048, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -5931568465642405048, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.04
+      objectReference: {fileID: 0}
+    - target: {fileID: -5931568465642405048, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.63
+      objectReference: {fileID: 0}
     - target: {fileID: -4995505552263797108, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -28172,6 +28413,18 @@ PrefabInstance:
     - target: {fileID: -4995505552263797108, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4995505552263797108, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.978
+      objectReference: {fileID: 0}
+    - target: {fileID: -4995505552263797108, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.144
+      objectReference: {fileID: 0}
+    - target: {fileID: -4995505552263797108, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.738
       objectReference: {fileID: 0}
     - target: {fileID: -4967600256151228270, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_Layer
@@ -28332,6 +28585,18 @@ PrefabInstance:
     - target: {fileID: 6554737347055600660, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554737347055600660, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.963
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554737347055600660, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.093
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554737347055600660, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.735
       objectReference: {fileID: 0}
     - target: {fileID: 6582723699965486648, guid: 1e77a21bfeee65d4c814d90a2da170c9, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -29506,6 +29771,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82aec7557c9f0234ca6e2ead722cb9bf, type: 3}
+--- !u!1 &931406373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931406374}
+  - component: {fileID: 931406375}
+  m_Layer: 6
+  m_Name: sonido
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &931406374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931406373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.066, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6272893289910372041}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &931406375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931406373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambiente/proyector
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0.8
 --- !u!1 &932886376
 GameObject:
   m_ObjectHideFlags: 0
@@ -29779,7 +30098,7 @@ MonoBehaviour:
   - {fileID: 2126441294}
   - {fileID: 556294954}
   FinalCombination: 5127
-  candadoSound: event:/candado2d
+  candadoSound: event:/candado
 --- !u!114 &953956446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29803,7 +30122,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &953956447
 BoxCollider:
@@ -29936,8 +30255,8 @@ MonoBehaviour:
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &958218717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36149,7 +36468,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1034492807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36503,7 +36822,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1038620594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37033,7 +37352,7 @@ MonoBehaviour:
   - {fileID: 19616972}
   - {fileID: 1374475429}
   FinalCombination: 4295
-  candadoSound: event:/candado2d
+  candadoSound: event:/candado
 --- !u!1001 &1084831593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37624,7 +37943,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &1098079557
 BoxCollider:
@@ -39566,8 +39885,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.7577963, y: 2.6256812, z: 0.56608963}
+  m_Center: {x: -1.3891094, y: -1.8798941, z: 4.331339}
 --- !u!1 &1188125864
 GameObject:
   m_ObjectHideFlags: 0
@@ -43732,7 +44051,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &1366493998
 BoxCollider:
@@ -44255,7 +44574,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &1374475430
 BoxCollider:
@@ -44695,6 +45014,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5019601, y: 0.63707817, z: 0.01}
   m_Center: {x: -0.005851388, y: -0.10504097, z: 0.0000000015694644}
+--- !u!1 &1379487107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379487108}
+  - component: {fileID: 1379487109}
+  m_Layer: 6
+  m_Name: sonido
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1379487108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379487107}
+  m_LocalRotation: {x: -0, y: -0, z: 0.2164396, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0179195, y: 0.9808457, z: 1}
+  m_Children: []
+  m_Father: {fileID: 187918009}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1379487109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379487107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambiente/proyector
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0.8
 --- !u!1 &1383097859
 GameObject:
   m_ObjectHideFlags: 0
@@ -45289,7 +45662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/ambiente/Pluja
+  Event: event:/Ambiente/lluvia
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -45298,7 +45671,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 0
-  OverrideMaxDistance: 11.938938
+  OverrideMaxDistance: 10.81
 --- !u!1 &1396194552
 GameObject:
   m_ObjectHideFlags: 0
@@ -45383,7 +45756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/ambiente/Pluja
+  Event: event:/Ambiente/lluvia
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -45392,7 +45765,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 1
   OverrideMinDistance: 0
-  OverrideMaxDistance: 19.030453
+  OverrideMaxDistance: 10.81
 --- !u!1 &1401742831
 GameObject:
   m_ObjectHideFlags: 0
@@ -46417,7 +46790,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &1436722793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46485,34 +46858,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -1620080179895627718, guid: e14e26dad0085254189a05e7f18ce929, type: 3}
   m_PrefabInstance: {fileID: 1887364131}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1448475161 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6876326276919770310, guid: 7c46e9e8e95d19b48bb4e1b8fd77a2c8, type: 3}
-  m_PrefabInstance: {fileID: 1864043594}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1448475165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448475161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/ambiente/goteras
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 1.0485193
 --- !u!1 &1449379453
 GameObject:
   m_ObjectHideFlags: 0
@@ -46587,7 +46932,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &1449379456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47064,7 +47409,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1462730574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47277,8 +47622,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &1464349713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47574,8 +47919,8 @@ MonoBehaviour:
   MovDimensions: {x: -0.2, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 4951062977390050768}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &1480364670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48450,6 +48795,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0326961, y: 0.9408532, z: 1}
   m_Center: {x: 0.016348112, y: 0.029573802, z: 0}
+--- !u!1 &1526965076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526965077}
+  - component: {fileID: 1526965078}
+  m_Layer: 0
+  m_Name: soonido
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1526965077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526965076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.075, z: 0.529}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1864043595}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526965078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526965076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/ambiente/goteras
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 1.0485193
 --- !u!4 &1529789247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90e2f47a0b494b44586baddcc6005ccf, type: 3}
@@ -48558,6 +48957,7 @@ Transform:
   m_Children:
   - {fileID: 1824669747}
   - {fileID: 50116566}
+  - {fileID: 60067897}
   m_Father: {fileID: 1833972976}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: -130, z: 0}
@@ -48837,7 +49237,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1564813632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49451,8 +49851,8 @@ MonoBehaviour:
   MovDimensions: {x: 0, y: 0, z: 0.2}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &1580863125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49782,7 +50182,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &1591058715
 BoxCollider:
@@ -50282,7 +50682,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.1
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1614664879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51402,8 +51802,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &1661149062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51483,7 +51883,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1661329242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52216,7 +52616,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1697547778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52274,8 +52674,8 @@ MonoBehaviour:
   MovDimensions: {x: 0.25, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &1698579576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52682,7 +53082,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!23 &1713748835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -52956,7 +53356,7 @@ MonoBehaviour:
   - {fileID: 1098079556}
   - {fileID: 387296391}
   FinalCombination: 1919
-  candadoSound: event:/candado2d
+  candadoSound: event:/candado
 --- !u!1 &1724288092
 GameObject:
   m_ObjectHideFlags: 0
@@ -53023,7 +53423,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1724288095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53360,8 +53760,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &1735031297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53723,15 +54123,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7862391691550088030, guid: 90e2f47a0b494b44586baddcc6005ccf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7639331209684527813, guid: 90e2f47a0b494b44586baddcc6005ccf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2239957647281096195, guid: 90e2f47a0b494b44586baddcc6005ccf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 90e2f47a0b494b44586baddcc6005ccf, type: 3}
       propertyPath: m_Name
@@ -53819,7 +54219,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &1739875153
 BoxCollider:
@@ -54531,7 +54931,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1782744104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55458,8 +55858,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!1 &1823843576
 GameObject:
   m_ObjectHideFlags: 0
@@ -56104,7 +56504,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &1845634858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56437,6 +56837,60 @@ Transform:
   m_Father: {fileID: 543450652158887065}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1858013562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858013563}
+  - component: {fileID: 1858013564}
+  m_Layer: 0
+  m_Name: sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1858013563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858013562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.43, y: -2, z: 5.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 543450651613459405}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858013564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858013562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambiente/goteras
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 1.7
 --- !u!1 &1862107225
 GameObject:
   m_ObjectHideFlags: 0
@@ -57195,7 +57649,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
   Action:
     m_PersistentCalls:
       m_Calls:
@@ -58307,6 +58761,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 0a7b7697fa1d03743bb9df283c92124a, type: 2}
     - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
+      propertyPath: itemSound
+      value: event:/cogerObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260038399895649043, guid: 56767d8d3f95ad94cb7c56743054dcd0, type: 3}
       propertyPath: achievementType
       value: 5
       objectReference: {fileID: 0}
@@ -58520,7 +58978,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &1940144574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59302,8 +59760,8 @@ MonoBehaviour:
   MovDimensions: {x: 0, y: 0, z: 0.25}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &1982687536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59454,7 +59912,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!114 &1988728153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59804,7 +60262,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!114 &1992018142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60830,8 +61288,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!1 &2018029659
 GameObject:
   m_ObjectHideFlags: 0
@@ -61209,7 +61667,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &2028339693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61551,7 +62009,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.15
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &2032912982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63262,7 +63720,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.2
   zoomSpeed: 0.1
   ThoughtAlsoOnExit: 1
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &2094201329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63992,8 +64450,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &2107107877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64114,8 +64572,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 8056900021321747559}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &2107220229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64363,7 +64821,7 @@ MonoBehaviour:
   controller: {fileID: 11400000, guid: cf0be0ce4604b4546bc2f4d9be3d64fc, type: 2}
   Interval: {x: 0, y: 10}
   Number: 0
-  eventoSound: event:/weels2d
+  eventoSound: event:/wheel
   angleOffset: 18
 --- !u!65 &2126441295
 BoxCollider:
@@ -65894,7 +66352,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &313837228188244708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66290,7 +66748,7 @@ MonoBehaviour:
     m_Bits: 1007
   MainLanternColor: {r: 0.9529412, g: 0.6745098, b: 0.43529412, a: 1}
   UVLanternColor: {r: 0.8745098, g: 0.6901961, b: 0.9529412, a: 1}
-  eventoSound: event:/llama/lamaEncendido2d
+  eventoSound: event:/candil/llama
 --- !u!1 &372768529452557842
 GameObject:
   m_ObjectHideFlags: 0
@@ -66991,8 +67449,8 @@ MonoBehaviour:
   MovDimensions: {x: 0.15, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &374987328227544196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67157,7 +67615,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &428283713945437710
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67491,6 +67949,7 @@ Transform:
   - {fileID: 7129599249578289127}
   - {fileID: 3519073915030703655}
   - {fileID: 1095870827}
+  - {fileID: 1858013563}
   m_Father: {fileID: 2064952083}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67671,6 +68130,7 @@ Transform:
   - {fileID: 5928701153169061059}
   - {fileID: 2548386742110669027}
   - {fileID: 7781335803672049725}
+  - {fileID: 508000098}
   m_Father: {fileID: 499315521}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -67784,7 +68244,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &573881979218690653
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -68129,7 +68589,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &672471475458970132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68320,7 +68780,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!4 &699892423946532909
 Transform:
   m_ObjectHideFlags: 0
@@ -68900,7 +69360,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &863244242998505792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69439,7 +69899,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!1 &1013431426484926378
 GameObject:
   m_ObjectHideFlags: 0
@@ -98662,8 +99122,8 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-  interruptorSound: event:/interruptor2d
-  palancaSound: event:/palanca2d
+  interruptorSound: event:/interruptor
+  palancaSound: event:/palanca
 --- !u!33 &1100961384697988637
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -99377,8 +99837,8 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-  interruptorSound: event:/interruptor2d
-  palancaSound: event:/palanca2d
+  interruptorSound: event:/interruptor
+  palancaSound: event:/palanca
 --- !u!33 &1249073697346522635
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -99913,7 +100373,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &1326498214592468604
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -100231,7 +100691,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &1422785312256204822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -100607,7 +101067,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!4 &1612187751603366145
 Transform:
   m_ObjectHideFlags: 0
@@ -101289,7 +101749,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &1797696941058688915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -101348,7 +101808,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &1822220128414229755
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -101488,7 +101948,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
   pic: {fileID: 6962151909431514043}
 --- !u!65 &1836932331140388309
 BoxCollider:
@@ -101602,7 +102062,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
   pic: {fileID: 5456817267417335482}
 --- !u!1 &1836932331745098502
 GameObject:
@@ -101658,7 +102118,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
   pic: {fileID: 1031528695312743354}
 --- !u!65 &1836932331745098504
 BoxCollider:
@@ -101813,7 +102273,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
   pic: {fileID: 7016010496118912077}
 --- !u!65 &1836932333150106374
 BoxCollider:
@@ -102533,7 +102993,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &1986138005676567066
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -102607,7 +103067,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &2024856689510956711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -102652,7 +103112,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!1 &2035354991955279929
 GameObject:
   m_ObjectHideFlags: 0
@@ -102778,8 +103238,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!23 &2104208049937921678
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -103140,8 +103600,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!114 &2229488405584869713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103715,7 +104175,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!23 &2383847280381748175
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -104020,7 +104480,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &2473498638624011860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104245,7 +104705,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &2542227722592694034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -109587,7 +110047,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!114 &2829250832276413141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109674,7 +110134,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!1 &2856258663154144836
 GameObject:
   m_ObjectHideFlags: 0
@@ -110033,7 +110493,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &2931169663296866472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -112258,7 +112718,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &3010769881500234794
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -112471,8 +112931,8 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-  interruptorSound: event:/interruptor2d
-  palancaSound: event:/palanca2d
+  interruptorSound: event:/interruptor
+  palancaSound: event:/palanca
 --- !u!4 &3013381805076581947
 Transform:
   m_ObjectHideFlags: 0
@@ -112560,7 +113020,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!4 &3016052489730300598
 Transform:
   m_ObjectHideFlags: 0
@@ -112733,7 +113193,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &3068844165063237311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -112861,7 +113321,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &3124340764767073177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -112914,7 +113374,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &3140705523835231438
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -113221,7 +113681,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!4 &3176976667006322203
 Transform:
   m_ObjectHideFlags: 0
@@ -113287,8 +113747,8 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-  interruptorSound: event:/interruptor2d
-  palancaSound: event:/palanca2d
+  interruptorSound: event:/interruptor
+  palancaSound: event:/palanca
 --- !u!1 &3196679449033904823
 GameObject:
   m_ObjectHideFlags: 0
@@ -113605,7 +114065,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &3292336671184740348
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -114135,7 +114595,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &3442587517852751844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -114270,8 +114730,8 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-  interruptorSound: event:/interruptor2d
-  palancaSound: event:/palanca2d
+  interruptorSound: event:/interruptor
+  palancaSound: event:/palanca
 --- !u!33 &3469287836602460450
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -114343,7 +114803,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &3481981549357589315
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -114383,7 +114843,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!23 &3502211929905413885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -114833,7 +115293,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!33 &3653741854845021862
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -114873,7 +115333,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!4 &3663354590336506808
 Transform:
   m_ObjectHideFlags: 0
@@ -117103,7 +117563,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &3797936164385704074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -117630,7 +118090,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!1 &3920017894794483969
 GameObject:
   m_ObjectHideFlags: 0
@@ -118248,8 +118708,8 @@ MonoBehaviour:
   MovDimensions: {x: -1.3, y: 0, z: 0}
   Speed: 1
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/estanteria
+  cerrarCajon: event:/estanteria
 --- !u!114 &4056878810455269164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119890,7 +120350,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &4503555609523322876
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120032,7 +120492,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &4585998780499454346
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -120115,7 +120575,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &4597784057986717219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120219,7 +120679,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!1 &4633991140707845951
 GameObject:
   m_ObjectHideFlags: 0
@@ -120408,7 +120868,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &4710580729740789881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120958,8 +121418,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!114 &4898291038163778131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121080,7 +121540,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!1 &4943049527838562914
 GameObject:
   m_ObjectHideFlags: 0
@@ -121158,8 +121618,8 @@ MonoBehaviour:
   MovDimensions: {x: 0, y: 0, z: 0.2}
   Speed: 2
   contiguousDrawer: {fileID: 1480364669}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &4951062977390050769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121305,7 +121765,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &5025176126437212346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -121421,7 +121881,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!23 &5066702240400714222
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -121632,7 +122092,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &5083466056683731965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -122286,7 +122746,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!23 &5324261904257896134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -122560,7 +123020,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &5424930818132539749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -122702,7 +123162,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!114 &5428142393477662875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122840,7 +123300,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &5463687140100197448
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -123003,7 +123463,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!114 &5477700670643837530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123035,7 +123495,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.5
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!136 &5477700670643837531
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -123557,7 +124017,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &5595887447870915542
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -124096,8 +124556,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!33 &5733549476885270658
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -125046,8 +125506,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 20071329}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &6032841889666634252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -125216,7 +125676,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!33 &6047745936221068293
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -125471,7 +125931,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!65 &6139207335570974493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -125764,6 +126224,7 @@ Transform:
   - {fileID: 4102349933106527115}
   - {fileID: 1593449794}
   - {fileID: 1617628764}
+  - {fileID: 931406374}
   m_Father: {fileID: 1833972976}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: -65, z: 0}
@@ -125887,7 +126348,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!4 &6294879123022920880
 Transform:
   m_ObjectHideFlags: 0
@@ -125962,7 +126423,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &6307205571119655276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -126064,7 +126525,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &6327522904146934529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -126434,8 +126895,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  interruptorSound: event:/interruptor2d
-  palancaSound: event:/palanca2d
+  interruptorSound: event:/interruptor
+  palancaSound: event:/palanca
 --- !u!4 &6477315032380798139
 Transform:
   m_ObjectHideFlags: 0
@@ -126719,8 +127180,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!23 &6522023154272360547
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -126854,7 +127315,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &6562536806483157985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127015,7 +127476,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!1 &6592401360658945291
 GameObject:
   m_ObjectHideFlags: 0
@@ -127914,7 +128375,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!33 &6879287767958748336
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -128534,7 +128995,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &7039236332218981757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -128783,7 +129244,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!1 &7105499384952814582
 GameObject:
   m_ObjectHideFlags: 0
@@ -128857,7 +129318,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!4 &7129599249578289127
 Transform:
   m_ObjectHideFlags: 0
@@ -129161,8 +129622,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!23 &7251170818441344679
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -130439,7 +130900,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!4 &7728163213102771096
 Transform:
   m_ObjectHideFlags: 0
@@ -130610,7 +131071,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &7751191602974071146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -131776,7 +132237,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!4 &7866784826063799396
 Transform:
   m_ObjectHideFlags: 0
@@ -131935,7 +132396,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!33 &7902276619808481730
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -132271,8 +132732,8 @@ MonoBehaviour:
   targetAngle: -90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!4 &7978751557453535805
 Transform:
   m_ObjectHideFlags: 0
@@ -132365,7 +132826,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &7994821920502364964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -132587,8 +133048,8 @@ MonoBehaviour:
   MovDimensions: {x: 0.2, y: 0, z: 0}
   Speed: 2
   contiguousDrawer: {fileID: 0}
-  abrirCajon: "event:/caj\xF3n/abrirCajon2d"
-  cerrarCajon: "event:/caj\xF3n/cerrarCajon2d"
+  abrirCajon: event:/cajones/abrirCajon
+  cerrarCajon: event:/cajones/cerrarCajon
 --- !u!114 &8022149785552610096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132733,8 +133194,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 2107220228}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!65 &8056900021321747560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -132873,7 +133334,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &8082898391355599613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -132961,7 +133422,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &8114139720008964583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133573,8 +134034,8 @@ MonoBehaviour:
   targetAngle: 90
   isDoorOpen: 0
   contiguousDoor: {fileID: 0}
-  abrirPuerta: event:/puerta/abrirPuerta2d
-  cerrarPuerta: event:/puerta/cerrarPuerta2d
+  abrirPuerta: event:/puertas/abrirPuerta
+  cerrarPuerta: event:/puertas/cerrarPuerta
 --- !u!1 &8226463597115449364
 GameObject:
   m_ObjectHideFlags: 0
@@ -134075,7 +134536,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &8378343502521631932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -134226,7 +134687,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!1 &8426460324885238108
 GameObject:
   m_ObjectHideFlags: 0
@@ -134948,7 +135409,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!65 &8594978529912355357
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -135001,7 +135462,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!4 &8623709359366378386
 Transform:
   m_ObjectHideFlags: 0
@@ -135422,7 +135883,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!114 &8731973589292895938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135460,8 +135921,8 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-  interruptorSound: event:/interruptor2d
-  palancaSound: event:/palanca2d
+  interruptorSound: event:/interruptor
+  palancaSound: event:/palanca
 --- !u!1 &8745167656290248469
 GameObject:
   m_ObjectHideFlags: 0
@@ -136066,7 +136527,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!23 &8840522409224037630
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -137030,7 +137491,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/libreta/paginas
 --- !u!1 &9120290757196349114
 GameObject:
   m_ObjectHideFlags: 0

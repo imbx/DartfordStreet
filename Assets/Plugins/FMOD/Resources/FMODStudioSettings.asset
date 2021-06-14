@@ -267,8 +267,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/Sounds/FMOD/GMA_Matins_Primerversio.fspro
-  sourceBankPath: Assets\Sounds\FMOD\Build
+  sourceProjectPath: Assets/Sounds/DartfordStFmodFinal/DartfordStFmodFinal.fspro
+  sourceBankPath: Assets\Sounds\DartfordStFmodFinal\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
