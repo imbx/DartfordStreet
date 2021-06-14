@@ -39,6 +39,12 @@ public class PicturePuzzle : MonoBehaviour {
         pictures.Shuffle();
         List<Picture> tempPictures = pictures;
         pictures = new List<Picture>();
+
+        foreach(Picture pic in tempPictures)
+        {
+            pic.gameObject.layer = LayerMask.NameToLayer("Blocked");
+        }
+        
         foreach(Picture pic in tempPictures)
             {
                 pic.MovePicture();
