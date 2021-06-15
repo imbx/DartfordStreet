@@ -477,8 +477,8 @@
         {
             "id": 32,
             "size": {
-                "x": 500.0,
-                "y": 220.0
+                "x": 788.0,
+                "y": 300.0
             },
             "anchoredPosition": {
                 "x": -96,
@@ -816,6 +816,21 @@
                 "y": -35
             },
             "dialogueText": "Una librería con tres baldas. Que libros más raros...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 55,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¡¿Una bomba?! ¿En que orden corto los cables?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.5

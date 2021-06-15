@@ -56,15 +56,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Projection1:
-        m_Texture: {fileID: 2800000, guid: 5fec3e80d3c5a0949a0a5a8b886f0e96, type: 3}
+        m_Texture: {fileID: 2800000, guid: 752f55dd1bbd19943a8d1bc82de5f3ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Projection2:
-        m_Texture: {fileID: 2800000, guid: 7902740bc29535d4883d4f2082ed09c2, type: 3}
+        m_Texture: {fileID: 2800000, guid: ccd4e9430d84db342a74198ff5fe6734, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Projection3:
-        m_Texture: {fileID: 2800000, guid: 49b59ec413c63374d828a40a791ee88f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 752f55dd1bbd19943a8d1bc82de5f3ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
