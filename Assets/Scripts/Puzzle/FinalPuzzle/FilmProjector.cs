@@ -35,7 +35,7 @@ public class FilmProjector : InteractBase {
     IEnumerator RotateProjector()
     {
         float timer = 0;
-        float startAngle = ProjectorTop.localEulerAngles.y;
+        float startAngle = ProjectorTop.localEulerAngles.z;
         float targetAngle = startAngle + (360f / ProjectorTextures.Length);
         isRotating = true;
         GameController.current.music.playMusic(ruedaSound);

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Thunder : MonoBehaviour {
     public List<Light> thunderLights;
+
+    public Vector2 SpawnInterval = new Vector2(3f, 5f);
     public bool ExecuteThunder = false;
 
     [Header("Thunder Parameters")]
@@ -14,71 +16,77 @@ public class Thunder : MonoBehaviour {
     [SerializeField] private float HoldAtMaxTimer = 0.5f;
     [SerializeField] private float SpeedToRemove = 1f;
 
+    [Header("FMOD Sound")]
+
+    [FMODUnity.EventRef]
+    public string thunderSound = "event:/Ambiente/trueno";
+
+
+    private float SpawnTimer = -1f;
+    
+
     private bool isAnimating = false;
 
     private void Update() {
-        if(ExecuteThunder && !isAnimating)
+
+        if(SpawnTimer == 0)
         {
-            ExecuteThunder = false;
+            SpawnTimer = Random.Range(SpawnInterval.x, SpawnInterval.y + 1);
 
             StartCoroutine(AnimThunder());
+        }
+
+        if(!isAnimating && SpawnTimer != -1)
+        {
+            SpawnTimer -= Time.deltaTime;
         }
     }
 
     IEnumerator AnimThunder()
     {
-        isAnimating = true;
-        float timer = 0f;
-        while(timer < TimeToMaxIntensity)
+        if(thunderLights.Count > 0)
         {
-            timer += Time.deltaTime;
-            foreach(Light x in thunderLights)
+            Light x = thunderLights[Random.Range(0, thunderLights.Count)];
+            isAnimating = true;
+            float timer = 0f;
+            while(timer < TimeToMaxIntensity)
             {
+                timer += Time.deltaTime;
                 x.intensity = Mathf.Lerp(0, MaxIntensity, timer / TimeToMaxIntensity);
                 yield return null;
             }
-            yield return null;
-        }
 
-        timer = 0f;
-        while(timer < TimeToHalf)
-        {
-            timer += Time.deltaTime;
-            foreach(Light x in thunderLights)
+            timer = 0f;
+            while(timer < TimeToHalf)
             {
+                timer += Time.deltaTime;
                 x.intensity = Mathf.Lerp(MaxIntensity, LowestMaxIntensity, timer / TimeToHalf);
                 yield return null;
             }
-            yield return null;
-        }
 
-        timer = 0f;
-        while(timer < TimeToHalf)
-        {
-            timer += Time.deltaTime;
-            foreach(Light x in thunderLights)
+            GameController.current.music.playMusic(thunderSound);
+
+            timer = 0f;
+            while(timer < TimeToHalf)
             {
+                timer += Time.deltaTime;
+
                 x.intensity = Mathf.Lerp(LowestMaxIntensity, MaxIntensity, timer / TimeToHalf);
                 yield return null;
             }
-            yield return null;
-        }
 
-        yield return new WaitForSeconds(HoldAtMaxTimer);
+            yield return new WaitForSeconds(HoldAtMaxTimer);
 
-        timer = 0f;
-        while(timer < 1f)
-        {
-            timer += Time.deltaTime * SpeedToRemove;
-            foreach(Light x in thunderLights)
+            timer = 0f;
+            while(timer < 1f)
             {
+                timer += Time.deltaTime * SpeedToRemove;
                 x.intensity = Mathf.Lerp(x.intensity, 0, timer);
                 yield return null;
             }
-            yield return null;
+            
+            isAnimating = false;
         }
-        
-        isAnimating = false;
         yield return null;
     }
 }
