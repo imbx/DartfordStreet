@@ -13,7 +13,7 @@ public class RoomManager : MonoBehaviour {
     private bool isUserPlaying = false;
     private bool isUserInRoom = false;
     private bool hasToEnd = false;
-    private float Counter = 60f;
+    public float Counter = 60f;
 
     public UnityEvent Action;
 
