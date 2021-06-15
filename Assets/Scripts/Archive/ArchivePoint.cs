@@ -10,7 +10,7 @@ public class ArchivePoint : MonoBehaviour {
     private Archive nodesParent;
 
     [FMODUnity.EventRef]
-    string pasarPagina = "event:/papel2d";
+    string pasarPagina = "event:/libreta/paginas";
 
     public void SetData(int dest, string title, Archive archive)
     {
