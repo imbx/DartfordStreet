@@ -79,7 +79,7 @@ public class Archive : MonoBehaviour
             Pages[GetPageFromListPost(currentPage)].SetActive(false);
             Pages[GetPageFromListPost(pageId)].SetActive(true);
 
-            ActionText.text = Pages[GetPageFromListPost(pageId)].isDoubleFaced ? "Pulsa [Tab] para salir   [Click derecho] para voltear" : "Pulsa [Tab] para salir";
+            GameController.current.gameCObject.playerTargetTag = Pages[GetPageFromListPost(pageId)].isDoubleFaced ? "ArchiveFlip" : "Archive";
             
             SelectCircle(currentPage, pageId);
             currentPage = pageId;

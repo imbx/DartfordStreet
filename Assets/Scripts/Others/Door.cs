@@ -55,7 +55,7 @@ public class Door : InteractBase {
         if(hasRequirement)
         {
             if(GameController.current.database.GetProgressionState(reqID))
-                transform.tag = "Untagged";
+                transform.tag = "BasicInteraction";
 
         }
 

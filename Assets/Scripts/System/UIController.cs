@@ -13,6 +13,8 @@ public class UIController : MonoBehaviour {
     public List<GameObject> TargetUIObjects;
     public List<Sprite> Interactions;
 
+    public GameObject InteractText;
+
     public void SetNotebookActive(bool active = true) {
         archive.gameObject.SetActive(active);
         // Notebook.SetActive(active);
@@ -45,17 +47,24 @@ public class UIController : MonoBehaviour {
 
     public void TargetUI(string targetTag)
     {
+        string tempString = GameController.current.database.GetInteraction(targetTag);
 
+        if(tempString != " ")
+        {
+            InteractText.SetActive(true);
+            InteractText.GetComponent<Text>().text = tempString;
+        } else InteractText.SetActive(false);
+        
         if(targetTag == "Safebox")
         {
             SafeboxText.SetActive(true);
         } else SafeboxText.SetActive(false);
         
-        foreach(GameObject gObject in TargetUIObjects)
+        /*foreach(GameObject gObject in TargetUIObjects)
         {
             if(gObject.activeInHierarchy && gObject.name != targetTag) gObject.SetActive(false);
             else if(gObject.name == targetTag) gObject.SetActive(true);
-        }
+        }*/
     }
 
     public void ForceDiaryPage(int reqId)

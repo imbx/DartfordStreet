@@ -54,7 +54,7 @@ public class TargetController : MonoBehaviour {
             else
             {
                 TargetThoughtTimer = 0;
-                if(!gcObject.isInPuzzle) gcObject.playerTargetTag = hit.collider.tag;
+                gcObject.playerTargetTag = hit.collider.tag;
 
                 // Debug.Log("[TargetController] Hitpoint : " + hit.point);
                 gcObject.playerTargetPosition = hit.point;
@@ -69,7 +69,7 @@ public class TargetController : MonoBehaviour {
                         gcObject.state != BoxScripts.GameState.LOOKITEM &&
                         gcObject.state != BoxScripts.GameState.ENDLOOKITEM)
                         {
-                            gcObject.playerTargetTag = hit.collider.tag;
+                            //gcObject.playerTargetTag = hit.collider.tag;
                             switch(hit.collider.tag)
                             {
                                 case "BasicInteraction":

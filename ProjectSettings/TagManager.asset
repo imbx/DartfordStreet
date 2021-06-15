@@ -16,6 +16,8 @@ TagManager:
   - BasicInteraction
   - Alfombra
   - PlacePicture
+  - ItemNoPick
+  - Book
   layers:
   - Default
   - TransparentFX

@@ -57,7 +57,9 @@ public class Item : InteractBase {
                 // transform.SetParent(GameController.current.gameCObject.camera.transform);
                 BoxUtils.SetLayerRecursively(gameObject, 8);
                 Debug.Log("[Item] Moving in");
-                tag = "Item";
+                if(CanPickup)
+                    tag = "Item";
+                else tag = "ItemNoPick";
                 if(Son) {
                     
                     // gameObject.layer = LayerMask.NameToLayer("Blocked");

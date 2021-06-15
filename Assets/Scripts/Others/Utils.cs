@@ -130,6 +130,14 @@ namespace BoxScripts {
         public float lifeTime;
     }
 
+     [Serializable]
+    public class Interactions
+    {
+        public string tag;
+        public string interactionText;
+    }
+
+
     [Serializable]
     public class SerializableVector2
     {

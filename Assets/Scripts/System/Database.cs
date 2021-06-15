@@ -10,11 +10,14 @@ public class Database {
     // private Dictionary<int, string>  Dialogues;
 
     private Dictionary<int, Dialogue> Dialogues;
+
+    private Dictionary<string, string> Interact;
     private Dictionary<int, bool> PlayerProgression;
     public EntityData playerData;
 
     public Database(EntityData entityData, bool ignoreSavedGame = true) {
         Dialogues = new Dictionary<int, Dialogue>();
+        Interact = new Dictionary<string, string>();
         PlayerProgression = new Dictionary<int, bool>();
         playerData = entityData;
         // Try to load
@@ -25,6 +28,8 @@ public class Database {
     private bool LoadData() {
         //Dialogues.Add(1, "Test dialogue");
         ParseDialogueData("Database/dialogues");
+        ParseInteractionsData("Database/interactions");
+
         AddProgressionID(-1, true);
         AddProgressionID(0, true);
         AddProgressionID(1, true);
@@ -117,6 +122,26 @@ public class Database {
                 Debug.Log("[Database] Dialogue added " + row[0] + " : " + row[1]);
             }
         }*/
+    }
+
+    public void ParseInteractionsData(string fileName)
+    {
+        var textAsset = Resources.Load<TextAsset>(fileName);
+
+        Interactions[] d = JsonHelper.FromJson<Interactions>(textAsset.text);
+
+        foreach(Interactions i in d)
+        {
+            Interact.Add(i.tag, i.interactionText);
+            Debug.Log("[Database] Interaction added " + i.tag + " : "  + i.interactionText);
+        }
+    }
+
+    public string GetInteraction(string tag)
+    {
+        if(Interact.ContainsKey(tag)) return Interact[tag];
+
+        return " ";
     }
 
     public bool EditProgression(int eventID, bool check = true) {
