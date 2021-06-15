@@ -17548,7 +17548,7 @@ GameObject:
   - component: {fileID: 320447709}
   m_Layer: 0
   m_Name: 3.10
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27402,7 +27402,7 @@ MonoBehaviour:
   zoomedDistanceToCamera: 0.25
   zoomSpeed: 0.05
   ThoughtAlsoOnExit: 0
-  itemSound: event:/cogerObject2d
+  itemSound: event:/cogerObject
 --- !u!114 &749524373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41120,7 +41120,7 @@ GameObject:
   - component: {fileID: 1124896237}
   m_Layer: 0
   m_Name: 3.11
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42586,7 +42586,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1183041198}
-  m_Layer: 0
+  - component: {fileID: 1183041199}
+  m_Layer: 9
   m_Name: Parts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42624,6 +42625,19 @@ Transform:
   m_Father: {fileID: 4486908875894846720}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1183041199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183041197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9015602, y: 0.83647656, z: 3.209598}
+  m_Center: {x: -0.02583063, y: 0.3097916, z: 1.104792}
 --- !u!1 &1183798114
 GameObject:
   m_ObjectHideFlags: 0
@@ -70624,7 +70638,7 @@ GameObject:
   - component: {fileID: 313837228188244707}
   m_Layer: 0
   m_Name: 3.8
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71887,7 +71901,7 @@ GameObject:
   - component: {fileID: 428283713945437709}
   m_Layer: 0
   m_Name: 2.8
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72823,7 +72837,7 @@ GameObject:
   - component: {fileID: 672471475458970131}
   m_Layer: 0
   m_Name: 3.5
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73001,7 +73015,7 @@ GameObject:
   - component: {fileID: 697176094423328380}
   m_Layer: 0
   m_Name: 1.16
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73594,7 +73608,7 @@ GameObject:
   - component: {fileID: 863244242998505791}
   m_Layer: 0
   m_Name: 2.7
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104850,7 +104864,7 @@ GameObject:
   - component: {fileID: 1422785312256204821}
   m_Layer: 0
   m_Name: 3.6
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107064,7 +107078,7 @@ GameObject:
   - component: {fileID: 1986138005676567065}
   m_Layer: 0
   m_Name: 2.15
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107138,7 +107152,7 @@ GameObject:
   - component: {fileID: 2024856689510956710}
   m_Layer: 0
   m_Name: 3.14
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108557,7 +108571,7 @@ GameObject:
   - component: {fileID: 2473498638624011859}
   m_Layer: 0
   m_Name: 3.4
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108769,7 +108783,7 @@ GameObject:
   - component: {fileID: 2532165598326298714}
   m_Layer: 0
   m_Name: 1.4
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112377,7 +112391,7 @@ GameObject:
   - component: {fileID: 2827091323000803019}
   m_Layer: 0
   m_Name: 1.7
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112836,7 +112850,7 @@ GameObject:
   - component: {fileID: 2931169663296866471}
   m_Layer: 0
   m_Name: 2.11
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115061,7 +115075,7 @@ GameObject:
   - component: {fileID: 3010769881500234793}
   m_Layer: 0
   m_Name: 3.3
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115350,7 +115364,7 @@ GameObject:
   - component: {fileID: 3015604459481868825}
   m_Layer: 0
   m_Name: 1.1
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115536,7 +115550,7 @@ GameObject:
   - component: {fileID: 3068844165063237310}
   m_Layer: 0
   m_Name: 2.2
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115664,7 +115678,7 @@ GameObject:
   - component: {fileID: 3124340764767073176}
   m_Layer: 0
   m_Name: 2.1
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116011,7 +116025,7 @@ GameObject:
   - component: {fileID: 3176713217659773985}
   m_Layer: 0
   m_Name: 1.6
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116939,7 +116953,7 @@ GameObject:
   - component: {fileID: 3442587517852751843}
   m_Layer: 0
   m_Name: 2.5
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117610,7 +117624,7 @@ GameObject:
   - component: {fileID: 3653381934994692807}
   m_Layer: 0
   m_Name: 1.3
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119875,7 +119889,7 @@ GameObject:
   - component: {fileID: 3797936164385704073}
   m_Layer: 0
   m_Name: 3.1
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120389,7 +120403,7 @@ GameObject:
   - component: {fileID: 3918026851435124836}
   m_Layer: 0
   m_Name: 1.2
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121021,7 +121035,7 @@ GameObject:
   - component: {fileID: 4056878810455269164}
   - component: {fileID: 4056878810455269163}
   - component: {fileID: 4056878810455269165}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LibraryCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122621,7 +122635,7 @@ GameObject:
   - component: {fileID: 4503555609523322875}
   m_Layer: 0
   m_Name: 2.13
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122838,7 +122852,7 @@ GameObject:
   - component: {fileID: 4597784057986717218}
   m_Layer: 0
   m_Name: 2.12
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123131,7 +123145,7 @@ GameObject:
   - component: {fileID: 4710580729740789880}
   m_Layer: 0
   m_Name: 3.9
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123790,7 +123804,7 @@ GameObject:
   - component: {fileID: 4935222726577673782}
   m_Layer: 0
   m_Name: 1.10
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124028,7 +124042,7 @@ GameObject:
   - component: {fileID: 5025176126437212345}
   m_Layer: 0
   m_Name: 2.6
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124131,7 +124145,7 @@ GameObject:
   - component: {fileID: 5059181373779060474}
   m_Layer: 0
   m_Name: 1.13
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124355,7 +124369,7 @@ GameObject:
   - component: {fileID: 5083466056683731964}
   m_Layer: 0
   m_Name: 3.16
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124943,6 +124957,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  UISafebox: {fileID: 2001309192}
 --- !u!65 &5302709689310654451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -125256,7 +125271,7 @@ GameObject:
   - component: {fileID: 5424930818132539748}
   m_Layer: 0
   m_Name: 3.2
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126212,7 +126227,7 @@ GameObject:
   - component: {fileID: 5595887447870915541}
   m_Layer: 0
   m_Name: 2.3
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127858,7 +127873,7 @@ GameObject:
   - component: {fileID: 6040591916071148349}
   m_Layer: 0
   m_Name: 1.12
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128448,7 +128463,7 @@ GameObject:
   - component: {fileID: 6289918227344372106}
   m_Layer: 0
   m_Name: 1.5
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128536,7 +128551,7 @@ GameObject:
   - component: {fileID: 6307205571119655275}
   m_Layer: 0
   m_Name: 3.7
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129328,7 +129343,7 @@ GameObject:
   - component: {fileID: 6562536806483157984}
   m_Layer: 0
   m_Name: 3.13
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130927,7 +130942,7 @@ GameObject:
   - component: {fileID: 7039236332218981756}
   m_Layer: 0
   m_Name: 3.12
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131163,7 +131178,7 @@ GameObject:
   - component: {fileID: 7097036043279795845}
   m_Layer: 0
   m_Name: 1.15
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131237,7 +131252,7 @@ GameObject:
   - component: {fileID: 7105499384952814583}
   m_Layer: 0
   m_Name: 1.9
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132967,7 +132982,7 @@ GameObject:
   - component: {fileID: 7751191602974071145}
   m_Layer: 0
   m_Name: 2.9
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134267,7 +134282,7 @@ GameObject:
   - component: {fileID: 7895570839549376859}
   m_Layer: 0
   m_Name: 1.11
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134692,7 +134707,7 @@ GameObject:
   - component: {fileID: 7994821920502364963}
   m_Layer: 0
   m_Name: 2.16
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135200,7 +135215,7 @@ GameObject:
   - component: {fileID: 8082898391355599612}
   m_Layer: 0
   m_Name: 2.14
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135288,7 +135303,7 @@ GameObject:
   - component: {fileID: 8114139720008964582}
   m_Layer: 0
   m_Name: 2.4
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136402,7 +136417,7 @@ GameObject:
   - component: {fileID: 8378343502521631931}
   m_Layer: 0
   m_Name: 2.10
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136540,7 +136555,7 @@ GameObject:
   - component: {fileID: 8417351402820455924}
   m_Layer: 0
   m_Name: 1.14
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137245,7 +137260,7 @@ GameObject:
   - component: {fileID: 8594978529912355356}
   m_Layer: 0
   m_Name: 3.15
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137706,7 +137721,7 @@ GameObject:
   - component: {fileID: 8721993626127920830}
   m_Layer: 0
   m_Name: 1.8
-  m_TagString: Untagged
+  m_TagString: Book
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

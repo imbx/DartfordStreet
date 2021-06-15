@@ -15,10 +15,13 @@ public class SafeBox : PuzzleBase
     public Door childDoor;
 
     public UnityEvent EndAction;
+
+    public GameObject UISafebox;
     public override void Execute(bool isLeftAction = true)
     {
         // transform.tag = "Safebox";
         base.Execute();
+        UISafebox.SetActive(true);
     }    
     void Update()
     {
@@ -49,6 +52,7 @@ public class SafeBox : PuzzleBase
     {
         // transform.tag = "Untagged";
         base.OnEnd(destroyGameObject);
+        UISafebox.SetActive(false);
         EndAction.Invoke();
 
         
@@ -59,6 +63,7 @@ public class SafeBox : PuzzleBase
     public override void OnExit()
     {
         // transform.tag = "BasicInteraction";
+        UISafebox.SetActive(false);
         base.OnExit();
     }
 }

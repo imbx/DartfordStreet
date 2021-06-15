@@ -55,10 +55,10 @@ public class UIController : MonoBehaviour {
             InteractText.GetComponent<Text>().text = tempString;
         } else InteractText.SetActive(false);
         
-        if(targetTag == "Safebox")
+        /*if(targetTag == "Safebox")
         {
             SafeboxText.SetActive(true);
-        } else SafeboxText.SetActive(false);
+        } else SafeboxText.SetActive(false);*/
         
         /*foreach(GameObject gObject in TargetUIObjects)
         {

@@ -35,7 +35,7 @@ public class TargetController : MonoBehaviour {
             if(Mathf.Abs((hit.transform.position - transform.position).magnitude) >
                 InteractRange && !gcObject.targetAllLayers)
             {
-                if(!gcObject.isInPuzzle) gcObject.playerTargetTag = "";
+                if(!((m_PlayerMovement.isInputHold || m_PlayerMovement.isInput2Hold) && gcObject.playerTargetTag != "")) gcObject.playerTargetTag = "";
                 // if(gcObject.state == BoxScripts.GameState.TARGETING) gcObject.ChangeState(BoxScripts.GameState.PLAYING);
                 GameController.current.ui.ChangeCursor(-1);
                 return;
@@ -54,7 +54,7 @@ public class TargetController : MonoBehaviour {
             else
             {
                 TargetThoughtTimer = 0;
-                gcObject.playerTargetTag = hit.collider.tag;
+                if(!((m_PlayerMovement.isInputHold || m_PlayerMovement.isInput2Hold) && gcObject.playerTargetTag != "")) gcObject.playerTargetTag = hit.collider.tag;
 
                 // Debug.Log("[TargetController] Hitpoint : " + hit.point);
                 gcObject.playerTargetPosition = hit.point;
@@ -114,7 +114,7 @@ public class TargetController : MonoBehaviour {
         else
         {
             TargetThoughtTimer = 0;
-            if(!gcObject.isInPuzzle) gcObject.playerTargetTag = "";
+            if(!((m_PlayerMovement.isInputHold || m_PlayerMovement.isInput2Hold) && gcObject.playerTargetTag != "")) gcObject.playerTargetTag = "";
             // if(gcObject.state == BoxScripts.GameState.TARGETING) gcObject.ChangeState(BoxScripts.GameState.PLAYING);
             GameController.current.ui.ChangeCursor(-1);
         }
