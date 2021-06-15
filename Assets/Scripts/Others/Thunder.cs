@@ -89,4 +89,9 @@ public class Thunder : MonoBehaviour {
         }
         yield return null;
     }
+
+    public void TriggerFirstThunder()
+    {
+        SpawnTimer = 0;
+    }
 }
