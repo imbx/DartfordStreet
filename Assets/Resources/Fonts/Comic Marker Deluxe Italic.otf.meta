@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 49f6b69182de62348a402b3143c3b01e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Comic Marker Deluxe
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 08a64b723c2cdf84cb81411ba680bc9a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
