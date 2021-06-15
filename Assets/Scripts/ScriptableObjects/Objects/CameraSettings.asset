@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CameraSettings
   m_EditorClassIdentifier: 
   MinPitch: -55
-  MaxPitch: 40
+  MaxPitch: 50
   YawSpeed: 22.5
   PitchSpeed: 11
   InvertY: 1

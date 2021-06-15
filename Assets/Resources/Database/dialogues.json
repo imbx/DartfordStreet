@@ -665,7 +665,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Un líquido para ver? ¿De que habla?",
+            "dialogueText": "¿Quizás pueda arreglar ahora los cables",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.5
@@ -680,7 +680,142 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Un frasco con un líquido. Que pasará si lo pongo en la lampara de aceite",
+            "dialogueText": "Un frasco con un líquido. ¿Que pasará si lo pongo en la lampara de aceite?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 46,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "No funciona. Quizás me falta alguna herramienta...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 47,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Una caja fuerte. ¿La podré abrir?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 48,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Esos numeros... ¿Serán combinaciones?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 49,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Supongo que necesito una herramienta...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 50,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Otra puerta con combinación...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 51,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Podría ser útil...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 52,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Es un mapa... ¿Me podrá ser útil?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 53,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "La nota menciona una ruta por el Reino Unido...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 2.5
+        },
+        {
+            "id": 54,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Una librería con tres baldas. Que libros más raros...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.5
