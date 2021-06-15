@@ -830,11 +830,28 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¡¿Una bomba?! ¿En que orden corto los cables?",
+            "dialogueText": "¡¿Una bomba?! ¿En que orden corto los cables? Si me equivoco al cortarlos explotará",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.5
+        },
+        {
+            "id": 56,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "El orden es correcto. Quizás tenga que activar la electricidad...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
         }
+        
     ]
 }
     
