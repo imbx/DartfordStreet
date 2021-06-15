@@ -29,10 +29,10 @@ public class Thunder : MonoBehaviour {
 
     private void Update() {
 
-        if(SpawnTimer == 0)
+        if(SpawnTimer <= 0 && SpawnTimer != -1)
         {
-            SpawnTimer = Random.Range(SpawnInterval.x, SpawnInterval.y + 1);
-
+            SpawnTimer = Random.Range(SpawnInterval.x, SpawnInterval.y) * 60f;
+            Debug.Log("[Thunder] Time for next Thunder : " + SpawnTimer);
             StartCoroutine(AnimThunder());
         }
 
@@ -55,6 +55,7 @@ public class Thunder : MonoBehaviour {
                 x.intensity = Mathf.Lerp(0, MaxIntensity, timer / TimeToMaxIntensity);
                 yield return null;
             }
+            GameController.current.music.playMusic(thunderSound);
 
             timer = 0f;
             while(timer < TimeToHalf)
@@ -63,8 +64,6 @@ public class Thunder : MonoBehaviour {
                 x.intensity = Mathf.Lerp(MaxIntensity, LowestMaxIntensity, timer / TimeToHalf);
                 yield return null;
             }
-
-            GameController.current.music.playMusic(thunderSound);
 
             timer = 0f;
             while(timer < TimeToHalf)

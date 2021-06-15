@@ -41,10 +41,13 @@ public class RoomManager : MonoBehaviour {
         if(!isUserPlaying) return;
 
         
-        if(bomb.isBombDeactivated) hasToEnd = true;
+        if(bomb.isBombDeactivated) 
+        {
+            hasToEnd = true;
+        }
 
         if(bomb.isBombExploding || (Counter < 0f)) StartCoroutine(PlayEnd());
-        if(hasToEnd && Counter >= 0f) StartCoroutine(PlayGoodEnd());
+        if(hasToEnd && Counter >= 0f) StartCoroutine(PlayEnd());
         // else if(hasToEnd && Counter < 0f) PlayBadEnd;
 
         Counter -= Time.deltaTime;
@@ -110,7 +113,5 @@ public class RoomManager : MonoBehaviour {
     IEnumerator PlayGoodEnd()
     {
         yield return new WaitForSeconds(1.5f);
-
-
     }
 }
