@@ -27,7 +27,7 @@ public class RoomManager : MonoBehaviour {
         CounterGameObject.SetActive(false);
         isUserInRoom = false;
         isUserPlaying = false;
-        Counter = 60f;
+        // Counter = 60f;
     }
 
     private void Update() {
