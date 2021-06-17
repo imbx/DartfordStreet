@@ -1042,6 +1042,54 @@
             "isAnchoredAtCenter": false,
             "lifeTime": 4
 
+        },
+        {
+            "id": 69,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Oliver... Durante la guerra vivimos muchas cosas. Espero que algún día no tengamos que fingir ",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 70,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "El líquido... Debe utilizarlo para pintar cosas",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 71,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Vaciar mi cuero? ¿Que va a hacer? Tengo que pararle",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
         }
     ]
 }
