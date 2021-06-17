@@ -877,7 +877,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Oliver de pequeño, que arodable",
+            "dialogueText": "Oliver de pequeño, que adorable",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -914,8 +914,104 @@
             "isAnchoredAtCenter": false,
             "lifeTime": 4
 
+        },
+        {
+            "id": 61,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Parece que estos proyectores muestran algun símbolo",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 62,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Cada proyector tiene una rueda con símbolos... ",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 63,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¡Oli! ¿Que te has tomado? ¿Que es este líquido?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 64,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¿Por que haces esto? ¿Cómo la desactivo?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 65,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Que raro, Oliver siempre ha sido muy ordenado...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
+        },
+        {
+            "id": 66,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "¡Oli! ¿Por que has caido en esto?",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
         }
-        
+
     ]
 }
     
