@@ -1010,6 +1010,22 @@
             "isAnchoredAtCenter": false,
             "lifeTime": 4
 
+        },
+        {
+            "id": 67,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Recuerdo cuando le envié esto a Oliver. Cada día pienso como hubiera sido mi vida con él",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
+
         }
 
     ]
