@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BombController : PuzzleBase {
+public class BombController : PuzzleBase
+{
 
 
     [Header("AntiWire Puzzle Parameters")]
@@ -16,26 +17,27 @@ public class BombController : PuzzleBase {
         GetComponent<BoxCollider>().enabled = false;
     }
 
-    private void Update() {
-        if(isInteractingThis && controller.isEscapePressed)
+    private void Update()
+    {
+        if (isInteractingThis && controller.isEscapePressed)
         {
             Debug.Log("[PuzzleBase] Called Escape");
-            this.OnEnd();
+            this.OnExit();
         }
     }
 
     public void CutCable(int wireId)
     {
-        if(WireOrder.Count <= 0) return;
+        if (WireOrder.Count <= 0) return;
 
-        if(wireId == WireOrder[0]) WireOrder.Remove(wireId);
-        else 
+        if (wireId == WireOrder[0]) WireOrder.Remove(wireId);
+        else
         {
             isBombExploding = true;
             return;
         }
 
-        if(WireOrder.Count == 0) isBombDeactivated = true;
+        if (WireOrder.Count == 0) isBombDeactivated = true;
     }
-    
+
 }
