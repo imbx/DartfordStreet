@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65decb411772d7042b883976724e8cd5, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  Speed: 7
+  Speed: 4
   RunSpeedMultiplier: 1.5
   VisionRange: 50
   CameraRotations: {x: -35.19626, y: 0, z: -101.84929}
