@@ -1005,7 +1005,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¡Oli! ¿Por que has caido en esto?",
+            "dialogueText": "Oli...¿Por que has caido en esto?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -1026,8 +1026,23 @@
             "isAnchoredAtCenter": false,
             "lifeTime": 4
 
-        }
+        },
+        {
+            "id": 68,
+            "size": {
+                "x": 766,
+                "y": 280
+            },
+            "anchoredPosition": {
+                "x": 0,
+                "y": -35
+            },
+            "dialogueText": "Tiene nombre de gato...",
+            "isAnchoredAtTop": true,
+            "isAnchoredAtCenter": false,
+            "lifeTime": 4
 
+        }
     ]
 }
     
