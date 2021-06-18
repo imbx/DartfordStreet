@@ -195,11 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5dd2c371303bf94eb2475cad914f9d7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.75
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5dd2c371303bf94eb2475cad914f9d7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0000014540663
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5dd2c371303bf94eb2475cad914f9d7, type: 3}
       propertyPath: m_LocalRotation.x
@@ -207,11 +207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5dd2c371303bf94eb2475cad914f9d7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -2.0037305e-12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5dd2c371303bf94eb2475cad914f9d7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000014603138
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f5dd2c371303bf94eb2475cad914f9d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -250,7 +250,7 @@ Animator:
   m_GameObject: {fileID: 92943511}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9117c0a0a774d4d4bad7c7b172cd75c7, type: 2}
+  m_Controller: {fileID: 9100000, guid: b48ed1e58371cf54ab8084fee81faac1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -503,6 +503,7 @@ GameObject:
   - component: {fileID: 201017935}
   - component: {fileID: 201017936}
   - component: {fileID: 201017937}
+  - component: {fileID: 201017938}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -568,13 +569,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201017931}
-  m_LocalRotation: {x: 0.18318318, y: 0.16808662, z: -0.03180588, w: 0.96808016}
-  m_LocalPosition: {x: 7.39, y: 0.53, z: -0.82}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -18.88, z: -1.838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 21.43, y: 19.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &201017935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +667,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e8ccdba6fac9404ba698f0b39f9e47d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &201017938
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201017931}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d5af8f483acd8b4e8021b6002dbcb3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &230718487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,13 +1820,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011755996}
-  m_LocalRotation: {x: 0.18318318, y: 0.16808662, z: -0.03180588, w: 0.96808016}
-  m_LocalPosition: {x: 7.39, y: 0.53, z: -0.82}
+  m_LocalRotation: {x: 0.06575069, y: -0.098552026, z: 0.031337775, w: 0.9924628}
+  m_LocalPosition: {x: 8.742, y: 0.53, z: -3.893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 732617337}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 21.43, y: 19.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 7.856, y: -11.146, z: 2.849}
 --- !u!1 &1025995404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,7 +2416,7 @@ MonoBehaviour:
   m_Text: "Victor Iba\xF1ez\nJose Miguel Arranz\nEmma Montserrat\nAlvaro Vidal\nRoger
     Montane\nJ\xF9lia Camba\n\n\n\n\nCarmen Filgaira\nPaula Alvira\nMiriam Martin\nLaura
     Alonso\nAna Marin\nNara Oller \nMart\xED Nogu\xE9s\nNerea Ortiz\n\n\nRodrigo
-    Ben\nMart\xED Guillot\nDani Rodriguez\nLeo Vicario\nAlbert Batista\nMeritxell
+    Ben\nMart\xED Guillot\nDani Rodriguez\nLeo Vicario\nAndrea Raya\nAlbert Batista\nMeritxell
     Cord\xF3n\nMarina Alzueta\nGara Ib\xE1\xF1ez\nGerm\xE1n Bueno\nMarc & Alice Gagrera\nAina
     Vidal\nPol Segarra\n"
 --- !u!222 &1365527086
@@ -3412,8 +3432,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Productor & Dise\xF1ador\nArtista & Programador\nArtista\n\"Artista\"\nProgramador\nDise\xF1adora\n\n\n\n\nSonidos\n\n\n\n\n\n
-    \n\n\n\nAgradecimientos"
+  m_Text: "Productor & Dise\xF1ador\nArtista & Programador\nArtista\n\"Artista\"\nProgramador\nDise\xF1adora\n\n\n\n\nSonidos\n\n\n\n\n\n\n\n\n\nAgradecimientos"
 --- !u!222 &1826749721
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4321,6 +4340,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3184320693984838363}
+  - component: {fileID: 3184320693984838342}
+  - component: {fileID: 3184320693984838343}
   m_Layer: 0
   m_Name: __GLOBAL__
   m_TagString: Untagged
@@ -4328,6 +4349,48 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3184320693984838342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184320693984838341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8d346c21759a040a5518cf31dce5b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 201017933}
+  gObject: {fileID: 11400000, guid: da79aebf0ea0e4999b7fad6670219c4e, type: 2}
+  targetPoints:
+  - {fileID: 1011755997}
+  - {fileID: 1724460340}
+  cameraAnimator: {fileID: 201017938}
+  newspaper: {fileID: 92943512}
+  credits: {fileID: 1750920320}
+  firstTimer: 4
+  timer: 12
+  FadeImage: {fileID: 4697718323457126486}
+--- !u!95 &3184320693984838343
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3184320693984838341}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d5af8f483acd8b4e8021b6002dbcb3b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3184320693984838363
 Transform:
   m_ObjectHideFlags: 0
@@ -4482,7 +4545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4697718323457126486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4496,7 +4559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

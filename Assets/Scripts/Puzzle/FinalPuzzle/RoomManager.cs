@@ -44,6 +44,7 @@ public class RoomManager : MonoBehaviour {
         if(bomb.isBombDeactivated) 
         {
             hasToEnd = true;
+            GameController.current.gameCObject.hasGoodEnd = true;
         }
 
         if(bomb.isBombExploding || (Counter < 0f)) StartCoroutine(PlayEnd());
@@ -107,7 +108,7 @@ public class RoomManager : MonoBehaviour {
 
         yield return null;
 
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("FinalCredits");
     }
 
     IEnumerator PlayGoodEnd()

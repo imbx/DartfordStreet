@@ -15,6 +15,8 @@ public class GameControllerObject : ScriptableObject {
 
     private GameState prevState = GameState.PLAYING;
 
+    public bool hasGoodEnd = false;
+
     public void ChangeState(GameState gs)
     {
         justChangedState = true;

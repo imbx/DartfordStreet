@@ -11,11 +11,16 @@ public class CreditScene : MonoBehaviour {
     public bool playAnimation = false;
     private float timer = 0f;
 
+    public void AnimateCredits()
+    {
+        playAnimation = true;
+    }
+
     void OnEnable()
     {
         timer = 0f;
         targetUIText.localPosition = new Vector3(targetUIText.localPosition.x, startendY.x,targetUIText.localPosition.z);
-        playAnimation = true;
+        // playAnimation = true;
     }
 
     private void Update() {
