@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour{
     public bool ignoreSavedGame = true;
 
     private void Awake() {
-        DontDestroyOnLoad(this);
+        // DontDestroyOnLoad(this);
         current = this;
         Debug.Log("Loading Database");
         #if UNITY_EDITOR

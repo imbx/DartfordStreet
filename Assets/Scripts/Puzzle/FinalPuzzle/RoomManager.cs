@@ -48,8 +48,14 @@ public class RoomManager : MonoBehaviour {
             GameController.current.gameCObject.hasGoodEnd = true;
         }
 
-        if(bomb.isBombExploding || (Counter < 0f)) StartCoroutine(PlayEnd());
-        if(hasToEnd && Counter >= 0f) StartCoroutine(PlayEnd());
+        if(bomb.isBombExploding || (Counter < 0f)) 
+        {
+            GameController.current.gameCObject.hasGoodEnd = false;
+            StartCoroutine(PlayEnd());
+        }
+        if(hasToEnd && Counter >= 0f) {
+            StartCoroutine(PlayEnd());
+        }
         // else if(hasToEnd && Counter < 0f) PlayBadEnd;
 
         Counter -= Time.deltaTime;
