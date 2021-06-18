@@ -17,8 +17,6 @@ public class RoundedLock : InteractBase
     {
         base.Execute(isLeftAction);
         isInteractingThis = true;
-
-
     }
 
     void Update()

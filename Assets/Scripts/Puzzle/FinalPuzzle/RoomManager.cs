@@ -44,6 +44,7 @@ public class RoomManager : MonoBehaviour {
         if(bomb.isBombDeactivated) 
         {
             hasToEnd = true;
+            Debug.Log("Casting good end");
             GameController.current.gameCObject.hasGoodEnd = true;
         }
 
