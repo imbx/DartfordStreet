@@ -131,6 +131,7 @@ public class Item : InteractBase {
     {
         isInteractingThis = false;
         if(Son) Son.GetComponent<Item>().isInteractingThis = false;
+        tag = "Untagged";
         isLeftAction = false;
         GameController.current.database.EditProgression(_id, true);
         gameControllerObject.ChangeState(GameState.ENDLOOKITEM);

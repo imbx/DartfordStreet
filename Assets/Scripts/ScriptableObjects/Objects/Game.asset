@@ -16,3 +16,8 @@ MonoBehaviour:
   camera: {fileID: 0}
   requireFocus: 1
   justChangedState: 0
+  playerTargetTag: 
+  playerTargetPosition: {x: 0, y: 0, z: 0}
+  targetAllLayers: 0
+  isInPuzzle: 0
+  hasGoodEnd: 1
