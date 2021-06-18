@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65decb411772d7042b883976724e8cd5, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  Speed: 4
+  Speed: 4.5
   RunSpeedMultiplier: 1.5
   VisionRange: 50
-  CameraRotations: {x: -35.19626, y: 0, z: -101.84929}
+  CameraRotations: {x: -55, y: 0, z: -63.600784}
   CanMove: 1
   CanLook: 1
   IsBlockedByEvent: 0
-  PlayerPosition: {x: 2.96791, y: 4.16, z: -3.5615795}
+  PlayerPosition: {x: -2.452521, y: 4.16, z: -1.6364856}
   isLoadingData: 1
