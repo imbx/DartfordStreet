@@ -11,6 +11,8 @@ public class AntiwireKnot : InteractBase
     public float SpeedToDeactivate = 4f;
     private Vector3 startRotation;
 
+    public Transform RealWire;
+
     private bool isActivated = false;
 
 
@@ -19,8 +21,10 @@ public class AntiwireKnot : InteractBase
         if (!isActivated)
         {
             isActivated = true;
-            Action.Invoke(WireId);
-            StartCoroutine(Deactivate());
+            Action.Invoke(WireId); 
+            Destroy(RealWire.gameObject);
+            Destroy(this);
+            //StartCoroutine(Deactivate());
         }
     }
 
@@ -28,7 +32,7 @@ public class AntiwireKnot : InteractBase
     {
         if (!isActivated)
         {
-            startRotation = transform.localEulerAngles;
+            startRotation = RealWire.localEulerAngles;
         }
     }
 
@@ -42,7 +46,7 @@ public class AntiwireKnot : InteractBase
         {
             timer += Time.deltaTime * SpeedToDeactivate;
 
-            transform.localEulerAngles = new Vector3(
+            RealWire.localEulerAngles = new Vector3(
                 Mathf.Lerp(startRotation.x, startRotation.x + targetRotation.x, timer),
                 Mathf.Lerp(startRotation.y, startRotation.y + targetRotation.y, timer),
                 Mathf.Lerp(startRotation.z, startRotation.z + targetRotation.z, timer)

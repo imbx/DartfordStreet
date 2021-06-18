@@ -42,7 +42,7 @@
         },
         {
             "tag": "Item",
-            "interactionText": "Pulsa [Click izq] para interactuar   Manten [Click dch] para rotar   Pulsa [Esc] para salir\n"
+            "interactionText": "Pulsa [Click izq] para interactuar   Manten [Click dch] para rotar   [W] [S] para hacer zoom   Pulsa [Esc] para salir\n"
         },
         {
             "tag": "ItemNoPick",
