@@ -27,6 +27,9 @@ public class GameController : MonoBehaviour{
 
     public Texture2D CircleCursor;
 
+    [Range(0,5)]
+    public int vSyncCount = 1;
+
     [Header("SAVED GAME")]
     public bool ignoreSavedGame = true;
 
@@ -52,6 +55,8 @@ public class GameController : MonoBehaviour{
 
         Vector2 cursorOffset = new Vector2(CircleCursor.width/2, CircleCursor.height/2);
         Cursor.SetCursor(CircleCursor, cursorOffset, CursorMode.Auto);
+
+        QualitySettings.vSyncCount = vSyncCount;
     }
 
     private void Update() {
