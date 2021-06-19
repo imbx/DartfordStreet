@@ -17,6 +17,8 @@ public class GameControllerObject : ScriptableObject {
 
     public bool hasGoodEnd = false;
 
+    public bool isFirstFloor = true;
+
     public void ChangeState(GameState gs)
     {
         justChangedState = true;

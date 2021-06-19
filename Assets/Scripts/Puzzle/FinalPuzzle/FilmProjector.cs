@@ -16,6 +16,8 @@ public class FilmProjector : InteractBase {
     private bool isRotating = false;
 
     private int CurrentProjectorTexture = 0;
+
+    public Light spotLight;
     
 
     [FMODUnity.EventRef]
@@ -42,6 +44,7 @@ public class FilmProjector : InteractBase {
         CurrentProjectorTexture++;
         if (CurrentProjectorTexture > ProjectorTextures.Length - 1) CurrentProjectorTexture = 0;
         TargetMaterial.SetTexture(TextureName, EmptyTexture);
+        spotLight.enabled = false;
         while(timer < 1f)
         {
             timer += RotationSpeed * Time.deltaTime;
@@ -53,6 +56,7 @@ public class FilmProjector : InteractBase {
             yield return null;
         }
         TargetMaterial.SetTexture(TextureName, ProjectorTextures[CurrentProjectorTexture]);
+        spotLight.enabled = true;
         ProjectorTop.localEulerAngles = new Vector3(
                 ProjectorTop.localEulerAngles.x,
                 ProjectorTop.localEulerAngles.y,

@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Projection2:
-        m_Texture: {fileID: 2800000, guid: ccd4e9430d84db342a74198ff5fe6734, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7902740bc29535d4883d4f2082ed09c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Projection3:

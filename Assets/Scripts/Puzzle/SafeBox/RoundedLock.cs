@@ -40,8 +40,8 @@ public class RoundedLock : InteractBase
 
         transform.localEulerAngles = new Vector3(0, (int)Mathf.Lerp(0, 360f, RotationLerp), 0);
         
-        if(mouseDir > 0) parent.FirstNumber = (int) CurrentRotation;
-        else parent.SecondNumber = (int) CurrentRotation;
+        if(controller.isInputHold) parent.FirstNumber = (int) CurrentRotation;
+        else if(controller.isInput2Hold) parent.SecondNumber = (int) CurrentRotation;
 
         Debug.Log("[RoundedLock] Current rot : " + CurrentRotation + " First Number is " + parent.FirstNumber + " and second is " + parent.SecondNumber);
     
