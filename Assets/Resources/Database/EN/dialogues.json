@@ -10,7 +10,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Quizás deberia inspecionar esta zona",
+            "dialogueText": "Maybe I should look around this area",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -25,7 +25,7 @@
                 "x": -396,
                 "y": -35
             },
-            "dialogueText": "Es posible que esto me resulte de utilidad",
+            "dialogueText": "This may be helpful to me",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -40,7 +40,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "¿Debería encontrar una manera de abrir esto?",
+            "dialogueText": "Should I find a way to open this?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -55,7 +55,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Que extraño, esto parece significar algo...",
+            "dialogueText": "This might mean something...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -70,7 +70,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Esto parece interesante",
+            "dialogueText": "This seems interesting",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -85,7 +85,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Oliver no estaba bien...",
+            "dialogueText": "Oliver was not well...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -100,7 +100,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Hmm parece un patrón",
+            "dialogueText": "Looks like a pattern",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -115,7 +115,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Puede que Oliver esté arriba",
+            "dialogueText": "Oliver may be upstairs",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -130,7 +130,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "La radio emite un ruido extraño. Parece el código que Oliver invento cuando combatiamos juntos... ¡Le encantaba usarlo para ocultar combinaciones!",
+            "dialogueText": "The radio is making a strange noise. It looks like the code Oliver invented when we fought together... He loved to use it to hide combinations!",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 5.0
@@ -145,7 +145,7 @@
                 "x": 0,
                 "y": -30
             },
-            "dialogueText": "Quizás debería primero subir los plomos. ¡Nadie sabe que puede ocurrir en la oscuridad!",
+            "dialogueText": "Maybe I should activate the fuses first. Nobody knows what can happen in the darkness!",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4.0
@@ -161,7 +161,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "¿Estos cuadros? ¿Por qué guardaría una copia aquí?",
+            "dialogueText": "These paintings? Why would he keep a copy here?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -177,7 +177,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Esta nota está rota, además parece que ha desaparecido un trozo",
+            "dialogueText": "This note is broken, it also seems that a piece has disappeared",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -193,7 +193,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Creo que encenderé las luces",
+            "dialogueText": "I think I'll turn on the lights",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -209,7 +209,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Se encienden las luces, buen trabajo Arthur",
+            "dialogueText": "The lights are turning on, good job Arthur",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -225,7 +225,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Me resulta familiar...",
+            "dialogueText": "This seems familiar to me...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -241,7 +241,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Hay unos numeros apuntados",
+            "dialogueText": "There are some numbers pointed",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -257,7 +257,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Parece que esto no funciona bien, necesito una herramienta",
+            "dialogueText": "",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -273,7 +273,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Vaya esto parece que tenga un mecanismo para moverse, ¿necesitará electricidad?",
+            "dialogueText": "",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.0
@@ -303,7 +303,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Será mejor que lo apunte!",
+            "dialogueText": "I should write this down",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.0
@@ -318,7 +318,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Con el lio de cables que hay abajo,\n ¿de que me sirve subir los plomos?",
+            "dialogueText": "With the mess of cables that are below, what's the point of activating the leads?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 2.5
@@ -333,7 +333,7 @@
                 "x": -445,
                 "y": -35
             },
-            "dialogueText": "Nunca había visto unas letras así.\n En la nota menciona que esconde algo detrás de la librería...",
+            "dialogueText": "I've never seen letters like this. In the note he mentions that he hides something behind the bookcase...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 2.5
@@ -348,7 +348,7 @@
                 "x": -90,
                 "y": -35
             },
-            "dialogueText": "Voy a probar con esta llave",
+            "dialogueText": "I'm going to try with this key",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -363,7 +363,7 @@
                 "x": -90,
                 "y": -35
             },
-            "dialogueText": "Oliver tiene un amigo llamado Abraham. Al parecer le falta una mano",
+            "dialogueText": "Oliver has a friend named Abraham. Apparently he has just one hand",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -378,7 +378,7 @@
                 "x": -95,
                 "y": -35
             },
-            "dialogueText": "Recuerdo a su hermana Emily… Parece que esta carta es de los bombardeos de la guerra",
+            "dialogueText": "I remember Oliver’s sister Emily... It seems that this letter is from the war bombings",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4.5
@@ -393,7 +393,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "En esta carta su amigo menciona la revolución Irlandesa...",
+            "dialogueText": "n this letter his friend Alfie mentions the Irish revolution ...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 3.5
@@ -408,7 +408,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "Parece que está cerrado con llave y un candado",
+            "dialogueText": "It looks like it's locked with a key and a padlock",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 3.5
@@ -423,7 +423,7 @@
                 "x": -90,
                 "y": -35
             },
-            "dialogueText": "Esta nota habla de un código secreto para encriptar combinaciones… Recuerdo que Oliver lo creó durante la guerra",
+            "dialogueText": "This note talks about a secret code to encrypt combinations ... I remember that Oliver created it during the war",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -438,7 +438,7 @@
                 "x": -90,
                 "y": -35
             },
-            "dialogueText": "Parece que aquí había un cuadro antes...",
+            "dialogueText": "It seems that there was a painting here before...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -454,7 +454,7 @@
                 "x": -50,
                 "y": -35
             },
-            "dialogueText": "¿Diagnosticaron a Oliver con estrés postraumático? Parece un asunto grave",
+            "dialogueText": "Was Oliver Diagnosed With Post Traumatic Stress? Seems like a big deal",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -469,7 +469,7 @@
                 "x": -90,
                 "y": -35
             },
-            "dialogueText": "Oliver... Lo que dice en esta nota es preocupante",
+            "dialogueText": "Oliver ... What he says in this note is worrying",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -484,7 +484,7 @@
                 "x": -96,
                 "y": -35
             },
-            "dialogueText": "¿Por qué habla de una fuerza superior? Nunca he visto este símbolo...",
+            "dialogueText": "Why does he speak about a superior force? I've never seen this symbol before...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -499,7 +499,7 @@
                 "x": -90,
                 "y": -35
             },
-            "dialogueText": "Pero… ¿De qué estás hablando Oliver? Está claro que está perdiendo la cabeza...",
+            "dialogueText": "But… What are you talking about, Oliver? Clearly he is losing his mind...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -530,7 +530,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Un candado y una cerradura? Si que se toma en serio la seguridad...",
+            "dialogueText": "A padlock and a lock? He is Definitely taking his security seriously...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -545,7 +545,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Pólvora? Que estás tramando Oliver...",
+            "dialogueText": "Powder? What are you hatching?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -560,7 +560,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "La puerta tiene candado. ¿Cuál será la combinación?",
+            "dialogueText": "The door has a padlock. What is the combination be?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -575,7 +575,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "A Oliver le encanta el arte. Recuerdo que siempre me lo explicaba cuando combatimos juntos",
+            "dialogueText": "Oliver loves art. I remember he was always explaining it to me when we fought together",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -590,7 +590,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Un cuadro de un hombre sin mano...",
+            "dialogueText": "A painting of a man without a hand...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -605,7 +605,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Bonita radio. ¿Puedo encenderla?",
+            "dialogueText": "Nice radio. Can I turn it on?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -620,7 +620,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Un trozo de nota?",
+            "dialogueText": "A piece of a note?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": true,
             "lifeTime": 4
@@ -635,7 +635,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Oliver guarda la llave de la puerta de arriba en la cocina",
+            "dialogueText": "Oliver keeps the key to the upstairs door in the kitchen",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -650,7 +650,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Un líquido para ver? ¿De que habla?",
+            "dialogueText": "A liquid to see? What is he talking about?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -665,7 +665,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Quizás pueda arreglar ahora los cables",
+            "dialogueText": "Maybe I can fix the cables now",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -680,7 +680,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Un frasco con un líquido. ¿Que pasará si lo pongo en la lámpara de aceite?",
+            "dialogueText": "A bottle with a liquid. What will happen if I put it in the oil lamp?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -695,7 +695,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "No funciona. Quizás me falta alguna herramienta...",
+            "dialogueText": "It does not work. Maybe I need a tool...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -710,7 +710,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Una caja fuerte. ¿La podré abrir?",
+            "dialogueText": "A strongbox. Can I open it?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -725,7 +725,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Esos números... ¿Serán combinaciones?",
+            "dialogueText": "Those numbers... Are they combinations?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -740,7 +740,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Supongo que necesito una herramienta...",
+            "dialogueText": "I guess I need a tool...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -755,7 +755,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Otra puerta con combinación...",
+            "dialogueText": "Another door with a combination...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -770,7 +770,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Podría ser útil...",
+            "dialogueText": "It could be useful...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -785,7 +785,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Es un mapa de Reino Unido",
+            "dialogueText": "It's a map of United Kingdom",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -800,7 +800,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "La nota menciona una ruta por el Reino Unido...",
+            "dialogueText": "The note mentions a route through the United Kingdom...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -815,7 +815,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Una librería con tres baldas. Que libros más raros...",
+            "dialogueText": "A bookcase with three shelves. What strange books...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -830,7 +830,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¡¿Una bomba?! ¿En qué orden corto los cables? Si me equivoco al cortarlos explotará",
+            "dialogueText": "A bomb?! In what order do I cut the cables? If I do it wrong it will explode",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -845,7 +845,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "El orden es correcto. Quizás tenga que activar la electricidad...",
+            "dialogueText": "The order is correct. I may have to turn on the electricity...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -861,7 +861,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Un cuadro de Oliver conmigo. Lo echo de menos. Espero que esté bien",
+            "dialogueText": "A painting of Oliver and me. I miss him so much. I hope he is fine",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -877,7 +877,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Oliver de pequeño, que adorable",
+            "dialogueText": "Oliver as a child. How adorable he was",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -893,7 +893,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "A Oliver siempre le ha gustado pintar. Espero que continúe siendo el mismo...",
+            "dialogueText": "Oliver has always liked to paint. I hope he continues being the same...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -909,7 +909,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Hilo y chinchetas. Puedo hacer algo con ello",
+            "dialogueText": "Thread and thumbtacks. I can do something with it",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -925,7 +925,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Parece que estos proyectores muestran algun símbolo",
+            "dialogueText": "It seems that these projectors show some symbol",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -941,7 +941,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Cada proyector tiene una rueda con símbolos... ",
+            "dialogueText": "Each projector has a wheel with symbols...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -957,7 +957,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¡Oli! ¿Qué te has tomado? ¿Qué es este líquido?",
+            "dialogueText": "Oli! What have you drunk? What is this liquid?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -973,7 +973,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Por qué haces esto? ¿Cómo la desactivo?",
+            "dialogueText": "Why are you doing this? How do I deactivate it?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -989,7 +989,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Que raro, Oliver siempre ha sido muy ordenado...",
+            "dialogueText": "This is weird, Oliver has always been very tidy...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -1005,7 +1005,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Oli...¿Por qué has caído en esto?",
+            "dialogueText": "Oli ... Why are you doing this?",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -1021,7 +1021,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Recuerdo cuando le envié esto a Oliver. Cada día pienso como hubiera sido mi vida con él",
+            "dialogueText": "I remember when I sent this to Oliver. Every day I think about how my life would have been with him.",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -1037,7 +1037,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Tiene nombre de gato...",
+            "dialogueText": "It seems like a cat name...",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -1053,7 +1053,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "Oliver... Durante la guerra vivimos muchas cosas. Espero que algún día no tengamos que fingir",
+            "dialogueText": "Oliver... During the war we lived through many things. I hope one day we don't have to pretend",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -1069,7 +1069,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "El líquido... Debe utilizarlo para pintar cosas",
+            "dialogueText": "The liquid... He might use it to paint things",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
@@ -1085,7 +1085,7 @@
                 "x": 0,
                 "y": -35
             },
-            "dialogueText": "¿Vaciar mi cuerpo? ¿Que va a hacer? Tengo que pararle",
+            "dialogueText": "Clear out my body? What are you going to do? I have to stop him",
             "isAnchoredAtTop": true,
             "isAnchoredAtCenter": false,
             "lifeTime": 4
