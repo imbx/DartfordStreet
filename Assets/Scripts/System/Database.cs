@@ -27,8 +27,8 @@ public class Database {
 
     private bool LoadData() {
         //Dialogues.Add(1, "Test dialogue");
-        ParseDialogueData("Database/dialogues");
-        ParseInteractionsData("Database/interactions");
+        ParseDialogueData("Database/" + GameController.current.gameCObject.lang + "/dialogues");
+        ParseInteractionsData("Database/" + GameController.current.gameCObject.lang + "/interactions");
 
         AddProgressionID(-1, true);
         AddProgressionID(0, true);

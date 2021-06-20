@@ -6,11 +6,15 @@ using UnityEngine.UI;
 public class DiaryPage : MonoBehaviour {
     public int ReqID = 0;
     public string Title = " ";
+    public string Title_EN = " ";
     public NotebookType pageType;
     
     public bool isDoubleFaced = false;
     public Sprite CaraA;
     public Sprite CaraB;
+
+    public Sprite A_EN;
+    public Sprite B_EN;
     private bool isShowingFaceA = true;
 
     public bool isActive { get { return gameObject.activeInHierarchy; } }
@@ -25,12 +29,16 @@ public class DiaryPage : MonoBehaviour {
     public void SetActive(bool setActive)
     {
         gameObject.SetActive(setActive);
-        GetComponent<Image>().sprite = isShowingFaceA ? CaraA : CaraB;
+        if(GameController.current.gameCObject.lang == "ES")
+            GetComponent<Image>().sprite = isShowingFaceA ? CaraA : CaraB;
+        else GetComponent<Image>().sprite = isShowingFaceA ? A_EN : B_EN;
     }
     public void Flip()
     {
         isShowingFaceA = !isShowingFaceA;
-        GetComponent<Image>().sprite = isShowingFaceA ? CaraA : CaraB;
+        if(GameController.current.gameCObject.lang == "ES")
+            GetComponent<Image>().sprite = isShowingFaceA ? CaraA : CaraB;
+        else GetComponent<Image>().sprite = isShowingFaceA ? A_EN : B_EN;
     }
 
     

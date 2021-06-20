@@ -8,6 +8,9 @@ public class Achievement : MonoBehaviour {
     public List<string> Texts;
     public List<string> LowTexts;
 
+    public List<string> Texts_EN;
+    public List<string> LowTexts_EN;
+
     public Image AchievementIcon;
     public Text UpperText;
     public Text LowerText;
@@ -47,8 +50,17 @@ public class Achievement : MonoBehaviour {
         if(Icons.Count < (int) achievement || (int) achievement < 0) return;
 
         AchievementIcon.sprite = Icons[(int) achievement];
-        UpperText.text = Texts[(int) achievement];
-        LowerText.text = LowTexts[(int) achievement];
+        if(GameController.current.gameCObject.lang == "ES")
+        {
+            UpperText.text = Texts[(int) achievement];
+            LowerText.text = LowTexts[(int) achievement];
+        }
+        else
+        {
+            UpperText.text = Texts_EN[(int) achievement];
+            LowerText.text = LowTexts_EN[(int) achievement];
+        }
+        
 
         gameObject.SetActive(true);
     }

@@ -17,6 +17,7 @@ public class SettingsMenu : MonoBehaviour
     public Slider AudioSlider;
     public Slider mouseX;
     public Slider mouseY;
+    public Dropdown language;
 
     private void OnEnable()
     {
@@ -24,6 +25,7 @@ public class SettingsMenu : MonoBehaviour
         AudioSlider.value = audioValue;
         mouseX.value = cSettings.YawSpeed;
         mouseY.value = cSettings.PitchSpeed;
+        language.value = gObject.lang == "ES" ? 0 : 1;
     }
 
     public void setVolume (float volumeChosed)
@@ -52,6 +54,11 @@ public class SettingsMenu : MonoBehaviour
             //CameraSettings.
             //si el boton esta activo, se tiene que invertir la camara
         }
+    }
+
+    public void SetLanguage(int value)
+    {
+        gObject.lang = value == 0 ? "ES" : "EN";
     }
 
     public void Return()

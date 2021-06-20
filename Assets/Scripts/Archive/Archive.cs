@@ -167,7 +167,12 @@ public class Archive : MonoBehaviour
             point.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             goParent.GetComponent<ArchivePoint>().DotImage = point.GetComponent<Image>();
             Debug.Log("[Archive] Setting node data");
-            goParent.GetComponent<ArchivePoint>().SetData(nodes.Count, Pages[ArchivePositions[nodes.Count]].Title, this);
+            
+            if(GameController.current.gameCObject.lang == "ES")
+                goParent.GetComponent<ArchivePoint>().SetData(nodes.Count, Pages[ArchivePositions[nodes.Count]].Title, this);
+            else
+                goParent.GetComponent<ArchivePoint>().SetData(nodes.Count, Pages[ArchivePositions[nodes.Count]].Title_EN, this);
+            
             goParent.GetComponent<Button>().targetGraphic = goParent.GetComponent<ArchivePoint>().DotImage;
             
             goParent.GetComponent<RectTransform>().anchoredPosition = new Vector2(0,-(VerticalSpan + totalHeight));

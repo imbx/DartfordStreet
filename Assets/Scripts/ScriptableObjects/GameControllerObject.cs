@@ -19,6 +19,8 @@ public class GameControllerObject : ScriptableObject {
 
     public bool isFirstFloor = true;
 
+    public string lang = "ES";
+
     public void ChangeState(GameState gs)
     {
         justChangedState = true;
