@@ -1491,6 +1491,40 @@ MonoBehaviour:
   opacity:
     overrideState: 0
     value: 1
+--- !u!114 &-3708250197492882241
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: OutlineFx
+  m_EditorClassIdentifier: Assembly-CSharp::OutlineFx
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  thickness:
+    overrideState: 1
+    value: 1
+  depthMultiplier:
+    overrideState: 1
+    value: 48.16
+  depthBias:
+    overrideState: 0
+    value: 3.33
+  normalMultiplier:
+    overrideState: 0
+    value: 1
+  normalBias:
+    overrideState: 1
+    value: 10
+  color:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 0.5686275}
 --- !u!114 &-3242653091491993980
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1771,7 +1805,7 @@ MonoBehaviour:
   - {fileID: -5058949052031880854}
   - {fileID: 4716217825517878967}
   - {fileID: -1422005980189143557}
-  - {fileID: -5569086272925647787}
+  - {fileID: 960586840828937561}
 --- !u!114 &51950002695669872
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1878,6 +1912,40 @@ MonoBehaviour:
     overrideState: 1
     value: {fileID: 2800000, guid: 590b341e8d47e80469e88936f7456a15, type: 3}
     defaultState: 2
+--- !u!114 &960586840828937561
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: OutlineFx
+  m_EditorClassIdentifier: Assembly-CSharp::OutlineFx
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  thickness:
+    overrideState: 1
+    value: 1
+  depthMultiplier:
+    overrideState: 1
+    value: 73.29
+  depthBias:
+    overrideState: 1
+    value: 1
+  normalMultiplier:
+    overrideState: 0
+    value: 1
+  normalBias:
+    overrideState: 0
+    value: 10
+  color:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 0.3254902}
 --- !u!114 &1457211648854859813
 MonoBehaviour:
   m_ObjectHideFlags: 3

@@ -37,10 +37,10 @@ public class GameController : MonoBehaviour{
         // DontDestroyOnLoad(this);
         current = this;
         Debug.Log("Loading Database");
-        #if UNITY_EDITOR
-            SceneController.LoadGame = !ignoreSavedGame;
-            Debug.Log("Ignoring database " + SceneController.LoadGame);
-        #endif
+        // #if UNITY_EDITOR
+            // SceneController.LoadGame = !ignoreSavedGame;
+            // Debug.Log("Ignoring database " + SceneController.LoadGame);
+        // #endif
         if(!SceneController.LoadGame)
         {
             Player.PlayerPosition = new Vector3(2.72f, 1.08f, -6.63f);

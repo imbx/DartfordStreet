@@ -1,4 +1,5 @@
 using System.Collections;
+using Aura2API;
 using UnityEngine;
 
 public class FilmProjector : InteractBase {
@@ -45,6 +46,7 @@ public class FilmProjector : InteractBase {
         if (CurrentProjectorTexture > ProjectorTextures.Length - 1) CurrentProjectorTexture = 0;
         TargetMaterial.SetTexture(TextureName, EmptyTexture);
         spotLight.enabled = false;
+        spotLight.GetComponent<AuraLight>().enabled = false;
         while(timer < 1f)
         {
             timer += RotationSpeed * Time.deltaTime;
@@ -57,6 +59,7 @@ public class FilmProjector : InteractBase {
         }
         TargetMaterial.SetTexture(TextureName, ProjectorTextures[CurrentProjectorTexture]);
         spotLight.enabled = true;
+        spotLight.GetComponent<AuraLight>().enabled = true;
         ProjectorTop.localEulerAngles = new Vector3(
                 ProjectorTop.localEulerAngles.x,
                 ProjectorTop.localEulerAngles.y,
