@@ -3032,7 +3032,36 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Productor & Dise\xF1ador\nArtista & Programador\nArtista\nArtista\nProgramador\nDise\xF1adora\n\n\n\n\nSonidos\n\n\n\n\n\n\n\n\n\nAgradecimientos"
+  m_Text: 'Producer & Designer
+
+    3DArtist & Programmer
+
+    3DArtist
+
+    3DArtist
+
+    Programmer
+
+    Designer
+
+
+
+
+
+    Sounds
+
+
+
+
+
+
+
+
+
+
+    Special
+
+    Thanks'
 --- !u!222 &1826749721
 CanvasRenderer:
   m_ObjectHideFlags: 0

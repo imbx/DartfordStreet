@@ -27,11 +27,15 @@ public class GameController : MonoBehaviour{
 
     public Texture2D CircleCursor;
 
+    public PauseMenu settings;
+
     [Range(0,5)]
     public int vSyncCount = 1;
 
     [Header("SAVED GAME")]
     public bool ignoreSavedGame = true;
+
+    public float playingInnerTimer = 0f;
 
     private void Awake() {
         // DontDestroyOnLoad(this);
@@ -86,9 +90,15 @@ public class GameController : MonoBehaviour{
                     DisablePostEffect();
                     StateChange(false);
                     ui.HideUI();
+                    playingInnerTimer = 0f;
                 }
                 
-                NotebookVisibility();
+                if(playingInnerTimer > 0.5f)
+                {
+                    Menu();
+                    NotebookVisibility();
+                } else playingInnerTimer += Time.deltaTime;
+                
 
                 /*if(PlayerControls.isInput2Pressed && keyPressCooldown <= 0f){
                     keyPressCooldown = 0.75f;
@@ -181,6 +191,11 @@ public class GameController : MonoBehaviour{
                     ui.SetNotebookActive(false);
                 }
                 gameCObject.ReturnToPreviousState();
+                break;
+            case GameState.SETTINGS:
+                if(gameCObject.justChangedState) StateChange(true);
+
+                Menu(false);
                 break;
             case GameState.ENDGAME:
                 break;
@@ -277,6 +292,15 @@ public class GameController : MonoBehaviour{
         if(PlayerControls.isTabPressed && keyPressCooldown <= 0f){
             keyPressCooldown = 0.75f;
             gameCObject.ChangeState(show ? GameState.OPENNOTEBOOK : GameState.CLOSENOTEBOOK);
+        }
+    }
+
+    private void Menu(bool active = true)
+    {
+        if(PlayerControls.isEscapePressed && keyPressCooldown <= 0f){
+            keyPressCooldown = 0.75f;
+            if(!active) settings.ReturnToGame();
+            else settings.EnableMenu();
         }
     }
 }
